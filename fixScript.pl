@@ -43,7 +43,7 @@ my $factory = Bio::DB::EUtilities->new(-eutil => 'esummary',
                                        -db    => 'sra',
                                        -history    => $hist);
 #Iterates through history by 500 each time
-my $retry = 0; my ($retmax, $retstart) = (500,0);
+my $retry = 0; my ($retmax, $retstart) = (2000,0);
 
 
 #While count is less than the total count, iterates

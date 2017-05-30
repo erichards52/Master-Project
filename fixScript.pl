@@ -1,4 +1,3 @@
-
 use LWP::Simple;
 use Bio::DB::EUtilities;
 use Bio::Tools::EUtilities;
@@ -95,13 +94,14 @@ $date1=$item->get_content;
        $platform=$3;
 	$bases=$6;
        	}
-if ($data=~/\<Study acc\=\"(.+)\" name\=\"(.+)\"\/\>\<Organism taxid/) {
+if ($data=~/\<Study acc\=\"(.+)\" name\=\"(.+)\"\/\>\<Organism taxid\=\"(.+)\" CommonName\=\"(.+)\"\/\>\<Sample/) {
 	$acc=$1;
 	$study=$2;
+	$org=$4;
 		}     
    }
 
 #Prints variables for each database submission in the SRA
-  print "\nId $id\nDesign: $seq\nDesc: $study\nCreateDate: $date\nUpdateDate: $date1\nPlatform: $model\nModel: $platform\nNumber of Bases: $bases\n\n";
+  print "\nId $id\nDesign: $seq\nDesc: $study\nOrganism: $org\nCreateDate: $date\nUpdateDate: $date1\nPlatform: $model\nModel: $platform\nNumber of Bases: $bases\n\n";
 }
 }

@@ -8,7 +8,7 @@ my $factory = Bio::DB::EUtilities->new(-eutil => 'esearch',
                                        -db     => 'sra',
                                        -term   => 'public OR controlled',
                                        -email  => '2274776r@student.gla.ac.uk',
-                                       -retmax => 50);
+                                       -usehistory => 'y');
 
 # query terms are mapped; what's the actual query?
 #print "Query translation: ",$factory->get_query_translation,"\n";
@@ -16,8 +16,14 @@ my $factory = Bio::DB::EUtilities->new(-eutil => 'esearch',
 # query hits
 print "Count = ",$factory->get_count,"\n";
 
+my $count = $factory->get_count;
+
+# get history from que
+my $hist = $factory->next_History || die;
+print "History returned\n";
+
 # UIDs
-my @ids = $factory->get_ids;
+
 #my @items = $factory-> get_all_Items;
 
 #sub my_function {
@@ -32,7 +38,15 @@ my @ids = $factory->get_ids;
 my $factory = Bio::DB::EUtilities->new(-eutil => 'esummary',
                                        -email => '2274776r@student.gla.ac.uk',
                                        -db    => 'sra',
-                                       -id    => \@ids);
+                                       -history    => $hist);
+
+my $retry = 0; my ($retmax, $retstart) = (500,0);
+
+
+while ($retstart < $count) {
+    $factory->set_parameters(-retmax => $retmax,
+                             -retstart => $retstart);
+
 
 								
 while (my $ds = $factory->next_DocSum){
@@ -70,4 +84,5 @@ if ($data=~/\<Study acc\=\"(.+)\" name\=\"(.+)\"\/\>\<Organism taxid/) {
 		}     
    }
   print "\nId $id\nAcc. Num: $acc\nDesign: $seq\nDesc: $study\nCreateDate: $date\nUpdateDate: $date1\nPlatform: $model\nModel: $platform\nNumber of Bases: $bases\n\n";
+}
 }

@@ -42,11 +42,11 @@ my $factory = Bio::DB::EUtilities->new(-eutil => 'esummary',
                                        -email => '2274776r@student.gla.ac.uk',
                                        -db    => 'sra',
                                        -history    => $hist);
-#Iterates through history by 500 each time
+#Iterates through history by 2000 each time
 my $retry = 0; my ($retmax, $retstart) = (2000,0);
 
 
-#While count is less than the total count, iterates
+#While retstart is less than the total hit count, iterates
 while ($retstart < $count) {
     $factory->set_parameters(-retmax => $retmax,
                              -retstart => $retstart);
@@ -94,14 +94,17 @@ $date1=$item->get_content;
        $platform=$3;
 	$bases=$6;
        	}
-if ($data=~/\<Study acc\=\"(.+)\" name\=\"(.+)\"\/\>\<Organism taxid\=\"(.+)\" CommonName\=\"(.+)\"\/\>\<Sample/) {
+if ($data=~/\<Study acc\=\"(.+)\" name\=\"(.+)\"\/\>\<Organism taxid\=\"(.+)\" CommonName\=\"(.+)\"\/\>\<Sample acc\=\"(.+)\" name\=\"(.+)\"\/\>\<Instrument/) {
 	$acc=$1;
 	$study=$2;
+	$taxid=$3;
 	$org=$4;
+	$sampleacc=$5;
+	$sciname=$6;
 		}     
    }
 
 #Prints variables for each database submission in the SRA
-  print "\nId $id\nDesign: $seq\nDesc: $study\nOrganism: $org\nCreateDate: $date\nUpdateDate: $date1\nPlatform: $model\nModel: $platform\nNumber of Bases: $bases\n\n";
+  print "\nId\t$id\nDesign:\t$seq\nDesc:\t$study\nOrganism (Common Name):\t$org\nOrganism(Scientific Name):\t$sciname\nOrganism(TaxID):\t$taxid\nSampleAcc:\t$sampleacc\nCreateDate:\t$date\nUpdateDate:\t$date1\nPlatform:\t$model\nModel:\t$platform\nNumber of Bases:\t$bases\n\n";
 }
 }

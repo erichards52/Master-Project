@@ -1,7 +1,42 @@
+#Set up workspace/load all necessary variables
 setwd("Important Files/Master's Degree (UoG)/Classes/Thesis")
 library(ggplot2)
 library(plyr)
 library(stringi)
+library(tm)
+library(Rgraphviz) 
+library(gtools) 
+library(XML)
+library(qdap) 
+library(tm) 
+library(SnowballC); library(RWeka); library(rJava); library(RWekajars)  
+library(Rstem) 
+library(stringr)
+library(devtools)
+
+#RUN THE NEXT TWO BATCHES OF CODE ONLY ONCE
+
+#Packages necessary for text datamining ONLY RUN ONCE
+install.packages("gtools", dependencies = T)
+install.packages("qdap")
+#Answer no to compliation for XML
+install.packages("XML")
+install.packages("Rgraphviz")
+install.packages("SnowballC")
+install.packages("RWeka")
+install.packages("rJava")
+install.packages("RWekajars")
+install.packages("Rstem")
+
+#Slam must be installed forcefully first or tm package wont work
+#DO NOT RUN THIS IF YOU HAVE ALREADY INSTALLED, THIS IS JUST A NOTE
+install.packages('devtools')
+slam_url <- "https://cran.r-project.org/src/contrib/Archive/slam/slam_0.1-37.tar.gz"
+install_url(slam_url)
+
+
+#HERE BEGINS ANALYSIS 
+#------------------------------------------------------------------------------------------------------
 
 #Read in the file
 tab<-read.csv("test.txt",header=TRUE, sep=",")
@@ -37,7 +72,28 @@ p<-ggplot(data=df, aes(x=dose, y=len)) +
   scale_x_discrete(labels=xLabs)
 p
 
+#Word Frequency test 2
+#Create shorter variable name
+orgNames <- tab$Organism.CommonName.
+orgNames<- as.character(orgNames) # to make sure it is text
+
+#Get text ready for analysis, no special characters and such
+orgNames <- tolower(orgNames)
+orgNames <- tm::removeNumbers(orgNames)
+orgNames <- str_replace_all(orgNames, "  ", "") 
+orgNames <- str_replace_all(orgNames, pattern = "[[:punct:]]", " ")
+orgNames <- tm::removeWords(x = orgNames, stopwords(kind = "SMART"))
+
+#Create corpus & create tdm from corpus using tm package
+corpus <- Corpus(VectorSource(orgNames)) 
+tdm <- TermDocumentMatrix(corpus) 
+
+#Top 25 organisms
+orgFreqs <- freq_terms(text.var = orgNames, top = 25) 
+
+
+#Not yet working, will return
 #Platforms vs date
-ggplot(data=datePlat, aes(x=platforms, y=time)) +
-  geom_bar(stat="identity")
+#ggplot(data=datePlat, aes(x=platforms, y=time)) +
+# geom_bar(stat="identity")
 

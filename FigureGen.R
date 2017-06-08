@@ -148,6 +148,18 @@ tab$Organism.CommonName. <- sub("B primigenius taurus", "Cattle",tab$Organism.Co
 tab$Organism.CommonName. <- sub("B. primigenius taurus", "Cattle",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("horse", "Horse",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("*.sativa japonica.*", "Japanese Rice",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("dog", "Dog",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Canis lupus familiaris", "Dog",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Canis familiaris", "Dog",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("C. lupus familiaris", "Dog",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("C. familiaris", "Dog",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("C familiaris", "Dog",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("c. familiaris", "Dog",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("c familiaris", "Dog",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("S. mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("s. mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("s mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("s. mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
 
 
 #Define organisms as factors
@@ -236,7 +248,7 @@ xLabsOrg <- strsplit(xLabsOrg,",")
 
 #Create organism plot
 pOrg<-ggplot(data=dfOrg, aes(x=orgCounts$Organism.CommonName., y=lenOrg)) +
-  geom_bar(aes(fill=orgCounts$Organism.CommonName.),stat="identity") +
+  geom_bar(aes(fill=orgCounts$Organism.CommonName.),stat="identity") + scale_y_log10() +
   scale_x_discrete(labels=xLabsOrg)
 
 #Add labels to plot
@@ -247,9 +259,62 @@ pOrg <- pOrg + guides(fill=guide_legend(title="Organisms"))
 pOrg
 
 #Save as PDF
-ggsave(pOrg,file='OrganismPlot.pdf', width = 16, height = 9, dpi = 120)
+ggsave(pOrg,file='BarPlot_Organisms.pdf', width = 16, height = 9, dpi = 120)
 dev.off()
 
+#Organism counts WITHOUT HUMAN OR HOUSE MOUSE
+#------------------------------------------------------------------------------
+#organism counts table
+TempDf <- tab[ which(tab$Organism.CommonName. != "Homo sapiens" 
+                          & tab$Organism.CommonName.!= "House Mouse"), ]
+
+#organism counts table
+orgCountsN <- count(TempDf, 'Organism.CommonName.')
+orgCountsN <- na.omit(orgCountsN)
+
+#Order orgCountsN df
+orgCountsN <- orgCountsN[order(-orgCountsN$freq),]
+
+#Truncate organism count table to 20 organisms
+orgCountsN <- orgCountsN[1:20,]
+
+#Return organism levels & drop those not needed
+orgCountsN$Organism.CommonName. <- droplevels(orgCountsN$Organism.CommonName.)
+orgLev <- levels(orgCountsN$Organism.CommonName.)
+
+#Count number of rows in df for organism plot
+rowsY <- nrow(orgCountsN)
+
+#data frame plot setup
+dose = orgCountsN[1]
+lenOrg = orgCountsN[2]
+dfOrg <- data.frame(dose=orgCountsN[1],
+                    lenOrg=orgCountsN[2])
+
+#Order levels for plot from greatest to least
+orgCountsN$Organism.CommonName. <- droplevels(orgCountsN$Organism.CommonName.)
+orgCountsN$Organism.CommonName. <- reorder(orgCountsN$Organism.CommonName., -orgCountsN$freq)
+
+#Creae 1-20 labels for plot
+xOrgN = 1
+xLabsOrgN <- seq(xOrgN,rowsY,1)
+xLabsOrgN <- toString(xLabsOrgN)
+xLabsOrgN <- strsplit(xLabsOrgN,",")
+
+#Create organism plot
+pOrgN<-ggplot(data=dfOrg, aes(x=orgCountsN$Organism.CommonName., y=lenOrg)) +
+  geom_bar(aes(fill=orgCountsN$Organism.CommonName.),stat="identity") +
+  scale_x_discrete(labels=xLabsOrg)
+
+#Add labels to plot
+pOrgN <- pOrgN + labs(x = "Organism")
+pOrgN <- pOrgN + labs(y = "Count")
+pOrgN <- pOrgN + labs(title = "Number of Datasets Submitted to SRA vs Organism Used")
+pOrgN <- pOrgN + guides(fill=guide_legend(title="Organisms"))
+pOrgN
+
+ggsave(pOrg,file='BarPlot_Organisms_Without.pdf', width = 16, height = 9, dpi = 120)
+dev.off()
 #Return bases sequenced each year for each platform
 #------------------------------------------------------------------------------
 #Subsetted df to be used

@@ -88,6 +88,67 @@ tab$Platform <- as.factor(tab$Platform)
 
 #Organism curation
 tab$Organism.CommonName. <- sub("human", "Homo sapiens", tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("H. sapiens", "Homo sapiens", tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("house mouse", "House Mouse",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("mus musculus", "House Mouse",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Mus musculus", "House Mouse",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("M. musculus", "House Mouse",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("m. musculus", "House Mouse",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("domesticated barley", "Domesticated Barley",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("thale cress", "Thale Cress",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("arabidopsis thaliana", "Thale Cress",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("baker's yeast", "Baker's Yeast",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("rice", "Rice",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("pneumococcus", "Streptococcus penumoniae",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("human herpesvirus 4", "Epstein-Barr virus",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("human herpesvirus-4", "Epstein-Barr virus",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("HHV-4", "Epstein-Barr virus",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("hhv-4", "Epstein-Barr virus",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("hhv-5", "Human cytomegalovirus",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("HHV-5", "Human cytomegalovirus",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("human herpesvirus-5", "Human cytomegalovirus",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("human herpesvirus 5", "Human cytomegalovirus",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("zebrafish", "Danio rerio",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Zebrafish", "Danio rerio",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("D. rerio", "Danio rerio",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("D rerio", "Danio rerio",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("d rerio", "Danio rerio",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("d. rerio", "Danio rerio",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("fruit fly", "Fruit fly",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Drosophila melanogaster", "Fruit fly",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("D. melanogaster", "Fruit fly",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("D melanogaster", "Fruit fly",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("d melanogaster", "Fruit fly",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("d. melanogaster", "Fruit fly",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("ice krill", "Ice krill",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Euphausia crystallorophias", "Ice krill",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("E crystallorophias", "Ice krill",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("E.crystallorophias", "Ice krill",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("e. crystallorophias", "Ice krill",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("e crystallorophias", "Ice krill",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Roundworm", "Caenorhabditis elegans",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("roundworm", "Caenorhabditis elegans",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("C elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("C. elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("c elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("c. elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Sus scrofa domesticus", "Pig",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("pig", "Pig",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Sus", "Pig",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("E. coli", "Escherichia coli",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("E coli", "Escherichia coli",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("e. coli", "Escherichia coli",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("e coli", "Escherichia coli",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("cattle", "Cattle",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Bos taurus", "Cattle",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("B taurus", "Cattle",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("B. taurus", "Cattle",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("Bos primigenius taurus", "Cattle",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("B primigenius taurus", "Cattle",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("B. primigenius taurus", "Cattle",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("horse", "Horse",tab$Organism.CommonName.)
+tab$Organism.CommonName. <- sub("*.sativa japonica.*", "Japanese Rice",tab$Organism.CommonName.)
+
 
 #Define organisms as factors
 tab$Organism.CommonName. <- as.factor(tab$Organism.CommonName.)
@@ -98,16 +159,15 @@ tab$Organism.CommonName. <- as.factor(tab$Organism.CommonName.)
 #Platform Analysis
 #-----------------------------------------------------------------------
 
-#Create platform variable for plots 
+#Create platform variable from levels for plot
 platforms <- levels(tab$Platform)
 
-#Total count of each platform
+#Total count of each platform ordered
 platCounts = count(tab, 'Platform')
-
 platCounts <- platCounts[order(-platCounts$freq),]
-#No. rows of platforms, necessary for barplot
-rowsX <- nrow(platCounts)
 
+#No. rows from platCounts df, necessary for barplot
+rowsX <- nrow(platCounts)
 
 #Build dataframe for barplot
 len = platCounts[2]
@@ -128,6 +188,7 @@ p<-ggplot(data=df, aes(x=df$Platform, y=len)) +
   geom_bar(aes(fill=Platform),stat="identity")+ scale_y_log10() +
   scale_x_discrete(labels=xLabs)
 
+#Add labels
 p <- p + labs(x = "Platform")
 p <- p + labs(y = "Count (log10)")
 p <- p + labs(title = "Number of Datasets Submitted to SRA vs Platform Used")
@@ -144,17 +205,17 @@ dev.off()
 orgCounts <- count(tab, 'Organism.CommonName.')
 orgCounts <- na.omit(orgCounts)
 
-#Order organisms by most frequent
+#Order orgCounts df
 orgCounts <- orgCounts[order(-orgCounts$freq),]
 
-#Truncate organism count table to 25 organisms
+#Truncate organism count table to 20 organisms
 orgCounts <- orgCounts[1:20,]
 
-#Return organism levels for plots
+#Return organism levels & drop those not needed
 orgCounts$Organism.CommonName. <- droplevels(orgCounts$Organism.CommonName.)
 orgLev <- levels(orgCounts$Organism.CommonName.)
 
-#Count number of rows in table for plot
+#Count number of rows in df for organism plot
 rowsY <- nrow(orgCounts)
 
 #data frame plot setup
@@ -163,10 +224,11 @@ lenOrg = orgCounts[2]
 dfOrg <- data.frame(dose=orgCounts[1],
                     lenOrg=orgCounts[2])
 
+#Order levels for plot from greatest to least
 orgCounts$Organism.CommonName. <- droplevels(orgCounts$Organism.CommonName.)
 orgCounts$Organism.CommonName. <- reorder(orgCounts$Organism.CommonName., -orgCounts$freq)
 
-#Return labels (will be changed later)
+#Creae 1-20 labels for plot
 xOrg = 1
 xLabsOrg <- seq(xOrg,rowsY,1)
 xLabsOrg <- toString(xLabsOrg)
@@ -177,6 +239,7 @@ pOrg<-ggplot(data=dfOrg, aes(x=orgCounts$Organism.CommonName., y=lenOrg)) +
   geom_bar(aes(fill=orgCounts$Organism.CommonName.),stat="identity") +
   scale_x_discrete(labels=xLabsOrg)
 
+#Add labels to plot
 pOrg <- pOrg + labs(x = "Organism")
 pOrg <- pOrg + labs(y = "Count")
 pOrg <- pOrg + labs(title = "Number of Datasets Submitted to SRA vs Organism Used")
@@ -189,10 +252,10 @@ dev.off()
 
 #Return bases sequenced each year for each platform
 #------------------------------------------------------------------------------
-#Subsetted df to be used when subsetting for years and platform
+#Subsetted df to be used
 tabLine <- tab[c(-1,-2,-3,-4,-5,-7,-9,-11,-12)]
 
-#Print total bases for each platform for each year separately
+#Print total bases for each platform for each year & platform separately
 #HiSeq
 for (i in 2007:2017)
 {
@@ -291,7 +354,6 @@ for (i in 2007:2017)
 }
 
 #Read in vectors for each platform (sum of bases for each year)
-
 illHiVec <- c(0,435300142357,1.110118e+12,1.301944e+13,8.868507e+13,3.069139e+14,5.185492e+14,
               8.942418e+14,1.343956e+15,5.920494e+15,1.027195e+15)
 
@@ -316,7 +378,7 @@ abSolidVec <- c(0,650853156805,699427118088,8.634524e+12,2.806592e+13,9.092201e+
 
 abGaVec <- c(0,0,0,0,16452372720,614725689869,1.509095e+12,4.13447e+12,7.449208e+12,2.519085e+12,920478722053)
 
-helScopeVec <- c(0,0,164027920249,26123605503,114533436072,156103313646,306670430378,1.366621e+12,1.194907e+12,                 40525032053,
+helScopeVec <- c(0,0,164027920249,26123605503,114533436072,156103313646,306670430378,1.366621e+12,1.194907e+12,40525032053,
                  28778958900)
 
 comGenVec <- c(0,0,0,1.375607e+12,1.615044e+12,2.87257e+14,4.022169e+14,7.764679e+13,4.671611e+13,5.302391e+13,
@@ -326,23 +388,23 @@ oxNanVec <- c(0,0,0,1.375607e+12,1.615044e+12,2.87257e+14,4.022169e+14,7.764679e
               902680687724)
 
 
-#Create list of vectors
+#Create list of bases vectors
 lst <- list(illHiVec,illMiVec,fourFive4Vec,illGaVec, illNextVec,torrentVec,pacBioVec,abSolidVec,abGaVec,helScopeVec,comGenVec,oxNanVec)
 
-#Turn list into df
+#Define new df with dimensions
 lineDF <- data.frame(matrix(nrow = 132, ncol = 3))
 
-#Define row and column names
+#Define column names of df
 colnames(lineDF) <- c("Year", "Platform", "Bases")
 
-#Paste bases list into appropriate column
+#Paste bases list into bases column
 lineDF$Bases = unlist(lst)
 
-#Create vector of platforms
+#Create vector of platform names
 platVecStr <- c("Illumina HiSeq","Illumina MiSeq","454 GS","Illumina GA","Illumina NextSeq","Ion Torrent",
                 "PacBio","AB SOLID","AB GA","Helicos HeliScope","Complete Genomics","Oxford Nanopore")
 
-#Function to repeat platforms & unlist platform list into appropriate column
+#Function to repeat platforms & unlist platform list into platforms column
 platVecStr<-sapply(platVecStr, function (x) rep(x,11))
 platVecStr <- as.vector(platVecStr)
 listPlat <- list(platVecStr)
@@ -355,13 +417,13 @@ yRS <- seq(yR,2017,1)
 yRS <- toString(yRS)
 yRS <- strsplit(yRS,",")
 
-#Function to repeat years & unlist yearslist into appropriate column
+#Function to repeat years & unlist years list into years column
 yRS<-sapply(yRS, function (x) rep(x,12))
 yRS <- as.vector(yRS)
 listYrs <- list(yRS)
 lineDF$Year = unlist(listYrs)
 
-#Reorder factors by year
+#Reorder factors by year for line graph
 lineDF$Year<- factor(lineDF$Year, levels=unique(as.character(lineDF$Year)) )
 
 #Create Line Graph from df
@@ -369,13 +431,14 @@ platPlot <- ggplot(data=lineDF, aes(x=lineDF$Year, y=lineDF$Bases, group=lineDF$
   geom_line(aes(color=lineDF$Platform))+ scale_y_log10() +
   geom_point(aes(color=lineDF$Platform))
 
-#Create line graph
+#Add labels to line graph
 platPlot <- platPlot + labs(x = "Year")
 platPlot <- platPlot + labs(y = "Bases (log10)")
 platPlot <- platPlot + labs(title = "Number of Bases Sequenced by Each Platform per Year")
 platPlot <- platPlot + labs(colour = "Platforms") 
 platPlot
 
+#Save plot
 ggsave(platPlot,file='BasesPlot.pdf', width = 16, height = 9, dpi = 120)
 
 

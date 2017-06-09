@@ -21,6 +21,9 @@ library(setattr)
 library(data.table)
 library("reshape2")
 library(scales)
+library("SnowballC")
+library("wordcloud")
+library("RColorBrewer")
 
 #RUN THE NEXT TWO BATCHES OF CODE ONLY ONCE
 #------------------------------------------------------------------------------
@@ -39,6 +42,9 @@ install.packages("stringr")
 install.packages("slam")
 install.packages("reshape2")
 install.packages("scales")
+install.packages("wordcloud")
+install.packages("SnowballC")
+install.packages("RColorBrewer")
 
 #Slam must be installed forcefully first or tm package wont work
 #DO NOT RUN THIS IF YOU HAVE ALREADY INSTALLED, THIS IS JUST A NOTE
@@ -87,58 +93,90 @@ tab$Platform[tab$Platform == "unspecified"] <- NA
 tab$Platform <- as.factor(tab$Platform)
 
 #Organism curation
+
+#Human
 tab$Organism.CommonName. <- sub("human", "Homo sapiens", tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("H. sapiens", "Homo sapiens", tab$Organism.CommonName.)
+
+#Mouse
 tab$Organism.CommonName. <- sub("house mouse", "House Mouse",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("mus musculus", "House Mouse",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("Mus musculus", "House Mouse",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("M. musculus", "House Mouse",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("m. musculus", "House Mouse",tab$Organism.CommonName.)
+
+#Barley
 tab$Organism.CommonName. <- sub("domesticated barley", "Domesticated Barley",tab$Organism.CommonName.)
+
+#Thale Cress
 tab$Organism.CommonName. <- sub("thale cress", "Thale Cress",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("arabidopsis thaliana", "Thale Cress",tab$Organism.CommonName.)
+
+#Baker's yeast
 tab$Organism.CommonName. <- sub("baker's yeast", "Baker's Yeast",tab$Organism.CommonName.)
+
+#Rice
 tab$Organism.CommonName. <- sub("rice", "Rice",tab$Organism.CommonName.)
+
+#Streptococcus penumoniae
 tab$Organism.CommonName. <- sub("pneumococcus", "Streptococcus penumoniae",tab$Organism.CommonName.)
+
+#Herpes 4
 tab$Organism.CommonName. <- sub("human herpesvirus 4", "Epstein-Barr virus",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("human herpesvirus-4", "Epstein-Barr virus",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("HHV-4", "Epstein-Barr virus",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("hhv-4", "Epstein-Barr virus",tab$Organism.CommonName.)
+
+#Herpes 5
 tab$Organism.CommonName. <- sub("hhv-5", "Human cytomegalovirus",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("HHV-5", "Human cytomegalovirus",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("human herpesvirus-5", "Human cytomegalovirus",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("human herpesvirus 5", "Human cytomegalovirus",tab$Organism.CommonName.)
+
+#Zebrafish
 tab$Organism.CommonName. <- sub("zebrafish", "Danio rerio",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("Zebrafish", "Danio rerio",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("D. rerio", "Danio rerio",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("D rerio", "Danio rerio",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("d rerio", "Danio rerio",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("d. rerio", "Danio rerio",tab$Organism.CommonName.)
+
+#Fruit fly
 tab$Organism.CommonName. <- sub("fruit fly", "Fruit fly",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("Drosophila melanogaster", "Fruit fly",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("D. melanogaster", "Fruit fly",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("D melanogaster", "Fruit fly",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("d melanogaster", "Fruit fly",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("d. melanogaster", "Fruit fly",tab$Organism.CommonName.)
+
+#Ice Krill
 tab$Organism.CommonName. <- sub("ice krill", "Ice krill",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("Euphausia crystallorophias", "Ice krill",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("E crystallorophias", "Ice krill",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("E.crystallorophias", "Ice krill",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("e. crystallorophias", "Ice krill",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("e crystallorophias", "Ice krill",tab$Organism.CommonName.)
+
+#Roundworm
 tab$Organism.CommonName. <- sub("Roundworm", "Caenorhabditis elegans",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("roundworm", "Caenorhabditis elegans",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("C elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("C. elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("c elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("c. elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
+
+#Pig
 tab$Organism.CommonName. <- sub("Sus scrofa domesticus", "Pig",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("pig", "Pig",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("Sus", "Pig",tab$Organism.CommonName.)
+
+#E coli
 tab$Organism.CommonName. <- sub("E. coli", "Escherichia coli",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("E coli", "Escherichia coli",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("e. coli", "Escherichia coli",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("e coli", "Escherichia coli",tab$Organism.CommonName.)
+
+#Cattle
 tab$Organism.CommonName. <- sub("cattle", "Cattle",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("Bos taurus", "Cattle",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("B taurus", "Cattle",tab$Organism.CommonName.)
@@ -146,8 +184,14 @@ tab$Organism.CommonName. <- sub("B. taurus", "Cattle",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("Bos primigenius taurus", "Cattle",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("B primigenius taurus", "Cattle",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("B. primigenius taurus", "Cattle",tab$Organism.CommonName.)
+
+#Horse
 tab$Organism.CommonName. <- sub("horse", "Horse",tab$Organism.CommonName.)
+
+#Jap Rice
 tab$Organism.CommonName. <- sub("*.sativa japonica.*", "Japanese Rice",tab$Organism.CommonName.)
+
+#Dog
 tab$Organism.CommonName. <- sub("dog", "Dog",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("Canis lupus familiaris", "Dog",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("Canis familiaris", "Dog",tab$Organism.CommonName.)
@@ -156,11 +200,12 @@ tab$Organism.CommonName. <- sub("C. familiaris", "Dog",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("C familiaris", "Dog",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("c. familiaris", "Dog",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("c familiaris", "Dog",tab$Organism.CommonName.)
+
+#Schistosoma mansoni
 tab$Organism.CommonName. <- sub("S. mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("s. mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("s mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
 tab$Organism.CommonName. <- sub("s. mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
-
 
 #Define organisms as factors
 tab$Organism.CommonName. <- as.factor(tab$Organism.CommonName.)
@@ -313,7 +358,7 @@ pOrgN <- pOrgN + labs(title = "Number of Datasets Submitted to SRA vs Organism U
 pOrgN <- pOrgN + guides(fill=guide_legend(title="Organisms"))
 pOrgN
 
-ggsave(pOrg,file='BarPlot_Organisms_Without.pdf', width = 16, height = 9, dpi = 120)
+ggsave(pOrgN,file='BarPlot_Organisms_Without.pdf', width = 16, height = 9, dpi = 120)
 dev.off()
 #Return bases sequenced each year for each platform
 #------------------------------------------------------------------------------
@@ -506,4 +551,146 @@ platPlot
 #Save plot
 ggsave(platPlot,file='BasesPlot.pdf', width = 16, height = 9, dpi = 120)
 
+#Model organism metadata
+#--------------------------------------------------------------
+#Return all datasets which use "rat" as an organism
+ratDat <- c(which(grepl("rat$", tab$Organism.CommonName.)))
+ratDat <- as.data.frame(tab[c(ratDat),])
+ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "firebrat"),]
+ratDat <- as.data.frame(ratDat)
 
+#Subset rows/turn rows into df
+ratDat$Organism.CommonName. <- droplevels(ratDat$Organism.CommonName.)
+ratDat$Design <- droplevels(ratDat$Design)
+
+#organism counts table
+ratDescCount <- count(ratDat, 'Design')
+ratDescCount <- na.omit(ratDescCount)
+
+#Order ratDescCount df
+ratDescCount <- ratDescCount[order(-ratDescCount$freq),]
+
+#Truncate organism count table to 20 organisms
+ratDescCount <- ratDescCount[1:20,]
+
+#Return organism levels & drop those not needed
+ratDescCount$Design <- droplevels(ratDescCount$Design)
+ratLev <- levels(ratDescCount$Design)
+
+#Count number of rows in df for organism plot
+rowsY <- nrow(ratDescCount)
+
+#data frame plot setup
+dose = ratDescCount[1]
+lenOrg = ratDescCount[2]
+ratDF <- data.frame(dose=ratDescCount[1],
+                    lenOrg=ratDescCount[2])
+
+#Order levels for plot from greatest to least
+ratDescCount$Design <- droplevels(ratDescCount$Design)
+ratDescCount$Design <- reorder(ratDescCount$Design, -ratDescCount$freq)
+
+#Creae 1-20 labels for plot
+ratN = 1
+ratRowN <- seq(ratN,rowsY,1)
+ratRowN <- toString(ratRowN)
+ratRowN <- strsplit(ratRowN,",")
+
+#Create organism plot
+ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Design, y=lenOrg)) +
+  geom_bar(aes(fill=ratDescCount$Design),stat="identity") +
+  scale_x_discrete(labels=xLabsOrg)
+
+#Add labels to plot
+ratPlot <- ratPlot + labs(x = "Descriptions")
+ratPlot <- ratPlot + labs(y = "Dataset Count")
+ratPlot <- ratPlot + labs(title = "Description vs Number of Datasets")
+ratPlot <- ratPlot + guides(fill=guide_legend(title="Descriptions"))
+ratPlot
+
+ggsave(ratPlot,file='BarPlot_RatDesc.pdf', width = 16, height = 9, dpi = 120)
+dev.off()
+
+#Model organism metadata (WordCloud)
+#---------------------------------------------------
+#Return all datasets which use "rat" as an organism
+ratDat <- c(which(grepl("rat$", tab$Organism.CommonName.)))
+ratDat <- as.data.frame(tab[c(ratDat),])
+
+#Return rats which aren't firebrat
+ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "firebrat"),]
+
+#Turn into df
+ratDat <- as.data.frame(ratDat) 
+
+#Turn design column into corpus
+docs <- Corpus(VectorSource(ratDat$Design))
+
+#Create function to get rid of unnessecary chars
+toSpace <- content_transformer(function (x , pattern ) gsub(pattern, " ", x))
+docs <- tm_map(docs, toSpace, ",")
+docs <- tm_map(docs, toSpace, "@")
+docs <- tm_map(docs, toSpace, "\\|")
+
+#Return top 20
+dtm <- TermDocumentMatrix(docs)
+m <- as.matrix(dtm)
+v <- sort(rowSums(m),decreasing=TRUE)
+d <- data.frame(word = names(v),freq=v)
+head(d, 20)
+
+#WordCloud creation for rat design
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+          max.words=200, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
+
+#Create taxonomic ID frequency plot
+#--------------------------------------
+#organism counts table
+taxCounts <- count(tab, 'Organism.TaxID.')
+taxCounts <- na.omit(taxCounts)
+
+#Order taxCounts df
+taxCounts <- taxCounts[order(-taxCounts$freq),]
+
+#Truncate organism count table to 20 organisms
+taxCounts <- taxCounts[1:20,]
+
+#Return organism levels & drop those not needed
+taxCounts$Organism.TaxID. <- droplevels(taxCounts$Organism.TaxID.)
+taxLev <- levels(taxCounts$Organism.TaxID.)
+
+#Count number of rows in df for organism plot
+rowsY <- nrow(taxCounts)
+
+#data frame plot setup
+dose = taxCounts[1]
+lenOrg = taxCounts[2]
+dfOrg <- data.frame(dose=taxCounts[1],
+                    lenOrg=taxCounts[2])
+
+#Order levels for plot from greatest to least
+taxCounts$Organism.TaxID. <- droplevels(taxCounts$Organism.TaxID.)
+taxCounts$Organism.TaxID. <- reorder(taxCounts$Organism.TaxID., -taxCounts$freq)
+
+#Creae 1-20 labels for plot
+xTax = 1
+xTaxN <- seq(xTax,rowsY,1)
+xTaxN <- toString(xTaxN)
+xTaxN <- strsplit(xTaxN,",")
+
+#Create organism plot
+taxPlot<-ggplot(data=dfOrg, aes(x=taxCounts$Organism.TaxID., y=lenOrg)) +
+  geom_bar(aes(fill=taxCounts$Organism.TaxID.),stat="identity") +
+  scale_x_discrete(labels=xTaxN)
+
+#Add labels to plot
+taxPlot <- taxPlot + labs(x = "TaxID")
+taxPlot <- taxPlot + labs(y = "Count")
+taxPlot <- taxPlot + labs(title = "Number of Datasets Submitted to SRA vs TaxID")
+taxPlot <- taxPlot + guides(fill=guide_legend(title="TaxIDs"))
+taxPlot
+
+ggsave(taxPlot,file='Tax_BarPlot.pdf', width = 16, height = 9, dpi = 120)
+dev.off()

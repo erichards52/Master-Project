@@ -45,6 +45,7 @@ install.packages("scales")
 install.packages("wordcloud")
 install.packages("SnowballC")
 install.packages("RColorBrewer")
+install.packages("reutils")
 
 #Slam must be installed forcefully first or tm package wont work
 #DO NOT RUN THIS IF YOU HAVE ALREADY INSTALLED, THIS IS JUST A NOTE
@@ -551,31 +552,28 @@ platPlot
 #Save plot
 ggsave(platPlot,file='BasesPlot.pdf', width = 16, height = 9, dpi = 120)
 
-#Model organism metadata
+#Model organism metadata - Rat species plot
 #--------------------------------------------------------------
 #Return all datasets which use "rat" as an organism
 ratDat <- c(which(grepl("rat$", tab$Organism.CommonName.)))
 ratDat <- as.data.frame(tab[c(ratDat),])
 ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "firebrat"),]
+ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "*.mole-rat$"),]
 ratDat <- as.data.frame(ratDat)
 
-#Subset rows/turn rows into df
+#Return organism levels & drop those not needed
 ratDat$Organism.CommonName. <- droplevels(ratDat$Organism.CommonName.)
-ratDat$Design <- droplevels(ratDat$Design)
+ratLev <- levels(ratDat$Organism.CommonName.)
 
 #organism counts table
-ratDescCount <- count(ratDat, 'Design')
+ratDescCount <- count(ratDat, 'Organism.CommonName.')
 ratDescCount <- na.omit(ratDescCount)
 
 #Order ratDescCount df
 ratDescCount <- ratDescCount[order(-ratDescCount$freq),]
 
-#Truncate organism count table to 20 organisms
-ratDescCount <- ratDescCount[1:20,]
-
-#Return organism levels & drop those not needed
-ratDescCount$Design <- droplevels(ratDescCount$Design)
-ratLev <- levels(ratDescCount$Design)
+#Truncate organism count table to 23 rat species
+ratDescCount <- ratDescCount[1:23,]
 
 #Count number of rows in df for organism plot
 rowsY <- nrow(ratDescCount)
@@ -586,10 +584,6 @@ lenOrg = ratDescCount[2]
 ratDF <- data.frame(dose=ratDescCount[1],
                     lenOrg=ratDescCount[2])
 
-#Order levels for plot from greatest to least
-ratDescCount$Design <- droplevels(ratDescCount$Design)
-ratDescCount$Design <- reorder(ratDescCount$Design, -ratDescCount$freq)
-
 #Creae 1-20 labels for plot
 ratN = 1
 ratRowN <- seq(ratN,rowsY,1)
@@ -597,29 +591,31 @@ ratRowN <- toString(ratRowN)
 ratRowN <- strsplit(ratRowN,",")
 
 #Create organism plot
-ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Design, y=lenOrg)) +
-  geom_bar(aes(fill=ratDescCount$Design),stat="identity") +
-  scale_x_discrete(labels=xLabsOrg)
+ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Organism.CommonName., y=lenOrg)) +
+  geom_bar(aes(fill=ratDescCount$Organism.CommonName.),stat="identity") +
+  scale_x_discrete(labels=ratRowN)
 
 #Add labels to plot
-ratPlot <- ratPlot + labs(x = "Descriptions")
-ratPlot <- ratPlot + labs(y = "Dataset Count")
-ratPlot <- ratPlot + labs(title = "Description vs Number of Datasets")
-ratPlot <- ratPlot + guides(fill=guide_legend(title="Descriptions"))
+ratPlot <- ratPlot + labs(x = "Rat Species")
+ratPlot <- ratPlot + labs(y = "Count")
+ratPlot <- ratPlot + labs(title = "Rat Species vs Number of Dataset Count")
+ratPlot <- ratPlot + guides(fill=guide_legend(title="Rat Species"))
 ratPlot
 
 ggsave(ratPlot,file='BarPlot_RatDesc.pdf', width = 16, height = 9, dpi = 120)
 dev.off()
 
-#Model organism metadata (WordCloud)
+#Model organism metadata (rat WordCloud)
 #---------------------------------------------------
 #Return all datasets which use "rat" as an organism
 ratDat <- c(which(grepl("rat$", tab$Organism.CommonName.)))
 ratDat <- as.data.frame(tab[c(ratDat),])
+ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "firebrat"),]
+ratDat <- as.data.frame(ratDat)
 
 #Return rats which aren't firebrat
 ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "firebrat"),]
-
+ratLev <- levels(ratDat$Organism.CommonName.)
 #Turn into df
 ratDat <- as.data.frame(ratDat) 
 
@@ -647,6 +643,14 @@ wordcloud(words = d$word, freq = d$freq, min.freq = 1,
 
 #Create taxonomic ID frequency plot
 #--------------------------------------
+#Use eutils for returning scientific name
+#esearch -db protein -query "NP_066243"| elink -target taxonomy |efetch -format xml |xtract -element Lineage
+
+#Vector unique taxIDs
+dfUniTax <- c(unique(tab$Organism.TaxID.))
+dfUniTax <- na.omit(dfUniTax)
+write(dfUniTax, file="TaxID.txt", sep = "\n")
+
 #organism counts table
 taxCounts <- count(tab, 'Organism.TaxID.')
 taxCounts <- na.omit(taxCounts)
@@ -670,6 +674,8 @@ lenOrg = taxCounts[2]
 dfOrg <- data.frame(dose=taxCounts[1],
                     lenOrg=taxCounts[2])
 
+dfOrgTax <- merge(dfOrg, taxIDOrg)
+
 #Order levels for plot from greatest to least
 taxCounts$Organism.TaxID. <- droplevels(taxCounts$Organism.TaxID.)
 taxCounts$Organism.TaxID. <- reorder(taxCounts$Organism.TaxID., -taxCounts$freq)
@@ -679,6 +685,9 @@ xTax = 1
 xTaxN <- seq(xTax,rowsY,1)
 xTaxN <- toString(xTaxN)
 xTaxN <- strsplit(xTaxN,",")
+
+#Curate tax IDs/replace ID add names
+
 
 #Create organism plot
 taxPlot<-ggplot(data=dfOrg, aes(x=taxCounts$Organism.TaxID., y=lenOrg)) +

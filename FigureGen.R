@@ -644,12 +644,16 @@ wordcloud(words = d$word, freq = d$freq, min.freq = 1,
 #Create taxonomic ID frequency plot
 #--------------------------------------
 #Use eutils for returning scientific name
-#esearch -db protein -query "NP_066243"| elink -target taxonomy |efetch -format xml |xtract -element Lineage
 
+#ONLY RUN FOLLOWING BATCH OF CODE ONCE, WAS FOR CREATING TAXIDS TO CHECK VIA ESEARCH
 #Vector unique taxIDs
 dfUniTax <- c(unique(tab$Organism.TaxID.))
 dfUniTax <- na.omit(dfUniTax)
 write(dfUniTax, file="TaxID.txt", sep = "\n")
+
+#Read in taxonomy txt produced via eutils (NCBI TAXONOMY)
+taxMerg<-read.csv("taxTest.txt",header=TRUE, sep=",", 
+              quote = "", na.strings = c("", "NA", "n/a"))
 
 #organism counts table
 taxCounts <- count(tab, 'Organism.TaxID.')
@@ -674,11 +678,11 @@ lenOrg = taxCounts[2]
 dfOrg <- data.frame(dose=taxCounts[1],
                     lenOrg=taxCounts[2])
 
-dfOrgTax <- merge(dfOrg, taxIDOrg)
+dfOrgTax <- merge(dfOrg, taxMerg, by.x = "Organism.TaxID.", by.y = "ID")
+dfOrgTax <- dfOrgTax[c(-1)]
 
 #Order levels for plot from greatest to least
-taxCounts$Organism.TaxID. <- droplevels(taxCounts$Organism.TaxID.)
-taxCounts$Organism.TaxID. <- reorder(taxCounts$Organism.TaxID., -taxCounts$freq)
+dfOrgTax <- dfOrgTax[with(dfOrgTax, order(-dfOrgTax$freq, dfOrgTax$Scientific.Name)),]
 
 #Creae 1-20 labels for plot
 xTax = 1
@@ -690,15 +694,15 @@ xTaxN <- strsplit(xTaxN,",")
 
 
 #Create organism plot
-taxPlot<-ggplot(data=dfOrg, aes(x=taxCounts$Organism.TaxID., y=lenOrg)) +
-  geom_bar(aes(fill=taxCounts$Organism.TaxID.),stat="identity") +
+taxPlot<-ggplot(data=dfOrgTax, aes(x=dfOrgTax$Scientific.Name, y=lenOrg)) +
+  geom_bar(aes(fill=dfOrgTax$Scientific.Name),stat="identity") +
   scale_x_discrete(labels=xTaxN)
 
 #Add labels to plot
-taxPlot <- taxPlot + labs(x = "TaxID")
+taxPlot <- taxPlot + labs(x = "Organisms")
 taxPlot <- taxPlot + labs(y = "Count")
 taxPlot <- taxPlot + labs(title = "Number of Datasets Submitted to SRA vs TaxID")
-taxPlot <- taxPlot + guides(fill=guide_legend(title="TaxIDs"))
+taxPlot <- taxPlot + guides(fill=guide_legend(title="Organisms"))
 taxPlot
 
 ggsave(taxPlot,file='Tax_BarPlot.pdf', width = 16, height = 9, dpi = 120)

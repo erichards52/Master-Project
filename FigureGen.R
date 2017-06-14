@@ -53,6 +53,13 @@ install.packages('devtools')
 slam_url <- "https://cran.r-project.org/src/contrib/Archive/slam/slam_0.1-37.tar.gz"
 install_url(slam_url)
 
+#Use eutils for returning scientific name
+#ONLY RUN FOLLOWING BATCH OF CODE ONCE, WAS FOR CREATING TAXIDS TO CHECK VIA ESUMMARY
+#Vector unique taxIDs
+dfUniTax <- c(unique(tab$Organism.TaxID.))
+dfUniTax <- na.omit(dfUniTax)
+write(dfUniTax, file="TaxID.txt", sep = "\n")
+
 #Read in the file
 tab<-read.csv("SRATest.txt",header=TRUE, sep=",", 
               quote = "", na.strings = c("", "NA", "n/a"))
@@ -94,122 +101,14 @@ tab$Platform[tab$Platform == "unspecified"] <- NA
 tab$Platform <- as.factor(tab$Platform)
 
 #Organism curation
-
-#Human
-tab$Organism.CommonName. <- sub("human", "Homo sapiens", tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("H. sapiens", "Homo sapiens", tab$Organism.CommonName.)
-
-#Mouse
-tab$Organism.CommonName. <- sub("house mouse", "House Mouse",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("mus musculus", "House Mouse",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("Mus musculus", "House Mouse",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("M. musculus", "House Mouse",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("m. musculus", "House Mouse",tab$Organism.CommonName.)
-
-#Barley
-tab$Organism.CommonName. <- sub("domesticated barley", "Domesticated Barley",tab$Organism.CommonName.)
-
-#Thale Cress
-tab$Organism.CommonName. <- sub("thale cress", "Thale Cress",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("arabidopsis thaliana", "Thale Cress",tab$Organism.CommonName.)
-
-#Baker's yeast
-tab$Organism.CommonName. <- sub("baker's yeast", "Baker's Yeast",tab$Organism.CommonName.)
-
-#Rice
-tab$Organism.CommonName. <- sub("rice", "Rice",tab$Organism.CommonName.)
-
-#Streptococcus penumoniae
-tab$Organism.CommonName. <- sub("pneumococcus", "Streptococcus penumoniae",tab$Organism.CommonName.)
-
-#Herpes 4
-tab$Organism.CommonName. <- sub("human herpesvirus 4", "Epstein-Barr virus",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("human herpesvirus-4", "Epstein-Barr virus",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("HHV-4", "Epstein-Barr virus",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("hhv-4", "Epstein-Barr virus",tab$Organism.CommonName.)
-
-#Herpes 5
-tab$Organism.CommonName. <- sub("hhv-5", "Human cytomegalovirus",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("HHV-5", "Human cytomegalovirus",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("human herpesvirus-5", "Human cytomegalovirus",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("human herpesvirus 5", "Human cytomegalovirus",tab$Organism.CommonName.)
-
-#Zebrafish
-tab$Organism.CommonName. <- sub("zebrafish", "Danio rerio",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("Zebrafish", "Danio rerio",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("D. rerio", "Danio rerio",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("D rerio", "Danio rerio",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("d rerio", "Danio rerio",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("d. rerio", "Danio rerio",tab$Organism.CommonName.)
-
-#Fruit fly
-tab$Organism.CommonName. <- sub("fruit fly", "Fruit fly",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("Drosophila melanogaster", "Fruit fly",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("D. melanogaster", "Fruit fly",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("D melanogaster", "Fruit fly",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("d melanogaster", "Fruit fly",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("d. melanogaster", "Fruit fly",tab$Organism.CommonName.)
-
-#Ice Krill
-tab$Organism.CommonName. <- sub("ice krill", "Ice krill",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("Euphausia crystallorophias", "Ice krill",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("E crystallorophias", "Ice krill",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("E.crystallorophias", "Ice krill",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("e. crystallorophias", "Ice krill",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("e crystallorophias", "Ice krill",tab$Organism.CommonName.)
-
-#Roundworm
-tab$Organism.CommonName. <- sub("Roundworm", "Caenorhabditis elegans",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("roundworm", "Caenorhabditis elegans",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("C elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("C. elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("c elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("c. elegans", "Caenorhabditis elegans",tab$Organism.CommonName.)
-
-#Pig
-tab$Organism.CommonName. <- sub("Sus scrofa domesticus", "Pig",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("pig", "Pig",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("Sus", "Pig",tab$Organism.CommonName.)
-
-#E coli
-tab$Organism.CommonName. <- sub("E. coli", "Escherichia coli",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("E coli", "Escherichia coli",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("e. coli", "Escherichia coli",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("e coli", "Escherichia coli",tab$Organism.CommonName.)
-
-#Cattle
-tab$Organism.CommonName. <- sub("cattle", "Cattle",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("Bos taurus", "Cattle",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("B taurus", "Cattle",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("B. taurus", "Cattle",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("Bos primigenius taurus", "Cattle",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("B primigenius taurus", "Cattle",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("B. primigenius taurus", "Cattle",tab$Organism.CommonName.)
-
-#Horse
-tab$Organism.CommonName. <- sub("horse", "Horse",tab$Organism.CommonName.)
-
-#Jap Rice
-tab$Organism.CommonName. <- sub("*.sativa japonica.*", "Japanese Rice",tab$Organism.CommonName.)
-
-#Dog
-tab$Organism.CommonName. <- sub("dog", "Dog",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("Canis lupus familiaris", "Dog",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("Canis familiaris", "Dog",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("C. lupus familiaris", "Dog",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("C. familiaris", "Dog",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("C familiaris", "Dog",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("c. familiaris", "Dog",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("c familiaris", "Dog",tab$Organism.CommonName.)
-
-#Schistosoma mansoni
-tab$Organism.CommonName. <- sub("S. mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("s. mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("s mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
-tab$Organism.CommonName. <- sub("s. mansoni", "Schistosoma mansoni",tab$Organism.CommonName.)
+#Read in taxonomy txt produced via eutils (NCBI TAXONOMY)
+taxMerg<-read.csv("taxTest.txt",header=TRUE, sep=",", 
+                  quote = "", na.strings = c("", "NA", "n/a"))
+tab <- merge(tab, taxMerg, by.x = "Organism.TaxID.", by.y = "ID")
+tab <- merge(tab, taxMerg)
 
 #Define organisms as factors
-tab$Organism.CommonName. <- as.factor(tab$Organism.CommonName.)
+tab$Scientific.Name <- as.factor(tab$Scientific.Name)
 
 #HERE BEGINS ANALYSIS 
 #-----------------------------------------------------------------------
@@ -260,7 +159,7 @@ dev.off()
 #Organism counts
 #------------------------------------------------------------------------------
 #organism counts table
-orgCounts <- count(tab, 'Organism.CommonName.')
+orgCounts <- count(tab, 'Scientific.Name')
 orgCounts <- na.omit(orgCounts)
 
 #Order orgCounts df
@@ -270,8 +169,8 @@ orgCounts <- orgCounts[order(-orgCounts$freq),]
 orgCounts <- orgCounts[1:20,]
 
 #Return organism levels & drop those not needed
-orgCounts$Organism.CommonName. <- droplevels(orgCounts$Organism.CommonName.)
-orgLev <- levels(orgCounts$Organism.CommonName.)
+orgCounts$Scientific.Name <- droplevels(orgCounts$Scientific.Name)
+orgLev <- levels(orgCounts$Scientific.Name)
 
 #Count number of rows in df for organism plot
 rowsY <- nrow(orgCounts)
@@ -283,8 +182,8 @@ dfOrg <- data.frame(dose=orgCounts[1],
                     lenOrg=orgCounts[2])
 
 #Order levels for plot from greatest to least
-orgCounts$Organism.CommonName. <- droplevels(orgCounts$Organism.CommonName.)
-orgCounts$Organism.CommonName. <- reorder(orgCounts$Organism.CommonName., -orgCounts$freq)
+orgCounts$Scientific.Name <- droplevels(orgCounts$Scientific.Name)
+orgCounts$Scientific.Name <- reorder(orgCounts$Scientific.Name, -orgCounts$freq)
 
 #Creae 1-20 labels for plot
 xOrg = 1
@@ -293,8 +192,8 @@ xLabsOrg <- toString(xLabsOrg)
 xLabsOrg <- strsplit(xLabsOrg,",")
 
 #Create organism plot
-pOrg<-ggplot(data=dfOrg, aes(x=orgCounts$Organism.CommonName., y=lenOrg)) +
-  geom_bar(aes(fill=orgCounts$Organism.CommonName.),stat="identity") + scale_y_log10() +
+pOrg<-ggplot(data=dfOrg, aes(x=orgCounts$Scientific.Name, y=lenOrg)) +
+  geom_bar(aes(fill=orgCounts$Scientific.Name),stat="identity") + scale_y_log10() +
   scale_x_discrete(labels=xLabsOrg)
 
 #Add labels to plot
@@ -311,11 +210,11 @@ dev.off()
 #Organism counts WITHOUT HUMAN OR HOUSE MOUSE
 #------------------------------------------------------------------------------
 #organism counts table
-TempDf <- tab[ which(tab$Organism.CommonName. != "Homo sapiens" 
-                          & tab$Organism.CommonName.!= "House Mouse"), ]
+TempDf <- tab[ which(tab$Scientific.Name != "Homo sapiens" 
+                          & tab$Scientific.Name!= "Mus musculus"), ]
 
 #organism counts table
-orgCountsN <- count(TempDf, 'Organism.CommonName.')
+orgCountsN <- count(TempDf, 'Scientific.Name')
 orgCountsN <- na.omit(orgCountsN)
 
 #Order orgCountsN df
@@ -325,8 +224,8 @@ orgCountsN <- orgCountsN[order(-orgCountsN$freq),]
 orgCountsN <- orgCountsN[1:20,]
 
 #Return organism levels & drop those not needed
-orgCountsN$Organism.CommonName. <- droplevels(orgCountsN$Organism.CommonName.)
-orgLev <- levels(orgCountsN$Organism.CommonName.)
+orgCountsN$Scientific.Name <- droplevels(orgCountsN$Scientific.Name)
+orgLev <- levels(orgCountsN$Scientific.Name)
 
 #Count number of rows in df for organism plot
 rowsY <- nrow(orgCountsN)
@@ -338,8 +237,8 @@ dfOrg <- data.frame(dose=orgCountsN[1],
                     lenOrg=orgCountsN[2])
 
 #Order levels for plot from greatest to least
-orgCountsN$Organism.CommonName. <- droplevels(orgCountsN$Organism.CommonName.)
-orgCountsN$Organism.CommonName. <- reorder(orgCountsN$Organism.CommonName., -orgCountsN$freq)
+orgCountsN$Scientific.Name <- droplevels(orgCountsN$Scientific.Name)
+orgCountsN$Scientific.Name <- reorder(orgCountsN$Scientific.Name, -orgCountsN$freq)
 
 #Creae 1-20 labels for plot
 xOrgN = 1
@@ -348,8 +247,8 @@ xLabsOrgN <- toString(xLabsOrgN)
 xLabsOrgN <- strsplit(xLabsOrgN,",")
 
 #Create organism plot
-pOrgN<-ggplot(data=dfOrg, aes(x=orgCountsN$Organism.CommonName., y=lenOrg)) +
-  geom_bar(aes(fill=orgCountsN$Organism.CommonName.),stat="identity") +
+pOrgN<-ggplot(data=dfOrg, aes(x=orgCountsN$Scientific.Name, y=lenOrg)) +
+  geom_bar(aes(fill=orgCountsN$Scientific.Name),stat="identity") +
   scale_x_discrete(labels=xLabsOrg)
 
 #Add labels to plot
@@ -364,7 +263,7 @@ dev.off()
 #Return bases sequenced each year for each platform
 #------------------------------------------------------------------------------
 #Subsetted df to be used
-tabLine <- tab[c(-1,-2,-3,-4,-5,-7,-9,-11,-12)]
+tabLine <- tab[c(-1,-2,-3,-4,-5,-6,-8,-10,-12,-13,-14)]
 
 #Print total bases for each platform for each year & platform separately
 #HiSeq
@@ -555,10 +454,8 @@ ggsave(platPlot,file='BasesPlot.pdf', width = 16, height = 9, dpi = 120)
 #Model organism metadata - Rat species plot
 #--------------------------------------------------------------
 #Return all datasets which use "rat" as an organism
-ratDat <- c(which(grepl("rat$", tab$Organism.CommonName.)))
+ratDat <- c(which(grepl("^Rattus*", tab$Scientific.Name)))
 ratDat <- as.data.frame(tab[c(ratDat),])
-ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "firebrat"),]
-ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "*.mole-rat$"),]
 ratDat <- as.data.frame(ratDat)
 
 #Return organism levels & drop those not needed
@@ -566,14 +463,14 @@ ratDat$Organism.CommonName. <- droplevels(ratDat$Organism.CommonName.)
 ratLev <- levels(ratDat$Organism.CommonName.)
 
 #organism counts table
-ratDescCount <- count(ratDat, 'Organism.CommonName.')
+ratDescCount <- count(ratDat, 'Scientific.Name')
 ratDescCount <- na.omit(ratDescCount)
 
 #Order ratDescCount df
 ratDescCount <- ratDescCount[order(-ratDescCount$freq),]
 
-#Truncate organism count table to 23 rat species
-ratDescCount <- ratDescCount[1:23,]
+#Truncate organism count table to 9 rat species (only those that exist)
+ratDescCount <- ratDescCount[1:9,]
 
 #Count number of rows in df for organism plot
 rowsY <- nrow(ratDescCount)
@@ -591,8 +488,8 @@ ratRowN <- toString(ratRowN)
 ratRowN <- strsplit(ratRowN,",")
 
 #Create organism plot
-ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Organism.CommonName., y=lenOrg)) +
-  geom_bar(aes(fill=ratDescCount$Organism.CommonName.),stat="identity") +
+ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Scientific.Name, y=lenOrg)) +
+  geom_bar(aes(fill=ratDescCount$Scientific.Name),stat="identity") + scale_y_log10() +
   scale_x_discrete(labels=ratRowN)
 
 #Add labels to plot
@@ -608,14 +505,13 @@ dev.off()
 #Model organism metadata (rat WordCloud)
 #---------------------------------------------------
 #Return all datasets which use "rat" as an organism
-ratDat <- c(which(grepl("rat$", tab$Organism.CommonName.)))
+ratDat <- c(which(grepl("^Rattus*", tab$Scientific.Name)))
 ratDat <- as.data.frame(tab[c(ratDat),])
-ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "firebrat"),]
 ratDat <- as.data.frame(ratDat)
 
 #Return rats which aren't firebrat
-ratDat <- ratDat[ which(ratDat$Organism.CommonName. != "firebrat"),]
-ratLev <- levels(ratDat$Organism.CommonName.)
+ratLev <- levels(ratDat$Scientific.Name)
+
 #Turn into df
 ratDat <- as.data.frame(ratDat) 
 
@@ -643,18 +539,6 @@ wordcloud(words = d$word, freq = d$freq, min.freq = 1,
 
 #Create taxonomic ID frequency plot
 #--------------------------------------
-#Use eutils for returning scientific name
-
-#ONLY RUN FOLLOWING BATCH OF CODE ONCE, WAS FOR CREATING TAXIDS TO CHECK VIA ESEARCH
-#Vector unique taxIDs
-dfUniTax <- c(unique(tab$Organism.TaxID.))
-dfUniTax <- na.omit(dfUniTax)
-write(dfUniTax, file="TaxID.txt", sep = "\n")
-
-#Read in taxonomy txt produced via eutils (NCBI TAXONOMY)
-taxMerg<-read.csv("taxTest.txt",header=TRUE, sep=",", 
-              quote = "", na.strings = c("", "NA", "n/a"))
-
 #organism counts table
 taxCounts <- count(tab, 'Organism.TaxID.')
 taxCounts <- na.omit(taxCounts)
@@ -666,7 +550,6 @@ taxCounts <- taxCounts[order(-taxCounts$freq),]
 taxCounts <- taxCounts[1:20,]
 
 #Return organism levels & drop those not needed
-taxCounts$Organism.TaxID. <- droplevels(taxCounts$Organism.TaxID.)
 taxLev <- levels(taxCounts$Organism.TaxID.)
 
 #Count number of rows in df for organism plot

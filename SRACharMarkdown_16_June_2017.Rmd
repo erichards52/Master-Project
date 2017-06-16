@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Platform Summary 
 ### Table, Barplot & Line Graph
 
-Table 1 is details platforms used by all datasets present on the SRA. Figure 1 is a barplot which represents this information. The number of datasets which did not provide a platform is included in both the table and the figure (NA). Figure 2 is a line graph which represents the number of bases sequenced by each platform per year (not cumulative).
+Table 1 details how many times a specific sequencing platform was used by a dataset present on the SRA. Figure 1 is a barplot which represents this information. The number of datasets which did not provide which platform was used is also included in both the table and the figure (NA). Figure 2 is a line graph which represents the number of bases sequenced by each platform per year (not cumulative).
 
 
 ```{r echo = FALSE}

@@ -24,6 +24,9 @@ library(scales)
 library("SnowballC")
 library("wordcloud")
 library("RColorBrewer")
+library(rmarkdown)
+library(knitr)
+library(markdown)
 
 #RUN THE NEXT TWO BATCHES OF CODE ONLY ONCE
 #------------------------------------------------------------------------------
@@ -133,6 +136,8 @@ df <- data.frame(dose=platCounts[1],
                  len=platCounts[2])
 df$Platform <- droplevels(df$Platform)
 df$Platform <- reorder(df$Platform, -df$freq)
+rownames(df) <- NULL
+
 
 #Change x axis labels (will be fixed further later)
 x = 1
@@ -182,8 +187,13 @@ dfOrg <- data.frame(dose=orgCounts[1],
                     lenOrg=orgCounts[2])
 
 #Order levels for plot from greatest to least
+dfOrg$Scientific.Name <- droplevels(dfOrg$Scientific.Name)
+dfOrg$Scientific.Name <- reorder(dfOrg$Scientific.Name, -dfOrg$freq)
+
+
 orgCounts$Scientific.Name <- droplevels(orgCounts$Scientific.Name)
 orgCounts$Scientific.Name <- reorder(orgCounts$Scientific.Name, -orgCounts$freq)
+rownames(orgCounts) <- NULL
 
 #Creae 1-20 labels for plot
 xOrg = 1
@@ -192,18 +202,18 @@ xLabsOrg <- toString(xLabsOrg)
 xLabsOrg <- strsplit(xLabsOrg,",")
 
 #Create organism plot
-pOrg<-ggplot(data=dfOrg, aes(x=orgCounts$Scientific.Name, y=lenOrg)) +
-  geom_bar(aes(fill=orgCounts$Scientific.Name),stat="identity") + scale_y_log10() +
+pOrg<-ggplot(data=dfOrg, aes(x=dfOrg$Scientific.Name, y=lenOrg)) +
+  geom_bar(aes(fill=dfOrg$Scientific.Name),stat="identity") + scale_y_log10() +
   scale_x_discrete(labels=xLabsOrg)
 
 #Add labels to plot
 pOrg <- pOrg + labs(x = "Organism")
-pOrg <- pOrg + labs(y = "Count")
+pOrg <- pOrg + labs(y = "Count (log10)")
 pOrg <- pOrg + labs(title = "Number of Datasets Submitted to SRA vs Organism Used")
 pOrg <- pOrg + guides(fill=guide_legend(title="Organisms"))
 pOrg
 
-#Save as PDF
+       #Save as PDF
 ggsave(pOrg,file='BarPlot_Organisms.pdf', width = 16, height = 9, dpi = 120)
 dev.off()
 
@@ -453,13 +463,15 @@ ggsave(platPlot,file='BasesPlot.pdf', width = 16, height = 9, dpi = 120)
 
 #Model organism metadata - Rat species plot
 #--------------------------------------------------------------
-#Return all datasets which use "rat" as an organism
+#Return all rows which use "Rattus" taxID
 ratDat <- c(which(grepl("^Rattus*", tab$Scientific.Name)))
+
+#Create dataframe
 ratDat <- as.data.frame(tab[c(ratDat),])
-ratDat <- as.data.frame(ratDat)
+ratDat <- as.data.frame(ratDat, row.names = NULL)
 
 #Return organism levels & drop those not needed
-ratDat$Organism.CommonName. <- droplevels(ratDat$Organism.CommonName.)
+ratDat$Scientific.Name <- droplevels(ratDat$Scientific.Name)
 ratLev <- levels(ratDat$Organism.CommonName.)
 
 #organism counts table
@@ -468,9 +480,18 @@ ratDescCount <- na.omit(ratDescCount)
 
 #Order ratDescCount df
 ratDescCount <- ratDescCount[order(-ratDescCount$freq),]
+rownames(ratDescCount) <- NULL
+
+#Subset Counts df to only include norvegicus and BLANK
+ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus leucopus"),]
+ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus fuscipes"),]
+ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus rattus"),]
+ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus sordidus"),]
+ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus tunneyi"),]
+ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus villosissimus"),]
 
 #Truncate organism count table to 9 rat species (only those that exist)
-ratDescCount <- ratDescCount[1:9,]
+ratDescCount <- ratDescCount[1:2,]
 
 #Count number of rows in df for organism plot
 rowsY <- nrow(ratDescCount)
@@ -481,13 +502,14 @@ lenOrg = ratDescCount[2]
 ratDF <- data.frame(dose=ratDescCount[1],
                     lenOrg=ratDescCount[2])
 
+
 #Creae 1-20 labels for plot
 ratN = 1
 ratRowN <- seq(ratN,rowsY,1)
 ratRowN <- toString(ratRowN)
 ratRowN <- strsplit(ratRowN,",")
 
-#Create organism plot
+#Create rat barplot
 ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Scientific.Name, y=lenOrg)) +
   geom_bar(aes(fill=ratDescCount$Scientific.Name),stat="identity") + scale_y_log10() +
   scale_x_discrete(labels=ratRowN)
@@ -495,7 +517,7 @@ ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Scientific.Name, y=lenOrg)) +
 #Add labels to plot
 ratPlot <- ratPlot + labs(x = "Rat Species")
 ratPlot <- ratPlot + labs(y = "Count")
-ratPlot <- ratPlot + labs(title = "Rat Species vs Number of Dataset Count")
+ratPlot <- ratPlot + labs(title = "Rat Species vs Dataset Count")
 ratPlot <- ratPlot + guides(fill=guide_legend(title="Rat Species"))
 ratPlot
 
@@ -573,9 +595,6 @@ xTaxN <- seq(xTax,rowsY,1)
 xTaxN <- toString(xTaxN)
 xTaxN <- strsplit(xTaxN,",")
 
-#Curate tax IDs/replace ID add names
-
-
 #Create organism plot
 taxPlot<-ggplot(data=dfOrgTax, aes(x=dfOrgTax$Scientific.Name, y=lenOrg)) +
   geom_bar(aes(fill=dfOrgTax$Scientific.Name),stat="identity") +
@@ -590,3 +609,7 @@ taxPlot
 
 ggsave(taxPlot,file='Tax_BarPlot.pdf', width = 16, height = 9, dpi = 120)
 dev.off()
+
+#RMarkdown
+#------------------------------------------------------------------------------------
+render("SRACharMarkdown_16_June_2017.Rmd", "all")

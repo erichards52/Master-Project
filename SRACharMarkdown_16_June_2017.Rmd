@@ -2,7 +2,7 @@
 title: "SRA Characterization"
 author: "Edward Richards"
 date: "16 June 2017"
-output: html_document
+output: word_document
 
 ---
 
@@ -89,10 +89,15 @@ pOrgN
 ```
 
 ## Genus Rattus 
-### Table 
+### Table & Word Cloud
 
-Table 3 exhibits the total number of each species of rat failling under the *Rattus* genus present on the SRA.
+Table 3 exhibits the total number of each species fallng under genus *Rattus* present on the SRA. Figure 5 is a word cloud exhibitng all metadata retrieved from the SRA which is associated with the genus *Rattus* datasets.
 ```{r echo = FALSE}
 #Organism table
 kable(ratDescCount[1:8,], caption = "Table 3: Genus Rattus Counts Table", col.names=c("Taxonomic Name", "Frequency"))
+
+set.seed(1234)
+wordcloud(words = d$word, freq = d$freq, min.freq = 1,
+          max.words=200, random.order=FALSE, rot.per=0.35, 
+          colors=brewer.pal(8, "Dark2"))
 ```

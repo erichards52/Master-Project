@@ -8,8 +8,11 @@ The directory dBScripts contains scripts which create databases for each classif
 Invoking the command 'python pythonKrakDB.py' will automatically create a Kraken database
 with the name EdKrakDB. It is best to run this command within a separate directory which
 has already been named appropriately (i.e.: I typically run this command once I have created
-a directory called "KrakDB"). This script will create an arachael genome, human genome, bacterial genome, viral genome and 
+a directory called "KrakDB"). 
+This script will create an arachael genome, human genome, bacterial genome, viral genome and 
 rat genome.
+
+This script will create an arachael genome, human genome, bacterial genome, viral genome and rat genome
 -------------------------
 ### Kaiju
 

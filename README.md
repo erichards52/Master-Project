@@ -10,7 +10,7 @@ with the name EdKrakDB. It is best to run this command within a separate directo
 has already been named appropriately (i.e.: I typically run this command once I have created
 a directory called "KrakDB").
 
-this script will create arachael genome, human genome, bacterial genome, viral genome and 
+this script will create an arachael genome, human genome, bacterial genome, viral genome and 
 rat genome.
 -------------------------
 ### Kaiju

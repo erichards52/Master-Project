@@ -10,7 +10,7 @@ with the name EdKrakDB. It is best to run this command within a separate directo
 has already been named appropriately (i.e.: I typically run this command once I have created
 a directory called "KrakDB").
 
-This script will create arachael genome, human genome, bacterial genome, viral genome and 
+this script will create arachael genome, human genome, bacterial genome, viral genome and 
 rat genome.
 -------------------------
 ### Kaiju
@@ -24,7 +24,7 @@ appropriately (i.e.: I typically run this command once i Have created a director
 The script will create arachael genome, human genome, bacterial genome and viral genome. The
 rat genome still has to be incorporated.
 
-VITAL: YOU MUST COPY ALL CONTENTS FROM THE BIN IN THE ORIGINAL DOWNLOAD TO YOUR WD BEFORE 
+ VITAL: YOU MUST COPY ALL CONTENTS FROM THE BIN IN THE ORIGINAL DOWNLOAD TO YOUR WD BEFORE 
 THIS SCRIPT WILL WORK (/home4/rich01e/kaiju/bin).
 -------------------------
 ### CLARK

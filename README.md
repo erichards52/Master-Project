@@ -13,7 +13,6 @@ a directory called "KrakDB").
 
 This script will create an arachael genome, human genome, bacterial genome, viral genome and rat genome
 
-This script will create an arachael genome, human genome, bacterial genome, viral genome and rat genome
 -------------------------
 ### Kaiju
 

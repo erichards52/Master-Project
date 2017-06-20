@@ -9,8 +9,6 @@ Invoking the command 'python pythonKrakDB.py' will automatically create a Kraken
 with the name EdKrakDB. It is best to run this command within a separate directory which
 has already been named appropriately (i.e.: I typically run this command once I have created
 a directory called "KrakDB"). 
-This script will create an arachael genome, human genome, bacterial genome, viral genome and 
-rat genome.
 
 This script will create an arachael genome, human genome, bacterial genome, viral genome and rat genome
 -------------------------
@@ -23,8 +21,9 @@ appropriately (i.e.: I typically run this command once i Have created a director
 "kaijudb".)
 
 The script will create arachael genome, human genome, bacterial genome and viral genome. The
-rat genome still has to be incorporated. VITAL: YOU MUST COPY ALL CONTENTS FROM THE BIN IN THE ORIGINAL DOWNLOAD TO YOUR WD BEFORE 
-THIS SCRIPT WILL WORK (/home4/rich01e/kaiju/bin).
+rat genome still has to be incorporated. 
+
+VITAL: YOU MUST COPY ALL CONTENTS FROM THE BIN IN THE ORIGINAL DOWNLOAD TO YOUR WD BEFORE THIS SCRIPT WILL WORK (/home4/rich01e/kaiju/bin).
 -------------------------
 ### CLARK
 

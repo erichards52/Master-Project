@@ -1,4 +1,4 @@
-dBScripts
+#dBScripts
 The directory dBScripts contains scripts which create databases for each classifier.
 -------------------------
 Kraken
@@ -30,7 +30,7 @@ CLARK
 No commands necessary (so far), uses database already created by Kraken.
 
 ------------------------------------------------------------------------------------
-rScripts
+#rScripts
 The directory rScripts contains scripts which utilise data downloaded by scripts in the 
 ncbiScripts directory - curates & generates figures & RMarkdown.
 
@@ -55,7 +55,7 @@ run the FigureGen.R before attempting to render the RMarkdown document, all figu
 generated at least once beforehand.
 
 ----------------------------------------------------------------------------------
-ncbiScripts
+#ncbiScripts
 The directory ncbiScripts contains scripts which download all metadata from every dataset
 on the SRA (fixScript.pl) as well as scripts which return correct taxonomic classification
 for every taxonomic ID given from the original metadata.

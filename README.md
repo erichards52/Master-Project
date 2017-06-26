@@ -3,7 +3,6 @@
 ## dBScripts
 The directory dBScripts contains scripts which create databases for each classifier.
 
-
 ### Kraken
 
 Invoking the command "python ratKrakDBCreationScript.py" will automatically create a Kraken database

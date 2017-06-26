@@ -1,0 +1,1 @@
+/home4/rich01e/clark/CLARKSCV1.2.3.1/classify_metagenome.sh -O /home4/rich01e/clark/CLARKSCV1.2.3.1/sampleFiles/samples.R.txt /home4/rich01e/clark/CLARKSCV1.2.3.1/sampleFiles/samples.L.txt -R /home4/rich01e/faFiles/clarkOutput/ -m 0 -n 8

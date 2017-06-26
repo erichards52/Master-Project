@@ -1,0 +1,1 @@
+/home4/rich01e/clark/CLARKSCV1.2.3.1/exe/CLARK -T /home4/rich01e/clark/CLARKSCV1.2.3.1/DBDirectory/targets.txt -D /home4/rich01e/clark/CLARKSCV1.2.3.1/DBDirectory/ -P /home4/rich01e/clark/CLARKSCV1.2.3.1/sampleFiles/samples.L.txt /home4/rich01e/clark/CLARKSCV1.2.3.1/sampleFiles/samples.R.txt -R /home4/rich01e/faFiles/clarkOutput/ -m 0 --extended

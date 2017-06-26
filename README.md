@@ -13,13 +13,17 @@ This script will create an arachael genome, human genome, bacterial genome, vira
 
 In order to run Kraken on specific sequences, invoke the following command:
 
+------------------------
 Without explanation:
 
 kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq
 
+------------------------
 With explanation:
 
 kraken --preload (preloads database) --threads 12 (number of threads) --fastq-input (remove for fa/fasta files) --paired (remove if not paired) --db <$DIR_DB> (replace <$DIR_DB> with database that you have made (i.e.: mine is HumanVirusBacteriaRat) sample1.R1.fq sample2.R2.fq
+
+------------------------
 
 In order to store output, you could either create a bash script and concatenante the output: (i.e.: KrakenClassificationScript.sh > KrakenOutput.txt) or simply concatenate the command itself: 
 kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq > KrakenOutput.txt

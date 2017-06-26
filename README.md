@@ -62,13 +62,25 @@ main CLARK classification command as follows (CLARK.exe is located in the exe su
 ------------------------
 Without explanation:
 
+<<<<<<< HEAD
 CLARK -T <$DIR_DB>/targets.txt -D <£DIR_DB> -P samples.L.txt samples.R.txt -R <$RESULTS_DIR> -m 0 -n 12 --extended
+=======
+CLARK -T <$DIR_DB>/targets.txt -D <Â£DIR_DB> -P samples.L.txt samples.R.txt -R <$RESULTS_DIR> -m 0 -n 12 --extended
+
+------------------------
+>>>>>>> 1a57b75a32c71350839bfae86aab2300b0f2e5a5
 
 ------------------------
 
 With explanation:
 
+<<<<<<< HEAD
 CLARK -T <$DIR_DB>/targets.txt -D <£DIR_DB> -P (or -O sample.fa for non-paired-end reads) samples.L.txt samples.R.txt -R <$RESULTS_DIR> (replace <$RESULTS_DIR> with wherever you want to keep these results) -m 0 (-m 0 is full mode (more results), use -m 2 for express mode) -n 12 (number of threads) --extended (more results)
+=======
+CLARK -T <$DIR_DB>/targets.txt -D <Â£DIR_DB> -P (or -O sample.fa for non-paired-end reads) samples.L.txt samples.R.txt -R <$RESULTS_DIR> (replace <$RESULTS_DIR> with wherever you want to keep these results) -m 0 (-m 0 is full mode (more results), use -m 2 for express mode) -n 12 (number of threads) --extended (more results)
+
+------------------------
+>>>>>>> 1a57b75a32c71350839bfae86aab2300b0f2e5a5
 
 ------------------------
 

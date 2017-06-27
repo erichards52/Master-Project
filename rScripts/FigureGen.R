@@ -1,4 +1,5 @@
 #Set up workspace/load all necessary libraries
+#This needs to be run every time the script is opened
 setwd("/Users/2274776r/Documents/MastersDegree/Thesis/R/")
 library(ggplot2)
 library(plyr)
@@ -25,41 +26,6 @@ library("RColorBrewer")
 library(rmarkdown)
 library(knitr)
 library(markdown)
-
-#RUN THE NEXT TWO BATCHES OF CODE ONLY ONCE
-#------------------------------------------------------------------------------
-#Packages necessary for text datamining ONLY RUN ONCE
-install.packages("gtools", dependencies = T)
-install.packages("qdap")
-#Answer no to compliation for XML
-install.packages("XML")
-install.packages("Rgraphviz")
-install.packages("SnowballC")
-install.packages("RWeka")
-install.packages("rJava")
-install.packages("RWekajars")
-install.packages("Rstem")
-install.packages("stringr")
-install.packages("slam")
-install.packages("reshape2")
-install.packages("scales")
-install.packages("wordcloud")
-install.packages("SnowballC")
-install.packages("RColorBrewer")
-install.packages("reutils")
-
-#Slam must be installed forcefully first or tm package wont work
-#DO NOT RUN THIS IF YOU HAVE ALREADY INSTALLED, THIS IS JUST A NOTE
-install.packages('devtools')
-slam_url <- "https://cran.r-project.org/src/contrib/Archive/slam/slam_0.1-37.tar.gz"
-install_url(slam_url)
-
-#Use eutils for returning scientific name
-#ONLY RUN FOLLOWING BATCH OF CODE ONCE, WAS FOR CREATING TAXIDS TO CHECK VIA ESUMMARY
-#Vector unique taxIDs
-dfUniTax <- c(unique(tab$Organism.TaxID.))
-dfUniTax <- na.omit(dfUniTax)
-write(dfUniTax, file="TaxID.txt", sep = "\n")
 
 #Read in the file
 tab<-read.csv("SRATest.txt",header=TRUE, sep=",", 
@@ -611,3 +577,37 @@ dev.off()
 #RMarkdown
 #------------------------------------------------------------------------------------
 render("SRACharMarkdown_16_June_2017.Rmd", "all")
+                               
+#RUN THE NEXT BATCH OF CODE BETWEEN THESE LINES ONLY ONCE IF YOU HAVE NEVER RUN IT BEFORE
+#------------------------------------------------------------------------------
+#Packages necessary for text datamining ONLY RUN ONCE
+install.packages("gtools", dependencies = T)
+install.packages("qdap")
+#Answer no to compliation for XML
+install.packages("XML")
+install.packages("Rgraphviz")
+install.packages("SnowballC")
+install.packages("RWeka")
+install.packages("rJava")
+install.packages("RWekajars")
+install.packages("Rstem")
+install.packages("stringr")
+install.packages("slam")
+install.packages("reshape2")
+install.packages("scales")
+install.packages("wordcloud")
+install.packages("SnowballC")
+install.packages("RColorBrewer")
+install.packages("reutils")
+
+#Slam must be installed forcefully first or tm package wont work
+install.packages('devtools')
+slam_url <- "https://cran.r-project.org/src/contrib/Archive/slam/slam_0.1-37.tar.gz"
+install_url(slam_url)
+
+#Use eutils for returning scientific name
+#Vector unique taxIDs
+dfUniTax <- c(unique(tab$Organism.TaxID.))
+dfUniTax <- na.omit(dfUniTax)
+write(dfUniTax, file="TaxID.txt", sep = "\n")
+#------------------------------------------------------------------------------

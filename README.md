@@ -42,7 +42,7 @@ kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.f
 ------------------------
 With explanation:
 
-kraken --preload (preloads database) --threads 12 (number of threads) --fastq-input (remove for fa/fasta files) --paired (remove if not paired) --db <$DIR_DB> (replace <$DIR_DB> with database that you have made (i.e.: mine is HumanVirusBacteriaRat) sample1.R1.fq sample2.R2.fq
+kraken --preload (preloads database) --threads 12 (number of threads) --fastq-input (remove for fa/fasta files) --paired (remove if not paired-end reads) --db <$DIR_DB> (replace <$DIR_DB> with database that you have made (i.e.: mine is HumanVirusBacteriaRat) sample1.R1.fq sample2.R2.fq
 
 ------------------------
 
@@ -105,7 +105,7 @@ This script is self-explanatory. It downloads the human, bacteria and rat genome
 ##### archaeaViralPlasmid.sh
 This script is self-explanatory. It downloads the arachaeal, viral and plasmid genome in the fna format. It should be run in the "Custom" directory.
 
-**Custom Database**
+**Custom Database**  
 If you wish to create your own custom database, or build on the one already created, merely change/add/remove the following code in HumanBacteriaRat.py
 
 print('Downloading <$ANY> genomes'+'\n')  

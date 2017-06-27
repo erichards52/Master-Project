@@ -78,7 +78,7 @@ This script is self-explanatory. It downloads the arachaeal, viral and plasmid g
 ##### gbk2faa.pl  
 This script is self-explanatory. It is able to convert both single as well as all .gbff files in a directory to a .faa file(s). It is used before creating a custom database from custom reference sequences.
 
-**Custom Database** 
+**Custom Database**  
 If you wish to create your own custom database, or build on the one already created, merely change/add/remove the following code in HumanBacteriaRat.py
 
 print('Downloading <$ANY> genomes'+'\n')  

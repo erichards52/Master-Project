@@ -18,7 +18,7 @@ It is best to run this command within a separate directory which has already bee
 
 This script will create an arachael genome, human genome, bacterial genome, viral genome and rat genome.
 
-**Custom Database**
+**Custom Database**  
 If you wish to create your own custom database, merely add the following lines to ratKrakDBCreationScript.py such that the taxonomic ID is changed to the taxonomic ID for the genome/species/reference sequence you wish to incorporate before running the script. 
 
 print('Downloading <$ANY> genome'+'\n')  

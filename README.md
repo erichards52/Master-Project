@@ -3,15 +3,33 @@
 ## dBScripts
 The directory dBScripts contains scripts which create databases for each classifier.
 
+**IMPORTANT: EACH CLASSIFIER LISTED HERE WAS USED WITH A CUSTOM DATABASE CREATED SPECIFICALLY FOR THIS PROJECT. IF YOU WOULD LIKE TO CREATE A CUSTOM DATABASE, PLEASE REFER TO THE DATABASE CREATION SCRIPTS (dbCreation) LISTED UNDER EACH SPECIFIC CLASSIFIER.** 
+
+**IF YOU WISH TO UTILISE THE DATABASE WHICH WAS PREVIOUSLY CREATED, MERELY USE THE EXAMPLE CLASSIFICATION SCRIPTS LISTED FOR EACH CLASSIFIER**
+
 ### Kraken
 
-Invoking the command "python ratKrakDBCreationScript.py" will automatically create a Kraken database
-with the name HumanVirusBacteriaRat. It is best to run this command within a separate directory which
-has already been named appropriately (i.e.: I typically run this command once I have created
-a directory called "KrakDB"). 
-This script will create an arachael genome, human genome, bacterial genome, viral genome and rat genome
+#### dbCreation
 
-In order to run Kraken on specific sequences, invoke the following command:
+##### ratKrakDBCreationScript.py
+Invoking the command "python ratKrakDBCreationScript.py" will automatically create a Kraken database with the name HumanVirusBacteriaRat.
+
+It is best to run this command within a separate directory which has already been named appropriately (i.e.: I ran this command once I had created the directory "ratKrakDB").
+
+This script will create an arachael genome, human genome, bacterial genome, viral genome and rat genome.
+
+If you wish to create your own custom database, merely add the following lines such that the taxonomic ID is changed to the taxonomic ID for the genome/species/reference sequence you wish to incorporate before running the script. 
+
+print('Downloading <$ANY> genome'+'\n')
+download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')
+print('Converting sequences to kraken input format'+'\n')
+get_fasta_in_kraken_format('<$ANY>_genome.fa')
+
+Replace <$ANY> with whatever you would like to name your genome.
+Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
+
+#### testDataScripts
+In order to run Kraken classification, invoke the following command:
 
 ------------------------
 Without explanation:
@@ -26,6 +44,7 @@ kraken --preload (preloads database) --threads 12 (number of threads) --fastq-in
 ------------------------
 
 In order to store output, you could either create a bash script and concatenante the output: (i.e.: KrakenClassificationScript.sh > KrakenOutput.txt) or simply concatenate the command itself: 
+
 kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq > KrakenOutput.txt
 
 
@@ -36,9 +55,7 @@ the database is not relevant as it is not included within the commands to query 
 It is best to run this command within a separate directory which has already been named 
 appropriately (i.e.: I typically run this command once i Have created a directory called 
 "kaijudb".)
-
-The script will create arachael genome, human genome, bacterial genome and viral genome. The
-rat genome still has to be incorporated. 
+This script will create arachael genome, human genome, bacterial genome and viral genome.
 
 VITAL: YOU MUST COPY ALL CONTENTS FROM THE BIN IN THE ORIGINAL DOWNLOAD TO YOUR WD BEFORE THIS SCRIPT WILL WORK (/home4/rich01e/kaiju/bin).
 

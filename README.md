@@ -18,7 +18,8 @@ It is best to run this command within a separate directory which has already bee
 
 This script will create an arachael genome, human genome, bacterial genome, viral genome and rat genome.
 
-If you wish to create your own custom database, merely add the following lines such that the taxonomic ID is changed to the taxonomic ID for the genome/species/reference sequence you wish to incorporate before running the script. 
+**Custom Database**
+If you wish to create your own custom database, merely add the following lines to ratKrakDBCreationScript.py such that the taxonomic ID is changed to the taxonomic ID for the genome/species/reference sequence you wish to incorporate before running the script. 
 
 print('Downloading <$ANY> genome'+'\n')  
 download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')  
@@ -28,7 +29,7 @@ get_fasta_in_kraken_format('<$ANY>_genome.fa')
 Replace <$ANY> with whatever you would like to name your genome.
 Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
-#### testDataScripts
+#### testDataScripts/Classification Scripts
 In order to run Kraken classification, invoke the following command:
 
 ------------------------
@@ -50,6 +51,9 @@ kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.f
 
 ### Kaiju
 
+#### dbCreation
+
+##### makeDB.sh
 Invoking the command 'makeDB.sh -e -v -t 12' will automatically create a Kaiju database. The name of
 the database is not relevant as it is not included within the commands to query the database.
 It is best to run this command within a separate directory which has already been named 
@@ -59,6 +63,22 @@ This script will create arachael genome, human genome, bacterial genome and vira
 
 VITAL: YOU MUST COPY ALL CONTENTS FROM THE BIN IN THE ORIGINAL DOWNLOAD TO YOUR WD BEFORE THIS SCRIPT WILL WORK (/home4/rich01e/kaiju/bin).
 
+This script was not used for this project, instead, a custom database was created.
+
+##### HumanBacteriaRat.py
+This script is self-explanatory. It downloads the human, bacteria and rat genome in the gbff format. It should be run in a directory where you will later convert all .gbff files into .faa files in order for Kaiju to recognise them. 
+
+##### archaeaViralPlasmid.sh
+This script is self-explanatory. It downloads the arachaea, viral and plasmid genome in the gbff format. It should be run in a directory where you will later convert all .gbff files into .faa files in order for Kaiju to recognise them.
+
+**Custom Database** 
+If you wish to create your own custom database, or build on the one already created, merely change/add/remove the following code in HumanBacteriaRat.py
+
+print('Downloading <$ANY> genomes'+'\n')  
+download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')
+
+Replace <$ANY> with whatever you would like to name your genome.
+Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
 ### CLARK
 

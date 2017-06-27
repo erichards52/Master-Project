@@ -60,9 +60,7 @@ THIS SCRIPT MUST BE RUN FROM WITHIN THE ORIGINAL KAIJU DIRECTORY WHERE ALL OTHER
 
 Invoking the command 'makeDB.sh -e -v -t 12' will automatically create a Kaiju database. The name of
 the database is not relevant as it is not included within the commands to query the database.
-It is best to run this command within a separate directory which has already been named 
-appropriately (i.e.: I typically run this command once i Have created a directory called 
-"kaijudb".)
+It is best to run this command within a separate directory which has already been named appropriately (i.e.: I ran this command once I had created a directory called "kaijudb".)
 This script will create arachael genome, human genome, bacterial genome and viral genome.
 
 VITAL: YOU MUST COPY ALL CONTENTS FROM THE BIN IN THE ORIGINAL DOWNLOAD TO YOUR WD BEFORE THIS SCRIPT WILL WORK (/home4/rich01e/kaiju/bin).
@@ -108,7 +106,7 @@ This script is self-explanatory. It downloads the human, bacteria and rat genome
 This script is self-explanatory. It downloads the arachaeal, viral and plasmid genome in the fna format. It should be run in the "Custom" directory.
 
 **Custom Database**  
-If you wish to create your own custom database, or build on the one already created, merely change/add/remove the following code in HumanBacteriaRat.py
+If you wish to create your own custom database, merely change/add/remove the following code in HumanBacteriaRat.py
 
 print('Downloading <$ANY> genomes'+'\n')  
 download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')

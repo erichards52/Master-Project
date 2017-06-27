@@ -20,9 +20,9 @@ This script will create an arachael genome, human genome, bacterial genome, vira
 
 If you wish to create your own custom database, merely add the following lines such that the taxonomic ID is changed to the taxonomic ID for the genome/species/reference sequence you wish to incorporate before running the script. 
 
-print('Downloading <$ANY> genome'+'\n')
-download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')
-print('Converting sequences to kraken input format'+'\n')
+print('Downloading <$ANY> genome'+'\n')  
+download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')  
+print('Converting sequences to kraken input format'+'\n')  
 get_fasta_in_kraken_format('<$ANY>_genome.fa')
 
 Replace <$ANY> with whatever you would like to name your genome.

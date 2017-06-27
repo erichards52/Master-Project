@@ -174,7 +174,7 @@ VITAL: PAY ATTENTION TO VARIABLES NAMES, THEY MUST BE EXACTLY AS NAMED IN THE RS
 IT WILL NOT WORK!
 
 ### FigureGen.R
-If you have not run this script before you will need to install necessary libraries. This can be done towards to the bottom of the script
+If you have not run this script before you will need to install necessary libraries. This can be done towards to the bottom of the script  
 This R script curates all downloaded metadata from the ncbiScripts and generates a fair
 amount of figures based upon that data.
 

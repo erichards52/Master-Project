@@ -1,1 +1,1 @@
-~/kaijudb/kaiju -v -x -z 12 -t ~/kaijudb/nodes.dmp -f /home4/rich01e/kaijudb/kaiju_db_nr_euk.fmi -i ~/faFiles/homoResp/1H7_S22_L001_R1.fq ~/faFiles/homoResp/1H7_S22_L001_R2.fq -o ~/faFiles/homoResp/kaijuHomoResp.txt
+/home4/rich01e/kaiju/kaiju/kaijudb/kaiju -v -x -z 12 -t /home4/rich01e/kaiju/kaiju/kaijudb/nodes.dmp -f /home4/rich01e/kaiju/kaiju/kaijudb/kaiju_db.fmi -i ~/faFiles/homoResp/1H7_S22_L001_R1.fq -j ~/faFiles/homoResp/1H7_S22_L001_R2.fq -o /home4/rich01e/faFiles/kaijuOutput/kaiju.out

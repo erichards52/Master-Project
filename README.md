@@ -5,7 +5,7 @@ The directory dBScripts contains scripts which create databases for each classif
 
 **IMPORTANT: EACH CLASSIFIER LISTED HERE WAS USED WITH A CUSTOM DATABASE CREATED SPECIFICALLY FOR THIS PROJECT. IF YOU WOULD LIKE TO CREATE A CUSTOM DATABASE, PLEASE REFER TO THE DATABASE CREATION SCRIPTS (dbCreation) LISTED UNDER EACH SPECIFIC CLASSIFIER.** 
 
-**IF YOU WISH TO UTILISE THE DATABASE WHICH WAS PREVIOUSLY CREATED, MERELY USE THE EXAMPLE CLASSIFICATION SCRIPTS LISTED FOR EACH CLASSIFIER**
+**IF YOU WISH TO UTILISE THE DATABASE WHICH WAS PREVIOUSLY CREATED, MERELY USE THE EXAMPLE CLASSIFICATION SCRIPTS LISTED FOR EACH CLASSIFIER (testDataScripts/Classification Scripts)**
 
 ### Kraken
 
@@ -82,17 +82,17 @@ Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://ww
 
 ### CLARK
 
-CLARK must be told what genomes/reference sequences you would like to use in order to classify reads of interest. 
-This can be done using the command "set_targets.sh <$DIR_DB> human viruses bacteria custom".
+#### dbCreation  
+CLARK must be told what genomes/reference sequences you would like to use in order to classify reads of interest.  
+This can be done using the command "set_targets.sh <$DIR_DB> human viruses bacteria".  
+This command creates a default database containing human, viral and bacteria genome(s).
 The command custom allows for the selection of a genome or reference sequence of your choosing (it references the custom folder). 
 
 <$DIR_DB> can be replaced with whatever you would like to name the database directory (I've named this one DBDirectory).
 
-In order to include any reference sequence, simply download the sequence, add it to the custom folder, and rename it to the taxonomic ID (as appears on the NCBI website). THIS MUST BE DONE
-BEFORE YOU RUN THE PREVIOUS COMMAND.
+In order to include any reference sequence, simply download the sequence, add it to the custom folder, and rename it to the taxonomic ID (as appears on the NCBI website). THIS MUST BE DONE BEFORE YOU RUN THE PREVIOUS COMMAND.
 
-==NORMAL CLASSIFCATION==
-
+==NORMAL CLASSIFCATION==  
 In order to run a normal classification, CLARK must first generate a database of specific sized k-mers. Here, only the default size has been used (31-mers). The database can be created by simply invoking the
 main CLARK classification command as follows (CLARK.exe is located in the exe subdirectory of the main CLARK folder):
 

@@ -164,7 +164,7 @@ A simpler and more streamlined command for those who do not wish to choose any o
 
 classify_metagenome.sh -O (or -P for paired-reads) sample.fa (or samples.L.txt samples.R.txt if using paired reads) -R <$RESULTS_DIR> -m 0 -n 8.
 
-**PAIRED-READS**
+**PAIRED-READS**  
 samples.L.txt MUST CONTAIN ALL R1 READS IN CORRECT ORDER  
 samples.R.txt MUST CONTAIN ALL R2 READS IN CORRECT ORDER
 

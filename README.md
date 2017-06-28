@@ -76,11 +76,13 @@ This script is self-explanatory. It downloads the human, bacteria and rat genome
 ##### archaeaViralPlasmid.sh
 This script is self-explanatory. It downloads the arachaeal, viral and plasmid genome in the gbff format. It should be run in a directory where you will later convert all .gbff files into .faa files in order for Kaiju to recognise them.
 
-##### gbk2faa.pl  
+##### gbk2faaCustom.pl  
 This script is self-explanatory. It is able to convert both single as well as all .gbff files in a directory to a .faa file(s). It is used before creating a custom database from custom reference sequences.
 
 **Custom Database**  
-If you wish to create your own custom database, merely change/add/remove the following code in HumanBacteriaRat.py
+In order to create a custom database, you must first delete the .faa file, .bwt file & the .fmi file.
+
+If you wish to create your own custom database, merely change/add/remove the following code in HumanBacteriaRat.py before running:
 
 print('Downloading <$ANY> genomes'+'\n')  
 download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')
@@ -89,6 +91,16 @@ Replace <$ANY> with whatever you would like to name your genome.
 Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
 The script should then be run in a separate directory.
+
+**Custom Database Continued**  
+Once this has been completed you must tell kaiju which reference sequences you wish to use. Assuming that all reference sequences have been download and converted into .faa files, you must then run the following commands:
+
+mkbwt -n 5 -a ACDEFGHIKLMNPQRSTVWY -o <$DBNAME> <$DBNAME>.faa  
+mkfmi <$DBNAME>  
+
+<$DBNAME> can be changed to whatever you wish to name your database.
+
+In order to add many reference sequences to your database, you must either concantenate them all into one .faa file, or make use of regular expressions in order to add them all at once.
 
 ### CLARK
 

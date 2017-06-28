@@ -191,9 +191,8 @@ VITAL: PAY ATTENTION TO VARIABLES NAMES, THEY MUST BE EXACTLY AS NAMED IN THE RS
 IT WILL NOT WORK!
 
 ### FigureGen.R
-If you have not run this script before you will need to install necessary libraries. This can be done towards to the bottom of the script  
-This R script curates all downloaded metadata from the ncbiScripts and generates a fair
-amount of figures based upon that data.
+If you have not run this script before you will need to install necessary libraries. This can be found at the bottom of the script.
+This R script curates all downloaded metadata from the ncbiScripts and generates a fair amount of figures based upon that data.
 
 Figures include platform abundance, organism abundance, platform utilisation over time (bases
 per year), rat sample wordcloud.
@@ -217,7 +216,7 @@ fixScript.pl, A TUTORIAL ON HOW TO DO SO EXISTS IN FigureGen.R, INCLUDES ALL NEC
 
 ### fixScript.pl
 
-This script downloads all metadata necessary from every single dataset on the SRA. Metadata
+This script downloads all metadata necessary from every dataset on the SRA. Metadata
 includes ID, organism common name & scientific name, organism taxonomic ID, sample information,
 creation date and update date, platform model used, generic platform name, number of bases,
 study title, and study description. 
@@ -226,9 +225,8 @@ Generates text file named to your liking, merely invoke 'fixScript.pl > "filenam
 
 ### taxScript.pl
 
-This script returns taxonomic names based upon a text file with provided taxonomic IDs.
+This script returns taxonomic names from the NCBI taxonomy database based upon a text file with provided taxonomic IDs.
 Taxonomic IDs must be separated via a newline character. IDs are read in as an array.
-
 
 ### prefetchSRA.sh
 

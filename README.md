@@ -1,4 +1,4 @@
-# Scripts: A Walkthrough
+# Classification & Custom Databases Made Easy: Kraken, CLARK & Kaiju 
 
 ## dBScripts
 The directory dBScripts contains scripts which create databases for each classifier.
@@ -106,6 +106,8 @@ This script is self-explanatory. It downloads the human, bacteria and rat genome
 This script is self-explanatory. It downloads the arachaeal, viral and plasmid genome in the fna format. It should be run in the "Custom" directory.
 
 **Custom Database**  
+BEFORE CREATING YOUR OWN DATABASE YOU MUST WIPE THE OLD ONE FROM EXISTENCE. THIS CAN BE DONE BY RUNNING THE COMMAND "sh clean.sh" FROM THE ORIGINAL CLARK DIRECTORY.
+
 If you wish to create your own custom database, merely change/add/remove the following code in HumanBacteriaRat.py
 
 print('Downloading <$ANY> genomes'+'\n')  

@@ -1,11 +1,14 @@
 # Classification & Custom Databases Made Easy: Kraken, CLARK & Kaiju 
 
-## dBScripts
-The directory dBScripts contains scripts which create databases for each classifier.
+This project was designed with the Centre for Virus Reseach (CVR) in mind. While it may provide some helpful tips with classification and database creation, it is meant to aid those at the CVR with further interest in this project.
 
 **IMPORTANT: EACH CLASSIFIER LISTED HERE WAS USED WITH A CUSTOM DATABASE CREATED SPECIFICALLY FOR THIS PROJECT. IF YOU WOULD LIKE TO CREATE A CUSTOM DATABASE, PLEASE REFER TO THE DATABASE CREATION SCRIPTS (dbCreation) LISTED UNDER EACH SPECIFIC CLASSIFIER.** 
 
-**IF YOU WISH TO UTILISE THE DATABASE WHICH WAS PREVIOUSLY CREATED, MERELY USE THE EXAMPLE CLASSIFICATION SCRIPTS LISTED FOR EACH CLASSIFIER (testDataScripts/Classification Scripts)**
+**IF YOU WISH TO UTILISE THE DATABASE WHICH WAS PREVIOUSLY CREATED, MERELY USE THE EXAMPLE CLASSIFICATION SCRIPTS LISTED FOR EACH CLASSIFIER (testDataScripts/Classification Scripts)**  
+
+
+## dBScripts
+The directory dBScripts contains scripts which create databases for each classifier.
 
 ### Kraken
 

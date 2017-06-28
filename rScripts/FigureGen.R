@@ -291,7 +291,6 @@ for (i in 2007:2017)
   print(sum(TempDf$Bases))
 }
 
-
 #PacBio
 for (i in 2007:2017)
 {
@@ -450,12 +449,12 @@ ratDescCount <- ratDescCount[order(-ratDescCount$freq),]
 rownames(ratDescCount) <- NULL
 
 #Subset Counts df to only include norvegicus and BLANK
-ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus leucopus"),]
-ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus fuscipes"),]
-ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus rattus"),]
-ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus sordidus"),]
-ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus tunneyi"),]
-ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus villosissimus"),]
+# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus leucopus"),]
+# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus fuscipes"),]
+# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus rattus"),]
+# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus sordidus"),]
+# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus tunneyi"),]
+# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus villosissimus"),]
 
 #Truncate organism count table to 9 rat species (only those that exist)
 # ratDescCount <- ratDescCount[1:2,]

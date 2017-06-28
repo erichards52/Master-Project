@@ -1,5 +1,8 @@
 #Set up workspace/load all necessary libraries
 #This needs to be run every time the script is opened
+
+#If you wish to generate the markdown document, simply run all code
+#in this script EXCEPT for the last batch (last batch installs necessary libraries)
 setwd("/Users/2274776r/Documents/MastersDegree/Thesis/R/")
 library(ggplot2)
 library(plyr)
@@ -177,7 +180,7 @@ pOrg <- pOrg + labs(title = "Number of Datasets Submitted to SRA vs Organism Use
 pOrg <- pOrg + guides(fill=guide_legend(title="Organisms"))
 pOrg
 
-       #Save as PDF
+#Save as PDF
 ggsave(pOrg,file='BarPlot_Organisms.pdf', width = 16, height = 9, dpi = 120)
 dev.off()
 
@@ -185,7 +188,7 @@ dev.off()
 #------------------------------------------------------------------------------
 #organism counts table
 TempDf <- tab[ which(tab$Scientific.Name != "Homo sapiens" 
-                          & tab$Scientific.Name!= "Mus musculus"), ]
+                     & tab$Scientific.Name!= "Mus musculus"), ]
 
 #organism counts table
 orgCountsN <- count(TempDf, 'Scientific.Name')
@@ -455,38 +458,38 @@ ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus tunn
 ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus villosissimus"),]
 
 #Truncate organism count table to 9 rat species (only those that exist)
-ratDescCount <- ratDescCount[1:2,]
-
-#Count number of rows in df for organism plot
-rowsY <- nrow(ratDescCount)
-
-#data frame plot setup
-dose = ratDescCount[1]
-lenOrg = ratDescCount[2]
-ratDF <- data.frame(dose=ratDescCount[1],
-                    lenOrg=ratDescCount[2])
-
-
-#Creae 1-20 labels for plot
-ratN = 1
-ratRowN <- seq(ratN,rowsY,1)
-ratRowN <- toString(ratRowN)
-ratRowN <- strsplit(ratRowN,",")
-
-#Create rat barplot
-ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Scientific.Name, y=lenOrg)) +
-  geom_bar(aes(fill=ratDescCount$Scientific.Name),stat="identity") + scale_y_log10() +
-  scale_x_discrete(labels=ratRowN)
-
-#Add labels to plot
-ratPlot <- ratPlot + labs(x = "Rat Species")
-ratPlot <- ratPlot + labs(y = "Count")
-ratPlot <- ratPlot + labs(title = "Rat Species vs Dataset Count")
-ratPlot <- ratPlot + guides(fill=guide_legend(title="Rat Species"))
-ratPlot
-
-ggsave(ratPlot,file='BarPlot_RatDesc.pdf', width = 16, height = 9, dpi = 120)
-dev.off()
+# ratDescCount <- ratDescCount[1:2,]
+# 
+# #Count number of rows in df for organism plot
+# rowsY <- nrow(ratDescCount)
+# 
+# #data frame plot setup
+# dose = ratDescCount[1]
+# lenOrg = ratDescCount[2]
+# ratDF <- data.frame(dose=ratDescCount[1],
+#                     lenOrg=ratDescCount[2])
+# 
+# 
+# #Creae 1-20 labels for plot
+# ratN = 1
+# ratRowN <- seq(ratN,rowsY,1)
+# ratRowN <- toString(ratRowN)
+# ratRowN <- strsplit(ratRowN,",")
+# 
+# #Create rat barplot
+# ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Scientific.Name, y=lenOrg)) +
+#   geom_bar(aes(fill=ratDescCount$Scientific.Name),stat="identity") + scale_y_log10() +
+#   scale_x_discrete(labels=ratRowN)
+# 
+# #Add labels to plot
+# ratPlot <- ratPlot + labs(x = "Rat Species")
+# ratPlot <- ratPlot + labs(y = "Count")
+# ratPlot <- ratPlot + labs(title = "Rat Species vs Dataset Count")
+# ratPlot <- ratPlot + guides(fill=guide_legend(title="Rat Species"))
+# ratPlot
+# 
+# ggsave(ratPlot,file='BarPlot_RatDesc.pdf', width = 16, height = 9, dpi = 120)
+# dev.off()
 
 #Model organism metadata (rat WordCloud)
 #---------------------------------------------------
@@ -526,58 +529,58 @@ wordcloud(words = d$word, freq = d$freq, min.freq = 1,
 #Create taxonomic ID frequency plot
 #--------------------------------------
 #organism counts table
-taxCounts <- count(tab, 'Organism.TaxID.')
-taxCounts <- na.omit(taxCounts)
-
-#Order taxCounts df
-taxCounts <- taxCounts[order(-taxCounts$freq),]
-
-#Truncate organism count table to 20 organisms
-taxCounts <- taxCounts[1:20,]
-
-#Return organism levels & drop those not needed
-taxLev <- levels(taxCounts$Organism.TaxID.)
-
-#Count number of rows in df for organism plot
-rowsY <- nrow(taxCounts)
-
-#data frame plot setup
-dose = taxCounts[1]
-lenOrg = taxCounts[2]
-dfOrg <- data.frame(dose=taxCounts[1],
-                    lenOrg=taxCounts[2])
-
-dfOrgTax <- merge(dfOrg, taxMerg, by.x = "Organism.TaxID.", by.y = "ID")
-dfOrgTax <- dfOrgTax[c(-1)]
-
-#Order levels for plot from greatest to least
-dfOrgTax <- dfOrgTax[with(dfOrgTax, order(-dfOrgTax$freq, dfOrgTax$Scientific.Name)),]
-
-#Creae 1-20 labels for plot
-xTax = 1
-xTaxN <- seq(xTax,rowsY,1)
-xTaxN <- toString(xTaxN)
-xTaxN <- strsplit(xTaxN,",")
-
-#Create organism plot
-taxPlot<-ggplot(data=dfOrgTax, aes(x=dfOrgTax$Scientific.Name, y=lenOrg)) +
-  geom_bar(aes(fill=dfOrgTax$Scientific.Name),stat="identity") +
-  scale_x_discrete(labels=xTaxN)
-
-#Add labels to plot
-taxPlot <- taxPlot + labs(x = "Organisms")
-taxPlot <- taxPlot + labs(y = "Count")
-taxPlot <- taxPlot + labs(title = "Number of Datasets Submitted to SRA vs TaxID")
-taxPlot <- taxPlot + guides(fill=guide_legend(title="Organisms"))
-taxPlot
-
-ggsave(taxPlot,file='Tax_BarPlot.pdf', width = 16, height = 9, dpi = 120)
-dev.off()
+# taxCounts <- count(tab, 'Organism.TaxID.')
+# taxCounts <- na.omit(taxCounts)
+# 
+# #Order taxCounts df
+# taxCounts <- taxCounts[order(-taxCounts$freq),]
+# 
+# #Truncate organism count table to 20 organisms
+# taxCounts <- taxCounts[1:20,]
+# 
+# #Return organism levels & drop those not needed
+# taxLev <- levels(taxCounts$Organism.TaxID.)
+# 
+# #Count number of rows in df for organism plot
+# rowsY <- nrow(taxCounts)
+# 
+# #data frame plot setup
+# dose = taxCounts[1]
+# lenOrg = taxCounts[2]
+# dfOrg <- data.frame(dose=taxCounts[1],
+#                     lenOrg=taxCounts[2])
+# 
+# dfOrgTax <- merge(dfOrg, taxMerg, by.x = "Organism.TaxID.", by.y = "ID")
+# dfOrgTax <- dfOrgTax[c(-1)]
+# 
+# #Order levels for plot from greatest to least
+# dfOrgTax <- dfOrgTax[with(dfOrgTax, order(-dfOrgTax$freq, dfOrgTax$Scientific.Name)),]
+# 
+# #Creae 1-20 labels for plot
+# xTax = 1
+# xTaxN <- seq(xTax,rowsY,1)
+# xTaxN <- toString(xTaxN)
+# xTaxN <- strsplit(xTaxN,",")
+# 
+# #Create organism plot
+# taxPlot<-ggplot(data=dfOrgTax, aes(x=dfOrgTax$Scientific.Name, y=lenOrg)) +
+#   geom_bar(aes(fill=dfOrgTax$Scientific.Name),stat="identity") +
+#   scale_x_discrete(labels=xTaxN)
+# 
+# #Add labels to plot
+# taxPlot <- taxPlot + labs(x = "Organisms")
+# taxPlot <- taxPlot + labs(y = "Count")
+# taxPlot <- taxPlot + labs(title = "Number of Datasets Submitted to SRA vs TaxID")
+# taxPlot <- taxPlot + guides(fill=guide_legend(title="Organisms"))
+# taxPlot
+# 
+# ggsave(taxPlot,file='Tax_BarPlot.pdf', width = 16, height = 9, dpi = 120)
+# dev.off()
 
 #RMarkdown
 #------------------------------------------------------------------------------------
 render("SRACharMarkdown_16_June_2017.Rmd", "all")
-                               
+
 #RUN THE NEXT BATCH OF CODE BETWEEN THESE LINES ONLY ONCE IF YOU HAVE NEVER RUN IT BEFORE
 #------------------------------------------------------------------------------
 #Packages necessary for text datamining ONLY RUN ONCE

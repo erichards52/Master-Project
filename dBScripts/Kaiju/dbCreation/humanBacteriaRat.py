@@ -38,7 +38,7 @@ def process_url_file(inputurlfile):
         #Download the files in the gbff format
         subprocess.call("wget "+ftp_url,shell=True) 
         #unzip the files
-        subprocess.call("gunzip *.gz",shell=True)
+        
     return
 
 #function to download bacterial sequences

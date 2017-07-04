@@ -102,9 +102,9 @@ ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html
 
 ##### krakOutputHelp.txt  
 This file details the output from running a Kraken classification.
+
+
 ------------------------
-
-
 
 ### Kaiju
 
@@ -216,8 +216,8 @@ ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>
 
 ##### KaijuOutputHelp.txt  
 This file details the output from running a Kaiju classification.
-------------------------
 
+------------------------
 
 
 ### CLARK

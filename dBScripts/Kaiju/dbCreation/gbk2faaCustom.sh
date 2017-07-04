@@ -1,2 +1,2 @@
-find ./genomeFiles -name "*.gbff" | xargs -n 1 -i gbk2faa.pl '{}' '{}'.faa
+find /home4/rich01e/kaiju/kaiju/kaijudb/faaFiles/ -name "*.gz" | xargs -n 5 -i /home4/rich01e/kaiju/kaiju/kaijudb/gbk2faa.pl '{}' '{}'.faa
 

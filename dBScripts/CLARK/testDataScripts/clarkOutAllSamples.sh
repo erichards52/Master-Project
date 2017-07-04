@@ -1,1 +1,1 @@
-/home4/rich01e/clark/exe/CLARK -T /home4/rich01e/clark/DBD/targets.txt -D /home4/rich01e/clark/DBD/ -P /home4/rich01e/clark/sampleFiles/samples1.L.txt /home4/rich01e/clark/sampleFiles/samples1.R.txt -R /home4/rich01e/faFiles/clarkOutput/results.txt -m 0 --extended
+/home4/rich01e/clark/exe/CLARK -T /home4/rich01e/clark/DBD/targets.txt -D /home4/rich01e/clark/DBD/ -P /home4/rich01e/clark/sampleFiles/samples.L.txt /home4/rich01e/clark/sampleFiles/samples.R.txt -R /home4/rich01e/faFiles/clarkOutput/results.txt -m 0 --extended

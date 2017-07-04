@@ -11,6 +11,7 @@ select $fh; $| = 1; select STDOUT;
 while(<$fh>) { 
     chomp; 
     push @array, $_;
+print "@array";
 } 
 close $fh;
 
@@ -19,7 +20,6 @@ print "Scientific Name,ID\n";
 foreach my $array(@array)
 {
 my $id = $array;
-
 my $factory = Bio::DB::EUtilities->new(-eutil => 'esummary',
                                        -email => '2274776r@student.gla.ac.uk',
                                        -db    => 'taxonomy',

@@ -299,7 +299,7 @@ ncbiScripts directory - curates & generates figures & RMarkdown.
 VITAL: PAY ATTENTION TO VARIABLES NAMES, THEY MUST BE EXACTLY AS NAMED IN THE RSCRIPT OR
 IT WILL NOT WORK!
 
-### FigureGen.R
+#### FigureGen.R
 If you have not run this script before you will need to install necessary libraries. This can be found at the bottom of the script.
 This R script curates all downloaded metadata from the ncbiScripts and generates a fair amount of figures based upon that data.
 
@@ -307,7 +307,7 @@ Figures include platform abundance, organism abundance, platform utilisation ove
 per year), rat sample wordcloud.
 
 
-### SRACharMarkdown.RMD
+#### SRACharMarkdown.RMD
 
 This generates an RMarkdown document to your liking. Can be modified to include whichever 
 figures take the user's fancy. At this moment in time includes all relevant figures. Please
@@ -323,7 +323,7 @@ for every taxonomic ID given from the original metadata.
 VITAL: YOU MUST FIRST GENERATE A LIST OF TAXONOMIC IDS FROM THE METADATA DOWNLOADED VIA
 fixScript.pl, A TUTORIAL ON HOW TO DO SO EXISTS IN FigureGen.R, INCLUDES ALL NECESSARY CODE.
 
-### fixScript.pl
+#### fixScript.pl
 
 This script downloads all metadata necessary from every dataset on the SRA. Metadata
 includes ID, organism common name & scientific name, organism taxonomic ID, sample information,
@@ -332,17 +332,17 @@ study title, and study description.
 
 Generates text file named to your liking, merely invoke 'fixScript.pl > "filename".txt'
 
-### taxScript.pl
+#### taxScript.pl
 
 This script returns taxonomic names from the NCBI taxonomy database based upon a text file with provided taxonomic IDs.
 Taxonomic IDs must be separated via a newline character. IDs are read in as an array.
 
-### prefetchSRA.sh
+#### prefetchSRA.sh
 
 This script downloads the relevant SRA dataset for a specific SRR accession number. If you wish to download a specific dataset, merely change the accession number(s).
 Typically stores the files in /home/user/ncbi/sra/public.
 
-### fastqDump1.sh & fastqDump2.sh
+#### fastqDump1.sh & fastqDump2.sh
 
 This script extracts the fastq files from the .sra file downloaded in the prefetchSRA.sh script. Merely change the script so that it points to the .sra file(s) downloaded via the prefetchSRA.sh script. 
 The second parameter is where the resulting fastq files will be saved.

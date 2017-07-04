@@ -33,7 +33,7 @@ get_fasta_in_kraken_format('<$ANY>_genome.fa')
 Replace <$ANY> with whatever you would like to name your genome.
 Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
-#### testDataScripts/Classification Scripts  
+#### Classification Scripts
 Classification can be run immediately utilising the custom database created during this project ("HumanVirusBacteriaRat").
 
 In order to run Kraken classification, invoke the following command:
@@ -54,7 +54,48 @@ In order to store output, you could either create a bash script and concatenante
 
 kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq > KrakenOutput.txt
 
-If you wish to see an example of this in use, please see krakOutAll.sh
+If you wish to see an example of this in use, please see krakOutAll.sh  
+
+#### Kraken Krona
+
+##### cutKrakResults  
+Converts the resulting Kraken classification output files ito krona-friendly files.
+
+If you wish to convert the Kraken output into Krona friendly output, invoke the following command:
+
+------------------------
+Without explanation:
+
+cut -f2,3 <$OUTPUT_INPUT> > <$OUTPUT>
+
+------------------------
+With explanation:
+
+cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>
+
+<$OUTPUT_INPUT> should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.
+<$OUTPUT> should be renamed to whatever the users wishes to name the resulting Krona-friendly output.
+
+------------------------
+
+#### krak2Krona.sh
+Converts the resulting krona-friendly kraken output file to an html krona file.  
+ktImportTaxonomy is part of KronaTools.
+------------------------
+Without explanation:
+
+ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html
+
+------------------------
+With explanation:
+
+ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html
+
+<$OUTPUT_INPUT> should be renamed to whichever krona-friendly Kraken classification output the user wishes to convert to a krona html file.  
+<$OUTPUT> should be renamed to whatever the users wishes to name the resulting krona html file.
+
+------------------------
+
 ### Kaiju
 
 #### dbCreation
@@ -104,10 +145,7 @@ mkfmi <$DBNAME>
 
 For an example of this script, please see testbwt.sh.  
 
-#### testDataScripts/Classification Scripts  
-
-##### KaijuOutputHelp.txt  
-This file details the output from running a Kaiju classification.
+#### Classification Scripts  
 
 Classification can be run immediately utilising the custom database created during this project (proteins.fmi - located in kaijudb/faaFiles)
 
@@ -123,16 +161,16 @@ With explanation:
 
 kaiju -v (verbose mode) -x (less false positive hits) -z 12 (12 threads) -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> (Input file) -j <$PAIRED_READ_INPUT_FASTQ/A> (Only put -j if paired reads) -o <$OUTPUT>
 
-<$DBNAME> can be replaced with whatever you have named your .fmi file  
-<$INPUT_FASTQ/A> should be replaced with your input file  
-<$PAIRED_READ_INPUT_FASTQ/A> should be replaced with a paired-read file if necessary  
+<$DBNAME> can be replaced with whatever you have named your .fmi file.  
+<$INPUT_FASTQ/A> should be replaced with your input file.  
+<$PAIRED_READ_INPUT_FASTQ/A> should be replaced with a paired-read file if necessary.  
   
-Please see kaijuOutAll.sh for example
+Please see kaijuOutAll.sh for example.
 
 #### Kaiju Krona  
-In order to convert the Kaiju output to Krona, you must run two scripts:
   
-##### Kaiju2krona  
+##### kaiju2kronaResults.sh  
+Converts Kaiju classification output to a krona-friendly output.
 
 ------------------------
 Without explanation:
@@ -147,9 +185,8 @@ kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>
 <$KAIJU_OUTPUT> is replaced with the output originally obtained from Kaiju classification.  
 <$KRONA_OUTPUT> is the resulting output and can be renamed to whatever the user wishes.
 
-Please see kaiju2kronaResults.sh for an example.
-
-##### ktImportText  
+##### kronatoHtml.sh  
+Converts the resulting krona-friendly Kaiju classification output to a Krona html file.
 ktImportText is part of KronaTools & it should be installed before attempting this.  
 
 ------------------------
@@ -165,7 +202,10 @@ ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>
 <$OUTPUT.html> should be renamed to whatever the user wishes to name the output 
 <$OUTPUT_INPUT> should be renamed to whatever the user named the relevant kaiju2krona output file
 
+#### Extras  
 
+##### KaijuOutputHelp.txt  
+This file details the output from running a Kaiju classification.
 
 ### CLARK
 
@@ -206,7 +246,7 @@ However, if you only wish to utilise the custom database you have created, merel
 In order to include a reference sequence(s)/genome(s) of your choosing, you must create a directory inside <$DIR_DB> called "Custom". 
 As stated in the previous scripts (HumanBacteriaRat.py & archaeaViralPlasmid.sh), you must download all reference sequences to the custom folder before running "set_targets.sh" from the original CLARK directory.
 
-#### testDataScripts/Classification Scripts  
+#### Classification Scripts  
 Classification can be run immediately utilising the custom database created during this project ("DBD").  
 
 In order to run classification, CLARK must first generate a database of specific sized k-mers. Here, only the default size has been used (31-mers). The database is created by simply invoking the main CLARK classification command as follows (CLARK.exe is located in the exe subdirectory of the main CLARK folder):

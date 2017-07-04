@@ -80,17 +80,9 @@ cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>
 
 #### krak2Krona.sh  
 
-Converts the resulting krona-friendly Kraken output file to an html krona file.
+Converts the resulting krona-friendly Kraken output file to an html krona file.  
 ktImportTaxonomy is part of KronaTools.
 
-
-
-
-
-
-
-Converts the resulting krona-friendly kraken output file to an html krona file.  
-ktImportTaxonomy is part of KronaTools.
 ------------------------
 Without explanation:
 

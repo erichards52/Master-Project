@@ -6,6 +6,7 @@ This project was designed with the Centre for Virus Reseach (CVR) in mind. While
 
 **IF YOU WISH TO UTILISE THE DATABASE WHICH WAS PREVIOUSLY CREATED IN ORDER TO PERFORM YOUR OWN CLASSIFICATION, MERELY USE THE EXAMPLE CLASSIFICATION SCRIPTS LISTED FOR EACH CLASSIFIER (testDataScripts/Classification Scripts)**  
 
+**LASTLY, YOU SHOULD HAVE KRONATOOLS INSTALLED IF YOU WISH TO CONVERT THE RESULTING OUTPUTS OF EACH CLASSIFIER INTO KRONA OUTPUTS**
 
 ## dBScripts
 The directory dBScripts contains scripts which create databases for each classifier.
@@ -53,7 +54,7 @@ In order to store output, you could either create a bash script and concatenante
 
 kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq > KrakenOutput.txt
 
-
+If you wish to see an example of this in use, please see krakOutAll.sh
 ### Kaiju
 
 #### dbCreation
@@ -77,12 +78,13 @@ This script is self-explanatory. It downloads the human, bacteria and rat genome
 This script is self-explanatory. It downloads the arachaeal, viral and plasmid genome in the gbff format. It should be run in a directory where you will later convert all .gbff files into .faa files in order for Kaiju to recognise them.
 
 ##### gbk2faaCustom.pl  
-This script is self-explanatory. It is able to convert both single as well as all .gbff files in a directory to a .faa file(s). It is used before creating a custom database from custom reference sequences.
+This script is self-explanatory. It is able to convert both single as well as all .gbff.gz files in a directory to a .faa file(s). It is used before creating a custom database from custom reference sequences.
+
+##### testbwt.sh  
+This script converts the concatenated .faa file (proteins.faa) into a bwt file (proteins.bwt) which is necessary for the creation of the fmi (proteins.fmi) file.
 
 **Custom Database**  
-In order to create a custom database, you must first delete the .faa file, .bwt file & the .fmi file.
-
-If you wish to create your own custom database, merely change/add/remove the following code in HumanBacteriaRat.py before running:
+If you wish to create your own custom database, which is different to the one created during this project, merely change/add/remove the following code in HumanBacteriaRat.py before running:
 
 print('Downloading <$ANY> genomes'+'\n')  
 download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')
@@ -93,14 +95,77 @@ Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://ww
 The script should then be run in a separate directory.
 
 **Custom Database Continued**  
-Once this has been completed you must tell kaiju which reference sequences you wish to use. Assuming that all reference sequences have been download and converted into .faa files, you must then run the following commands:
+Once this has been completed you must tell kaiju which reference sequences you wish to use. Assuming that all reference sequences have been download and converted into .faa files (using gbk2faaCustom.pl), and all .faa files have been concatenated into a single .faa file (\*.faa > proteins.faa), you must then run the following commands:
 
 mkbwt -n 5 -a ACDEFGHIKLMNPQRSTVWY -o <$DBNAME> <$DBNAME>.faa  
 mkfmi <$DBNAME>  
 
-<$DBNAME> can be changed to whatever you wish to name your database.
+<$DBNAME> can be changed to whatever you wish to name your database (I used proteins (i.e.: proteins.fmi)).
 
-In order to add many reference sequences to your database, you must either concantenate them all into one .faa file, or make use of regular expressions in order to add them all at once.
+For an example of this script, please see testbwt.sh.  
+
+#### testDataScripts/Classification Scripts  
+
+##### KaijuOutputHelp.txt  
+This file details the output from running a Kaiju classification.
+
+Classification can be run immediately utilising the custom database created during this project (proteins.fmi - located in kaijudb/faaFiles)
+
+In order to run Kaiju classification, invoke the following command:
+
+------------------------
+Without explanation:
+
+kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A -o <$OUTPUT>
+
+------------------------
+With explanation:
+
+kaiju -v (verbose mode) -x (less false positive hits) -z 12 (12 threads) -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> (Input file) -j <$PAIRED_READ_INPUT_FASTQ/A> (Only put -j if paired reads) -o <$OUTPUT>
+
+<$DBNAME> can be replaced with whatever you have named your .fmi file  
+<$INPUT_FASTQ/A> should be replaced with your input file  
+<$PAIRED_READ_INPUT_FASTQ/A> should be replaced with a paired-read file if necessary  
+  
+Please see kaijuOutAll.sh for example
+
+#### Kaiju Krona  
+In order to convert the Kaiju output to Krona, you must run two scripts:
+  
+##### Kaiju2krona  
+
+------------------------
+Without explanation:
+
+kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>
+
+------------------------
+With explanation:
+
+kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>  
+  
+<$KAIJU_OUTPUT> is replaced with the output originally obtained from Kaiju classification.  
+<$KRONA_OUTPUT> is the resulting output and can be renamed to whatever the user wishes.
+
+Please see kaiju2kronaResults.sh for an example.
+
+##### ktImportText  
+ktImportText is part of KronaTools & it should be installed before attempting this.  
+
+------------------------
+Without explanation:
+
+ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>
+
+------------------------
+With explanation:
+
+ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>  
+
+<$OUTPUT.html> should be renamed to whatever the user wishes to name the output 
+<$OUTPUT_INPUT> should be renamed to whatever the user named the relevant kaiju2krona output file
+
+
 
 ### CLARK
 

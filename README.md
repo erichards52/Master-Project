@@ -33,7 +33,7 @@ get_fasta_in_kraken_format('<$ANY>_genome.fa')
 Replace <$ANY> with whatever you would like to name your genome.
 Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
-#### Classification Scripts
+#### Classification Scripts/testDataScripts
 Classification can be run immediately utilising the custom database created during this project ("HumanVirusBacteriaRat").
 
 In order to run Kraken classification, invoke the following command:
@@ -56,7 +56,7 @@ kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.f
 
 If you wish to see an example of this in use, please see krakOutAll.sh  
 
-#### Kraken Krona
+#### Kraken Krona/KronaScripts
 
 ##### cutKrakResults  
 Converts the resulting Kraken classification output files ito krona-friendly files.
@@ -78,7 +78,7 @@ cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>
 
 ------------------------
 
-#### krak2Krona.sh  
+##### krak2Krona.sh  
 
 Converts the resulting krona-friendly Kraken output file to an html krona file.  
 ktImportTaxonomy is part of KronaTools.
@@ -97,6 +97,11 @@ ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html
 <$OUTPUT> should be renamed to whatever the users wishes to name the resulting krona html file.
 
 ------------------------
+
+#### Extras  
+
+##### krakOutputHelp.txt  
+This file details the output from running a Kraken classification.
 
 ### Kaiju
 
@@ -147,7 +152,7 @@ mkfmi <$DBNAME>
 
 For an example of this script, please see testbwt.sh.  
 
-#### Classification Scripts  
+#### Classification Scripts/testDataScripts
 
 Classification can be run immediately utilising the custom database created during this project (proteins.fmi - located in kaijudb/faaFiles)
 
@@ -169,7 +174,7 @@ kaiju -v (verbose mode) -x (less false positive hits) -z 12 (12 threads) -t node
   
 Please see kaijuOutAll.sh for example.
 
-#### Kaiju Krona  
+#### Kaiju Krona/KronaScripts
   
 ##### kaiju2kronaResults.sh  
 Converts Kaiju classification output to a krona-friendly output.

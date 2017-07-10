@@ -4,12 +4,13 @@ library(vegan)
 library(OTUtable)
 x <- "C:/Users/2274776r/Documents/MastersDegree/Thesis/Classifiers/CLARK/Abundanc&Speeds/"
 y <- "C:/Users/2274776r/Documents/MastersDegree/Thesis/Classifiers/Kaiju/Abundances&Speed/"
+
 #Build Respective Sample Tables & Read in their respective files from each Classifier
 #------------------------------------------------------------
 #HomoResp
 HomoResp <- data.frame(matrix(nrow = 4, ncol = 3))
 colnames(HomoResp) <- c("Kaiju", "CLARK", "Kraken")
-rownames(HomoResp) <- c("Richness (Total Hits/Total no. of TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
+rownames(HomoResp) <- c("Richness (Total Hits/TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
 
 #Read abundance table from CLARK
 setwd(x)
@@ -25,7 +26,7 @@ HomoRespAbundKaiju <- read.csv("kaijuKronaHomoResp.out.krona", header=FALSE,sep=
 #TravChik
 TravChik <- data.frame(matrix(nrow = 4, ncol = 3))
 colnames(TravChik) <- c("Kaiju", "CLARK", "Kraken")
-rownames(TravChik) <- c("Richness (Total Hits/Total no. of TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
+rownames(TravChik) <- c("Richness (Total Hits/TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
 
 #Read abundance table from CLARK
 setwd(x)
@@ -41,7 +42,7 @@ TravChikAbundKaiju <- read.csv("kaijuKronaTravChik.out.krona", header=TRUE,sep="
 #MidgeNov
 MidgeNov <- data.frame(matrix(nrow = 4, ncol = 3))
 colnames(MidgeNov) <- c("Kaiju", "CLARK", "Kraken")
-rownames(MidgeNov) <- c("Richness (Total Hits/Total no. of TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
+rownames(MidgeNov) <- c("Richness (Total Hits/TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
 
 #Read abundance table from CLARK
 setwd(x)
@@ -57,7 +58,7 @@ MidgeNovAbundKaiju <- read.csv("kaijuKronaMidgeNov.out.krona", header=TRUE,sep="
 #SRR062462
 SRR062462 <- data.frame(matrix(nrow = 4, ncol = 3))
 colnames(SRR062462) <- c("Kaiju", "CLARK", "Kraken")
-rownames(SRR062462) <- c("Richness (Total Hits/Total no. of TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
+rownames(SRR062462) <- c("Richness (Total Hits/TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
 
 #Read abundance table from CLARK
 setwd(x)
@@ -73,7 +74,7 @@ SRR062462AbundKaiju <- read.csv("kaijuKronaSRR062462.out.krona", header=TRUE,sep
 #SRR062415
 SRR062415 <- data.frame(matrix(nrow = 4, ncol = 3))
 colnames(SRR062415) <- c("Kaiju", "CLARK", "Kraken")
-rownames(SRR062415) <- c("Richness (Total Hits/Total no. of TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
+rownames(SRR062415) <- c("Richness (Total Hits/TaxIDs", "Time(s)", "Pielou Evenness Index", "Total # Viral")
 
 #Read abundance table from CLARK
 setwd(x)
@@ -159,6 +160,43 @@ SRR062462Vec <- SRR062462Abund$Count
 SRR062462Pielou <- pielou(SRR062462Vec)
 SRR062462[3,2] <- SRR062462Pielou
 
+#Retrieve no. of viral sequences for CLARK
+#-------------------------------------------------------
+#List of lineages related to viruses
+virusFilter <- c('*.viral.*','*.viridae.*','*.virus.*','*.phage.*','*.satellite.*')
+
+#Subset & Sum
+#HomoResp
+HomoClarkViral <- unique(subset(HomoRespAbund, grepl(paste(virusFilter, collapse = "|"), 
+                                                     HomoRespAbund[[3]]), drop = FALSE))
+TotClarkHomoVir <- sum(HomoClarkViral$Count)
+
+#TravChik
+TravClarkViral <- unique(subset(TravChikAbund, grepl(paste(virusFilter, collapse = "|"), 
+                                                     TravChikAbund[[3]]), drop = FALSE))
+TotClarkTravVir <- sum(TravClarkViral$Count)
+
+#MidgeNov
+MidgeClarkViral <- unique(subset(MidgeNovAbund, grepl(paste(virusFilter, collapse = "|"), 
+                                                      MidgeNovAbund[[3]]), drop = FALSE))
+TotClarkMidgeVir <- sum(MidgeClarkViral$Count)
+
+#SRR062415
+SRR062415ClarkViral <- unique(subset(SRR062415Abund, grepl(paste(virusFilter, collapse = "|"), 
+                                                           SRR062415Abund[[3]]), drop = FALSE))
+TotClarkSRR062415Vir <- sum(SRR062415ClarkViral$Count)
+
+#SRR062462
+SRR062462ClarkViral <- unique(subset(SRR062462Abund, grepl(paste(virusFilter, collapse = "|"), 
+                                                           SRR062462Abund[[3]]), drop = FALSE))
+TotClarkSRR062462Vir <- sum(SRR062462ClarkViral$Count)
+
+#Assign total no. of viral sequences
+HomoResp[4,2] <- TotClarkHomoVir
+TravChik[4,2] <- TotClarkTravVir
+MidgeNov[4,2] <- TotClarkMidgeVir
+SRR062415[4,2] <- TotClarkSRR062415Vir
+SRR062462[4,2] <- TotClarkSRR062462Vir
 #Kaiju
 #--------------------------------------------------------
 #Read in kaiju speeds
@@ -247,7 +285,7 @@ SRR062462[3,1] <- SRR062462KaijuPielou
 #Retrieve total number of virus hits for Kaiju
 #HomoResp
 kaijuVirusTotHomo <- kaijuSumHomo[grep("Viruses", kaijuSumHomo$Species),]
-kaijuVirusTotHomo <- kaijuVirusTot$Reads
+kaijuVirusTotHomo <- kaijuVirusTotHomo$Reads
 HomoResp[4,1] <- kaijuVirusTotHomo
 
 #MidgeNov
@@ -267,7 +305,7 @@ SRR062462[4,1] <- kaijuVirusTotSRR062462
 
 #SRR062415
 kaijuVirusTotSRR062415 <- kaijuSumSRR062415[grep("Viruses", kaijuSumTrav$Species),]
-kaijuVirusTotSRR062415 <- kaijuSumSRR062415$Reads
+kaijuVirusTotSRR062415 <- kaijuVirusTotSRR062415$Reads
 SRR062415[4,1] <- kaijuVirusTotSRR062415
 
 

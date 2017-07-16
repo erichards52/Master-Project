@@ -354,3 +354,4 @@ Typically stores the files in /home/user/ncbi/sra/public.
 
 This script extracts the fastq files from the .sra file downloaded in the prefetchSRA.sh script. Merely change the script so that it points to the .sra file(s) downloaded via the prefetchSRA.sh script. 
 The second parameter is where the resulting fastq files will be saved.
+# KronaFiles.github.io

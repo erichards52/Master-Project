@@ -97,8 +97,67 @@ With explanation:
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting krona html file.
 
 ------------------------
+##### krakReportAll.sh  
+Creates Kraken reports from Kraken outputs.  
+  
+Without explanation:
+`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`  
+  
+With explanation:  
+`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>` 
+`<$DIR_DB>` can be replaced with the Kraken database directory (i.e. Mine is HumanVirusBacteriaRat).  
+`<$KRAK_OUTPUT>` is the resulting output from the original classification of a sequence.  
+`<$KRAK_REPORT>` is the resulting report file produced by Kraken.
 
-#### Extras  
+#### Bracken  
+BEFORE RUNNING BRACKEN, PLEASE MAKE SURE YOU HAVE THE KRAKEN REPORTS FOR THE SEQUENCES OF INTEREST. KRAKEN REPORTS ARE GENERATED USING KRAKEN-REPORT. PLEASE REFER TO krakReportAll.sh
+  
+Bracken translates the original Kraken output into a more legible abundance table, detailing counts per tax ID.  
+  
+In order to use Bracken, several Kraken commands must be run. These are detailed in order below:
+  
+##### brackScript.sh  
+Converts original Kraken database into a Bracken-friendly database.  
+
+Without explanation:
+`kraken --db=<$DIR_DB> --<$FASTA_INPUT> --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
+  
+  
+`perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts`  
+  
+  
+`python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`
+  
+With explanation:
+`kraken --db=<$DIR_DB> --fasta-input (assumes reference sequences are fasta input) --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
+`<$DIR_DB>` can be replaced with the directory in which the Kraken database is found (i.e. mine is HumanBacteriaVirusRat).  
+`<$DIR_DB/FA_SEQ_DIR>` can be replaced with the directory in which the reference sequences (.fna) reside.  
+`database.kraken` is the resulting concatenated output file. The name can be changed but the suffix `.kraken` should be kept.
+
+  
+`perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts`  
+`<$DIR_DB>` can be replaced with the directory in which the database can be found (i.e. HumanBacteriaVirusRat again).  
+`database.kraken` is the concatenated output file from the last command, it can be renamed as previously mentioned.  
+`database75mers.kraken_cnts` is the resulting database output required to run Bracken, as it manipulates the original database. Although it can be renamed, keeping these file names is probably a good idea. A read-length of 75 is the default.
+
+`python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`  
+`abundest_krak.TXT` is the resulting abundances output file produced by Bracken.  
+`database75mers.kraken_cnts` is the file produced from the previous command.  
+
+
+For an example, please see dBScripts/Kraken/testDataScripts  
+
+##### brackReports.sh 
+Converts Kraken reports to Bracken reports.  
+
+Without explanation:  
+`python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>`  
+
+With explanation:  
+`python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>`  
+`<$REPORT>` can be replaced with the resulting Kraken output file from using
+
+#### Extras 
 
 ##### krakOutputHelp.txt  
 This file details the output from running a Kraken classification.
@@ -221,6 +280,9 @@ This file details the output from running a Kaiju classification.
 
 
 ### CLARK
+  
+In all scripts below, `<$DIR_DB>` can be replaced with the directory in which you wish to keep your CLARK database.  
+Additionally, `Custom`, in all scripts below, references the Custom folder/directory in which all reference sequences should be kept ( which should be kept inside `<$DIR_DB>`)  
 
 #### dbCreationScripts  
 
@@ -228,18 +290,18 @@ This file details the output from running a Kaiju classification.
 THIS SCRIPT MUST BE RUN FROM WITHIN THE ORIGINAL CLARK DIRECTORY WHERE ALL OTHER .SH SCRIPTS ARE CONTAINED. DO NOT ATTEMPT TO RUN THIS SCRIPT OUTSIDE OF THIS ENVIRONMENT.  
 
 CLARK must be told what genomes/reference sequences you would like to use in order to classify reads of interest.  
-This can be done using the command "sh set_targets.sh <$DIR_DB> human viruses bacteria", which creates a default database containing human, viral and bacteria genome(s).
+This can be done using the command `sh set_targets.sh <$DIR_DB> human viruses bacteria`, which creates a default database containing human, viral and bacteria genome(s).  
 
 This command was not used for this project, instead, a custom database was created.
 
 ##### HumanBacteriaRat.py
-This script is self-explanatory. It downloads the human, bacteria and rat genome in the fna format. It should be run in the "Custom" directory.
+This script is self-explanatory. It downloads the human, bacteria and rat genome in the fna format. It should be run in the `Custom` directory.
 
 ##### archaeaViralPlasmid.sh
-This script is self-explanatory. It downloads the arachaeal, viral and plasmid genome in the fna format. It should be run in the "Custom" directory.
+This script is self-explanatory. It downloads the arachaeal, viral and plasmid genome in the fna format. It should be run in the `Custom` directory.
 
 **Custom Database**  
-BEFORE CREATING YOUR OWN DATABASE YOU MUST WIPE THE OLD ONE FROM EXISTENCE. THIS CAN BE DONE BY RUNNING THE COMMAND "sh clean.sh" FROM THE ORIGINAL CLARK DIRECTORY.
+BEFORE CREATING YOUR OWN DATABASE YOU MUST WIPE THE OLD ONE FROM EXISTENCE. THIS CAN BE DONE BY RUNNING THE COMMAND `sh clean.sh` FROM THE ORIGINAL CLARK DIRECTORY.
 
 If you wish to create your own custom database, merely change/add/remove the following code in HumanBacteriaRat.py
 
@@ -250,9 +312,9 @@ Replace `<$ANY>` with whatever you would like to name your genome.
 Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
 **Custom Database Continued**  
-The command "custom" allows for the selection of a genome or reference sequence of your choosing (it references the custom folder). 
-It is possible to invoke the command: "sh set_targets.sh <$DIR_DB> human viruses bacteria custom" if you would still like to download the default human, viral and bacteria genome(s).  
-However, if you only wish to utilise the custom database you have created, merely type: "sh set_targets.sh <$DIR_DB> custom".
+The command `custom` allows for the selection of a genome or reference sequence of your choosing (it references the custom folder). 
+It is possible to invoke the command: `sh set_targets.sh <$DIR_DB> human viruses bacteria custom` if you would still like to download the default human, viral and bacteria genome(s).  
+However, if you only wish to utilise the custom database you have created, merely type: `sh set_targets.sh <$DIR_DB> custom`.
 
 <$DIR_DB> can be replaced with whatever you would like to name the database directory (I've named this one DBD). You must create this directory inside the original CLARK directory.
 
@@ -262,7 +324,7 @@ As stated in the previous scripts (HumanBacteriaRat.py & archaeaViralPlasmid.sh)
 #### Classification Scripts  
 Classification can be run immediately utilising the custom database created during this project ("DBD").  
 
-In order to run classification, CLARK must first generate a database of specific sized k-mers. Here, only the default size has been used (31-mers). The database is created by simply invoking the main CLARK classification command as follows (CLARK.exe is located in the exe subdirectory of the main CLARK folder):
+In order to run classification, CLARK must first generate a database of specific sized k-mers. Here, only the default size has been used (31-mers). The database is created by simply invoking the main CLARK classification command as follows: 
 
 ------------------------
 Without explanation:

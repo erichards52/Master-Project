@@ -120,7 +120,8 @@ In order to use Bracken, several Kraken commands must be run. These are detailed
 ##### brackScript.sh  
 Converts original Kraken database into a Bracken-friendly database.  
 
-Without explanation:
+Without explanation:  
+
 `kraken --db=<$DIR_DB> --<$FASTA_INPUT> --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
   
   
@@ -129,7 +130,8 @@ Without explanation:
   
 `python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`
   
-With explanation:
+With explanation:  
+
 `kraken --db=<$DIR_DB> --fasta-input (assumes reference sequences are fasta input) --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
 
 `<$DIR_DB>` can be replaced with the directory in which the Kraken database is found (i.e. mine is HumanBacteriaVirusRat).  

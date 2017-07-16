@@ -25,13 +25,13 @@ This script will create an arachael genome, human genome, bacterial genome, vira
 **Custom Database**  
 If you wish to create your own custom database, merely add the following lines to ratKrakDBCreationScript.py such that <$ID> is changed to the taxonomic ID for the genome/species/reference sequence you wish to incorporate before running the script. 
 
-print('Downloading <$ANY> genome'+'\n')  
+`print('Downloading <$ANY> genome'+'\n')  
 download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')  
 print('Converting sequences to kraken input format'+'\n')  
-get_fasta_in_kraken_format('<$ANY>_genome.fa')
+get_fasta_in_kraken_format('<$ANY>_genome.fa')`
 
-Replace <$ANY> with whatever you would like to name your genome.
-Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
+Replace `<$ANY>` with whatever you would like to name your genome.
+Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
 #### Classification Scripts/testDataScripts
 Classification can be run immediately utilising the custom database created during this project ("HumanVirusBacteriaRat").
@@ -41,18 +41,18 @@ In order to run Kraken classification, invoke the following command:
 ------------------------
 Without explanation:
 
-kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq
+`kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq`
 
 ------------------------
 With explanation:
 
-kraken --preload (preloads database) --threads 12 (number of threads) --fastq-input (remove for fa/fasta files) --paired (remove if not paired-end reads) --db <$DIR_DB> (replace <$DIR_DB> with database that you have made (i.e.: mine is HumanVirusBacteriaRat) sample1.R1.fq sample2.R2.fq
+`kraken --preload (preloads database) --threads 12 (number of threads) --fastq-input (remove for fa/fasta files) --paired (remove if not paired-end reads) --db <$DIR_DB> (replace <$DIR_DB> with database that you have made (i.e.: mine is HumanVirusBacteriaRat) sample1.R1.fq sample2.R2.fq`
 
 ------------------------
 
 In order to store output, you could either create a bash script and concatenante the output: (i.e.: KrakenClassificationScript.sh > KrakenOutput.txt) or simply concatenate the command itself: 
 
-kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq > KrakenOutput.txt
+`kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq > KrakenOutput.txt`
 
 If you wish to see an example of this in use, please see krakOutAll.sh  
 
@@ -66,15 +66,15 @@ If you wish to convert the Kraken output into Krona friendly output, invoke the 
 ------------------------
 Without explanation:
 
-cut -f2,3 <$OUTPUT_INPUT> > <$OUTPUT>
+`cut -f2,3 <$OUTPUT_INPUT> > <$OUTPUT>`
 
 ------------------------
 With explanation:
 
-cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>
+`cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>`
 
-<$OUTPUT_INPUT> should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.
-<$OUTPUT> should be renamed to whatever the users wishes to name the resulting Krona-friendly output.
+`<$OUTPUT_INPUT>` should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.
+`<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting Krona-friendly output.
 
 ------------------------
 
@@ -86,15 +86,15 @@ ktImportTaxonomy is part of KronaTools.
 ------------------------
 Without explanation:
 
-ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html
+`ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html`
 
 ------------------------
 With explanation:
 
-ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html
+`ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html`
 
-<$OUTPUT_INPUT> should be renamed to whichever krona-friendly Kraken classification output the user wishes to convert to a krona html file.  
-<$OUTPUT> should be renamed to whatever the users wishes to name the resulting krona html file.
+`<$OUTPUT_INPUT>` should be renamed to whichever krona-friendly Kraken classification output the user wishes to convert to a krona html file.  
+`<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting krona html file.
 
 ------------------------
 
@@ -137,21 +137,21 @@ This script converts the concatenated .faa file (proteins.faa) into a bwt file (
 **Custom Database**  
 If you wish to create your own custom database, which is different to the one created during this project, merely change/add/remove the following code in HumanBacteriaRat.py before running:
 
-print('Downloading <$ANY> genomes'+'\n')  
-download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')
+`print('Downloading <$ANY> genomes'+'\n')  
+download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')`
 
-Replace <$ANY> with whatever you would like to name your genome.
-Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
+Replace `<$ANY>` with whatever you would like to name your genome.
+Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
 The script should then be run in a separate directory.
 
 **Custom Database Continued**  
 Once this has been completed you must tell kaiju which reference sequences you wish to use. Assuming that all reference sequences have been download and converted into .faa files (using gbk2faaCustom.pl), and all .faa files have been concatenated into a single .faa file (\*.faa > proteins.faa), you must then run the following commands:
 
-mkbwt -n 5 -a ACDEFGHIKLMNPQRSTVWY -o <$DBNAME> <$DBNAME>.faa  
-mkfmi <$DBNAME>  
+`mkbwt -n 5 -a ACDEFGHIKLMNPQRSTVWY -o <$DBNAME> <$DBNAME>.faa  
+mkfmi <$DBNAME>`  
 
-<$DBNAME> can be changed to whatever you wish to name your database (I used proteins (i.e.: proteins.fmi)).
+`<$DBNAME>` can be changed to whatever you wish to name your database (I used proteins (i.e.: proteins.fmi)).
 
 For an example of this script, please see testbwt.sh.  
 
@@ -164,16 +164,16 @@ In order to run Kaiju classification, invoke the following command:
 ------------------------
 Without explanation:
 
-kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A -o <$OUTPUT>
+`kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A -o <$OUTPUT>`
 
 ------------------------
 With explanation:
 
-kaiju -v (verbose mode) -x (less false positive hits) -z 12 (12 threads) -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> (Input file) -j <$PAIRED_READ_INPUT_FASTQ/A> (Only put -j if paired reads) -o <$OUTPUT>
+`kaiju -v (verbose mode) -x (less false positive hits) -z 12 (12 threads) -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> (Input file) -j <$PAIRED_READ_INPUT_FASTQ/A> (Only put -j if paired reads) -o <$OUTPUT>`
 
-<$DBNAME> can be replaced with whatever you have named your .fmi file.  
-<$INPUT_FASTQ/A> should be replaced with your input file.  
-<$PAIRED_READ_INPUT_FASTQ/A> should be replaced with a paired-read file if necessary.  
+`<$DBNAME>` can be replaced with whatever you have named your .fmi file.  
+`<$INPUT_FASTQ/A>` should be replaced with your input file.  
+`<$PAIRED_READ_INPUT_FASTQ/A>` should be replaced with a paired-read file if necessary.  
   
 Please see kaijuOutAll.sh for example.
 
@@ -185,15 +185,15 @@ Converts Kaiju classification output to a krona-friendly output.
 ------------------------
 Without explanation:
 
-kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>
+`kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>`
 
 ------------------------
 With explanation:
 
-kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>  
+`kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>` 
   
-<$KAIJU_OUTPUT> is replaced with the output originally obtained from Kaiju classification.  
-<$KRONA_OUTPUT> is the resulting output and can be renamed to whatever the user wishes.
+`<$KAIJU_OUTPUT>` is replaced with the output originally obtained from Kaiju classification.  
+`<$KRONA_OUTPUT>` is the resulting output and can be renamed to whatever the user wishes.
 
 ##### kronatoHtml.sh  
 Converts the resulting krona-friendly Kaiju classification output to a Krona html file.
@@ -202,15 +202,15 @@ ktImportText is part of KronaTools & it should be installed before attempting th
 ------------------------
 Without explanation:
 
-ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>
+`ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>`
 
 ------------------------
 With explanation:
 
-ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>  
+`ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>` 
 
-<$OUTPUT.html> should be renamed to whatever the user wishes to name the output 
-<$OUTPUT_INPUT> should be renamed to whatever the user named the relevant kaiju2krona output file
+`<$OUTPUT.html>` should be renamed to whatever the user wishes to name the output 
+`<$OUTPUT_INPUT>` should be renamed to whatever the user named the relevant kaiju2krona output file
 
 #### Extras  
 
@@ -243,11 +243,11 @@ BEFORE CREATING YOUR OWN DATABASE YOU MUST WIPE THE OLD ONE FROM EXISTENCE. THIS
 
 If you wish to create your own custom database, merely change/add/remove the following code in HumanBacteriaRat.py
 
-print('Downloading <$ANY> genomes'+'\n')  
-download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')
+`print('Downloading <$ANY> genomes'+'\n')`  
+`download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')`
 
-Replace <$ANY> with whatever you would like to name your genome.
-Replace <$ID> with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
+Replace `<$ANY>` with whatever you would like to name your genome.
+Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
 **Custom Database Continued**  
 The command "custom" allows for the selection of a genome or reference sequence of your choosing (it references the custom folder). 

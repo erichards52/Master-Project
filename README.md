@@ -16,14 +16,14 @@ The directory dBScripts contains scripts which create databases for each classif
 #### dbCreation
 
 ##### ratKrakDBCreationScript.py
-Invoking the command "python ratKrakDBCreationScript.py" will automatically create a (default) Kraken database with the name HumanVirusBacteriaRat.
+Invoking the command `python ratKrakDBCreationScript.py` will automatically create a (default) Kraken database with the name HumanVirusBacteriaRat.
 
 It is best to run this command within a separate directory which has already been named appropriately (i.e.: I ran this command once I had created the directory "ratKrakDB").
 
 This script will create an arachael genome, human genome, bacterial genome, viral genome and rat genome.
 
 **Custom Database**  
-If you wish to create your own custom database, merely add the following lines to ratKrakDBCreationScript.py such that <$ID> is changed to the taxonomic ID for the genome/species/reference sequence you wish to incorporate before running the script. 
+If you wish to create your own custom database, merely add the following lines to ratKrakDBCreationScript.py such that `<$ID>` is changed to the taxonomic ID for the genome/species/reference sequence you wish to incorporate before running the script. 
 
 `print('Downloading <$ANY> genome'+'\n')  
 download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')  
@@ -177,7 +177,7 @@ This file details the output from running a Kraken classification.
 ##### makeDB.sh
 THIS SCRIPT MUST BE RUN FROM WITHIN THE ORIGINAL KAIJU DIRECTORY WHERE ALL OTHER .SH SCRIPTS ARE CONTAINED. DO NOT ATTEMPT TO RUN THIS SCRIPT OUTSIDE OF THIS ENVIRONMENT.  
 
-Invoking the command 'makeDB.sh -e -v -t 12' will automatically create a Kaiju database. The name of
+Invoking the command `makeDB.sh -e -v -t 12` will automatically create a Kaiju database. The name of
 the database is not relevant as it is not included within the commands to query the database.
 It is best to run this command within a separate directory which has already been named appropriately (i.e.: I ran this command once I had created a directory called "kaijudb".)
 This script will create arachael genome, human genome, bacterial genome and viral genome.
@@ -350,16 +350,16 @@ A simpler and more streamlined command for those who do not wish to choose any o
 `./classify_metagenome.sh -O (or -P for paired-reads) sample.fa (or samples.L.txt samples.R.txt if using paired reads) -R <$RESULTS_DIR> -m 0 -n 8`
 
 **PAIRED-READS**  
-samples.L.txt MUST CONTAIN ALL R1 READS IN CORRECT ORDER  
-samples.R.txt MUST CONTAIN ALL R2 READS IN CORRECT ORDER
+`samples.L.txt` MUST CONTAIN ALL R1 READS IN CORRECT ORDER  
+`samples.R.txt` MUST CONTAIN ALL R2 READS IN CORRECT ORDER
 
 Example:  
-samples.L.txt would contain:  
+`samples.L.txt` would contain:  
 sample1.R1.txt  
 sample2.R1.txt  
 sample3.R1.txt
 
-samples.R.txt would contain:  
+`samples.R.txt` would contain:  
 sample1.R2.txt  
 sample2.R2.txt  
 sample3.R3.txt

@@ -387,7 +387,11 @@ per year), rat sample wordcloud.
 This generates an RMarkdown document to your liking. Can be modified to include whichever 
 figures take the user's fancy. At this moment in time includes all relevant figures. Please
 run the FigureGen.R before attempting to render the RMarkdown document, all figures must be
-generated at least once beforehand.
+generated at least once beforehand.  
+  
+#### BenchmarkTable.R  
+
+This takes the resulting abundance tables produced from each classifier and tallies as well as performs analytical tests. All data considered is sample data designed to benchmark the classifiers with previously known/realised content. This script could theoretically be used to analyse other data if changed accordingly.
 
 ----------------------------------------------------------------------------------
 ## ncbiScripts

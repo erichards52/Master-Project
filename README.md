@@ -40,7 +40,7 @@ Classification can be run immediately utilising the custom database created duri
 
 In order to run Kraken classification, invoke the following command:
 
-------------------------
+
 Without explanation:
 
 `kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq`
@@ -76,7 +76,6 @@ Converts the resulting Kraken classification output files ito krona-friendly fil
 
 If you wish to convert the Kraken output into Krona friendly output, invoke the following command:
 
-------------------------
 Without explanation:
 
 `cut -f2,3 <$OUTPUT_INPUT> > <$OUTPUT>`
@@ -96,7 +95,6 @@ With explanation:
 Converts the resulting krona-friendly Kraken output file to an html krona file.  
 ktImportTaxonomy is part of KronaTools.
 
-------------------------
 Without explanation:
 
 `ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html`
@@ -115,7 +113,6 @@ With explanation:
 Creates Kraken reports from Kraken outputs.
 
 
-------------------------
 Without explanation:  
 
 `kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`  
@@ -142,7 +139,6 @@ In order to use Bracken, several Kraken commands must be run. These are detailed
 ##### brackScript.sh  
 Converts original Kraken database into a Bracken-friendly database.  
 
-------------------------
 Without explanation:  
 
 `kraken --db=<$DIR_DB> --<$FASTA_INPUT> --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
@@ -179,7 +175,7 @@ For an example, please see dBScripts/Kraken/testDataScripts
 ------------------------
 ##### brackReports.sh 
 Converts Kraken reports to Bracken reports.  
-------------------------
+
 Without explanation:  
 
 `python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>`  
@@ -272,7 +268,7 @@ Please see kaijuOutAll.sh for example.
 
 ##### kaijuSummaries.sh  
 This script converts all Kaiju outputs to Kaiju summaries.  
-------------------------
+
 Without explanation:  
 
 `./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary`  
@@ -292,7 +288,6 @@ With explanation:
 ##### kaiju2kronaResults.sh  
 Converts Kaiju classification output to a krona-friendly output.
 
-------------------------
 Without explanation:
 
 `kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>`
@@ -310,7 +305,6 @@ With explanation:
 Converts the resulting krona-friendly Kaiju classification output to a Krona html file.
 ktImportText is part of KronaTools & it should be installed before attempting this.  
 
-------------------------
 Without explanation:
 
 `ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>`
@@ -425,7 +419,7 @@ sample3.R3.txt
 
 ##### getAbundance.sh  
 Calculates & creates an abundance table as well as krona file (.krn) from the CLARK results.  
-------------------------
+
 Without explanation:  
 
 `./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv`  
@@ -444,7 +438,6 @@ A krona file is automatically generated in the directory where the script is run
 
 ##### kronaScripts.sh  
 Converts the krona file(s) generated in the previous script into an html file.  
-------------------------
 
 Without explanation:  
 

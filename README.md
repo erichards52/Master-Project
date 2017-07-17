@@ -115,7 +115,6 @@ With explanation:
 Creates Kraken reports from Kraken outputs.
 
 
-Creates Kraken reports from Kraken outputs
 ------------------------
 Without explanation:  
 

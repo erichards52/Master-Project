@@ -50,7 +50,6 @@ With explanation:
 
 `kraken --preload (preloads database) --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq`
 
-  **why** 
   
   
 `preload` allows the user to preload the database, useful if carrying out multiple classifications.  

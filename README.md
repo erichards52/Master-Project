@@ -10,8 +10,7 @@ This project was designed with the Centre for Virus Reseach (CVR) in mind. While
 
 **FINALLY, IN EACH CLASSIFICATION WALKTHROUGH, IT IS ASSUMED THE USER HAS DOWNLOADED AND INSTALLED EACH CLASSIFIER AND HAD A LOOK AT THE SCRIPTS CONTAINED IN EACH**
 
-## dBScripts
-The directory dBScripts contains scripts which create databases for each classifier.
+--------------------------------------------------------------------------------------------------------
 
 ### Kraken
 
@@ -57,7 +56,13 @@ With explanation:
 `preload` allows the user to preload the database, useful if carrying out multiple classifications.  
 `fastq-input` allows the user to use FASTQ files rather than FASTA.  
 `--paired` allows the user to use paired-end reads.  
-`<$DIR_DB>` can be replaced with the database that you have made (i.e.: mine is HumanVirusBacteriaRat) 
+`<$DIR_DB>` can be replaced with the database that you have made (i.e.: mine is HumanVirusBacteriaRat).
+
+
+`preload` allows the user to preload the database, useful if carrying out multiple classifications.  
+`fastq-input` allows the user to use FASTQ files rather than FASTA.  
+`--paired` allows the user to use paired-end reads.  
+`<$DIR_DB>` can be replaced with the database that you have made (i.e. mine is HumanVirusBacteriaRat).
 ------------------------
 
 In order to store output, you could either create a bash script and concatenante the output: (i.e.: KrakenClassificationScript.sh > KrakenOutput.txt) or simply concatenate the command itself: 

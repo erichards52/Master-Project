@@ -113,6 +113,9 @@ With explanation:
 ##### krakReportAll.sh
 
 Creates Kraken reports from Kraken outputs.
+
+
+Creates Kraken reports from Kraken outputs
 ------------------------
 Without explanation:  
 
@@ -124,7 +127,9 @@ With explanation:
 `kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`
 
 `<$DIR_DB>` can be replaced with the Kraken database directory (i.e. Mine is HumanVirusBacteriaRat).
+
 `<$KRAK_OUTPUT>` is the resulting output from the original classification of a sequence.
+
 `<$KRAK_REPORT>` is the resulting report file produced by Kraken.
 ------------------------
 

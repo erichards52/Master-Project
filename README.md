@@ -8,7 +8,7 @@ This project was designed with the Centre for Virus Reseach (CVR) in mind. While
 
 **LASTLY, YOU SHOULD HAVE KRONATOOLS INSTALLED IF YOU WISH TO CONVERT THE RESULTING OUTPUTS OF EACH CLASSIFIER INTO KRONA OUTPUTS**
 
-**FINALLY, IN EACH CLASSIFICATION WALKTHROUGH, IT IS ASSUMED THE USER HAS DOWNLOADED AND INSTALLED EACH CLASSIFIER AND HAD A LOOK AT THE SCRIPTS CONTAINED IN EACH**
+**FINALLY, IN EACH CLASSIFICATION WALKTHROUGH, IT IS ASSUMED THE USER AT LEAST HAS DOWNLOADED AND INSTALLED EACH CLASSIFIER AND HAD A LOOK AT THE SCRIPTS & MANUALS CONTAINED IN EACH**
 
 --------------------------------------------------------------------------------------------------------
 
@@ -84,7 +84,7 @@ With explanation:
 
 `cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>`
 
-`<$OUTPUT_INPUT>` should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.
+`<$OUTPUT_INPUT>` should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.  
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting Krona-friendly output.
 
 ------------------------
@@ -110,16 +110,20 @@ With explanation:
 ------------------------
 ##### krakReportAll.sh  
 Creates Kraken reports from Kraken outputs.  
-  
-Without explanation:
+------------------------
+Without explanation:  
+
 `kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`  
-  
+------------------------
+
 With explanation:  
+
 `kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>` 
 
 `<$DIR_DB>` can be replaced with the Kraken database directory (i.e. Mine is HumanVirusBacteriaRat).  
 `<$KRAK_OUTPUT>` is the resulting output from the original classification of a sequence.  
 `<$KRAK_REPORT>` is the resulting report file produced by Kraken.
+------------------------
 
 #### Bracken  
 BEFORE RUNNING BRACKEN, PLEASE MAKE SURE YOU HAVE THE KRAKEN REPORTS FOR THE SEQUENCES OF INTEREST. KRAKEN REPORTS ARE GENERATED USING KRAKEN-REPORT. PLEASE REFER TO krakReportAll.sh
@@ -131,16 +135,17 @@ In order to use Bracken, several Kraken commands must be run. These are detailed
 ##### brackScript.sh  
 Converts original Kraken database into a Bracken-friendly database.  
 
+------------------------
 Without explanation:  
 
 `kraken --db=<$DIR_DB> --<$FASTA_INPUT> --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
   
-  
+------------------------ 
 `perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts`  
-  
+------------------------  
   
 `python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`
-  
+------------------------
 With explanation:  
 
 `kraken --db=<$DIR_DB> --fasta-input (assumes reference sequences are fasta input) --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
@@ -149,12 +154,13 @@ With explanation:
 `<$DIR_DB/FA_SEQ_DIR>` can be replaced with the directory in which the reference sequences (.fna) reside.  
 `database.kraken` is the resulting concatenated output file. The name can be changed but the suffix `.kraken` should be kept.
 
-  
+------------------------
 `perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts`  
 
 `<$DIR_DB>` can be replaced with the directory in which the database can be found (i.e. HumanBacteriaVirusRat again).  
 `database.kraken` is the concatenated output file from the last command, it can be renamed as previously mentioned.  
 `database75mers.kraken_cnts` is the resulting database output required to run Bracken, as it manipulates the original database. Although it can be renamed, keeping these file names is probably a good idea. A read-length of 75 is the default.
+------------------------
 
 `python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`  
 
@@ -163,17 +169,23 @@ With explanation:
 
 
 For an example, please see dBScripts/Kraken/testDataScripts  
-
+------------------------
 ##### brackReports.sh 
 Converts Kraken reports to Bracken reports.  
-
+------------------------
 Without explanation:  
+
 `python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>`  
 
+------------------------
 With explanation:  
+
 `python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>`  
 
-`<$REPORT>` can be replaced with the resulting Kraken output file from using
+`<$REPORT>` can be replaced with a Kraken report file.  
+`<$OUTPUT_FILE>` can be replaced with the desired name for the resulting Bracken report.
+
+------------------------
 
 #### Extras 
 
@@ -249,19 +261,24 @@ With explanation:
 `<$PAIRED_READ_INPUT_FASTQ/A>` should be replaced with a paired-read file if necessary.  
   
 Please see kaijuOutAll.sh for example.
+------------------------
 
 ##### kaijuSummaries.sh  
 This script converts all Kaiju outputs to Kaiju summaries.  
-
+------------------------
 Without explanation:  
-`./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary`  
 
+`./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary`  
+------------------------
 With explanation:  
+
 `./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary`  
 
 `<$KAIJU_OUTPUT>` should be replaced with the output resulting from a Kaiju classificaton.  
 `<$TAX_LEVEL>` should be replaced with the desired level of taxonomy for the resulting summary file (i.e. species)  
 `<$RESULT_FILE>` should be replaced with the desired summary output filename.  
+
+------------------------
 
 #### Kaiju Krona/KronaScripts
   
@@ -281,6 +298,7 @@ With explanation:
 `<$KAIJU_OUTPUT>` is replaced with the output originally obtained from Kaiju classification.  
 `<$KRONA_OUTPUT>` is the resulting output and can be renamed to whatever the user wishes.
 
+------------------------
 ##### kronatoHtml.sh  
 Converts the resulting krona-friendly Kaiju classification output to a Krona html file.
 ktImportText is part of KronaTools & it should be installed before attempting this.  
@@ -377,6 +395,7 @@ This script adheres to the options shown in the above script, however, the comma
 
 Please have a look at metaClarkOutAllSamples.sh for more information.  
 
+------------------------
 
 **PAIRED-READS**  
 `samples.L.txt` MUST CONTAIN ALL R1 READS IN CORRECT ORDER  
@@ -399,11 +418,14 @@ sample3.R3.txt
 
 ##### getAbundance.sh  
 Calculates & creates an abundance table as well as krona file (.krn) from the CLARK results.  
-
+------------------------
 Without explanation:  
+
 `./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv`  
+------------------------
 
 With explanation:  
+
 `./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv` 
 `<$CLARK_OUTPUT>` should be replaced with the output from a CLARK classification.  
 `<$DB_DIR>` should be replaced with the CLARK database directory.  
@@ -411,20 +433,27 @@ With explanation:
 
 A krona file is automatically generated in the directory where the script is run.
 
+------------------------
+
 ##### kronaScripts.sh  
 Converts the krona file(s) generated in the previous script into an html file.  
+------------------------
 
 Without explanation:  
+
 `ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn`  
 
+------------------------
+
 With explanation: 
+
 `ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn`  
 `<$HTML_FILE>` can be replaced with the output HTML file desired.  
 `<$KRONA_FILE>` can be replaced with the krona file generated from the previous script.  
 
 Both scripts above are written several times for each of the different CLARK types (CLARK-l & CLARK-S). Please refer to the scripts in the relevant sub-directories for more information.
 
----------
+------------------------
 #### Extras  
 
 ##### clarkOutHelp.txt  

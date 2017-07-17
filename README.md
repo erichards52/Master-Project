@@ -51,11 +51,10 @@ With explanation:
 
 `kraken --preload (preloads database) --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq`
   
-
 `preload` allows the user to preload the database, useful if carrying out multiple classifications.  
 `fastq-input` allows the user to use FASTQ files rather than FASTA.  
 `--paired` allows the user to use paired-end reads.  
-`<$DIR_DB>` can be replaced with the database that you have made (i.e.: mine is HumanVirusBacteriaRat)
+`<$DIR_DB>` can be replaced with the database that you have made (i.e.: mine is HumanVirusBacteriaRat) 
 ------------------------
 
 In order to store output, you could either create a bash script and concatenante the output: (i.e.: KrakenClassificationScript.sh > KrakenOutput.txt) or simply concatenate the command itself: 

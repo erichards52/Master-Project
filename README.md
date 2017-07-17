@@ -6,10 +6,11 @@ This project was designed with the Centre for Virus Reseach (CVR) in mind. While
 
 **IF YOU WISH TO UTILISE THE DATABASE WHICH WAS PREVIOUSLY CREATED IN ORDER TO PERFORM YOUR OWN CLASSIFICATION, MERELY USE THE EXAMPLE CLASSIFICATION SCRIPTS LISTED FOR EACH CLASSIFIER (testDataScripts/Classification Scripts)**  
 
-**LASTLY, YOU SHOULD HAVE KRONATOOLS INSTALLED IF YOU WISH TO CONVERT THE RESULTING OUTPUTS OF EACH CLASSIFIER INTO KRONA OUTPUTS**
+**KRONATOOLS SHOULD BE INSTALLED IF YOU WISH TO CONVERT THE RESULTING OUTPUTS OF EACH CLASSIFIER INTO KRONA OUTPUTS**
 
-## dBScripts
-The directory dBScripts contains scripts which create databases for each classifier.
+**FINALLY, IN EACH CLASSIFICATION WALKTHROUGH, IT IS ASSUMED THE USER HAS AT LEAST DOWNLOADED AND INSTALLED EACH CLASSIFIER AND HAD A LOOK AT THE SCRIPTS & MANUALS CONTAINED IN EACH**
+
+--------------------------------------------------------------------------------------------------------
 
 ### Kraken
 
@@ -33,12 +34,12 @@ get_fasta_in_kraken_format('<$ANY>_genome.fa')`
 Replace `<$ANY>` with whatever you would like to name your genome.
 Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
-#### Classification Scripts/testDataScripts
+#### Classification Scripts/testDataScripts  
 Classification can be run immediately utilising the custom database created during this project ("HumanVirusBacteriaRat").
 
 In order to run Kraken classification, invoke the following command:
 
-------------------------
+
 Without explanation:
 
 `kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq`
@@ -46,7 +47,16 @@ Without explanation:
 ------------------------
 With explanation:
 
-`kraken --preload (preloads database) --threads 12 (number of threads) --fastq-input (remove for fa/fasta files) --paired (remove if not paired-end reads) --db <$DIR_DB> (replace <$DIR_DB> with database that you have made (i.e.: mine is HumanVirusBacteriaRat) sample1.R1.fq sample2.R2.fq`
+`kraken --preload (preloads database) --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq`
+
+  
+  
+`preload` allows the user to preload the database, useful if carrying out multiple classifications.  
+`fastq-input` allows the user to use FASTQ files rather than FASTA.  
+`--paired` allows the user to use paired-end reads.  
+`<$DIR_DB>` can be replaced with the database that you have made (i.e.: mine is HumanVirusBacteriaRat).
+
+
 
 ------------------------
 
@@ -56,6 +66,8 @@ In order to store output, you could either create a bash script and concatenante
 
 If you wish to see an example of this in use, please see krakOutAll.sh  
 
+------------------------
+
 #### Kraken Krona/KronaScripts
 
 ##### cutKrakResults  
@@ -63,18 +75,19 @@ Converts the resulting Kraken classification output files ito krona-friendly fil
 
 If you wish to convert the Kraken output into Krona friendly output, invoke the following command:
 
-------------------------
 Without explanation:
 
 `cut -f2,3 <$OUTPUT_INPUT> > <$OUTPUT>`
+
 
 ------------------------
 With explanation:
 
 `cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>`
 
-`<$OUTPUT_INPUT>` should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.
+`<$OUTPUT_INPUT>` should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.  
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting Krona-friendly output.
+
 
 ------------------------
 
@@ -83,10 +96,10 @@ With explanation:
 Converts the resulting krona-friendly Kraken output file to an html krona file.  
 ktImportTaxonomy is part of KronaTools.
 
-------------------------
 Without explanation:
 
 `ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html`
+
 
 ------------------------
 With explanation:
@@ -97,18 +110,30 @@ With explanation:
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting krona html file.
 
 ------------------------
-##### krakReportAll.sh  
-Creates Kraken reports from Kraken outputs.  
-  
-Without explanation:
-`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`  
-  
-With explanation:  
-`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>` 
+##### krakReportAll.sh
 
-`<$DIR_DB>` can be replaced with the Kraken database directory (i.e. Mine is HumanVirusBacteriaRat).  
-`<$KRAK_OUTPUT>` is the resulting output from the original classification of a sequence.  
+Creates Kraken reports from Kraken outputs.
+
+
+Without explanation:  
+
+`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`
+
+
+------------------------
+
+With explanation:  
+
+`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`
+
+`<$DIR_DB>` can be replaced with the Kraken database directory (i.e. Mine is HumanVirusBacteriaRat).
+
+`<$KRAK_OUTPUT>` is the resulting output from the original classification of a sequence.
+
 `<$KRAK_REPORT>` is the resulting report file produced by Kraken.
+
+
+------------------------
 
 #### Bracken  
 BEFORE RUNNING BRACKEN, PLEASE MAKE SURE YOU HAVE THE KRAKEN REPORTS FOR THE SEQUENCES OF INTEREST. KRAKEN REPORTS ARE GENERATED USING KRAKEN-REPORT. PLEASE REFER TO krakReportAll.sh
@@ -125,11 +150,16 @@ Without explanation:
 `kraken --db=<$DIR_DB> --<$FASTA_INPUT> --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
   
   
-`perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts`  
-  
+------------------------ 
+`perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts` 
+
+
+------------------------  
   
 `python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`
-  
+
+
+------------------------
 With explanation:  
 
 `kraken --db=<$DIR_DB> --fasta-input (assumes reference sequences are fasta input) --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
@@ -138,12 +168,16 @@ With explanation:
 `<$DIR_DB/FA_SEQ_DIR>` can be replaced with the directory in which the reference sequences (.fna) reside.  
 `database.kraken` is the resulting concatenated output file. The name can be changed but the suffix `.kraken` should be kept.
 
-  
+
+------------------------
 `perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts`  
 
 `<$DIR_DB>` can be replaced with the directory in which the database can be found (i.e. HumanBacteriaVirusRat again).  
 `database.kraken` is the concatenated output file from the last command, it can be renamed as previously mentioned.  
 `database75mers.kraken_cnts` is the resulting database output required to run Bracken, as it manipulates the original database. Although it can be renamed, keeping these file names is probably a good idea. A read-length of 75 is the default.
+
+
+------------------------
 
 `python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`  
 
@@ -153,16 +187,26 @@ With explanation:
 
 For an example, please see dBScripts/Kraken/testDataScripts  
 
+
+------------------------
 ##### brackReports.sh 
 Converts Kraken reports to Bracken reports.  
 
 Without explanation:  
-`python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>`  
 
+`python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>` 
+
+
+------------------------
 With explanation:  
+
 `python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>`  
 
-`<$REPORT>` can be replaced with the resulting Kraken output file from using
+`<$REPORT>` can be replaced with a Kraken report file.  
+`<$OUTPUT_FILE>` can be replaced with the desired name for the resulting Bracken report.
+
+
+------------------------
 
 #### Extras 
 
@@ -174,11 +218,7 @@ This file details the output from running a Kraken classification.
 
 ### Kaiju
 
-#### dbCreation
-
-##### makeDB.sh
-THIS SCRIPT MUST BE RUN FROM WITHIN THE ORIGINAL KAIJU DIRECTORY WHERE ALL OTHER .SH SCRIPTS ARE CONTAINED. DO NOT ATTEMPT TO RUN THIS SCRIPT OUTSIDE OF THIS ENVIRONMENT.  
-
+#### dbCreation  
 Invoking the command `makeDB.sh -e -v -t 12` will automatically create a Kaiju database. The name of
 the database is not relevant as it is not included within the commands to query the database.
 It is best to run this command within a separate directory which has already been named appropriately (i.e.: I ran this command once I had created a directory called "kaijudb".)
@@ -227,10 +267,12 @@ Classification can be run immediately utilising the custom database created duri
 
 In order to run Kaiju classification, invoke the following command:
 
+
 ------------------------
 Without explanation:
 
 `kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A -o <$OUTPUT>`
+
 
 ------------------------
 With explanation:
@@ -243,15 +285,39 @@ With explanation:
   
 Please see kaijuOutAll.sh for example.
 
+
+------------------------
+
+##### kaijuSummaries.sh  
+This script converts all Kaiju outputs to Kaiju summaries.  
+
+Without explanation:  
+
+`./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary`  
+
+
+
+------------------------
+With explanation:  
+
+`./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary`  
+
+`<$KAIJU_OUTPUT>` should be replaced with the output resulting from a Kaiju classificaton.  
+`<$TAX_LEVEL>` should be replaced with the desired level of taxonomy for the resulting summary file (i.e. species)  
+`<$RESULT_FILE>` should be replaced with the desired summary output filename.  
+
+
+------------------------
+
 #### Kaiju Krona/KronaScripts
   
 ##### kaiju2kronaResults.sh  
 Converts Kaiju classification output to a krona-friendly output.
 
-------------------------
 Without explanation:
 
 `kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>`
+
 
 ------------------------
 With explanation:
@@ -261,14 +327,16 @@ With explanation:
 `<$KAIJU_OUTPUT>` is replaced with the output originally obtained from Kaiju classification.  
 `<$KRONA_OUTPUT>` is the resulting output and can be renamed to whatever the user wishes.
 
+
+------------------------
 ##### kronatoHtml.sh  
 Converts the resulting krona-friendly Kaiju classification output to a Krona html file.
 ktImportText is part of KronaTools & it should be installed before attempting this.  
 
-------------------------
 Without explanation:
 
 `ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>`
+
 
 ------------------------
 With explanation:
@@ -283,8 +351,8 @@ With explanation:
 ##### KaijuOutputHelp.txt  
 This file details the output from running a Kaiju classification.
 
-------------------------
 
+------------------------
 
 ### CLARK
   
@@ -292,10 +360,6 @@ In all scripts below, `<$DIR_DB>` can be replaced with the directory in which yo
 Additionally, `Custom`, in all scripts below, references the Custom folder/directory in which all reference sequences should be kept ( which should be kept inside `<$DIR_DB>`)  
 
 #### dbCreationScripts  
-
-##### set_targets.sh
-THIS SCRIPT MUST BE RUN FROM WITHIN THE ORIGINAL CLARK DIRECTORY WHERE ALL OTHER .SH SCRIPTS ARE CONTAINED. DO NOT ATTEMPT TO RUN THIS SCRIPT OUTSIDE OF THIS ENVIRONMENT.  
-
 CLARK must be told what genomes/reference sequences you would like to use in order to classify reads of interest.  
 This can be done using the command `sh set_targets.sh <$DIR_DB> human viruses bacteria`, which creates a default database containing human, viral and bacteria genome(s).  
 
@@ -319,37 +383,55 @@ Replace `<$ANY>` with whatever you would like to name your genome.
 Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
 **Custom Database Continued**  
-The command `custom` allows for the selection of a genome or reference sequence of your choosing (it references the custom folder). 
-It is possible to invoke the command: `sh set_targets.sh <$DIR_DB> human viruses bacteria custom` if you would still like to download the default human, viral and bacteria genome(s).  
-However, if you only wish to utilise the custom database you have created, merely type: `sh set_targets.sh <$DIR_DB> custom`.
+It is possible to invoke the command: `sh set_targets.sh <$DIR_DB> human viruses bacteria` if you would like to download the default database including the human, viral and bacteria genome(s) (`<$DIR_DB>` can be replaced with whatever you would like to name the database directory (I named mine "DBD") - you must create this directory inside the original CLARK directory).  
+However, if you only wish to utilise a custom database you have created, several steps are involved:
 
-`<$DIR_DB>` can be replaced with whatever you would like to name the database directory (I've named this one DBD). You must create this directory inside the original CLARK directory.
+In order to include a reference sequence(s)/genome(s) of your choosing, you must create a directory inside `<$DIR_DB>` called `Custom`. As stated in the previous scripts (HumanBacteriaRat.py & archaeaViralPlasmid.sh), you must download all reference sequences to the `Custom` folder before running `set_targets.sh` from the original CLARK directory. Once this is done, merely type: `sh set_targets.sh <$DIR_DB> custom`. The command `custom` allows for the selection of a genome or reference sequence of your choosing (it references the custom folder). 
 
-In order to include a reference sequence(s)/genome(s) of your choosing, you must create a directory inside `<$DIR_DB>` called `Custom`. 
-As stated in the previous scripts (HumanBacteriaRat.py & archaeaViralPlasmid.sh), you must download all reference sequences to the custom folder before running `set_targets.sh` from the original CLARK directory.
+Finally, if you wish to use CLARK-S, you must first run a sample classification in order to generate the database, and then invoke the command `sh buildSpacedDB.sh` from the CLARK directory (as this builds a CLARK-S/spaced k-mer friendly database).
 
-#### Classification Scripts  
+#### Classification Scripts/testDataScripts  
+Classification on sample sequences was run using CLARK, CLARK-l & CLARK-S. All of these scripts can be found in the relevant sub-directories for each classifier.  
 Classification can be run immediately utilising the custom database created during this project ("DBD").  
 
 In order to run classification, CLARK must first generate a database of specific sized k-mers. Here, only the default size has been used (31-mers). The database is created by simply invoking the main CLARK classification command as follows: 
+
 
 ------------------------
 Without explanation:
 
 `CLARK -T <$DIR_DB>/targets.txt -D <$DIR_DB> -P samples.L.txt samples.R.txt -R <$RESULTS_DIR> -m 0 -n 12 --extended`
 
+
 ------------------------
 
 With explanation:
 
-`CLARK -T <$DIR_DB>/targets.txt -D <$DIR_DB> -P (or -O sample.fa for non-paired-end reads) samples.L.txt samples.R.txt -R <$RESULTS_DIR> (replace <$RESULTS_DIR> with wherever you want to keep these results) -m 0 (-m 0 is full mode (more results), use -m 2 for express mode) -n 12 (number of threads) --extended (more results)`
+`CLARK -T <$DIR_DB>/targets.txt -D <$DIR_DB> -P samples.L.txt samples.R.txt -R <$RESULTS_DIR> -m 0 -n 12 --extended`  
+
+`-P` is only for paired-end reads. The command `-O` should be used for reads which are not paired-end.  
+`<$RESULTS_DIR>` can be replaced with wherever you want to keep these results.  
+`-m 0` is full mode (more results), use `-m 2` for express mode.
+`--extended` provides further results.
+The `targets.txt` file is generated by the initial "set_targets.sh" command and is located in the `<$DIR_DB>`.  
+For `samples.L.txt` and `samples.R.txt` please have a look at the paired-reads example below.
+
+Please have a look at any of the ClarkOutAllSamples.sh scripts for more information.
+
 
 ------------------------
-The targets.txt file is generated by the initial `set_targets.sh` command and is located in the <$DIR_DB>
 
-A simpler and more streamlined command for those who do not wish to choose any options:
 
-`./classify_metagenome.sh -O (or -P for paired-reads) sample.fa (or samples.L.txt samples.R.txt if using paired reads) -R <$RESULTS_DIR> -m 0 -n 8`
+A simpler and more streamlined command of CLARK is as follows:
+
+`./classify_metagenome.sh -O sample.fa -R <$RESULTS_DIR> -m 0 -n 8`  
+
+This script adheres to the options shown in the above script, however, the command `--spaced` can be added at the end in order to use CLARK-S.
+
+Please have a look at metaClarkOutAllSamples.sh for more information. 
+
+
+------------------------
 
 **PAIRED-READS**  
 `samples.L.txt` MUST CONTAIN ALL R1 READS IN CORRECT ORDER  
@@ -365,6 +447,58 @@ sample3.R1.txt
 sample1.R2.txt  
 sample2.R2.txt  
 sample3.R3.txt
+  
+-------------------------
+
+#### CLARK Krona/kronaScripts 
+
+##### getAbundance.sh  
+Calculates & creates an abundance table as well as krona file (.krn) from the CLARK results.  
+
+Without explanation:  
+
+`./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv`  
+
+
+------------------------
+
+With explanation:  
+
+`./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv` 
+`<$CLARK_OUTPUT>` should be replaced with the output from a CLARK classification.  
+`<$DB_DIR>` should be replaced with the CLARK database directory.  
+`<$RESULT_FILE>` should be replaced with the desired output filename.  
+
+A krona file is automatically generated in the directory where the script is run.
+
+
+------------------------
+
+##### kronaScripts.sh  
+Converts the krona file(s) generated in the previous script into an html file.  
+
+Without explanation:  
+
+`ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn`  
+
+
+------------------------
+
+With explanation: 
+
+`ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn`  
+`<$HTML_FILE>` can be replaced with the output HTML file desired.  
+`<$KRONA_FILE>` can be replaced with the krona file generated from the previous script.  
+
+Both scripts above are written several times for each of the different CLARK types (CLARK-l & CLARK-S). Please refer to the scripts in the relevant sub-directories for more information.
+
+
+------------------------
+#### Extras  
+
+##### clarkOutHelp.txt  
+Details the output of a CLARK classification.
+
 
 ------------------------------------------------------------------------------------
 
@@ -394,6 +528,7 @@ generated at least once beforehand.
 #### BenchmarkTable.R  
 
 This takes the resulting abundance tables produced from each classifier and tallies as well as performs analytical tests. All data considered is sample data designed to benchmark the classifiers with previously known/realised content. This script could theoretically be used to analyse other data if changed accordingly.
+
 
 ----------------------------------------------------------------------------------
 ## ncbiScripts

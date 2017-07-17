@@ -35,7 +35,6 @@ Replace `<$ANY>` with whatever you would like to name your genome.
 Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
 #### Classification Scripts/testDataScripts  
-This section covers all scripts found in "testDataScripts" in each classifier sub-directory.  
 Classification can be run immediately utilising the custom database created during this project ("HumanVirusBacteriaRat").
 
 In order to run Kraken classification, invoke the following command:

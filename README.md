@@ -67,6 +67,8 @@ In order to store output, you could either create a bash script and concatenante
 
 If you wish to see an example of this in use, please see krakOutAll.sh  
 
+------------------------
+
 #### Kraken Krona/KronaScripts
 
 ##### cutKrakResults  

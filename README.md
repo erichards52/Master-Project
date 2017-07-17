@@ -114,7 +114,9 @@ Creates Kraken reports from Kraken outputs.
 
 Without explanation:  
 
-`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`  
+`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`
+
+
 ------------------------
 
 With explanation:  

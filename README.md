@@ -79,6 +79,7 @@ Without explanation:
 
 `cut -f2,3 <$OUTPUT_INPUT> > <$OUTPUT>`
 
+
 ------------------------
 With explanation:
 
@@ -86,6 +87,7 @@ With explanation:
 
 `<$OUTPUT_INPUT>` should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.  
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting Krona-friendly output.
+
 
 ------------------------
 
@@ -97,6 +99,7 @@ ktImportTaxonomy is part of KronaTools.
 Without explanation:
 
 `ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html`
+
 
 ------------------------
 With explanation:
@@ -128,6 +131,8 @@ With explanation:
 `<$KRAK_OUTPUT>` is the resulting output from the original classification of a sequence.
 
 `<$KRAK_REPORT>` is the resulting report file produced by Kraken.
+
+
 ------------------------
 
 #### Bracken  
@@ -144,11 +149,16 @@ Without explanation:
 
 `kraken --db=<$DIR_DB> --<$FASTA_INPUT> --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
   
+  
 ------------------------ 
-`perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts`  
+`perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts` 
+
+
 ------------------------  
   
 `python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`
+
+
 ------------------------
 With explanation:  
 
@@ -158,12 +168,15 @@ With explanation:
 `<$DIR_DB/FA_SEQ_DIR>` can be replaced with the directory in which the reference sequences (.fna) reside.  
 `database.kraken` is the resulting concatenated output file. The name can be changed but the suffix `.kraken` should be kept.
 
+
 ------------------------
 `perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts`  
 
 `<$DIR_DB>` can be replaced with the directory in which the database can be found (i.e. HumanBacteriaVirusRat again).  
 `database.kraken` is the concatenated output file from the last command, it can be renamed as previously mentioned.  
 `database75mers.kraken_cnts` is the resulting database output required to run Bracken, as it manipulates the original database. Although it can be renamed, keeping these file names is probably a good idea. A read-length of 75 is the default.
+
+
 ------------------------
 
 `python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`  
@@ -173,13 +186,16 @@ With explanation:
 
 
 For an example, please see dBScripts/Kraken/testDataScripts  
+
+
 ------------------------
 ##### brackReports.sh 
 Converts Kraken reports to Bracken reports.  
 
 Without explanation:  
 
-`python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>`  
+`python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>` 
+
 
 ------------------------
 With explanation:  
@@ -188,6 +204,7 @@ With explanation:
 
 `<$REPORT>` can be replaced with a Kraken report file.  
 `<$OUTPUT_FILE>` can be replaced with the desired name for the resulting Bracken report.
+
 
 ------------------------
 
@@ -250,10 +267,12 @@ Classification can be run immediately utilising the custom database created duri
 
 In order to run Kaiju classification, invoke the following command:
 
+
 ------------------------
 Without explanation:
 
 `kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A -o <$OUTPUT>`
+
 
 ------------------------
 With explanation:
@@ -265,6 +284,8 @@ With explanation:
 `<$PAIRED_READ_INPUT_FASTQ/A>` should be replaced with a paired-read file if necessary.  
   
 Please see kaijuOutAll.sh for example.
+
+
 ------------------------
 
 ##### kaijuSummaries.sh  
@@ -273,6 +294,9 @@ This script converts all Kaiju outputs to Kaiju summaries.
 Without explanation:  
 
 `./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary`  
+
+
+
 ------------------------
 With explanation:  
 
@@ -281,6 +305,7 @@ With explanation:
 `<$KAIJU_OUTPUT>` should be replaced with the output resulting from a Kaiju classificaton.  
 `<$TAX_LEVEL>` should be replaced with the desired level of taxonomy for the resulting summary file (i.e. species)  
 `<$RESULT_FILE>` should be replaced with the desired summary output filename.  
+
 
 ------------------------
 
@@ -293,6 +318,7 @@ Without explanation:
 
 `kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>`
 
+
 ------------------------
 With explanation:
 
@@ -300,6 +326,7 @@ With explanation:
   
 `<$KAIJU_OUTPUT>` is replaced with the output originally obtained from Kaiju classification.  
 `<$KRONA_OUTPUT>` is the resulting output and can be renamed to whatever the user wishes.
+
 
 ------------------------
 ##### kronatoHtml.sh  
@@ -309,6 +336,7 @@ ktImportText is part of KronaTools & it should be installed before attempting th
 Without explanation:
 
 `ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>`
+
 
 ------------------------
 With explanation:
@@ -322,6 +350,7 @@ With explanation:
 
 ##### KaijuOutputHelp.txt  
 This file details the output from running a Kaiju classification.
+
 
 ------------------------
 
@@ -367,10 +396,12 @@ Classification can be run immediately utilising the custom database created duri
 
 In order to run classification, CLARK must first generate a database of specific sized k-mers. Here, only the default size has been used (31-mers). The database is created by simply invoking the main CLARK classification command as follows: 
 
+
 ------------------------
 Without explanation:
 
 `CLARK -T <$DIR_DB>/targets.txt -D <$DIR_DB> -P samples.L.txt samples.R.txt -R <$RESULTS_DIR> -m 0 -n 12 --extended`
+
 
 ------------------------
 
@@ -386,6 +417,8 @@ The `targets.txt` file is generated by the initial "set_targets.sh" command and 
 For `samples.L.txt` and `samples.R.txt` please have a look at the paired-reads example below.
 
 Please have a look at any of the ClarkOutAllSamples.sh scripts for more information.
+
+
 ------------------------
 
 
@@ -395,7 +428,8 @@ A simpler and more streamlined command of CLARK is as follows:
 
 This script adheres to the options shown in the above script, however, the command `--spaced` can be added at the end in order to use CLARK-S.
 
-Please have a look at metaClarkOutAllSamples.sh for more information.  
+Please have a look at metaClarkOutAllSamples.sh for more information. 
+
 
 ------------------------
 
@@ -424,6 +458,8 @@ Calculates & creates an abundance table as well as krona file (.krn) from the CL
 Without explanation:  
 
 `./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv`  
+
+
 ------------------------
 
 With explanation:  
@@ -435,6 +471,7 @@ With explanation:
 
 A krona file is automatically generated in the directory where the script is run.
 
+
 ------------------------
 
 ##### kronaScripts.sh  
@@ -443,6 +480,7 @@ Converts the krona file(s) generated in the previous script into an html file.
 Without explanation:  
 
 `ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn`  
+
 
 ------------------------
 
@@ -454,11 +492,14 @@ With explanation:
 
 Both scripts above are written several times for each of the different CLARK types (CLARK-l & CLARK-S). Please refer to the scripts in the relevant sub-directories for more information.
 
+
 ------------------------
 #### Extras  
 
 ##### clarkOutHelp.txt  
 Details the output of a CLARK classification.
+
+
 ------------------------------------------------------------------------------------
 
 
@@ -487,6 +528,7 @@ generated at least once beforehand.
 #### BenchmarkTable.R  
 
 This takes the resulting abundance tables produced from each classifier and tallies as well as performs analytical tests. All data considered is sample data designed to benchmark the classifiers with previously known/realised content. This script could theoretically be used to analyse other data if changed accordingly.
+
 
 ----------------------------------------------------------------------------------
 ## ncbiScripts

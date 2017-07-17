@@ -110,9 +110,9 @@ With explanation:
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting krona html file.
 
 ------------------------
-##### krakReportAll.sh  
+##### krakReportAll.sh
 
-Creates Kraken reports from Kraken outputs
+Creates Kraken reports from Kraken outputs.
 ------------------------
 Without explanation:  
 
@@ -121,10 +121,10 @@ Without explanation:
 
 With explanation:  
 
-`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>` 
+`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`
 
-`<$DIR_DB>` can be replaced with the Kraken database directory (i.e. Mine is HumanVirusBacteriaRat).  
-`<$KRAK_OUTPUT>` is the resulting output from the original classification of a sequence.  
+`<$DIR_DB>` can be replaced with the Kraken database directory (i.e. Mine is HumanVirusBacteriaRat).
+`<$KRAK_OUTPUT>` is the resulting output from the original classification of a sequence.
 `<$KRAK_REPORT>` is the resulting report file produced by Kraken.
 ------------------------
 

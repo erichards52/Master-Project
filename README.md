@@ -45,12 +45,16 @@ In order to run Kraken classification, invoke the following command:
 
 Without explanation:
 
-`kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq`
+```
+kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq
+```
 
 ------------------------
 With explanation:
 
-`kraken --preload (preloads database) --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq`
+```
+kraken --preload (preloads database) --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq
+```
 
   
   
@@ -65,7 +69,9 @@ With explanation:
 
 In order to store output, you could either create a bash script and concatenante the output: (i.e.: KrakenClassificationScript.sh > KrakenOutput.txt) or simply concatenate the command itself: 
 
-`kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq > KrakenOutput.txt`
+```
+kraken --preload --threads 12 --fastq-input --paired --db <$DIR_DB> sample1.R1.fq sample2.R2.fq > KrakenOutput.txt
+```
 
 If you wish to see an example of this in use, please see krakOutAll.sh  
 
@@ -80,13 +86,17 @@ If you wish to convert the Kraken output into Krona friendly output, invoke the 
 
 Without explanation:
 
-`cut -f2,3 <$OUTPUT_INPUT> > <$OUTPUT>`
+```
+cut -f2,3 <$OUTPUT_INPUT> > <$OUTPUT>
+```
 
 
 ------------------------
 With explanation:
 
-`cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>`
+```
+cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>
+```
 
 `<$OUTPUT_INPUT>` should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.  
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting Krona-friendly output.
@@ -101,13 +111,17 @@ ktImportTaxonomy is part of KronaTools.
 
 Without explanation:
 
-`ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html`
+```
+ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html
+```
 
 
 ------------------------
 With explanation:
 
-`ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html`
+```
+ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html
+```
 
 `<$OUTPUT_INPUT>` should be renamed to whichever krona-friendly Kraken classification output the user wishes to convert to a krona html file.  
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting krona html file.
@@ -120,14 +134,18 @@ Creates Kraken reports from Kraken outputs.
 
 Without explanation:  
 
-`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`
+```
+kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>
+```
 
 
 ------------------------
 
 With explanation:  
 
-`kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>`
+```
+kraken-report --db <$DIR_DB> <$KRAK_OUTPUT> > <$KRAK_REPORT>
+```
 
 `<$DIR_DB>` can be replaced with the Kraken database directory (i.e. Mine is HumanVirusBacteriaRat).
 
@@ -168,7 +186,9 @@ kraken --db=<$DIR_DB> --fasta-input (assumes reference sequences are fasta input
 
 
 ------------------------
-`perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts`  
+```
+perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts
+```  
 
 `<$DIR_DB>` can be replaced with the directory in which the database can be found (i.e. HumanBacteriaVirusRat again).  
 `database.kraken` is the concatenated output file from the last command, it can be renamed as previously mentioned.  
@@ -177,7 +197,9 @@ kraken --db=<$DIR_DB> --fasta-input (assumes reference sequences are fasta input
 
 ------------------------
 
-`python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`  
+```
+python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT
+```  
 
 `abundest_krak.TXT` is the resulting abundances output file produced by Bracken.  
 `database75mers.kraken_cnts` is the file produced from the previous command.  
@@ -192,13 +214,17 @@ Converts Kraken reports to Bracken reports.
 
 Without explanation:  
 
-`python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>` 
+```
+python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>
+``` 
 
 
 ------------------------
 With explanation:  
 
-`python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>`  
+```
+python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>
+```  
 
 `<$REPORT>` can be replaced with a Kraken report file.  
 `<$OUTPUT_FILE>` can be replaced with the desired name for the resulting Bracken report.
@@ -270,13 +296,17 @@ In order to run Kaiju classification, invoke the following command:
 ------------------------
 Without explanation:
 
-`kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A -o <$OUTPUT>`
+```
+kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A -o <$OUTPUT>
+```
 
 
 ------------------------
 With explanation:
 
-`kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A> -o <$OUTPUT>`
+```
+kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A> -o <$OUTPUT>
+```
 
 `-v` provides an extended output (verbose mode).
 `-x` leads to less false positive hits and should be enabled.
@@ -296,14 +326,18 @@ This script converts all Kaiju outputs to Kaiju summaries.
 
 Without explanation:  
 
-`./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary`  
+```
+./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary
+```  
 
 
 
 ------------------------
 With explanation:  
 
-`./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary`  
+```
+./kaijuReport -t kaijudb/nodes.dmp -n kaijudb/names.dmp -i <$KAIJU_OUTPUT>.out -r <$TAX_LEVEL> -o <$RESULT_FILE>.out.summary
+```  
 
 `<$KAIJU_OUTPUT>` should be replaced with the output resulting from a Kaiju classificaton.  
 `<$TAX_LEVEL>` should be replaced with the desired level of taxonomy for the resulting summary file (i.e. species)  
@@ -317,13 +351,17 @@ This script adds taxonomy names to a Kaiju output file.
 
 Without explanation: 
 
-`./addTaxonNames -u -t nodes.dmp -n names.dmp -i <$INPUT_FILE> -o <$OUTPUT_FILE>`
+```
+./addTaxonNames -u -t nodes.dmp -n names.dmp -i <$INPUT_FILE> -o <$OUTPUT_FILE>
+```
 
 
 --------------------
 With explanation:
 
-`./addTaxonNames -u -t nodes.dmp -n names.dmp -i <$INPUT_FILE> -o <$OUTPUT_FILE>`
+```
+./addTaxonNames -u -t nodes.dmp -n names.dmp -i <$INPUT_FILE> -o <$OUTPUT_FILE>
+```
 
 `-u` removes all reads which are unclassified.  
 `<$INPUT_FILE>` should be replaced with the relevant Kaiju output file.
@@ -341,13 +379,17 @@ Converts Kaiju classification output to a krona-friendly output.
 
 Without explanation:
 
-`kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>`
+```
+kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>
+```
 
 
 ------------------------
 With explanation:
 
-`kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>` 
+```
+kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>
+``` 
   
 `<$KAIJU_OUTPUT>` is replaced with the output originally obtained from Kaiju classification.  
 `<$KRONA_OUTPUT>` is the resulting output and can be renamed to whatever the user wishes.
@@ -360,13 +402,17 @@ ktImportText is part of KronaTools & it should be installed before attempting th
 
 Without explanation:
 
-`ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>`
+```
+ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>
+```
 
 
 ------------------------
 With explanation:
 
-`ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>` 
+```
+ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>
+``` 
 
 `<$OUTPUT.html>` should be renamed to whatever the user wishes to name the output 
 `<$OUTPUT_INPUT>` should be renamed to whatever the user named the relevant kaiju2krona output file
@@ -428,14 +474,18 @@ In order to run classification, CLARK must first generate a database of specific
 ------------------------
 Without explanation:
 
-`CLARK -T <$DIR_DB>/targets.txt -D <$DIR_DB> -P samples.L.txt samples.R.txt -R <$RESULTS_DIR> -m 0 -n 12 --extended`
+```
+CLARK -T <$DIR_DB>/targets.txt -D <$DIR_DB> -P samples.L.txt samples.R.txt -R <$RESULTS_DIR> -m 0 -n 12 --extended
+```
 
 
 ------------------------
 
 With explanation:
 
-`CLARK -T <$DIR_DB>/targets.txt -D <$DIR_DB> -P samples.L.txt samples.R.txt -R <$RESULTS_DIR> -m 0 -n 12 --extended`  
+```
+CLARK -T <$DIR_DB>/targets.txt -D <$DIR_DB> -P samples.L.txt samples.R.txt -R <$RESULTS_DIR> -m 0 -n 12 --extended
+```  
 
 `-P` is only for paired-end reads. The command `-O` should be used for reads which are not paired-end.  
 `<$RESULTS_DIR>` can be replaced with wherever you want to keep these results.  
@@ -452,7 +502,9 @@ Please have a look at any of the ClarkOutAllSamples.sh scripts for more informat
 
 A simpler and more streamlined command of CLARK is as follows:
 
-`./classify_metagenome.sh -O sample.fa -R <$RESULTS_DIR> -m 0 -n 8`  
+```
+./classify_metagenome.sh -O sample.fa -R <$RESULTS_DIR> -m 0 -n 8
+```  
 
 This script adheres to the options shown in the above script, however, the command `--spaced` can be added at the end in order to use CLARK-S.
 
@@ -466,7 +518,9 @@ Calculates & creates an abundance table as well as krona file (.krn) from the CL
 
 Without explanation:  
 
-`./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv`  
+```
+./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv
+```  
 
 
 ------------------------
@@ -507,14 +561,18 @@ Converts the krona file(s) generated in the previous script into an html file.
 
 Without explanation:  
 
-`ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn`  
+```
+ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn
+```  
 
 
 ------------------------
 
 With explanation: 
 
-`ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn`  
+```
+ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn
+```  
 `<$HTML_FILE>` can be replaced with the output HTML file desired.  
 `<$KRONA_FILE>` can be replaced with the krona file generated from the previous script.  
 

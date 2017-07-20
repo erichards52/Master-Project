@@ -13,6 +13,8 @@ Top Viral TaxID |	12131 |	7 |	147712
 Top Viral Name |	Human rhinovirus B14 |	Paenibacillus phage | phiIBB_Pl23	Rhinovirus B
 Top Viral Kmer Count |	73803 |	3449 |	3326
 
+
+
 ## MidgeNov
 
 Variables | Kaiju | CLARK | Kraken
@@ -25,6 +27,8 @@ Total # Viral | 40338 | 126182 | 109149
 Top Viral TaxID |	364745 |	30 |	364745
 Top Viral Name |	Choristoneura occidentalis granulovirus |	Paenibacillus phage phiIBB_Pl23 |	Choristoneura occidentalis granulovirus
 Top Viral Kmer Count |	29622 |	126181 |	100526
+
+
 
 ## TravChik
 
@@ -39,6 +43,8 @@ Top Viral TaxID |	37124 |	23 |	37124
 Top Viral Name |	Chikungunya virus |	Paenibacillus phage phiIBB_Pl23 |	Chikungunya virus
 Top Viral Kmer Count |	254087 |	284491 |	284258
 
+
+
 ## SRR062415
 
 Variables | Kaiju | CLARK | Kraken
@@ -51,6 +57,8 @@ Total # Viral | 3649 | 1195 | 2098
 Top Viral TaxID |	157239 |	281 |	157239
 Top Viral Name |	Haemophilus phage HP2 |	Paenibacillus phage phiIBB_Pl23 |	Haemophilus phage HP2
 Top Viral Kmer Count |	444 |	1177 |	1083
+
+
 
 ## SRR062462
 

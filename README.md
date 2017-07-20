@@ -35,6 +35,7 @@ get_fasta_in_kraken_format('<$ANY>_genome.fa')
 ```
 
 Replace `<$ANY>` with whatever you would like to name your genome.
+
 Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
 
 ## dbScripts/Kraken/testDataScripts  
@@ -59,8 +60,11 @@ kraken --preload (preloads database) --threads 12 --fastq-input --paired --db <$
   
   
 `preload` allows the user to preload the database, useful if carrying out multiple classifications.  
+
 `fastq-input` allows the user to use FASTQ files rather than FASTA.  
+
 `--paired` allows the user to use paired-end reads.  
+
 `<$DIR_DB>` can be replaced with the database that you have made (i.e.: mine is HumanVirusBacteriaRat).
 
 
@@ -98,7 +102,8 @@ With explanation:
 cut -f2,3 (removes columns not needed) <$OUTPUT_INPUT> > <$OUTPUT>
 ```
 
-`<$OUTPUT_INPUT>` should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.  
+`<$OUTPUT_INPUT>` should be renamed to whichever Kraken output the user wishes to convert to Krona-friendly input.
+
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting Krona-friendly output.
 
 
@@ -124,6 +129,7 @@ ktImportTaxonomy <$OUTPUT_INPUT> -o <$OUTPUT>.html
 ```
 
 `<$OUTPUT_INPUT>` should be renamed to whichever krona-friendly Kraken classification output the user wishes to convert to a krona html file.  
+
 `<$OUTPUT>` should be renamed to whatever the users wishes to name the resulting krona html file.
 
 ------------------------
@@ -180,8 +186,10 @@ With explanation:
 kraken --db=<$DIR_DB> --fasta-input (assumes reference sequences are fasta input) --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken
 ```  
 
-`<$DIR_DB>` can be replaced with the directory in which the Kraken database is found (i.e. mine is HumanBacteriaVirusRat).  
+`<$DIR_DB>` can be replaced with the directory in which the Kraken database is found (i.e. mine is HumanBacteriaVirusRat). 
+
 `<$DIR_DB/FA_SEQ_DIR>` can be replaced with the directory in which the reference sequences (.fna) reside.  
+
 `database.kraken` is the resulting concatenated output file. The name can be changed but the suffix `.kraken` should be kept.
 
 
@@ -191,7 +199,9 @@ perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 datab
 ```  
 
 `<$DIR_DB>` can be replaced with the directory in which the database can be found (i.e. HumanBacteriaVirusRat again).  
+
 `database.kraken` is the concatenated output file from the last command, it can be renamed as previously mentioned.  
+
 `database75mers.kraken_cnts` is the resulting database output required to run Bracken, as it manipulates the original database. Although it can be renamed, keeping these file names is probably a good idea. A read-length of 75 is the default.
 
 
@@ -202,6 +212,7 @@ python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_k
 ```  
 
 `abundest_krak.TXT` is the resulting abundances output file produced by Bracken.  
+
 `database75mers.kraken_cnts` is the file produced from the previous command.  
 
 
@@ -227,6 +238,7 @@ python est_abundance.py -i <$REPORT> -k abundest_krak.txt -o <$OUTPUT_FILE>
 ```  
 
 `<$REPORT>` can be replaced with a Kraken report file.  
+
 `<$OUTPUT_FILE>` can be replaced with the desired name for the resulting Bracken report.
 
 
@@ -309,11 +321,17 @@ kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_
 ```
 
 `-v` provides an extended output (verbose mode).  
+
 `-x` leads to less false positive hits and should be enabled.  
+
 `<$DBNAME>` can be replaced with whatever you have named your .fmi file.  
+
 `<$INPUT_FASTQ/A>` should be replaced with your input file.  
+
 The flag `-j` should only be used when using paired-reads.  
+
 `<$PAIRED_READ_INPUT_FASTQ/A>` should be replaced with a paired-read file if necessary.  
+
  `<$OUTPUT>` should be replaced with the desired output filename.
   
 Please see kaijuOutAll.sh for example.
@@ -340,7 +358,9 @@ With explanation:
 ```  
 
 `<$KAIJU_OUTPUT>` should be replaced with the output resulting from a Kaiju classificaton.  
-`<$TAX_LEVEL>` should be replaced with the desired level of taxonomy for the resulting summary file (i.e. species)  
+
+`<$TAX_LEVEL>` should be replaced with the desired level of taxonomy for the resulting summary file (i.e. species). 
+
 `<$RESULT_FILE>` should be replaced with the desired summary output filename.  
 
 
@@ -364,7 +384,9 @@ With explanation:
 ```
 
 `-u` removes all reads which are unclassified.  
+
 `<$INPUT_FILE>` should be replaced with the relevant Kaiju output file.  
+
 `<$OUTPUT_FILE>` should be replaced with the desired output filename. 
 
 
@@ -391,13 +413,15 @@ With explanation:
 kaiju2krona -t nodes.dmp -n names.dmp -i <$KAIJU_OUTPUT> -o <$KRONA_OUTPUT>
 ``` 
   
-`<$KAIJU_OUTPUT>` is replaced with the output originally obtained from Kaiju classification.  
+`<$KAIJU_OUTPUT>` is replaced with the output originally obtained from Kaiju classification.
+
 `<$KRONA_OUTPUT>` is the resulting output and can be renamed to whatever the user wishes.
 
 
 ------------------------
 ### kronatoHtml.sh  
 Converts the resulting krona-friendly Kaiju classification output to a Krona html file.
+
 ktImportText is part of KronaTools & it should be installed before attempting this.  
 
 Without explanation:
@@ -415,6 +439,7 @@ ktImportText -o <$OUTPUT.html> <$OUTPUT_INPUT>
 ``` 
 
 `<$OUTPUT.html>` should be renamed to whatever the user wishes to name the output.  
+
 `<$OUTPUT_INPUT>` should be renamed to whatever the user named the relevant kaiju2krona output file.
 
 ## Extras  
@@ -488,10 +513,15 @@ CLARK -T <$DIR_DB>/targets.txt -D <$DIR_DB> -P samples.L.txt samples.R.txt -R <$
 ```  
 
 `-P` is only for paired-end reads. The command `-O` should be used for reads which are not paired-end.  
+
 `<$RESULTS_DIR>` can be replaced with wherever you want to keep these results.  
+
 `-m 0` is full mode (more results), use `-m 2` for express mode.  
+
 `--extended` provides further results in the output file.  
+
 The `targets.txt` file is generated by the initial "set_targets.sh" command and is located in the `<$DIR_DB>`.  
+
 For `samples.L.txt` and `samples.R.txt` please have a look at the paired-reads example below.
 
 Please have a look at any of the ClarkOutAllSamples.sh scripts for more information.
@@ -531,7 +561,9 @@ With explanation:
 ./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv
 ``` 
 `<$CLARK_OUTPUT>` should be replaced with the output from a CLARK classification.  
+
 `<$DB_DIR>` should be replaced with the CLARK database directory.  
+
 `<$RESULT_FILE>` should be replaced with the desired output filename.  
 
 A krona file is automatically generated in the directory where the script is run.
@@ -576,6 +608,7 @@ With explanation:
 ktImportTaxonomy -o <$HTML_FILE>.html -m 3 <$KRONA_FILE>.krn
 ```  
 `<$HTML_FILE>` can be replaced with the output HTML file desired.  
+
 `<$KRONA_FILE>` can be replaced with the krona file generated from the previous script.  
 
 getAbundance.sh & kronaScripts.sh are written several times for each of the different CLARK types (CLARK-l & CLARK-S). Please refer to the scripts in the relevant sub-directories for more information.

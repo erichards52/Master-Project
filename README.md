@@ -553,7 +553,7 @@ generated at least once beforehand.
   
 ## BenchmarkTable.R  
 
-This takes the resulting abundance tables produced from each classifier and tallies as well as performs analytical tests. All data considered is sample data designed to benchmark the classifiers with previously known/realised content. This script could theoretically be used to analyse other data if changed accordingly.
+This takes the resulting abundance tables & outputs produced from each classifier and creates the tables found in BenchmarkTables & taxTables. All data considered is sample data designed to benchmark the classifiers with previously known/realised content. This script could theoretically be used to analyse other data if changed accordingly.
 
 
 ----------------------------------------------------------------------------------

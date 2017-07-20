@@ -435,6 +435,28 @@ Please have a look at metaClarkOutAllSamples.sh for more information.
 
 ------------------------
 
+##### getAbundance.sh  
+Calculates & creates an abundance table as well as krona file (.krn) from the CLARK results.
+
+Without explanation:  
+
+`./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv`  
+
+
+------------------------
+
+With explanation:  
+
+`./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv` 
+`<$CLARK_OUTPUT>` should be replaced with the output from a CLARK classification.  
+`<$DB_DIR>` should be replaced with the CLARK database directory.  
+`<$RESULT_FILE>` should be replaced with the desired output filename.  
+
+A krona file is automatically generated in the directory where the script is run.
+
+------------------------
+
+
 **PAIRED-READS**  
 `samples.L.txt` MUST CONTAIN ALL R1 READS IN CORRECT ORDER  
 `samples.R.txt` MUST CONTAIN ALL R2 READS IN CORRECT ORDER
@@ -454,28 +476,6 @@ sample3.R3.txt
 
 #### dBScripts/CLARK/kronaScripts
 
-##### getAbundance.sh  
-Calculates & creates an abundance table as well as krona file (.krn) from the CLARK results.  
-
-Without explanation:  
-
-`./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv`  
-
-
-------------------------
-
-With explanation:  
-
-`./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv` 
-`<$CLARK_OUTPUT>` should be replaced with the output from a CLARK classification.  
-`<$DB_DIR>` should be replaced with the CLARK database directory.  
-`<$RESULT_FILE>` should be replaced with the desired output filename.  
-
-A krona file is automatically generated in the directory where the script is run.
-
-
-------------------------
-
 ##### kronaScripts.sh  
 Converts the krona file(s) generated in the previous script into an html file.  
 
@@ -492,7 +492,7 @@ With explanation:
 `<$HTML_FILE>` can be replaced with the output HTML file desired.  
 `<$KRONA_FILE>` can be replaced with the krona file generated from the previous script.  
 
-Both scripts above are written several times for each of the different CLARK types (CLARK-l & CLARK-S). Please refer to the scripts in the relevant sub-directories for more information.
+getAbundance.sh & kronaScripts.sh are written several times for each of the different CLARK types (CLARK-l & CLARK-S). Please refer to the scripts in the relevant sub-directories for more information.
 
 
 ------------------------

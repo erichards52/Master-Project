@@ -276,13 +276,15 @@ Without explanation:
 ------------------------
 With explanation:
 
-`kaiju -v (verbose mode) -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A> -o <$OUTPUT>`
+`kaiju -v -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A> -o <$OUTPUT>`
 
+`-v` provides an extended output (verbose mode).
 `-x` leads to less false positive hits and should be enabled.
 `<$DBNAME>` can be replaced with whatever you have named your .fmi file.  
 `<$INPUT_FASTQ/A>` should be replaced with your input file.  
+The flag `-j` should only be used when using paired-reads. 
 `<$PAIRED_READ_INPUT_FASTQ/A>` should be replaced with a paired-read file if necessary. 
-The flag `-j` should only be used when using paired-reads.  
+ `<$OUTPUT>` should be replaced with the desired output filename.
   
 Please see kaijuOutAll.sh for example.
 

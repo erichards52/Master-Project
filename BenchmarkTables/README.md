@@ -64,7 +64,7 @@ Top Viral Kmer Count |	444 |	1177 |	1083
 
 Variables | Kaiju | CLARK | Kraken
 --- | --- | --- | --- 
-Total Hits | 28161090 | 28161090 | 995226 
+Total Hits | 28161090 | 1011699 | 995226 
 Total TaxIDs | 4506 | 2271 | 827 
 Time(s) | 153 | 567.96 | 333.67  
 Pielou Evenness Index | 0.53 | 0.46 | 0.51  

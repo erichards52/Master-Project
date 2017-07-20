@@ -27,10 +27,12 @@ This script will create an arachael genome, human genome, bacterial genome, vira
 **Custom Database**  
 If you wish to create your own custom database, merely add the following lines to ratKrakDBCreationScript.py such that `<$ID>` is changed to the taxonomic ID for the genome/species/reference sequence you wish to incorporate before running the script. 
 
-`print('Downloading <$ANY> genome'+'\n')  
+```
+print('Downloading <$ANY> genome'+'\n')  
 download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')  
 print('Converting sequences to kraken input format'+'\n')  
-get_fasta_in_kraken_format('<$ANY>_genome.fa')`
+get_fasta_in_kraken_format('<$ANY>_genome.fa')
+```
 
 Replace `<$ANY>` with whatever you would like to name your genome.
 Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
@@ -147,23 +149,18 @@ In order to use Bracken, several Kraken commands must be run. These are detailed
 Converts original Kraken database into a Bracken-friendly database.  
 
 Without explanation:  
-
-`kraken --db=<$DIR_DB> --<$FASTA_INPUT> --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
-  
-  
------------------------- 
-`perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts` 
-
-
-------------------------  
-  
-`python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT`
+```
+kraken --db=<$DIR_DB> --<$FASTA_INPUT> --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken  
+perl count-kmer-abundances.pl --db=<$DIR_DB> --read-length=75 --threads=10 database.kraken > database75mers.kraken_cnts  
+python generate_kmer_distribution.py -i database75mers.kraken_cnts -o abundest_krak.TXT
+```
 
 
-------------------------
 With explanation:  
 
-`kraken --db=<$DIR_DB> --fasta-input (assumes reference sequences are fasta input) --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken`  
+```
+kraken --db=<$DIR_DB> --fasta-input (assumes reference sequences are fasta input) --threads=10 <( find -L <$DIR_DB/FA_SEQ_DIR> -name "*.fna" -exec cat {} + )  > database.kraken
+```  
 
 `<$DIR_DB>` can be replaced with the directory in which the Kraken database is found (i.e. mine is HumanBacteriaVirusRat).  
 `<$DIR_DB/FA_SEQ_DIR>` can be replaced with the directory in which the reference sequences (.fna) reside.  
@@ -241,8 +238,10 @@ This script converts the concatenated .faa file (proteins.faa) into a bwt file (
 **Custom Database**  
 If you wish to create your own custom database, which is different to the one created during this project, merely change/add/remove the following code in HumanBacteriaRat.py before running:
 
-`print('Downloading <$ANY> genomes'+'\n')  
-download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')`
+```
+print('Downloading <$ANY> genomes'+'\n')  
+download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')
+```
 
 Replace `<$ANY>` with whatever you would like to name your genome.
 Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)
@@ -252,8 +251,10 @@ The script should then be run in a separate directory.
 **Custom Database Continued**  
 Once this has been completed you must tell kaiju which reference sequences you wish to use. Assuming that all reference sequences have been download and converted into .faa files (using gbk2faaCustom.pl), and all .faa files have been concatenated into a single .faa file (\*.faa > proteins.faa), you must then run the following commands:
 
-`mkbwt -n 5 -a ACDEFGHIKLMNPQRSTVWY -o <$DBNAME> <$DBNAME>.faa  
-mkfmi <$DBNAME>`  
+```
+mkbwt -n 5 -a ACDEFGHIKLMNPQRSTVWY -o <$DBNAME> <$DBNAME>.faa  
+mkfmi <$DBNAME>
+```  
 
 `<$DBNAME>` can be changed to whatever you wish to name your database (I used proteins (i.e.: proteins.fmi)).
 
@@ -399,8 +400,10 @@ BEFORE CREATING YOUR OWN DATABASE YOU MUST WIPE THE OLD ONE FROM EXISTENCE. THIS
 
 If you wish to create your own custom database, merely change/add/remove the following code in HumanBacteriaRat.py
 
-`print('Downloading <$ANY> genomes'+'\n')`  
-`download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')`
+```
+print('Downloading <$ANY> genomes'+'\n')  
+download_refseq_genome(<$ID>,'<$ANY>_genome_url.txt')
+```
 
 Replace `<$ANY>` with whatever you would like to name your genome.
 Replace `<$ID>` with the relevant NCBI taxonomy ID (IDs can be found at https://www.ncbi.nlm.nih.gov/taxonomy)

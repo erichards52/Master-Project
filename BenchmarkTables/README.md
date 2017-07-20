@@ -9,7 +9,9 @@ Total TaxIDs | 187 | 47 | 16
 Time(s) | 22 | 24.09 | 4.64  
 Pielou Evenness Index | 0.32 | 0.09 | 0.11  
 Total # Viral | 93964 | 3451 | 3392 
-
+Top Viral TaxID |	12131 |	7 |	147712
+Top Viral Name |	Human rhinovirus B14 |	Paenibacillus phage | phiIBB_Pl23	Rhinovirus B
+Top Viral Kmer Count |	73803 |	3449 |	3326
 ## MidgeNov
 
 Variables | Kaiju | CLARK | Kraken

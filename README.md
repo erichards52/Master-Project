@@ -9,7 +9,7 @@ This project was designed with the Centre for Virus Reseach (CVR) in mind. While
 
 **KRONATOOLS SHOULD BE INSTALLED IF YOU WISH TO CONVERT THE RESULTING OUTPUTS OF EACH CLASSIFIER INTO KRONA OUTPUTS**
 
-**FINALLY, IN EACH CLASSIFICATION WALKTHROUGH, IT IS ASSUMED THE USER HAS AT LEAST DOWNLOADED AND INSTALLED EACH CLASSIFIER AND HAD A LOOK AT THE SCRIPTS & MANUALS CONTAINED IN EACH**
+**FINALLY, IN EACH CLASSIFICATION WALKTHROUGH, IT IS ASSUMED THE USER HAS AT LEAST DOWNLOADED AND INSTALLED EACH CLASSIFIER AND HAD A LOOK AT THE SCRIPTS & MANUALS CONTAINED IN EACH, AS SOME FLAGS ARE NOT INCLUDED**
 
 --------------------------------------------------------------------------------------------------------
 
@@ -264,7 +264,7 @@ For an example of this script, please see testbwt.sh.
 
 ## dBScripts/Kaiju/dbCreation
 
-Classification can be run immediately utilising the custom database created during this project (proteins.fmi - located in kaijudb/faaFiles)
+Classification can be run immediately utilising the custom database created during this project (proteins.fmi - located in kaijudb/faaFiles).
 
 In order to run Kaiju classification, invoke the following command:
 
@@ -278,11 +278,13 @@ Without explanation:
 ------------------------
 With explanation:
 
-`kaiju -v (verbose mode) -x (less false positive hits) -z 12 (12 threads) -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> (Input file) -j <$PAIRED_READ_INPUT_FASTQ/A> (Only put -j if paired reads) -o <$OUTPUT>`
+`kaiju -v (verbose mode) -x -z 12 -t nodes.dmp -f <$DBNAME>.fmi -i <$INPUT_FASTQ/A> -j <$PAIRED_READ_INPUT_FASTQ/A> -o <$OUTPUT>`
 
+`-x` leads to less false positive hits and should be enabled.
 `<$DBNAME>` can be replaced with whatever you have named your .fmi file.  
 `<$INPUT_FASTQ/A>` should be replaced with your input file.  
-`<$PAIRED_READ_INPUT_FASTQ/A>` should be replaced with a paired-read file if necessary.  
+`<$PAIRED_READ_INPUT_FASTQ/A>` should be replaced with a paired-read file if necessary. 
+The flag `-j` should only be used when using paired-reads.  
   
 Please see kaijuOutAll.sh for example.
 
@@ -309,6 +311,28 @@ With explanation:
 
 
 ------------------------
+
+### kaijuAddTaxNames2Out.sh  
+This script adds taxonomy names to a Kaiju output file.
+
+Without explanation: 
+
+`./addTaxonNames -u -t nodes.dmp -n names.dmp -i <$INPUT_FILE> -o <$OUTPUT_FILE>`
+
+
+--------------------
+With explanation:
+
+`./addTaxonNames -u -t nodes.dmp -n names.dmp -i <$INPUT_FILE> -o <$OUTPUT_FILE>`
+
+`-u` removes all reads which are unclassified.  
+`<$INPUT_FILE>` should be replaced with the relevant Kaiju output file.
+`<$OUTPUT_FILE>` should be replaced with the desired output filename.
+
+
+-----------------------
+### kaijuTaxCut.sh  
+This script removes columns from the Kaiju output produced via kaijuAddTaxNames2Out.sh in order to create an abundance table-friendly output for the RScript: BenchmarkTable.R. No explanation included as this is fairly self-explanatory, only keeps TaxID & species.
 
 ## dBScript/Kaiju/kronaScripts
   

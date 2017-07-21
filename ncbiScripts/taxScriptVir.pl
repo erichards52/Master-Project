@@ -3,9 +3,11 @@
 use strict;
 use warnings;
 use Bio::DB::EUtilities;
-
+use Bio::DB::Taxonomy;
+use Bio::DB::Taxonomy::entrez;
+ 
 my @array;
-open(my $fh, "<", "TaxID.txt")
+open(my $fh, "<", "HomoRespClarkTax.tsv")
     or die "Failed to open file: $!\n";
 select $fh; $| = 1; select STDOUT;
 while(<$fh>) { 
@@ -15,10 +17,11 @@ print "@array";
 } 
 close $fh;
 
-print "Scientific Name,ID\n";
+print "Scientific Name,Kingdom,ID\n";
 
 foreach my $array(@array)
 {
+require Bio::DB::Taxonomy;
 my $id = $array;
 my $factory = Bio::DB::EUtilities->new(-eutil => 'esummary',
                                        -email => '2274776r@student.gla.ac.uk',
@@ -26,7 +29,9 @@ my $factory = Bio::DB::EUtilities->new(-eutil => 'esummary',
                                        -id    => $id );
 
 my ($name) = $factory->next_DocSum->get_contents_by_name('ScientificName');
-print "$name,$id\n";
+my ($king) = $factory->get_Taxonomy_Node('$id');
+print "$name,$king,$id\n";
+
 }
 
 

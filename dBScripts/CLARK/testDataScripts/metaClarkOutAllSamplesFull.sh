@@ -3,4 +3,4 @@
 ./classify_metagenome.sh -P /home4/rich01e/faFiles/travChik/S18_R1.fq /home4/rich01e/faFiles/travChik/S18_R2.fq -R ~/faFiles/clarkOutput/travChik.txt
 ./classify_metagenome.sh -P /home4/rich01e/faFiles/sraFiles/SRR062415_1.fastq /home4/rich01e/faFiles/sraFiles/SRR062415_2.fastq -R ~/faFiles/clarkOutput/SRR062415.txt
 ./classify_metagenome.sh -P /home4/rich01e/faFiles/sraFiles/SRR062462_1.fastq /home4/rich01e/faFiles/sraFiles/SRR062462_2.fastq -R ~/faFiles/clarkOutput/SRR062462.txt
-./buildSpacedDB.sh
+

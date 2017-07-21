@@ -16,9 +16,9 @@ This project was designed with the Centre for Virus Reseach (CVR) in mind. While
 # Kraken
 
 ## dbScripts/Kraken/dbCreation
+### Default Database Creation
 
 ### ratKrakDBCreationScript.py
-### Default Database Creation
 Invoking the command `python ratKrakDBCreationScript.py` will automatically create a (default) Kraken database with the name HumanVirusBacteriaRat within the current working directory.
 
 This script will create a reference database consisting of the arachael genome, human genome, bacterial genome, viral genome and rat genome.

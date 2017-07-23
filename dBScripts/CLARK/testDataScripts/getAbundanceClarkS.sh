@@ -1,7 +1,6 @@
-./estimate_abundance.sh -F /home4/rich01e/faFiles/clarksOutput/TravChikResults.txt.csv -D /home4/rich01e/clark/DBD/ --krona > /home4/rich01e/faFiles/clarksOutput/abundResultstravChik.csv
-./estimate_abundance.sh -F /home4/rich01e/faFiles/clarksOutput/SRR62462Results.txt.csv -D /home4/rich01e/clark/DBD/ --krona > /home4/rich01e/faFiles/clarksOutput/abundResultsSaliva62462.csv
-./estimate_abundance.sh -F /home4/rich01e/faFiles/clarksOutput/SRR62415Results.txt.csv -D /home4/rich01e/clark/DBD/ --krona > /home4/rich01e/faFiles/clarksOutput/abundResultsSaliva62415.csv
-./estimate_abundance.sh -F /home4/rich01e/faFiles/clarksOutput/MidgeNovResults.txt.csv -D /home4/rich01e/clark/DBD/ --krona > /home4/rich01e/faFiles/clarksOutput/abundResultsmidgeNov.csv
-./estimate_abundance.sh -F /home4/rich01e/faFiles/clarksOutput/HomoRespResults.txt.csv -D /home4/rich01e/clark/DBD/ --krona > /home4/rich01e/faFiles/clarksOutput/abundResultshomoResp.csv
-   
-a
+./estimate_abundance.sh -F /home4/rich01e/faFiles/clarkSOutput/travChik.txt.csv -D /home4/rich01e/clark/CLARKSCV1.2.3.1/DBD/ --krona > /home4/rich01e/faFiles/clarkSOutput/abundResultstravChik.csv
+./estimate_abundance.sh -F /home4/rich01e/faFiles/clarkSOutput/SRR062462.txt.csv -D /home4/rich01e/clark/CLARKSCV1.2.3.1/DBD/ --krona > /home4/rich01e/faFiles/clarkSOutput/abundResultsSaliva62462.csv
+./estimate_abundance.sh -F /home4/rich01e/faFiles/clarkSOutput/SRR062415.txt.csv -D /home4/rich01e/clark/CLARKSCV1.2.3.1/DBD/ --krona > /home4/rich01e/faFiles/clarkSOutput/abundResultsSaliva62415.csv
+./estimate_abundance.sh -F /home4/rich01e/faFiles/clarkSOutput/MidgeNov.txt.csv -D /home4/rich01e/clark/CLARKSCV1.2.3.1/DBD/ --krona > /home4/rich01e/faFiles/clarkSOutput/abundResultsmidgeNov.csv
+./estimate_abundance.sh -F /home4/rich01e/faFiles/clarkSOutput/HomoResp.txt.csv -D /home4/rich01e/clark/CLARKSCV1.2.3.1/DBD/ --krona > /home4/rich01e/faFiles/clarkSOutput/abundResultshomoResp.csv
+

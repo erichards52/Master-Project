@@ -1,0 +1,232 @@
+Scientific Name,ID
+root,1
+Simian sapelovirus 1,1002918
+Rattus norvegicus,10116
+Pseudomonas alcaliphila,101564
+Human betaherpesvirus 5,10359
+Cupriavidus necator N-1,1042878
+Ralstonia mannitolilytica,105219
+Halomicrobium katesii DSM 19301,1069082
+Bat picornavirus 1,1074863
+Bat picornavirus 2,1074864
+Bat picornavirus 3,1074865
+Rhodopseudomonas palustris,1076
+Blastochloris viridis,1079
+Leptolyngbya sp. O-77,1080068
+Quail picornavirus QPV1/HUN/2010,1089138
+Synechococcus sp. CC9605,110662
+Chloroflexus,1107
+Feline picornavirus,1108810
+Streptomyces sp. SCSIO 03032,1109743
+Gordonia polyisoprenivorans VH2,1112204
+Mycoplasma hyorhinis SK76,1118964
+Pseudomonas stutzeri DSM 10701,1123519
+Rhizobium sp. NT-26,1125847
+Canine picodicistrovirus,1150861
+Geitlerinema sp. PCC 7407,1173025
+Agrobacterium fabrum,1176649
+Spirosoma montaniterrae,1178516
+Human enterovirus,1193974
+Canine picornavirus,1196647
+Picornaviridae,12058
+Enterovirus,12059
+Halogranum salarium B-1,1210908
+Human rhinovirus B14,12131
+Bradyrhizobium sp. CCGE-LA001,1223566
+Firmicutes,1239
+Bradyrhizobium oligotrophicum S58,1245469
+Serratia marcescens FGI94,1249634
+Streptomyces sp. 769,1262452
+Halococcus sediminicola,1264579
+Cupriavidus gilardii CR3,1267562
+Altererythrobacter atlanticus,1267766
+Micrococcaceae,1268
+Bradyrhizobium icense,1274631
+Staphylococcus epidermidis,1282
+Stenotrophomonas acidaminiphila,128780
+Isoptericola dokdonensis DS-3,1300344
+Ilumatobacter coccineus YM16-304,1313172
+cellular organisms,131567
+Sphingobium sp. TKS,1315974
+Enterovirus J,1330521
+Paenibacillus phage phiIBB_Pl23,1337877
+Pseudoalteromonas sp. OCN003,1348114
+Janthinobacterium agaricidamnosum NBRC 102515 = DSM 9628,1349767
+Sphingomonas,13687
+Aerococcus urinae,1376
+Enterovirus A,138948
+Enterovirus B,138949
+Enterovirus C,138950
+Enterovirus D,138951
+Bacillus megaterium,1404
+Endomicrobium proavitum,1408281
+Methanosarcina vacuolata Z-761,1434123
+Bifidobacterium actinocoloniiforme DSM 22766,1437605
+Kutzneria albida DSM 43870,1449976
+Methanothermobacter wolfeii,145261
+Haloterrigena jeotgali A29,1455609
+Chlamydia gallinacea,1457153
+Mycobacterium phage MosMoris,1471542
+Rhinovirus A,147711
+Rhinovirus B,147712
+Methanosarcina sp. 1.H.T.1A.1,1483602
+Treponema azotonutricium,150829
+Moorella thermoacetica,1525
+Paenibacillus sp. FSL P4-0081,1536769
+Haematospirillum jordaniae,1549855
+Rhodovulum sp. P5,1564506
+Pseudomonas cremoricolorata,157783
+Anaeromyxobacter,161492
+Arthrobacter sp. IHBB 11108,1618207
+Corynebacterium camporealensis,161896
+Gemmata sp. SH-PL17,1630693
+Planctomyces sp. SH-PL14,1632864
+Vulcanisaeta sp. EB80,1650660
+Limnohabitans sp. 63ED37-2,1678128
+Negativicoccus massiliensis,1702287
+Devosia sp. A16,1736675
+Leptolyngbya sp. NIES-3755,1752064
+Actinobacteria,1760
+Christensenella massiliensis,1805714
+Amycolatopsis,1813
+Marinobacterium sp. ST58-10,1821621
+Enterovirus SEV-gx,1826059
+Streptomyces sp. RTd22,1841249
+Gordonibacter massiliensis,1841863
+Pseudonocardia,1847
+Enterovirus goat/JL14,1849328
+Murdochiella sp. Marseille-P2341,1852373
+Pseudomonas sp. A3(2016),1853130
+Streptomyces,1883
+Pseudomonas sp. LPH1,1898684
+Streptomyces clavuligerus,1901
+Hafniaceae,1903412
+Streptomyces glaucescens,1907
+Ralstonia insidiosa,190721
+Streptomyces reticuli,1926
+Bartonella sp. JB15,1933906
+Bartonella sp. JB63,1933907
+Streptomyces niveus,193462
+Campylobacter jejuni,197
+Streptosporangiaceae,2004
+Aeromicrobium erythreum,2041
+Sphingomonadales,204457
+Pimelobacter simplex,2045
+Acanthamoeba polyphaga mimivirus,212035
+Archaea,2157
+Methanobrevibacter smithii,2173
+Methanosarcina,2207
+Methanosarcina mazei,2209
+Mannheimia succiniciproducens MBEL55E,221988
+Helicobacter sp. MIT 01-6242,222136
+Halobacteriales,2235
+Methanomicrobia,224756
+Shewanella psychrophila,225848
+Rhizobium/Agrobacterium group,227290
+Sulfolobus acidocaldarius,2285
+Xylella fastidiosa,2371
+Thermococcus sp. AM4,246969
+Pseudoalteromonas aliena,247523
+Gloeobacter violaceus PCC 7421,251221
+Possum enterovirus W1,263531
+Streptomyces hygroscopicus subsp. limoneus,264445
+Anabaena cylindrica PCC 7122,272123
+Bacillus halodurans C-125,272558
+Legionella pneumophila subsp. pneumophila str. Philadelphia 1,272624
+Alphaproteobacteria,28211
+Clavibacter michiganensis,28447
+Pseudomonas,286
+Pseudomonas aeruginosa,287
+Bradyrhizobium sp. BTAi1,288000
+Bacillus cereus E33L,288681
+Euryarchaeota,28890
+Pseudomonas fluorescens,294
+Rhizobium etli,29449
+Brucella melitensis,29459
+Pelobacter acetylenicus,29542
+Polaromonas sp. JS666,296591
+Pseudomonas mendocina,300
+Ralstonia solanacearum,305
+Enterovirus H,310907
+Acidiplasma cupricumulans,312540
+Euarchontoglires,314146
+Alteromonas mediterranea,314275
+Pseudoxanthomonas suwonensis,314722
+Rhodopseudomonas palustris BisA53,316055
+Rhodopseudomonas palustris BisB18,316056
+Pseudomonas syringae,317
+Rhodobacteraceae,31989
+Nitrobacter hamburgensis X14,323097
+Ralstonia pickettii,329
+Pseudomonas pseudoalcaligenes,330
+Pelobacter propionicus DSM 2379,338966
+Micavibrio aeruginosavorus,349221
+unclassified Picornaviridae,35296
+Agrobacterium,357
+Agrobacterium rhizogenes,359
+Choristoneura occidentalis granulovirus,364745
+Sinorhizobium medicae WSM419,366394
+Haladaptatus paucihalophilus,367189
+Salinispora tropica CNB-440,369723
+Haloterrigena limicola,370323
+Rivularia sp. PCC 7116,373994
+Bradyrhizobium,374
+Pseudomonas entomophila L48,384676
+Rhizobium leguminosarum bv. trifolii WSM2304,395492
+Erythrobacter litoralis,39960
+Petrotoga mobilis SJ95,403833
+Virgibacillus sp. SK37,403957
+Cellulomonas flavigena DSM 20109,446466
+Phenylobacterium zucineum HLK1,450851
+Tatlockia micdadei,451
+Capnocytophaga haemolytica,45243
+Methanoculleus,45989
+Rhinovirus C,463676
+Picornavirales,464095
+Thermobispora bispora DSM 43833,469371
+Dyadobacter fermentans DSM 18053,471854
+Enterovirus sp.,47681
+Kribbella flavida DSM 17836,479435
+Myxococcus fulvus HW-1,483219
+Bacillus velezensis,492670
+Heliobacterium modesticaldum Ice1,498761
+Acidiplasma aeolicum,507754
+Bordetella avium,521
+Paenibacillus xylanexedens,528191
+Pirellula staleyi DSM 6068,530564
+Thermococcus chitonophagus,54262
+Corynebacterium mustelae,571915
+Morganella morganii,582
+Porcine enterovirus 9,64141
+Desulfarculus baarsii DSM 2075,644282
+Methanohalobium evestigatum Z-7303,644295
+Thermaerobacter marianensis DSM 12885,644966
+Actinoplanes sp. N902-109,649831
+Streptomyces violaceusniger Tu 4113,653045
+Frankia symbiont of Datisca glomerata,656024
+Tenacibaculum dicentrarchi,669041
+Propionibacterium sp. oral taxon 193,671223
+Streptomyces albulus,68570
+Oleispira antarctica RB-8,698738
+Corynebacterium diphtheriae HC02,698968
+Clostridioides difficile M120,699035
+Staphylococcus condimenti,70255
+Mycobacterium rhodesiae NBB3,710685
+Methanocorpusculum bavaricum,71518
+Kocuria palustris,71999
+Weissella ceti,759620
+Prevotella denticola F0289,767031
+Moritella viscosa,80854
+Rhodoferax antarcticus,81479
+Methanoculleus bourgensis,83986
+Lysobacter antibioticus,84531
+Turneriella parva DSM 21527,869212
+Mycobacterium sinense,875328
+Desulfobacca acetoxidans DSM 11109,880072
+Desulfovibrio piger,901
+Starkeya novella,921
+Pigeon picornavirus B,928289
+Desulfurispirillum indicum,936456
+Anaplasmataceae,942
+Methanosarcinales,94695
+Homo sapiens,9606

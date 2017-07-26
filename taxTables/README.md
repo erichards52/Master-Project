@@ -6,7 +6,7 @@
 ![Alt text](https://github.com/erichards52/Master-Project/blob/master/taxTables/HomoRespVenn.PNG?raw=true "Title")
 
 ### MidgeNov
-![Alt text](https://github.com/erichards52/Master-Project/blob/master/taxTables/MidgepVenn.PNG?raw=true "Title")
+![Alt text](https://github.com/erichards52/Master-Project/blob/master/taxTables/MidgeVenn.PNG?raw=true "Title")
 
 ### TravChik
 ![Alt text](https://github.com/erichards52/Master-Project/blob/master/taxTables/TravChik.PNG?raw=true "Title")

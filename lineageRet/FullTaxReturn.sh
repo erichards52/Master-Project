@@ -1,5 +1,3 @@
-perl SRR062415taxScriptVir.pl > SRR062415ClarkSVir.txt
-perl SRR062462taxScriptVir.pl > SRR062462ClarkSVir.txt
 perl HomoResptaxScript.pl > HomoRespTax.txt
 perl MidgeNovtaxScript.pl > MidgeNovTax.txt
 perl TravChiktaxScript.pl > TravChikTax.txt

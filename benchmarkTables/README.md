@@ -1,16 +1,17 @@
 # Benchmark Results
 
 ## HomoResp
-Variables | Kaiju |	CLARK |	Kraken |	CLARK-S
---- | --- | --- | --- | --- 
-Total | Hits |	132954 |	89917 |	89380 |	201746
-Total TaxIDS |	187 |	47 |	16 |	26
-Time(s) |	22 |	24.09 |	4.64 |	387.7
-Pielou Evenness Index |	0.32 |	0.09 |	0.11 |	0.11
-Total # Viral |	93964 |	3451 |	3392 |	4352
-Top Viral TaxID |	12131 |	1337877 |	147712 |	1337877
-Top Viral Name |	Human rhinovirus B14 |	Paenibacillus phage phiIBB_Pl23 |	Rhinovirus B |	Paenibacillus phage phiIBB_Pl23
-Top Viral Kmer Count |	73803 |	3449 |	3326 |	4352
+| Kaiju                 | CLARK                | Kraken                          | CLARK-S      |                                 | 
+|-----------------------|----------------------|---------------------------------|--------------|---------------------------------| 
+| Total Hits            | 132954               | 89917                           | 89380        | 201746                          | 
+| Total TaxIDS          | 187                  | 47                              | 16           | 26                              | 
+| Time(s)               | 22                   | 24.09                           | 4.64         | 387.7                           | 
+| Pielou Evenness Index | 0.32                 | 0.09                            | 0.11         | 0.11                            | 
+| Total # Viral         | 93964                | 3451                            | 3392         | 4352                            | 
+| Top Viral TaxID       | 12131                | 1337877                         | 147712       | 1337877                         | 
+| Top Viral Name        | Human rhinovirus B14 | Paenibacillus phage phiIBB_Pl23 | Rhinovirus B | Paenibacillus phage phiIBB_Pl23 | 
+| Top Viral Kmer Count  | 73803                | 3449                            | 3326         | 4352                            | 
+
 
 
 ## MidgeNov
@@ -30,43 +31,46 @@ Top Viral Kmer Count |	73803 |	3449 |	3326 |	4352
 
 ## TravChik
 
-Variables | Kaiju | CLARK | Kraken
---- | --- | --- | --- 
-Total Hits | 366592 | 510061 | 418999 
-Total TaxIDs | 464 | 175 | 18 
-Time(s) | 16 | 30.47 | 6.66  
-Pielou Evenness Index | 0.19 | 0.2 | 0.23  
-Total # Viral | 314201 | 284492 | 284462
-Top Viral TaxID |	37124 |	23 |	37124
-Top Viral Name |	Chikungunya virus |	Paenibacillus phage phiIBB_Pl23 |	Chikungunya virus
-Top Viral Kmer Count |	254087 |	284491 |	284258
+| Kaiju                 | CLARK             | Kraken                          | CLARK-S           |                                 | 
+|-----------------------|-------------------|---------------------------------|-------------------|---------------------------------| 
+| Total Hits            | 366592            | 419345                          | 418999            | 456266                          | 
+| Total TaxIDS          | 464               | 174                             | 18                | 122                             | 
+| Time(s)               | 16                | 30.47                           | 6.66              | 528.34                          | 
+| Pielou Evenness Index | 0.19              | 0.13                            | 0.23              | 0.14                            | 
+| Total # Viral         | 314201            | 284492                          | 284462            | 316056                          | 
+| Top Viral TaxID       | 37124             | 1337877                         | 37124             | 1337877                         | 
+| Top Viral Name        | Chikungunya virus | Paenibacillus phage phiIBB_Pl23 | Chikungunya virus | Paenibacillus phage phiIBB_Pl23 | 
+| Top Viral Kmer Count  | 254087            | 284491                          | 284258            | 316056                          | 
+
 
 
 
 ## SRR062415
 
-Variables | Kaiju | CLARK | Kraken
---- | --- | --- | --- 
-Total Hits | 28098607 | 1012153 | 995691 
-Total TaxIDs | 4556 | 2280 | 811 
-Time(s) | 151 | 519.7 | 320.66  
-Pielou Evenness Index | 0.53 | 0.46 | 0.51  
-Total # Viral | 3649 | 1195 | 2098
-Top Viral TaxID |	157239 |	281 |	157239
-Top Viral Name |	Haemophilus phage HP2 |	Paenibacillus phage phiIBB_Pl23 |	Haemophilus phage HP2
-Top Viral Kmer Count |	444 |	1177 |	1083
+| Kaiju                 | CLARK                 | Kraken                          | CLARK-S               |                                 | 
+|-----------------------|-----------------------|---------------------------------|-----------------------|---------------------------------| 
+| Total Hits            | 882926                | 1012153                         | 995691                | 913553                          | 
+| Total TaxIDS          | 4556                  | 2280                            | 811                   | 1793                            | 
+| Time(s)               | 151                   | 519.7                           | 320.66                | 3612.52                         | 
+| Pielou Evenness Index | 0.53                  | 0.46                            | 0.51                  | 0.45                            | 
+| Total # Viral         | 3602                  | 1195                            | 2102                  | 1210                            | 
+| Top Viral TaxID       | 157239                | 1337877                         | 157239                | 1337877                         | 
+| Top Viral Name        | Haemophilus phage HP2 | Paenibacillus phage phiIBB_Pl23 | Haemophilus phage HP2 | Paenibacillus phage phiIBB_Pl23 | 
+| Top Viral Kmer Count  | 444                   | 1177                            | 1083                  | 1194                            | 
+
 
 
 
 ## SRR062462
 
-Variables | Kaiju | CLARK | Kraken
---- | --- | --- | --- 
-Total Hits | 28161090 | 1011699 | 995226 
-Total TaxIDs | 4506 | 2271 | 827 
-Time(s) | 153 | 567.96 | 333.67  
-Pielou Evenness Index | 0.53 | 0.46 | 0.51  
-Total # Viral | 3743 | 1245 | 2144
-Top Viral TaxID |	157239 |	277 |	157239
-Top Viral Name |	Haemophilus phage HP2 |	Paenibacillus phage phiIBB_Pl23 |	Haemophilus phage HP2
-Top Viral Kmer Count |	487 |	1222 |	1099
+| Kaiju                 | CLARK                 | Kraken                          | CLARK-S               |                                 | 
+|-----------------------|-----------------------|---------------------------------|-----------------------|---------------------------------| 
+| Total Hits            | 880134                | 1011699                         | 995226                | 915828                          | 
+| Total TaxIDS          | 4506                  | 2270                            | 827                   | 1794                            | 
+| Time(s)               | 153                   | 567.96                          | 333.67                | 3373.57                         | 
+| Pielou Evenness Index | 0.53                  | 0.46                            | 0.51                  | 0.45                            | 
+| Total # Viral         | 3703                  | 1245                            | 2164                  | 1279                            | 
+| Top Viral TaxID       | 157239                | 1337877                         | 157239                | 1337877                         | 
+| Top Viral Name        | Haemophilus phage HP2 | Paenibacillus phage phiIBB_Pl23 | Haemophilus phage HP2 | Paenibacillus phage phiIBB_Pl23 | 
+| Top Viral Kmer Count  | 487                   | 1222                            | 1099                  | 1248                            | 
+

@@ -3,7 +3,7 @@
 ## Venn diagrams below list the number of taxa shared across classifiers for each dataset.
 
 ### HomoResp
-![Alt text](https://github.com/erichards52/Master-Project/blob/master/taxTables/HomoRespVenn.PNG?raw=true "Title")
+![Alt text](https://github.com/erichards52/Master-Project/blob/master/stepTwo_Benchmark/taxResults/HomoRespVenn.PNG?raw=true "Title")
 
 ### MidgeNov
 ![Alt text](https://github.com/erichards52/Master-Project/blob/master/taxTables/MidgeVenn.PNG?raw=true "Title")

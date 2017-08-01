@@ -1,1 +1,0 @@
-python est_abundance.py -i /home4/rich01e/faFiles/krakenOutput/HomoRespReportKrak -k /home4/rich01e/Bracken/Bracken/abundest_kmerdist_krak.txt -o /home4/rich01e/faFiles/krakenOutput/BrackenHomoResp.txt 

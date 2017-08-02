@@ -1,0 +1,8 @@
+Sample Accession No.	Prefetch & FastQDump Runtime	Classification Time	Total TaxIDs	Total Hits	Pielou's Evenness	Top TaxID	Top TaxID Name	Top TaxID Hits	Total Viral Hits	Top Viral TaxID	Top Viral TaxID Name	Top Viral TaxID Hits
+ERR2013703	460	87	 2698 	 248313 	 0.31 	 1 	 root 	 123261 	 4707 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 4514
+ERR2003012	76	5	 1060 	 4234 	 0.82 	 1926494 	 Paraburkholderia sp. SOS3 	 293 	 22 	 417290 	 Saccharopolyspora erythraea prophage pSE211 	 3
+ERR2003013	113	6	 1316 	 6008 	 0.81 	 1926494 	 Paraburkholderia sp. SOS3 	 373 	 45 	 1923444 	 Shahe picorna-like virus 14 	 7
+ERR2003014	55	6	 1161 	 5459 	 0.76 	 2263 	 Thermococcus 	 630 	 38 	 417290 	 Saccharopolyspora erythraea prophage pSE211 	 6
+ERR2003015	73	8	 1348 	 6942 	 0.78 	 2263 	 Thermococcus 	 713 	 43 	 417290 	 Saccharopolyspora erythraea prophage pSE211 	 7
+ERR2003016	88	9	 1266 	 6181 	 0.78 	 1926494 	 Paraburkholderia sp. SOS3 	 570 	 34 	 417290 	 Saccharopolyspora erythraea prophage pSE211 	 5
+ERR2003017	108	4

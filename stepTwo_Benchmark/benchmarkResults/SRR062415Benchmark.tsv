@@ -1,0 +1,9 @@
+Kaiju	CLARK	Kraken	CLARK-S
+Total Hits	882926	1012153	995691	913553
+Total TaxIDS	4556	2280	811	1793
+Time(s)	151	519.7	320.66	3612.52
+Pielou Evenness Index	0.53	0.46	0.51	0.45
+Total # Viral	3602	1195	2102	1210
+Top Viral TaxID	157239	1337877	157239	1337877
+Top Viral Name	Haemophilus phage HP2	Paenibacillus phage phiIBB_Pl23	Haemophilus phage HP2	Paenibacillus phage phiIBB_Pl23
+Top Viral Kmer Count	444	1177	1083	1194

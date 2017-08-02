@@ -1,0 +1,17 @@
+== RESULTS FORMAT ==
+Results are in CSV format. 
+Confidence scores and other statistics about assignments are computed only in the full/spectrum mode. 
+In the full mode (extended), the results format is the following for each line: 
+<Object_ID>,<hit count in target 1>,...,<hit count in target N>,<Length of object>,<Gamma>,<first assignment>,<hit count of first>,<second assignment>,<hit count of second>,<confidence score> where : * the "Object_ID" is the tag name indicated in the header (after ">" or "@") for eachobject, and N is the number of targets.
+			 
+In the spectrum mode, this tag name is merely the filename. 
+* hit count in target i is the number of k-mers specific to target i that are in the object (if the option "--extended" is on). 
+* Length of object is the number of bases (A,C,G,T,U or N) the object has. 
+* Gamma is the ratio between the total number of hit found in the object(against all targets) and the number of k-mers in the object. 
+* first assignment is the target ID of the target that obtained the highest hit count(ties are broken arbitrarily: the 1st assignment is the targethaving the first hit). 
+* hit count of first is the number of hit count for the first assignment (h1). 
+* second assignment is the target ID of the target that obtained the second highest hit count (ties are broken arbitrarily). 
+* hit count of second is the number of hit count for the second assignment (h2). 
+* confidence score is the ratio : h1/(h1+h2). In the default or express mode, the results format is the following for each line: <Object_ID>,<Length of object>,<1st_assignment>, where : 
+* the "Object_ID" is the tag name indicated in the header (after ">" or "@") for each object. * Length of object is the number of bases the object has. 
+* 1st assignment is the target ID of the target that obtained the highest hit count (ties are broken arbitrarily: the 1st assignment is the target having the first hit).

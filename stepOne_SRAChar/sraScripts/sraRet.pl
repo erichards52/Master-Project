@@ -23,7 +23,7 @@ my $factory = Bio::DB::EUtilities->new(-eutil => 'esummary',
 my  $ID;
 
 #headers
-print "ID\tStudyAcc\tSubmitterAcc\tTaxID\tOrganism\tNCBIname\tDate\tUpdateDate\tCompany\tModel\tBases\tDescription\tDesign\tCenter\tContactName\tLaboratory\tLibraryName\tLibraryStrategy\tLibrarySource\tLibrarySelection\tbioProj\tbioSample\n";
+print "Id\tOrganism CommonName\tOrganism ScientificName\tOrganism TaxID\tSampleAcc\tCreateDate\tUpdateDate\tPlatform\tModel\tBases\tDesc\tDesign\n";
 
 #iterates: retstart is less that the total hit count.
 my $retry = 0; my ($retmax, $retstart) = (10000,0);

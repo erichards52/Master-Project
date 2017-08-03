@@ -47,7 +47,7 @@ while ($retstart < $count) {
 
 close $out;
 
-#if query has results 
+#if the query has results 
 while (my $ds = $factory->next_DocSum){
 
   #variables
@@ -59,7 +59,7 @@ while (my $item = $ds->next_Item) {
      $name=$item->get_name;
      my $data=$item->get_content;
 
-#parse design, model, platform and bases.
+#Design, model, platform and bases.
 if($data=~/\<Summary><Title\>(.+)\<\/Title\>\<Platform instrument_model\=\"(.+)\"\>(.+)\<\/Platform\>\<Statistics total_runs\=\"(.+)\" total_spots\=\"(.+)\" total_bases\=\"(.+)\" total_size/){     
 	  $design=$1;
 	  $design=~s/\t//g;
@@ -68,24 +68,13 @@ if($data=~/\<Summary><Title\>(.+)\<\/Title\>\<Platform instrument_model\=\"(.+)\
 	  $platform=~s/\t//g;
 	  $bases=$6;
 }
-#parse create date and update date      
+#Create date and update date      
 if ($name="CreateDate"){
 	$date=$item->get_content;
 	$date1=$item->get_content;
 }
-#parse submission acession, center name, contact name, and lab name.
-if($data=~/\<Submitter acc\=\"(.+)\" center_name\=\"(.+)\" contact_name\=\"(.+)\" lab_name\=\"(.+)\"\/><Experiment/)
-{
- $submitter=$1;
- $submitter=~s/\t//g;
- $center=$2;
- $center=~s/\t//g;
- $contact=$3;
- $contact=~s/\t//g;
- $lab=$4;
- $lab=~s/\t//g;
-}
-#parse study accession number, description, taxonomic ID and organism (common name)
+
+#Get study acc no., desc. Tax ID and organism (common name)
 if($data=~/\<Study acc\=\"(.+)\" name\=\"(.+)\"\/\>\<Organism taxid\=\"(.+)\" CommonName\=\"(.+)\"\/\>\<Sample/){
 	$study=$1;
 	$study=~s/\t//g;
@@ -95,32 +84,9 @@ if($data=~/\<Study acc\=\"(.+)\" name\=\"(.+)\"\/\>\<Organism taxid\=\"(.+)\" Co
 	$taxId=~s/\t//g;
 	$organ=$4;
 	$organ=~s/\t//g;		
-
 $ID = $taxID;
-}	
-#parse library name, library strategy, library source and library selection
-if ($data=~/\<LIBRARY_NAME\>(.+)\<\/LIBRARY_NAME>\<LIBRARY_STRATEGY\>(.+)\<\/LIBRARY_STRATEGY>\<LIBRARY_SOURCE\>(.+)\<\/LIBRARY_SOURCE>\<LIBRARY_SELECTION\>(.+)\<\/LIBRARY_SELECTION>\<LIBRARY_LAYOUT/)
-{
-$libName=$1;
-$libStrat=$2;
-$libSource=$3;
-$libSelect=$4;
-
-}
-#parse Bioproject and Biosample ID
-if($data=~/\<Bioproject\>(.+)\<\/Bioproject\>\<Biosample\>(.+)\<\/Biosample>/)
-{
-$bioProj=$1;
-$bioSample=$2;
-}
 }}
 
-
-
-
- 
-#printing variables for each submission in the SRA.
-print "$id\t$study\t$submitter\t$taxId\t$organ\tNCBIname\t$date\t$date1\t$platform\t$model\t$bases\t$des\t$design\t$center\t$contact\t$lab\t$libName\t$libStrat\t$libSource\t$libSelect\t$bioProj\t$bioSample\n";
-
-
+#Print variables 
+print "$id\t$organ\t$$organ\t$taxId\t$study\t$date\t$date1\t$platform\t$model\t$bases\t$des\t$design\n";
 }

@@ -8,11 +8,11 @@
 
 
 ## Step Two: Benchmarking Classifiers for Virus and Phage Detection (stepTwo_Benchmark)
-### Scripts for creating default & custom databases for the classifiers used 
+⋅⋅*### Scripts for creating default & custom databases for the classifiers used 
 
-### Scripts for performing classification for the classifiers used 
+⋅⋅*### Scripts for performing classification for the classifiers used 
 
-### All benchmark results
+⋅⋅*### All benchmark results
 
 
 --------------------------------------

@@ -1,26 +1,15 @@
-# SRA Database Characterization, Benchmarking Classifiers for Virus and Phage Detection & *Rattus norvegicus* Virome Assembly
-## Step One: SRA Database Characterization (stepOne_SRAChar)
+# RScripts_Output
 
-* Scripts for retrieving, parsing & generating figures from SRA data/metadata
-
-
---------------------------------------
+### Contains 
+* RScript (SRATableFigure.R) which processes data/metadata retrieved from the SRA 
+* Accompanying RMarkdown html file (SRACharMarkdown_16_June_2017.Rmd).
 
 
-## Step Two: Benchmarking Classifiers for Virus and Phage Detection (stepTwo_Benchmark)
-* Scripts for creating default & custom databases for the classifiers used 
-
-* Scripts for performing classification for the classifiers used 
-
-* All benchmark results
+-------------------------------------
 
 
---------------------------------------
+# sraScripts
 
-
-## Step Three: *Rattus norvegicus* Virome Assembly (stepThree_Virome)
-* Script for accessing all dataset accession numbers utilising *Rattus norvegicus* as a model organism All dataset accession numbers utilising *Rattus norvegicus* as a model organism 
-
-* Scripts for downloading & extracting datasets, performing & timing classification, & retrieving various general & viral/phage classification information for each dataset utilised
-
-* OTU table for each dataset utilised
+### Contains
+* Perl script (sraRet.pl) which uses EUtils in order to download and parse SRA dataset metadata
+* Bash script (eSearch.sh) which uses EUtils in order to download and parse slightly different dataset metadata

@@ -89,4 +89,4 @@ $ID = $taxID;
 
 #Print variables 
 print "$id\t$organ\t$$organ\t$taxId\t$study\t$date\t$date1\t$platform\t$model\t$bases\t$des\t$design\n";
-}
+}}

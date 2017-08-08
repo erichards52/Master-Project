@@ -5,6 +5,8 @@
 
 ## benchmarkResults 
 * Tables detailing the overall results obtained from each classifiers output
+
+## benchMarkScripts
 * Script used to generate the tables, tax tables and Venn diagrams.
 
 ## taxResults

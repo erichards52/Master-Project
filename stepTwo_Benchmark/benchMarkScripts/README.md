@@ -5,16 +5,6 @@
 * Reads in outputs from CLARK, Kraken and Kaiju.
 * Creates benchmark tables and Venn diagrams
 
-Workflow:
-* Read in files from CLARK & Bracken output
-* Create tables/perform calculations in R using the script BenchmarkTableVenn.R
-* Create tables/perform calculations in R using the script KaijuFreqVir.R for cut kaiju output files
-
-## KaijuFreqVir.R
-
-* Reads in outputs from Kaiju (those that have been cut for lineage and tax only)
-* Prints desired outputs 
-
 ## taxScriptVir.pl
 
 * Used in order to return division/kingdom of a tax ID  

@@ -13,7 +13,7 @@ This script is self-explanatory. It downloads the arachaeal, viral and plasmid g
 ### gbk2faaCustom.pl  
 This script is self-explanatory. It is able to convert both single as well as all .gbff.gz files in a directory to a .faa file(s). It is used before creating a custom database from custom reference sequences.
 
-### testbwt.sh  
+### createbwt.sh  
 This script converts the concatenated .faa file (proteins.faa) into a bwt file (proteins.bwt) which is necessary for the creation of the fmi (proteins.fmi) file.
 
 ### Custom Database Creation

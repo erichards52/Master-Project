@@ -15,7 +15,7 @@ This script is self-explanatory. It downloads the arachaeal, viral and plasmid g
 ## Custom Database Creation  
 BEFORE CREATING YOUR OWN DATABASE YOU MUST WIPE THE OLD ONE FROM EXISTENCE. THIS CAN BE DONE BY RUNNING THE COMMAND `sh clean.sh` FROM THE ORIGINAL CLARK DIRECTORY.
 
-If the user wishes to create their own custom database, they merely need to change/add/remove the following code in HumanBacteriaRat.py
+If the user wishes to create their own custom database, they merely need to run `./resetCustomDB.sh` and change/add/remove the following code in HumanBacteriaRat.py
 
 ```
 print('Downloading <$ANY> genomes'+'\n')  

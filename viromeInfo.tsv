@@ -772,6 +772,7 @@ SRR5504325	103	56	 1864 	 2682285 	 0.1 	 10116 	 Rattus norvegicus 	 1992197 	 
 SRR5504326	105	53	 1841 	 2680131 	 0.1 	 10116 	 Rattus norvegicus 	 1988726 	 71 	 515 	 364745 	 Choristoneura occidentalis granulovirus 	 195
 SRR5504327	112	69	 1854 	 2679260 	 0.1 	 10116 	 Rattus norvegicus 	 1991003 	 84 	 535 	 364745 	 Choristoneura occidentalis granulovirus 	 202
 SRR5504328	24	10	 518 	 245723 	 0.13 	 10116 	 Rattus norvegicus 	 181901 	 18 	 55 	 364745 	 Choristoneura occidentalis granulovirus 	 21
+SRR5470938	35	37
 SRR5470940	4474	2220	 6138 	 5207208 	 0.33 	 131567 	 cellular organisms 	 1573274 	 1311 	 33321 	 1349410 	 Pandoravirus salinus 	 6238
 SRR5470941	5890	2287	 6133 	 5261714 	 0.33 	 131567 	 cellular organisms 	 1583324 	 1309 	 34123 	 1349410 	 Pandoravirus salinus 	 6503
 SRR5470949	4074	1593	 5659 	 23914313 	 0.16 	 1 	 root 	 15959427 	 1006 	 781166 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 758337
@@ -954,3 +955,4 @@ SRR5171560	865	281	 3698 	 16213765 	 0.1 	 10116 	 Rattus norvegicus 	 9921584 
 SRR5171561	810	369	 3609 	 14855718 	 0.1 	 10116 	 Rattus norvegicus 	 9079895 	 248 	 6113 	 11768 	 Feline leukemia virus 	 1139
 SRR5171565	835	292	 3743 	 16684170 	 0.1 	 10116 	 Rattus norvegicus 	 10209904 	 276 	 8515 	 364745 	 Choristoneura occidentalis granulovirus 	 2814
 SRR5171566	864	289	 3619 	 16443876 	 0.1 	 10116 	 Rattus norvegicus 	 10060071 	 273 	 8530 	 364745 	 Choristoneura occidentalis granulovirus 	 2980
+SRR5171568	913	385	 3727 	 17539500 	 0.1 	 10116 	 Rattus norvegicus 	 10697506 	 271 	 6070 	 11768 	 Feline leukemia virus 	 1142

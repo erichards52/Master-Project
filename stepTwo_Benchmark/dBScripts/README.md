@@ -8,4 +8,4 @@
 * Contains scripts used for creating custom databases
 
 ### kronaScripts
-*Contains scripts used for creating krona plots from classification outputs
+* Contains scripts used for creating krona plots from classification outputs

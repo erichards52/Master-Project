@@ -1,17 +1,16 @@
 # Benchmark Results
 
 ## HomoResp
-| Variables             | Kaiju                | CLARK                           | Kraken       | CLARK-S                         | 
-|-----------------------|----------------------|---------------------------------|--------------|---------------------------------| 
-| Total Hits            | 132954               | 89917                           | 89380        | 201746                          | 
-| Total TaxIDS          | 187                  | 47                              | 16           | 26                              | 
-| Time(s)               | 22                   | 24.09                           | 4.64         | 387.7                           | 
-| Pielou Evenness Index | 0.32                 | 0.09                            | 0.11         | 0.11                            | 
-| Total # Viral Hits    | 93964                | 3451                            | 3392         | 4352                            | 
-| Top Viral TaxID       | 12131                | 1337877                         | 147712       | 1337877                         | 
-| Top Viral Name        | Human rhinovirus B14 | Paenibacillus phage phiIBB_Pl23 | Rhinovirus B | Paenibacillus phage phiIBB_Pl23 | 
-| Top Viral Kmer Count  | 73803                | 3449                            | 3326         | 4352                            | 
-
+| Variables                          | Kaiju                | CLARK                           | Kraken       | CLARK-S                         | 
+|------------------------------------|----------------------|---------------------------------|--------------|---------------------------------| 
+| Total Reads Classified             | 132954               | 89917                           | 89380        | 201746                          | 
+| Total Taxon IDs                    | 187                  | 47                              | 16           | 26                              | 
+| Time (s)                           | 22                   | 24.09                           | 4.64         | 387.7                           | 
+| Pielou’s Evenness Index            | 0.32                 | 0.09                            | 0.11         | 0.11                            | 
+| Total No. Viral Read Classified    | 93964                | 3451                            | 3392         | 4352                            | 
+| Top Viral Taxon ID                 | 12131                | 1337877                         | 147712       | 1337877                         | 
+| Top Viral Taxon Name               | Human rhinovirus B14 | Paenibacillus phage phiIBB_Pl23 | Rhinovirus B | Paenibacillus phage phiIBB_Pl23 | 
+| Top Viral Taxon - Reads Classified | 73803                | 3449                            | 3326         | 4352                            | 
 
 
 

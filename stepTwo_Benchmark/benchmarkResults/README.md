@@ -72,6 +72,4 @@
 | Top Viral Taxon Name               | Haemophilus phage HP2 | Paenibacillus phage phiIBB_Pl23 | Haemophilus phage HP2 | Paenibacillus phage phiIBB_Pl23 | 
 | Top Viral Taxon - Reads Classified | 487                   | 1222                            | 1099                  | 1248                            | 
 
-## BenchmarkTableVenn.R
 
-This script reads in outputs from all classifiers and creates tables similar to the ones above for each of the sample files provided. This script is not considered to be usable/reproducable by other parties.

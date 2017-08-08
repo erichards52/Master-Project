@@ -1,7 +1,12 @@
 # Database Creation, Classification and Benchmarking
 
-## dBScripts contains scripts which were used to create custom database and perform classification.
+## dBScripts 
+*Scripts which were used to create custom database and perform classification.
 
-## benchmarkResults contains tables detailing the overall results obtained from each classifiers output, as well as scripts used to generate the tables.
+## benchmarkResults 
+*Tables detailing the overall results obtained from each classifiers output
+*Script used to generate the tables, tax tables and Venn diagrams.
 
-## taxResults contains Venn diagrams detailing the overlap of taxon IDs between different classifier outputs as well as tables listing tax IDs identified by each classifier, their individual frequencies, and corresponding taxon names.
+## taxResults
+*Venn diagrams detailing the overlap of taxon IDs between different classifier outputs
+*tables listing tax IDs identified by each classifier, their individual frequencies, and corresponding taxon names.

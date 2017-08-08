@@ -25,7 +25,10 @@ With explanation:
 `--spaced` is a flag which should only be added if the user is performing a classification using a spaced DB created specifically for CLARK-S.
 
 
-### getAbundance.sh & getAbundanceClarkS.sh  
+----------------------------------------------
+
+
+## getAbundance.sh & getAbundanceClarkS.sh  
 Calculates & creates an abundance table as well as krona file (.krn) from the CLARK results.
 
 Without explanation:  

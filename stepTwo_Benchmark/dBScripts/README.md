@@ -9,3 +9,6 @@
 
 ### kronaScripts
 * Contains scripts used for creating krona plots from classification outputs
+
+### Extras
+* Contains explanation of output from each classifier

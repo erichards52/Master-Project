@@ -1,8 +1,15 @@
 #Set up workspace/load all necessary libraries
 #This needs to be run every time the script is opened
 
-#If you wish to generate the markdown document, simply run all code
-#in this script EXCEPT for the last batch (last batch installs necessary libraries)
+#If you wish to generate the markdown document, run all code
+#in this script EXCEPT for the last batch, unless you have never run it before (last batch installs necessary libraries)
+
+#PLEASE READ LAST BATCH OF CODE AT THE BOTTOM BEFORE RUNNING ANYTHING
+
+#Number of bases sequenced by platform per year section needs to be updated manually if you wish to create
+#an up to date line plot
+
+#WD needs to be set to wherever downloaded SRA metadata file to
 setwd("/Users/2274776r/Documents/MastersDegree/Thesis/R/")
 library(ggplot2)
 library(plyr)
@@ -31,7 +38,7 @@ library(knitr)
 library(markdown)
 
 #Read in the file
-tab<-read.csv("SRATest.txt",header=TRUE, sep=",", 
+tab<-read.csv("SRAData.txt",header=TRUE, sep=",", 
               quote = "", na.strings = c("", "NA", "n/a"))
 
 #Curation
@@ -72,7 +79,9 @@ tab$Platform <- as.factor(tab$Platform)
 
 #Organism curation
 #Read in taxonomy txt produced via eutils (NCBI TAXONOMY)
-taxMerg<-read.csv("taxTest.txt",header=TRUE, sep=",", 
+#This should be whatever you named the concatenated file. For the sake of ease, you might want to name it 
+#taxUpdated.txt
+taxMerg<-read.csv("taxUpdated.txt",header=TRUE, sep=",", 
                   quote = "", na.strings = c("", "NA", "n/a"))
 tab <- merge(tab, taxMerg, by.x = "Organism.TaxID.", by.y = "ID")
 tab <- merge(tab, taxMerg)
@@ -340,6 +349,8 @@ for (i in 2007:2017)
 }
 
 #Read in vectors for each platform (sum of bases for each year)
+#THIS CODE WILL NOT WORK IF YOU ARE TRYING TO PRODUCE AN UPDATED LINE GRAPH
+#YOU NEED TO STORE ALL VALUES FROM THE LAST SELECTION IN VECTORS WITH THE NAMES PRESENT IN THIS SECTION
 illHiVec <- c(0,435300142357,1.110118e+12,1.301944e+13,8.868507e+13,3.069139e+14,5.185492e+14,
               8.942418e+14,1.343956e+15,5.920494e+15,1.027195e+15)
 
@@ -448,48 +459,6 @@ ratDescCount <- na.omit(ratDescCount)
 ratDescCount <- ratDescCount[order(-ratDescCount$freq),]
 rownames(ratDescCount) <- NULL
 
-#Subset Counts df to only include norvegicus and BLANK
-# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus leucopus"),]
-# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus fuscipes"),]
-# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus rattus"),]
-# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus sordidus"),]
-# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus tunneyi"),]
-# ratDescCount <- ratDescCount[ which(ratDescCount$Scientific.Name != "Rattus villosissimus"),]
-
-#Truncate organism count table to 9 rat species (only those that exist)
-# ratDescCount <- ratDescCount[1:2,]
-# 
-# #Count number of rows in df for organism plot
-# rowsY <- nrow(ratDescCount)
-# 
-# #data frame plot setup
-# dose = ratDescCount[1]
-# lenOrg = ratDescCount[2]
-# ratDF <- data.frame(dose=ratDescCount[1],
-#                     lenOrg=ratDescCount[2])
-# 
-# 
-# #Creae 1-20 labels for plot
-# ratN = 1
-# ratRowN <- seq(ratN,rowsY,1)
-# ratRowN <- toString(ratRowN)
-# ratRowN <- strsplit(ratRowN,",")
-# 
-# #Create rat barplot
-# ratPlot<-ggplot(data=ratDF, aes(x=ratDescCount$Scientific.Name, y=lenOrg)) +
-#   geom_bar(aes(fill=ratDescCount$Scientific.Name),stat="identity") + scale_y_log10() +
-#   scale_x_discrete(labels=ratRowN)
-# 
-# #Add labels to plot
-# ratPlot <- ratPlot + labs(x = "Rat Species")
-# ratPlot <- ratPlot + labs(y = "Count")
-# ratPlot <- ratPlot + labs(title = "Rat Species vs Dataset Count")
-# ratPlot <- ratPlot + guides(fill=guide_legend(title="Rat Species"))
-# ratPlot
-# 
-# ggsave(ratPlot,file='BarPlot_RatDesc.pdf', width = 16, height = 9, dpi = 120)
-# dev.off()
-
 #Model organism metadata (rat WordCloud)
 #---------------------------------------------------
 #Return all datasets which use "rat" as an organism
@@ -525,56 +494,6 @@ wordcloud(words = d$word, freq = d$freq, min.freq = 1,
           max.words=200, random.order=FALSE, rot.per=0.35, 
           colors=brewer.pal(8, "Dark2"))
 
-#Create taxonomic ID frequency plot
-#--------------------------------------
-#organism counts table
-# taxCounts <- count(tab, 'Organism.TaxID.')
-# taxCounts <- na.omit(taxCounts)
-# 
-# #Order taxCounts df
-# taxCounts <- taxCounts[order(-taxCounts$freq),]
-# 
-# #Truncate organism count table to 20 organisms
-# taxCounts <- taxCounts[1:20,]
-# 
-# #Return organism levels & drop those not needed
-# taxLev <- levels(taxCounts$Organism.TaxID.)
-# 
-# #Count number of rows in df for organism plot
-# rowsY <- nrow(taxCounts)
-# 
-# #data frame plot setup
-# dose = taxCounts[1]
-# lenOrg = taxCounts[2]
-# dfOrg <- data.frame(dose=taxCounts[1],
-#                     lenOrg=taxCounts[2])
-# 
-# dfOrgTax <- merge(dfOrg, taxMerg, by.x = "Organism.TaxID.", by.y = "ID")
-# dfOrgTax <- dfOrgTax[c(-1)]
-# 
-# #Order levels for plot from greatest to least
-# dfOrgTax <- dfOrgTax[with(dfOrgTax, order(-dfOrgTax$freq, dfOrgTax$Scientific.Name)),]
-# 
-# #Creae 1-20 labels for plot
-# xTax = 1
-# xTaxN <- seq(xTax,rowsY,1)
-# xTaxN <- toString(xTaxN)
-# xTaxN <- strsplit(xTaxN,",")
-# 
-# #Create organism plot
-# taxPlot<-ggplot(data=dfOrgTax, aes(x=dfOrgTax$Scientific.Name, y=lenOrg)) +
-#   geom_bar(aes(fill=dfOrgTax$Scientific.Name),stat="identity") +
-#   scale_x_discrete(labels=xTaxN)
-# 
-# #Add labels to plot
-# taxPlot <- taxPlot + labs(x = "Organisms")
-# taxPlot <- taxPlot + labs(y = "Count")
-# taxPlot <- taxPlot + labs(title = "Number of Datasets Submitted to SRA vs TaxID")
-# taxPlot <- taxPlot + guides(fill=guide_legend(title="Organisms"))
-# taxPlot
-# 
-# ggsave(taxPlot,file='Tax_BarPlot.pdf', width = 16, height = 9, dpi = 120)
-# dev.off()
 
 #RMarkdown
 #------------------------------------------------------------------------------------
@@ -607,7 +526,9 @@ install.packages('devtools')
 slam_url <- "https://cran.r-project.org/src/contrib/Archive/slam/slam_0.1-37.tar.gz"
 install_url(slam_url)
 
-#Use eutils for returning scientific name
+#Use eutils for returning scientific name, NEEDS TO BE RUN AFTER READING MAIN FILE, OTHERWISE TAX NAMES WILL NOT BE CORRECT
+#SHOULD ONLY BE RUN ONCE
+#Run taxScript.pl after creating this file
 #Vector unique taxIDs
 dfUniTax <- c(unique(tab$Organism.TaxID.))
 dfUniTax <- na.omit(dfUniTax)

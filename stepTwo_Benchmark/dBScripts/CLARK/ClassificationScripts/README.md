@@ -24,5 +24,32 @@ With explanation:
 
 `--spaced` is a flag which should only be added if the user is performing a classification using a spaced DB created specifically for CLARK-S.
 
+
+### getAbundance.sh & getAbundanceClarkS.sh  
+Calculates & creates an abundance table as well as krona file (.krn) from the CLARK results.
+
+Without explanation:  
+
+```
+./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv
+```  
+
+
+------------------------
+
+With explanation:  
+
+```
+./estimate_abundance.sh -F <$CLARK_OUTPUT> -D <$DB_DIR> --krona > <$RESULT_FILE>.csv
+``` 
+`<$CLARK_OUTPUT>` should be replaced with the output from a CLARK classification.  
+
+`<$DB_DIR>` should be replaced with the CLARK database directory.  
+
+`<$RESULT_FILE>` should be replaced with the desired output filename.  
+
+A krona file is automatically generated in the directory where the script is run.
+
+------------------------
  
 

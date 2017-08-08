@@ -1,5 +1,5 @@
 # Explanation of Structure
-## Each classifier's directories are divided into sections
+## Each classifier's directories are divided into:
 
 ### ClassificationScripts
 * Contains scripts used for performing classification

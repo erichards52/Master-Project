@@ -1,3 +1,7 @@
+#This script was used in order to return benchmark results for each classifier. 
+#Although output from Kaiju is read in and assigned to the tables present, the way in which the values are generated was considered
+#redundant, and another script was created called KaijuFreqVir.R
+
 #Libraries
 library(asbio)
 library(vegan)
@@ -538,6 +542,7 @@ SRR062415[3,1] <- kaijuSRR062415Speed
 SRR062462[3,1] <- kaijuSRR062462Speed
 
 #--------------------------------------------------------
+#DISREGARD THIS SECTION, OTHER SCRIPT WAS CREATED FOR RETURNING KAIJU INFORMATION
 #Kaiju assigned taxon ids & number of assigned taxon ids & number of hits
 setwd(y)
 
@@ -1115,22 +1120,6 @@ HomoTaxDF <- merge(HomoTaxDF, TempHomoKaiju, all=T)
 HomoTaxDF <- merge(HomoTaxDF, TempHomoKrak, all=T)
 HomoTaxDF <-merge(HomoTaxDF, TempHomoClarkS, all=T)
 
-#Venn Diagram of different classifiers & overlapping TaxIDs
-write.csv(TempHomoClark$TaxID, file="ClarkHomoTax.csv",row.names=F,col.names=F)
-ClarkHomoTax <- read.csv("ClarkHomoTax.csv")
-
-write.csv(TempHomoKaiju$TaxID, file="KaijuHomoTax.csv",row.names=F,col.names=F)
-KaijuHomoTax <- read.csv("KaijuHomoTax.csv")
-
-write.csv(TempHomoKrak$TaxID, file="KrakHomoTax.csv",row.names=F,col.names=F)
-KrakHomoTax <- read.csv("KrakHomoTax.csv")
-
-write.csv(TempHomoClarkS$TaxID, file="ClarkSHomoTax.csv",row.names=F)
-ClarkSHomoTax <- read.csv("ClarkSHomoTax.csv")
-
-HomoVenn <- venn.diagram(c(ClarkHomoTax,ClarkSHomoTax,KaijuHomoTax,KrakHomoTax), category.names = c("CLARK","CLARK-S","Kaiju","Kraken"), "HomoRespVenn.tiff", fill=c("blue", "red", "yellow","green"))
-
-
 #MidgeNov
 TempMidgeClark <- TempMidgeClark[-c(1,3,5,6)]
 colnames(TempMidgeClark) <- c("TaxID", "CLARK")
@@ -1254,3 +1243,113 @@ SRR062462TaxDF <- merge(SRR062462TaxDF, SRR062462Lin)
 # write.table(TravTaxDF, file='TravChikTaxTable.tsv', quote=FALSE, sep="\t", row.names = FALSE)
 # write.table(SRR062415TaxDF, file='SRR062415TaxTable.tsv', quote=FALSE, sep="\t", row.names = FALSE)
 # write.table(SRR062462TaxDF, file='SRR062462TaxTable.tsv', quote=FALSE, sep="\t", row.names = FALSE)
+
+#Venn Diagram of different classifiers & overlapping TaxIDs
+#First create CSV of each classifiers unique TaxIDs and read it back in
+#HomoResp
+write.csv(TempHomoClark$TaxID, file="ClarkHomoTax.csv",row.names=F,col.names=F)
+ClarkHomoTax <- read.csv("ClarkHomoTax.csv")
+
+write.csv(TempHomoKaiju$TaxID, file="KaijuHomoTax.csv",row.names=F,col.names=F)
+KaijuHomoTax <- read.csv("KaijuHomoTax.csv")
+
+write.csv(TempHomoKrak$TaxID, file="KrakHomoTax.csv",row.names=F,col.names=F)
+KrakHomoTax <- read.csv("KrakHomoTax.csv")
+
+write.csv(TempHomoClarkS$TaxID, file="ClarkSHomoTax.csv",row.names=F)
+ClarkSHomoTax <- read.csv("ClarkSHomoTax.csv")
+
+#Create Venn Diagram & get list of overlapping Taxas (sharedXList)
+HomoVenn <- venn.diagram(c(ClarkHomoTax,ClarkSHomoTax,KaijuHomoTax,KrakHomoTax), category.names = c("CLARK","CLARK-S","Kaiju","Kraken"), "HomoRespVenn.tiff", fill=c("blue", "red", "yellow","green"))
+sharedHomoList <- Reduce(intersect, c(ClarkHomoTax,ClarkSHomoTax,KaijuHomoTax,KrakHomoTax))
+
+#MidgeNov
+write.csv(TempMidgeClark$TaxID, file="ClarkMidgeTax.csv",row.names=F,col.names=F)
+ClarkMidgeTax <- read.csv("ClarkMidgeTax.csv")
+
+write.csv(TempMidgeKaiju$TaxID, file="KaijuMidgeTax.csv",row.names=F,col.names=F)
+KaijuMidgeTax <- read.csv("KaijuMidgeTax.csv")
+
+write.csv(TempMidgeKrak$TaxID, file="KrakMidgeTax.csv",row.names=F,col.names=F)
+KrakMidgeTax <- read.csv("KrakMidgeTax.csv")
+
+write.csv(TempMidgeClarkS$TaxID, file="ClarkSMidgeTax.csv",row.names=F)
+ClarkSMidgeTax <- read.csv("ClarkSMidgeTax.csv")
+
+#Create Venn Diagram & get list of overlapping Taxas (sharedXList)
+MidgeVenn <- venn.diagram(c(ClarkMidgeTax,ClarkSMidgeTax,KaijuMidgeTax,KrakMidgeTax), category.names = c("CLARK","CLARK-S","Kaiju","Kraken"), "MidgeVenn.tiff", fill=c("blue", "red", "yellow","green"))
+sharedMidgeList <- Reduce(intersect, c(ClarkMidgeTax,ClarkSMidgeTax,KaijuMidgeTax,KrakMidgeTax))
+
+#TravChik
+write.csv(TempTravClark$TaxID, file="ClarkTravTax.csv",row.names=F,col.names=F)
+ClarkTravTax <- read.csv("ClarkTravTax.csv")
+
+write.csv(TempTravKaiju$TaxID, file="KaijuTravTax.csv",row.names=F,col.names=F)
+KaijuTravTax <- read.csv("KaijuTravTax.csv")
+
+write.csv(TempTravKrak$TaxID, file="KrakTravTax.csv",row.names=F,col.names=F)
+KrakTravTax <- read.csv("KrakTravTax.csv")
+
+write.csv(TempTravClarkS$TaxID, file="ClarkSTravTax.csv",row.names=F)
+ClarkSTravTax <- read.csv("ClarkSTravTax.csv")
+
+#Create Venn Diagram & get list of overlapping Taxas (sharedXList)
+TravVenn <- venn.diagram(c(ClarkTravTax,ClarkSTravTax,KaijuTravTax,KrakTravTax), category.names = c("CLARK","CLARK-S","Kaiju","Kraken"), "TravVenn.tiff", fill=c("blue", "red", "yellow","green"))
+sharedTravList <- Reduce(intersect, c(ClarkTravTax,ClarkSTravTax,KaijuTravTax,KrakTravTax))
+
+#Create Venn Diagram & get list of overlapping Taxas (sharedXList)
+MidgeVenn <- venn.diagram(c(ClarkMidgeTax,ClarkSMidgeTax,KaijuMidgeTax,KrakMidgeTax), category.names = c("CLARK","CLARK-S","Kaiju","Kraken"), "MidgeVenn.tiff", fill=c("blue", "red", "yellow","green"))
+sharedMidgeList <- Reduce(intersect, c(ClarkMidgeTax,ClarkSMidgeTax,KaijuMidgeTax,KrakMidgeTax))
+
+#SRR062415
+write.csv(TempSRR062415Clark$TaxID, file="ClarkSRR062415Tax.csv",row.names=F,col.names=F)
+ClarkSRR062415Tax <- read.csv("ClarkSRR062415Tax.csv")
+
+write.csv(TempSRR062415Kaiju$TaxID, file="KaijuSRR062415Tax.csv",row.names=F,col.names=F)
+KaijuSRR062415Tax <- read.csv("KaijuSRR062415Tax.csv")
+
+write.csv(TempSRR062415Krak$TaxID, file="KrakSRR062415Tax.csv",row.names=F,col.names=F)
+KrakSRR062415Tax <- read.csv("KrakSRR062415Tax.csv")
+
+write.csv(TempSRR062415ClarkS$TaxID, file="ClarkSSRR062415Tax.csv",row.names=F)
+ClarkSSRR062415Tax <- read.csv("ClarkSSRR062415Tax.csv")
+
+#Create Venn Diagram & get list of overlapping Taxas (sharedXList)
+SRR062415Venn <- venn.diagram(c(ClarkSRR062415Tax,ClarkSSRR062415Tax,KaijuSRR062415Tax,KrakSRR062415Tax), category.names = c("CLARK","CLARK-S","Kaiju","Kraken"), "SRR062415Venn.tiff", fill=c("blue", "red", "yellow","green"))
+sharedSRR062415List <- Reduce(intersect, c(ClarkSRR062415Tax,ClarkSSRR062415Tax,KaijuSRR062415Tax,KrakSRR062415Tax))
+
+#SRR062462
+write.csv(TempSRR062462Clark$TaxID, file="ClarkSRR062462Tax.csv",row.names=F,col.names=F)
+ClarkSRR062462Tax <- read.csv("ClarkSRR062462Tax.csv")
+
+write.csv(TempSRR062462Kaiju$TaxID, file="KaijuSRR062462Tax.csv",row.names=F,col.names=F)
+KaijuSRR062462Tax <- read.csv("KaijuSRR062462Tax.csv")
+
+write.csv(TempSRR062462Krak$TaxID, file="KrakSRR062462Tax.csv",row.names=F,col.names=F)
+KrakSRR062462Tax <- read.csv("KrakSRR062462Tax.csv")
+
+write.csv(TempSRR062462ClarkS$TaxID, file="ClarkSSRR062462Tax.csv",row.names=F)
+ClarkSSRR062462Tax <- read.csv("ClarkSSRR062462Tax.csv")
+
+#Create Venn Diagram & get list of overlapping Taxas (sharedXList)
+SRR062462Venn <- venn.diagram(c(ClarkSRR062462Tax,ClarkSSRR062462Tax,KaijuSRR062462Tax,KrakSRR062462Tax), category.names = c("CLARK","CLARK-S","Kaiju","Kraken"), "SRR062462Venn.tiff", fill=c("blue", "red", "yellow","green"))
+#All
+sharedSRR062462List <- Reduce(intersect, c(ClarkSRR062462Tax,ClarkSSRR062462Tax,KaijuSRR062462Tax,KrakSRR062462Tax))
+#Clark&ClarkS
+sharedSRR062462ListClarkClarkS <- Reduce(intersect, c(ClarkSRR062462Tax,ClarkSSRR062462Tax))
+sharedSRR062462ListClarkClarkSKaiju <- Reduce(intersect, c(ClarkSRR062462Tax,ClarkSSRR062462Tax,KaijuSRR062462Tax))
+sharedSRR062462ListClarkClarkSKraken <- Reduce(intersect, c(ClarkSRR062462Tax,ClarkSSRR062462Tax,KrakSRR062462Tax))
+#ClarkS
+sharedSRR062462ListClarkSKaijuKraken <- Reduce(intersect, c(ClarkSSRR062462Tax,KaijuSRR062462Tax,KrakSRR062462Tax))
+sharedSRR062462ListKrakenClarkS <- Reduce(intersect, c(ClarkSSRR062462Tax,KrakSRR062462Tax))
+sharedSRR062462ListKaijuClarkS <- Reduce(intersect, c(ClarkSSRR062462Tax,KaijuSRR062462Tax))
+#Clark
+sharedSRR062462ListClarkKaijuKraken <- Reduce(intersect, c(ClarkSRR062462Tax,KaijuSRR062462Tax,KrakSRR062462Tax))
+sharedSRR062462ListClarkKaiju <- Reduce(intersect, c(ClarkSRR062462Tax,KaijuSRR062462Tax))
+sharedSRR062462ListKrakenKaiju <- Reduce(intersect, c(KaijuSRR062462Tax,KrakSRR062462Tax))
+
+
+
+
+
+

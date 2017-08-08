@@ -9,7 +9,8 @@ use Bio::DB::Taxonomy::entrez;
 use Data::Dumper;
 
 my @array;
-open(my $fh, "<", "/home4/rich01e/ncbi/public/outputDir/KaijuTax.tsv")
+#Choose file to read in - must be TaxIDs separated by newlines
+open(my $fh, "<", "Tax.tsv")
     or die "Failed to open file: $!\n";
 select $fh; $| = 1; select STDOUT;
 while(<$fh>) {

@@ -1,5 +1,5 @@
 # Taxa Tables
-### The directory "tsvFiles" list taxa that were detected by each classifier for each dataset used during benchmarking. Venn diagrams below list the number of taxa shared across classifiers for each dataset.
+### The directory "tsvFiles" list taxa that were identfied by each classifier for each sample used during benchmarking. Venn diagrams below list the number of taxa shared across classifiers for each dataset.
 
 ### HomoResp
 ![Alt text](https://github.com/erichards52/Master-Project/blob/master/stepTwo_Benchmark/taxResults/HomoRespVenn.PNG?raw=true "Title")

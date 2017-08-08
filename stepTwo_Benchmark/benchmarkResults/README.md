@@ -1,6 +1,6 @@
 # Benchmark Results
 
-## HomoResp
+## Human Respiratory Sample Infected with Rhinovirus 
 | Variables                          | Kaiju                | CLARK                           | Kraken       | CLARK-S                         | 
 |------------------------------------|----------------------|---------------------------------|--------------|---------------------------------| 
 | Total Reads Classified             | 132954               | 89917                           | 89380        | 201746                          | 
@@ -14,22 +14,21 @@
 
 
 
-## MidgeNov
+## Metagenomic Midge Sample Infected with Novel Nodavirus 
 
-| Variables             | Kaiju                                   | CLARK                           | Kraken                                  | CLARK-S                         | 
-|-----------------------|-----------------------------------------|---------------------------------|-----------------------------------------|---------------------------------| 
-| Total Hits            | 178825                                  | 235014                          | 218965                                  | 361320                          | 
-| Total TaxIDS          | 1196                                    | 250                             | 53                                      | 125                             | 
-| Time(s)               | 70                                      | 99.38                           | 26.1                                    | 2025.05                         | 
-| Pielou Evenness Index | 0.27                                    | 0.24                            | 0.34                                    | 0.23                            | 
-| Total # Viral Hits    | 40338                                   | 126182                          | 109149                                  | 70543                           | 
-| Top Viral TaxID       | 364745                                  | 1337877                         | 364745                                  | 1337877                         | 
-| Top Viral Name        | Choristoneura occidentalis granulovirus | Paenibacillus phage phiIBB_Pl23 | Choristoneura occidentalis granulovirus | Paenibacillus phage phiIBB_Pl23 | 
-| Top Viral Kmer Count  | 29622                                   | 126181                          | 100526                                  | 70543                           | 
+|                           | Kaiju                                   | CLARK                           | Kraken                                  | CLARK-S                         | 
+|------------------------------------|-----------------------------------------|---------------------------------|-----------------------------------------|---------------------------------| 
+| Total Reads Classified             | 178825                                  | 235014                          | 218965                                  | 361320                          | 
+| Total Taxon IDs                    | 1196                                    | 250                             | 53                                      | 125                             | 
+| Time (s)                           | 70                                      | 99.38                           | 26.1                                    | 2025.05                         | 
+| Pielou’s Evenness Index            | 0.27                                    | 0.24                            | 0.34                                    | 0.23                            | 
+| Total No. Viral Read Classified    | 40338                                   | 126182                          | 109149                                  | 70543                           | 
+| Top Viral Taxon ID                 | 364745                                  | 1337877                         | 364745                                  | 1337877                         | 
+| Top Viral Taxon Name               | Choristoneura occidentalis granulovirus | Paenibacillus phage phiIBB_Pl23 | Choristoneura occidentalis granulovirus | Paenibacillus phage phiIBB_Pl23 | 
+| Top Viral Taxon - Reads Classified | 29622                                   | 126181                          | 100526                                  | 70543                           | 
 
 
-
-## TravChik
+## Human Sample Infected with Chikungunya Virus
 
 | Variables             | Kaiju             | CLARK                           | Kraken            | CLARK-S                         | 
 |-----------------------|-------------------|---------------------------------|-------------------|---------------------------------| 
@@ -45,7 +44,7 @@
 
 
 
-## SRR062415
+## SRX024927: Metagenomics of Human Microbiome – Run SRR062415
 
 | Variables             | Kaiju                 | CLARK                           | Kraken                | CLARK-S                         | 
 |-----------------------|-----------------------|---------------------------------|-----------------------|---------------------------------| 
@@ -61,7 +60,7 @@
 
 
 
-## SRR062462
+## SRX024927: Metagenomics of Human Microbiome – Run SRR062462
 
 | Variables             | Kaiju                 | CLARK                           | Kraken                | CLARK-S                         | 
 |-----------------------|-----------------------|---------------------------------|-----------------------|---------------------------------| 

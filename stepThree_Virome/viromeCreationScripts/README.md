@@ -1,6 +1,6 @@
 # Explanation of Scripts
 
-## KaijuFreqVir
+## KaijuFreqVir.R
 * Creates abundance/frequency table of tax IDs identified by Kaiju and with respective tax names
 * Prints general information as well as viral information
 

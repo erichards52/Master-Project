@@ -7,5 +7,5 @@
 ## createVirome.pl
 * Downloads and extract FASTQ files of all SRA accession associated with tax ID 10116 (*Rattus norvegicus*)
 * Performs classification using Kaiju
-* Returns/prints general as well as viral information for dataset and produces krona plot
+* Returns/prints general as well as viral information for dataset (utilising KaijuFreqVir.R) and produces krona plot
 * Automated upload of information as well as krona plot to GitHub

@@ -29,7 +29,7 @@ If the user wishes to use download a database like the one created during this p
 
 Before the user can perform any classifications, they must invoke the command `sh set_targets.sh <$DIR_DB> custom`, which will then allow CLARK to realise the reference sequences/genomes in the `Custom` folder. 
 
-A sample classification must then be run in order for the database to be created (please see Metagenome Classification below).
+A sample classification must then be run in order for the database to be created.
 
 If the user wishes to use CLARK-S, the database must have already been created via performing a sample classification, after which the command `./buildSpacedDB.sh` should be used in order to create a spaced k-mer database.
 

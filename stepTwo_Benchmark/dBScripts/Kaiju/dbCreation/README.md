@@ -14,7 +14,7 @@ This script is self-explanatory. It is able to convert both single as well as al
 This script converts the concatenated .faa file (proteins.faa) into a bwt file (proteins.bwt) which is necessary for the creation of the fmi (proteins.fmi) file.
 
 ### Custom Database Creation
-In order to create a custom database, merely change/add/remove the following code in HumanBacteriaRat.py before running:
+In order to create a custom database, merely change/add/remove the following code in KaijuDB.py before running:
 
 ```
 print('Downloading <$ANY> genomes'+'\n')  

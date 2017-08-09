@@ -101,3 +101,8 @@ download_refseq_genome(10116,'rat_genome_url.txt')
 
 print('Downloading bacterial genomes'+'\n')
 download_bacterial_genomes('bacterial_complete_genome_url.txt')
+
+subprocess.call(wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/archaea/archaea.*.genomic.gbff.gz)
+subprocess.call(wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.*.genomic.gbff.gz)
+subprocess.call(wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.gbff.gz)
+subprocess.call(gunzip *.gz)

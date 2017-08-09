@@ -104,8 +104,8 @@ download_bacterial_genomes('bacterial_complete_genome_url.txt')
 
 
 subprocess.call(wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/archaea/archaea.*.genomic.fna.gz)
-subprcoess.call(wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.*.genomic.fna.gz)
-subprcoss.call(wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz)
-subprcoess.call(gunzip *.gz)
+subprocess.call(wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/viral/viral.*.genomic.fna.gz)
+subprocess.call(wget ftp://ftp.ncbi.nlm.nih.gov/refseq/release/plasmid/plasmid.*.genomic.fna.gz)
+subprocess.call(gunzip *.gz)
 
 

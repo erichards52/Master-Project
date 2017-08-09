@@ -772,6 +772,7 @@ SRR5504325	103	56	 1864 	 2682285 	 0.1 	 10116 	 Rattus norvegicus 	 1992197 	 
 SRR5504326	105	53	 1841 	 2680131 	 0.1 	 10116 	 Rattus norvegicus 	 1988726 	 71 	 515 	 364745 	 Choristoneura occidentalis granulovirus 	 195
 SRR5504327	112	69	 1854 	 2679260 	 0.1 	 10116 	 Rattus norvegicus 	 1991003 	 84 	 535 	 364745 	 Choristoneura occidentalis granulovirus 	 202
 SRR5504328	24	10	 518 	 245723 	 0.13 	 10116 	 Rattus norvegicus 	 181901 	 18 	 55 	 364745 	 Choristoneura occidentalis granulovirus 	 21
+SRR5470938	35	37
 SRR5470940	4474	2220	 6138 	 5207208 	 0.33 	 131567 	 cellular organisms 	 1573274 	 1311 	 33321 	 1349410 	 Pandoravirus salinus 	 6238
 SRR5470941	5890	2287	 6133 	 5261714 	 0.33 	 131567 	 cellular organisms 	 1583324 	 1309 	 34123 	 1349410 	 Pandoravirus salinus 	 6503
 SRR5470949	4074	1593	 5659 	 23914313 	 0.16 	 1 	 root 	 15959427 	 1006 	 781166 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 758337
@@ -957,3 +958,72 @@ SRR5171566	864	289	 3619 	 16443876 	 0.1 	 10116 	 Rattus norvegicus 	 10060071
 SRR5171568	913	385	 3727 	 17539500 	 0.1 	 10116 	 Rattus norvegicus 	 10697506 	 271 	 6070 	 11768 	 Feline leukemia virus 	 1142
 SRR5171572	992	379	 3797 	 18758238 	 0.1 	 10116 	 Rattus norvegicus 	 11420747 	 298 	 10373 	 364745 	 Choristoneura occidentalis granulovirus 	 3598
 SRR5171574	842	329	 3654 	 16290114 	 0.1 	 10116 	 Rattus norvegicus 	 9850679 	 283 	 8536 	 364745 	 Choristoneura occidentalis granulovirus 	 3006
+SRR5151126	810	455	 3458 	 9505912 	 0.11 	 10116 	 Rattus norvegicus 	 6032474 	 215 	 34942 	 364745 	 Choristoneura occidentalis granulovirus 	 31998
+SRR5151127	719	289	 3317 	 7714974 	 0.12 	 10116 	 Rattus norvegicus 	 5104063 	 206 	 77538 	 364745 	 Choristoneura occidentalis granulovirus 	 75160
+SRR5151128	1341	431	 3962 	 15501742 	 0.11 	 10116 	 Rattus norvegicus 	 10024177 	 312 	 77789 	 364745 	 Choristoneura occidentalis granulovirus 	 73920
+SRR5151131	1383	900	 4132 	 19581697 	 0.11 	 10116 	 Rattus norvegicus 	 12394254 	 354 	 50120 	 364745 	 Choristoneura occidentalis granulovirus 	 44387
+SRR5151132	1240	768	 4048 	 21105479 	 0.1 	 10116 	 Rattus norvegicus 	 13496255 	 341 	 14686 	 364745 	 Choristoneura occidentalis granulovirus 	 7347
+SRR5151133	1479	603	 4052 	 21223034 	 0.1 	 10116 	 Rattus norvegicus 	 13577193 	 348 	 22672 	 364745 	 Choristoneura occidentalis granulovirus 	 15089
+SRR5151134	1236	668	 3965 	 18979376 	 0.1 	 10116 	 Rattus norvegicus 	 12243656 	 319 	 14254 	 364745 	 Choristoneura occidentalis granulovirus 	 7832
+SRR5151136	1800	535	 4032 	 23876384 	 0.1 	 10116 	 Rattus norvegicus 	 15236601 	 335 	 17242 	 364745 	 Choristoneura occidentalis granulovirus 	 8747
+SRR5141900	1264	372	 4998 	 2427349 	 0.17 	 10116 	 Rattus norvegicus 	 1845463 	 700 	 16190 	 11768 	 Feline leukemia virus 	 1987
+SRR5141901	375	135	 4518 	 1039729 	 0.17 	 10116 	 Rattus norvegicus 	 797821 	 528 	 7421 	 11768 	 Feline leukemia virus 	 706
+SRR5141902	735	209	 4978 	 2114118 	 0.17 	 10116 	 Rattus norvegicus 	 1626333 	 685 	 13490 	 11768 	 Feline leukemia virus 	 1536
+SRR5141903	1081	355	 5150 	 3139179 	 0.18 	 10116 	 Rattus norvegicus 	 2371416 	 790 	 22928 	 11768 	 Feline leukemia virus 	 2491
+SRR5141904	919	277	 5585 	 2965459 	 0.22 	 10116 	 Rattus norvegicus 	 1826236 	 998 	 12148 	 76875 	 Broad bean wilt virus 2 	 1696
+SRR5135702	654	309	 3844 	 19716418 	 0.06 	 10116 	 Rattus norvegicus 	 16822258 	 271 	 10152 	 364745 	 Choristoneura occidentalis granulovirus 	 7924
+SRR5135703	860	255	 3913 	 19343837 	 0.1 	 10116 	 Rattus norvegicus 	 12173179 	 314 	 3349 	 1667587 	 Papio ursinus cytomegalovirus 	 884
+SRR5135704	728	251	 4023 	 19810862 	 0.06 	 10116 	 Rattus norvegicus 	 16830712 	 331 	 3475 	 364745 	 Choristoneura occidentalis granulovirus 	 732
+SRR5135705	780	351	 3840 	 17397914 	 0.1 	 10116 	 Rattus norvegicus 	 10904470 	 291 	 3366 	 364745 	 Choristoneura occidentalis granulovirus 	 711
+SRR5135706	677	228	 3572 	 17632671 	 0.06 	 10116 	 Rattus norvegicus 	 15050897 	 238 	 2289 	 364745 	 Choristoneura occidentalis granulovirus 	 806
+SRR5135707	797	267	 3791 	 16117217 	 0.1 	 10116 	 Rattus norvegicus 	 10192491 	 284 	 3489 	 1667587 	 Papio ursinus cytomegalovirus 	 938
+SRR5135708	712	208	 3569 	 16060977 	 0.06 	 10116 	 Rattus norvegicus 	 13718114 	 253 	 3188 	 364745 	 Choristoneura occidentalis granulovirus 	 1547
+SRR5135709	734	198	 3808 	 14951025 	 0.1 	 10116 	 Rattus norvegicus 	 9463121 	 267 	 2930 	 1667587 	 Papio ursinus cytomegalovirus 	 822
+SRR5130134	243	68	 321 	 46073 	 0.22 	 1 	 root 	 21273 	 18 	 549 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 506
+SRR5130135	179	80	 236 	 36422 	 0.2 	 1 	 root 	 24715 	 17 	 677 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 612
+SRR5130136	218	53	 237 	 26065 	 0.19 	 1 	 root 	 19582 	 14 	 412 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 375
+SRR5130137	228	59	 274 	 28524 	 0.21 	 1 	 root 	 18023 	 11 	 443 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 410
+SRR5130138	152	60	 322 	 32871 	 0.19 	 1 	 root 	 24862 	 17 	 585 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 534
+SRR5130139	269	63	 338 	 37881 	 0.23 	 1 	 root 	 20610 	 21 	 554 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 487
+SRR5130140	259	64	 246 	 22024 	 0.25 	 1 	 root 	 13581 	 14 	 410 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 377
+SRR5130141	147	57	 348 	 35848 	 0.24 	 1 	 root 	 20411 	 14 	 481 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 431
+SRR5130142	403	71	 242 	 24450 	 0.25 	 1 	 root 	 13871 	 10 	 312 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 293
+SRR5127135	422	94	 2899 	 4226850 	 0.11 	 314146 	 Euarchontoglires 	 2152532 	 157 	 1578 	 364745 	 Choristoneura occidentalis granulovirus 	 516
+SRR5127136	334	73	 2877 	 3160210 	 0.11 	 314146 	 Euarchontoglires 	 1594185 	 170 	 1190 	 364745 	 Choristoneura occidentalis granulovirus 	 356
+SRR5127137	413	103	 2805 	 3443640 	 0.12 	 314146 	 Euarchontoglires 	 1733921 	 138 	 1240 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 301
+SRR5127138	219	131	 3000 	 3513951 	 0.11 	 314146 	 Euarchontoglires 	 1737447 	 155 	 1392 	 364745 	 Choristoneura occidentalis granulovirus 	 482
+SRR5127139	291	71	 2838 	 3345721 	 0.12 	 314146 	 Euarchontoglires 	 1627535 	 155 	 1521 	 364745 	 Choristoneura occidentalis granulovirus 	 475
+SRR5127140	245	87	 2803 	 3946659 	 0.11 	 10116 	 Rattus norvegicus 	 1971096 	 142 	 1926 	 364745 	 Choristoneura occidentalis granulovirus 	 925
+SRR5127141	323	70	 2037 	 2437704 	 0.13 	 10116 	 Rattus norvegicus 	 1177081 	 110 	 1124 	 364745 	 Choristoneura occidentalis granulovirus 	 425
+SRR5127142	158	76	 2467 	 2818716 	 0.12 	 10116 	 Rattus norvegicus 	 1370738 	 127 	 1416 	 364745 	 Choristoneura occidentalis granulovirus 	 517
+SRR5127143	521	58	 2471 	 2358382 	 0.12 	 10116 	 Rattus norvegicus 	 1149211 	 123 	 1029 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 310
+SRR5127144	247	69	 2239 	 2666823 	 0.12 	 10116 	 Rattus norvegicus 	 1288849 	 109 	 1234 	 364745 	 Choristoneura occidentalis granulovirus 	 511
+SRR5127145	186	82	 2551 	 4052350 	 0.12 	 314146 	 Euarchontoglires 	 1952411 	 129 	 1426 	 364745 	 Choristoneura occidentalis granulovirus 	 470
+SRR5127146	506	58	 1925 	 2782598 	 0.12 	 10116 	 Rattus norvegicus 	 1342384 	 105 	 1008 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 338
+SRR5127147	411	71	 1978 	 2840574 	 0.13 	 10116 	 Rattus norvegicus 	 1388483 	 91 	 1468 	 364745 	 Choristoneura occidentalis granulovirus 	 642
+SRR5127148	223	63	 1773 	 2560689 	 0.13 	 10116 	 Rattus norvegicus 	 1246039 	 87 	 1241 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 459
+SRR5127149	250	53	 1770 	 2513930 	 0.13 	 10116 	 Rattus norvegicus 	 1238324 	 87 	 1318 	 364745 	 Choristoneura occidentalis granulovirus 	 655
+SRR5127150	282	76	 2258 	 4285790 	 0.12 	 10116 	 Rattus norvegicus 	 2114526 	 97 	 1598 	 364745 	 Choristoneura occidentalis granulovirus 	 696
+SRR5127151	242	101	 2355 	 4174511 	 0.12 	 10116 	 Rattus norvegicus 	 2024978 	 118 	 1478 	 364745 	 Choristoneura occidentalis granulovirus 	 654
+SRR5127152	198	146	 2815 	 2838700 	 0.12 	 314146 	 Euarchontoglires 	 1393915 	 136 	 1520 	 364745 	 Choristoneura occidentalis granulovirus 	 612
+SRR5127153	597	79	 2594 	 2934600 	 0.12 	 314146 	 Euarchontoglires 	 1471271 	 134 	 1140 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 403
+SRR5127154	166	84	 2762 	 3355661 	 0.12 	 314146 	 Euarchontoglires 	 1679305 	 143 	 1732 	 364745 	 Choristoneura occidentalis granulovirus 	 641
+SRR5127155	222	69	 2684 	 2719422 	 0.12 	 314146 	 Euarchontoglires 	 1337900 	 140 	 1349 	 364745 	 Choristoneura occidentalis granulovirus 	 490
+SRR5127156	412	79	 2861 	 3911428 	 0.12 	 314146 	 Euarchontoglires 	 2026516 	 148 	 1516 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 437
+SRR5127157	200	97	 2695 	 2759622 	 0.12 	 314146 	 Euarchontoglires 	 1316327 	 139 	 1564 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 520
+SRR5127158	576	109	 2602 	 3244711 	 0.12 	 10116 	 Rattus norvegicus 	 1545500 	 133 	 1729 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 682
+SRR5127159	426	74	 2733 	 3513392 	 0.12 	 10116 	 Rattus norvegicus 	 1687189 	 142 	 1940 	 364745 	 Choristoneura occidentalis granulovirus 	 793
+SRR5127160	279	122	 2587 	 3369665 	 0.12 	 10116 	 Rattus norvegicus 	 1698379 	 140 	 1884 	 364745 	 Choristoneura occidentalis granulovirus 	 754
+SRR5127161	314	90	 2576 	 3807989 	 0.11 	 314146 	 Euarchontoglires 	 1873370 	 128 	 1367 	 364745 	 Choristoneura occidentalis granulovirus 	 565
+SRR5127162	289	72	 2399 	 4398194 	 0.11 	 314146 	 Euarchontoglires 	 2243156 	 116 	 1416 	 364745 	 Choristoneura occidentalis granulovirus 	 536
+SRR5113666	88	37	 54 	 10814 	 0.26 	 1 	 root 	 7355 	 7 	 255 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 247
+SRR5113667	77	31	 61 	 14197 	 0.26 	 1 	 root 	 9037 	 5 	 289 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 285
+SRR5113668	755	681	 2610 	 10907148 	 0.13 	 10116 	 Rattus norvegicus 	 7586807 	 99 	 11138 	 364745 	 Choristoneura occidentalis granulovirus 	 9554
+SRR5113669	142	33	 48 	 3478 	 0.37 	 10116 	 Rattus norvegicus 	 1595 	 2 	 34 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 33
+SRR5113670	96	34	 49 	 5291 	 0.38 	 10116 	 Rattus norvegicus 	 2828 	 2 	 53 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 52
+SRR5113671	611	918	 3451 	 36942778 	 0.09 	 10116 	 Rattus norvegicus 	 26703368 	 218 	 2867 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 1046
+SRR5113672	168	37	 46 	 3490 	 0.43 	 1 	 root 	 1324 	 3 	 43 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 41
+SRR5113673	594	657	 3472 	 34532480 	 0.1 	 10116 	 Rattus norvegicus 	 24588189 	 216 	 2528 	 364745 	 Choristoneura occidentalis granulovirus 	 876
+SRR5113674	116	30	 55 	 5180 	 0.34 	 10116 	 Rattus norvegicus 	 2468 	 5 	 70 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 63
+SRR5113675	704	909	 3548 	 32448978 	 0.1 	 10116 	 Rattus norvegicus 	 23366968 	 242 	 4401 	 364745 	 Choristoneura occidentalis granulovirus 	 2255
+SRR5113676	674	498	 3264 	 37584001 	 0.09 	 10116 	 Rattus norvegicus 	 27345257 	 200 	 1855 	 374840 	 Enterobacteria phage phiX174 sensu lato 	 458

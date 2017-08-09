@@ -7,6 +7,9 @@
 * Script for generating virome information from Kaiju classification - utilised in virome creation script
 * Script for adding krona links to virome table output
 
+# Virome Table
+### The table below displays all virome information for datasets classified. It can be fully viewed by holding the shift key and scrolling left to right. Krona plot links are available on the far right of the table.
+
 | Sample.Accession.No. | Prefetch...FastQDump.Runtime | Classification.Time | Total.TaxIDs | Total.Hits | Pielou.s.Evenness | Top.TaxID | Top.TaxID.Name                          | Top.TaxID.Hits | Total.Viral.TaxIDs | Total.Viral.Hits | Top.Viral.TaxID | Top.Viral.TaxID.Name                               | Top.Viral.TaxID.Hits | KronaPlot                                                                         | 
 |----------------------|------------------------------|---------------------|--------------|------------|-------------------|-----------|-----------------------------------------|----------------|--------------------|------------------|-----------------|----------------------------------------------------|----------------------|-----------------------------------------------------------------------------------| 
 | ERR2013703           | 449                          | 77                  | 2698         | 248313     | 0.31              | 1         |  root                                   | 123261         | 119                | 4708             |  374840         |  Enterobacteria phage phiX174 sensu lato           |  4514                | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2013703.html | 

@@ -1,7 +1,7 @@
 #Load libraries for pielou calculation
 library(OTUtable)
 library(plyr); library(dplyr)
-
+library(data.table)
 
 
 #Read in virome information table - produced by createvirome script
@@ -41,10 +41,6 @@ df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
 func <- function(x,y){merge(x, y, by.x=names(x)[1], by.y=names(y)[1])}
 df <- lapply(df, func, virTax)
 #df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
-df <- ldply(df, data.frame)
-df$.id <- NULL
-df$TaxID <- as.numeric(df$TaxID)
-dftest <- df %.% group_by(TaxID) %.% summarise(data = sum(data))
-print(tail(dftest))
+dftest <- rbindlist(df)[, lapply(.SD, sum), by = TaxID]
 #write.table(output, "allDataVirMerge.tsv", col.names = T, row.names = T, sep="\t",quote=F)
 

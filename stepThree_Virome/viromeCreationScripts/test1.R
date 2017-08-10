@@ -38,16 +38,11 @@ for (i in 1:length(df)) {
 }
 df <- lapply(df, function(x) { x["fname"] <- NULL; x })
 df <- lapply(df, function(x) { x[".id"] <- NULL; x })
-df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
+#df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
 func <- function(x,y){merge(x, y, by.x=names(x)[1], by.y=names(y)[1])}
 df <- lapply(df, func, virTax)
-df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
-myList <- lapply(df, function(df) {
-  if (!ncol(df)) df <- data.frame(Intercept = NA)
-  df
-})
-library(data.table)
-rbindlist(myList, fill = TRUE)
+#df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
+dftest <- do.call("bind_rows", df)
 print(dftest)
 #write.table(output, "allDataVirMerge.tsv", col.names = T, row.names = T, sep="\t",quote=F)
 

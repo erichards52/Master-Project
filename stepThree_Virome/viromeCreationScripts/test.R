@@ -1,6 +1,7 @@
 #Load libraries for pielou calculation
 library(OTUtable)
 library(dplyr)
+require(dplyr)
 
 #Read in virome information table
 setwd("/home4/rich01e/GitProj/stepThree_Virome/")

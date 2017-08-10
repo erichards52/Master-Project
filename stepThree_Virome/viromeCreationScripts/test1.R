@@ -43,6 +43,6 @@ df <- lapply(df, func, virTax)
 df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
 df <- ldply(df, data.frame)
 dftest <- as.matrix(sapply(df, as.numeric))  
-
+print(dftest)
 #write.table(output, "allDataVirMerge.tsv", col.names = T, row.names = T, sep="\t",quote=F)
 

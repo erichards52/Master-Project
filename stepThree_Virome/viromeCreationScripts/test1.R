@@ -40,9 +40,11 @@ df <- lapply(df, function(x) { x["fname"] <- NULL; x })
 df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
 func <- function(x,y){merge(x, y, by.x=names(x)[1], by.y=names(y)[1])}
 df <- lapply(df, func, virTax)
-df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
+#df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
 df <- ldply(df, data.frame)
-dftest <- as.matrix(sapply(df, as.numeric))  
-print(dftest)
+df$.id <- NULL
+df$TaxID <- as.numeric(df$TaxID)
+dftest <- df %.% group_by(TaxID) %.% summarise(data = sum(data))
+print(tail(dftest))
 #write.table(output, "allDataVirMerge.tsv", col.names = T, row.names = T, sep="\t",quote=F)
 

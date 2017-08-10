@@ -42,6 +42,6 @@ func <- function(x,y){merge(x, y, by.x=names(x)[1], by.y=names(y)[1])}
 df <- lapply(df, func, virTax)
 #df <- lapply(df, function(x){ row.names(x)<- x$TaxID; x})
 dftest <- rbindlist(df, idcol = "TaxID")
-head(dftest)
+dftest
 #write.table(output, "allDataVirMerge.tsv", col.names = T, row.names = T, sep="\t",quote=F)
 

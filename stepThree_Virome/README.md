@@ -7,10 +7,13 @@
 * Script for generating virome information from Kaiju classification - utilised in virome creation script
 * Script for adding krona links to virome table output
 
+## viromeInfo
+* Contains various tsv files listing metadata created from table below
+
 # Virome Table
 ### The table below displays all virome information for datasets classified. It can be fully viewed by holding the shift key and scrolling left to right. Krona plot links are available on the far right of the table.
 
-| Sample.Accession.No. | Prefetch...FastQDump.Runtime | Classification.Time | Total.TaxIDs | Total.Hits | Pielou.s.Evenness | Top.TaxID | Top.TaxID.Name                          | Top.TaxID.Hits | Total.Viral.TaxIDs | Total.Viral.Hits | Top.Viral.TaxID | Top.Viral.TaxID.Name                               | Top.Viral.TaxID.Hits | KronaPlot                                                                         | 
+| Sample Accession No. | Prefetch & FastQDump Runtime | Classification Time | Total TaxIDs | Total Hits | Pielou's Evenness | Top TaxID | Top TaxID Name                          | Top TaxID Hits | Total Viral TaxIDs | Total Viral Hits | Top Viral TaxID | Top Viral TaxID Name                               | Top Viral TaxID Hits | Krona Plot                                                                         | 
 |----------------------|------------------------------|---------------------|--------------|------------|-------------------|-----------|-----------------------------------------|----------------|--------------------|------------------|-----------------|----------------------------------------------------|----------------------|-----------------------------------------------------------------------------------| 
 | ERR2013703           | 449                          | 77                  | 2698         | 248313     | 0.31              | 1         |  root                                   | 123261         | 119                | 4708             |  374840         |  Enterobacteria phage phiX174 sensu lato           |  4514                | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2013703.html | 
 | ERR2003012           | 106                          | 5                   | 1060         | 4234       | 0.82              | 1926494   |  Paraburkholderia sp. SOS3              | 293            | 19                 | 22               |  417290         |  Saccharopolyspora erythraea prophage pSE211       |  3                   | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003012.html | 

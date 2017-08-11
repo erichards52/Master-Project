@@ -27,7 +27,7 @@ sampleTable <- virTable[c(1,6,11,13)]
 sampleTable[, 2] <- as.numeric(as.character( sampleTable[, 2] ))
 sampleTable[, 3] <- as.numeric(as.character( sampleTable[, 3] ))
 threshold <- 10000
-pieThreshold <- 0.3
+pieThreshold <- 0.2
 sampleTable <- subset(sampleTable, sampleTable[,3] > threshold)
 sampleTable <- subset(sampleTable, sampleTable[,2] > pieThreshold)
 sampleTable <- sampleTable[with(sampleTable, order(-Pielou.s.Evenness, -Total.Viral.Hits)), ]

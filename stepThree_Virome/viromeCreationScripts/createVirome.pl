@@ -6,7 +6,7 @@ use 5.010;
 
 #Open file with all accession numbers & create an array
 my @array;
-open(my $fh, "<", "RatSampleAccs.txt")
+open(my $fh, "<", "/home4/rich01e/GitProj/stepThree_Virome/viromeInfo/tsvFiles/SamplesOfInteresttoCopy.tsv")
     or die "Failed to open file: $!\n";
 #select $fh; $| = 1; select STDOUT;
 while(<$fh>) {
@@ -115,7 +115,7 @@ system("rm ~/ncbi/public/sra/*.sra");
 system("rm ~/ncbi/public/outputDir/*.namescut.out");
 system("rm ~/ncbi/public/outputDir/*.domainnamescut.out");
 system("rm /home4/rich01e/ncbi/public/sra/fastqDir/*");
-system("cp /home4/rich01e/ncbi/public/outputDir/OTUTable.tsv ~/GitProj/stepThree_Virome/outputStore/$array[$i]OTUTable.tsv");
+system("cp /home4/rich01e/ncbi/public/outputDir/OTUTable.tsv ~/GitProj/stepThree_Virome/outputStore/$array[$i].tsv");
 system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/GitProj/ add --all");
 system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/GitProj/ commit -m 'Adding Files'");
 system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/GitProj/ push origin master");
@@ -184,7 +184,7 @@ system("rm ~/ncbi/public/sra/*.sra");
 system("rm ~/ncbi/public/outputDir/*.namescut.out");
 system("rm ~/ncbi/public/outputDir/*.domainnamescut.out");
 system("rm /home4/rich01e/ncbi/public/sra/fastqDir/*");
-system("cp /home4/rich01e/ncbi/public/outputDir/OTUTable.tsv ~/GitProj/stepThree_Virome/outputStore/$array[$i]OTUTable.tsv");
+system("cp /home4/rich01e/ncbi/public/outputDir/OTUTable.tsv ~/GitProj/stepThree_Virome/outputStore/$array[$i].tsv");
 system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/GitProj/ add --all");
 system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/GitProj/ commit -m 'Adding Files'");
 system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/GitProj/ push origin master");

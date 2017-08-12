@@ -1,17 +1,179 @@
-Sample Accession No.	Pielou's Evennness	Total Viral Read Classified	Top Viral Read Classified
-SRR5556575	0.63	35121	 T1virus 
-SRR5556578	0.63	19709	 Streptococcus phage 2096.2 
-SRR5556574	0.62	89847	 T1virus 
-SRR5556579	0.61	19477	 Streptococcus phage 2096.2 
-SRR5556577	0.59	19180	 Streptococcus phage 2096.2 
-SRR5556576	0.57	17142	 Streptococcus phage 2096.2 
-SRR5470958	0.34	30220	 Papio ursinus cytomegalovirus 
-SRR5470941	0.33	34123	 Pandoravirus salinus 
-SRR5470940	0.33	33321	 Pandoravirus salinus 
-ERR1780366	0.33	13132	 Pandoravirus salinus 
-ERR1780368	0.33	10073	 Pandoravirus salinus 
-SRR5504201	0.27	10955	 Piscine myocarditis-like virus 
-SRR5504202	0.27	10576	 Piscine myocarditis-like virus 
-SRR5504199	0.26	17966	 Piscine myocarditis-like virus 
-SRR5470959	0.25	26377	 Papio ursinus cytomegalovirus 
-SRR5141904	0.22	12148	 Broad bean wilt virus 2 
+Sample Accession No.	Pielou's Evennness	Total Viral Read Classified	Top Viral Read Classified	NA
+SRR5556575	0.63	35121	 T1virus 	6958
+SRR5556578	0.63	19709	 Streptococcus phage 2096.2 	3099
+SRR5556574	0.62	89847	 T1virus 	41386
+SRR5556579	0.61	19477	 Streptococcus phage 2096.2 	2749
+SRR5556577	0.59	19180	 Streptococcus phage 2096.2 	1560
+SRR5556576	0.57	17142	 Streptococcus phage 2096.2 	1332
+SRR5470958	0.34	30220	 Papio ursinus cytomegalovirus 	17545
+SRR5470941	0.33	34123	 Pandoravirus salinus 	6503
+SRR5470940	0.33	33321	 Pandoravirus salinus 	6238
+ERR1780366	0.33	13132	 Pandoravirus salinus 	4158
+ERR1780368	0.33	10073	 Pandoravirus salinus 	3092
+ERR1780370	0.33	5252	 Pandoravirus salinus 	1631
+ERR1780367	0.32	4584	 Pandoravirus salinus 	1303
+ERR2013703	0.31	4708	 Enterobacteria phage phiX174 sensu lato 	4514
+SRR5504198	0.3	5205	 Piscine myocarditis-like virus 	4449
+SRR5504197	0.28	7027	 Piscine myocarditis-like virus 	5910
+SRR5504203	0.28	5331	 Piscine myocarditis-like virus 	4058
+SRR5504201	0.27	10955	 Piscine myocarditis-like virus 	9749
+SRR5504202	0.27	10576	 Piscine myocarditis-like virus 	8820
+ERR1780369	0.27	6949	 Pandoravirus salinus 	2319
+SRR5504205	0.27	6695	 Piscine myocarditis-like virus 	5219
+SRR5504195	0.27	4364	 Piscine myocarditis-like virus 	3053
+SRR5504199	0.26	17966	 Piscine myocarditis-like virus 	16044
+SRR5470959	0.25	26377	 Papio ursinus cytomegalovirus 	4721
+SRR5504196	0.25	8372	 Piscine myocarditis-like virus 	7419
+SRR5504200	0.25	7657	 Piscine myocarditis-like virus 	6348
+SRR5504194	0.25	6397	 Piscine myocarditis-like virus 	5481
+SRR5504204	0.25	5495	 Piscine myocarditis-like virus 	4364
+SRR5264109	0.23	3706	 Enterobacteria phage phiX174 sensu lato 	1209
+SRR5141904	0.22	12148	 Broad bean wilt virus 2 	1696
+SRR5264110	0.22	4241	 Enterobacteria phage phiX174 sensu lato 	1446
+SRR5264106	0.21	6530	 Enterobacteria phage phiX174 sensu lato 	2031
+SRR5526728	0.21	2276	 Choristoneura occidentalis granulovirus 	1079
+SRR5526738	0.21	2241	 Choristoneura occidentalis granulovirus 	636
+SRR5526739	0.21	2238	 Choristoneura occidentalis granulovirus 	651
+SRR5526727	0.21	2237	 Choristoneura occidentalis granulovirus 	1065
+SRR5526725	0.21	2191	 Choristoneura occidentalis granulovirus 	1012
+SRR5526740	0.21	2185	 Choristoneura occidentalis granulovirus 	612
+SRR5526732	0.21	2167	 Choristoneura occidentalis granulovirus 	611
+SRR5526731	0.21	2128	 Choristoneura occidentalis granulovirus 	651
+SRR5526720	0.21	2119	 Choristoneura occidentalis granulovirus 	615
+SRR5526704	0.21	2117	 Only Syngen Nebraska virus 5 	549
+SRR5526737	0.21	2110	 Choristoneura occidentalis granulovirus 	580
+SRR5526730	0.21	2097	 Choristoneura occidentalis granulovirus 	608
+SRR5526719	0.21	2095	 Choristoneura occidentalis granulovirus 	637
+SRR5526729	0.21	2083	 Choristoneura occidentalis granulovirus 	574
+SRR5526717	0.21	2052	 Choristoneura occidentalis granulovirus 	563
+SRR5526726	0.21	2047	 Choristoneura occidentalis granulovirus 	995
+SRR5526701	0.21	2009	 Choristoneura occidentalis granulovirus 	522
+SRR5264107	0.2	5259	 Enterobacteria phage phiX174 sensu lato 	1370
+SRR5264108	0.2	4574	 Enterobacteria phage phiX174 sensu lato 	1255
+SRR5526711	0.2	2162	 Choristoneura occidentalis granulovirus 	587
+SRR5526709	0.2	2114	 Choristoneura occidentalis granulovirus 	563
+SRR5526712	0.2	2105	 Choristoneura occidentalis granulovirus 	571
+SRR5526710	0.2	2095	 Choristoneura occidentalis granulovirus 	524
+SRR5526744	0.2	2088	 Choristoneura occidentalis granulovirus 	712
+SRR5526714	0.2	2034	 Choristoneura occidentalis granulovirus 	665
+SRR5526699	0.2	2015	 Choristoneura occidentalis granulovirus 	563
+SRR5526755	0.2	2012	 Choristoneura occidentalis granulovirus 	656
+SRR5526748	0.2	2004	 Choristoneura occidentalis granulovirus 	533
+SRR5526756	0.2	2004	 Choristoneura occidentalis granulovirus 	675
+SRR5141903	0.18	22928	 Feline leukemia virus 	2491
+SRR5363796	0.17	25624	 Enterobacteria phage phiX174 sensu lato 	5943
+SRR5141900	0.17	16190	 Feline leukemia virus 	1987
+SRR5141902	0.17	13490	 Feline leukemia virus 	1536
+SRR5141901	0.17	7421	 Feline leukemia virus 	706
+SRR5470955	0.16	805961	 Enterobacteria phage phiX174 sensu lato 	779611
+SRR5470952	0.16	804101	 Enterobacteria phage phiX174 sensu lato 	779415
+SRR5470954	0.16	800853	 Enterobacteria phage phiX174 sensu lato 	776012
+SRR5470950	0.16	797420	 Enterobacteria phage phiX174 sensu lato 	772777
+SRR5470949	0.16	781166	 Enterobacteria phage phiX174 sensu lato 	758337
+SRR5470951	0.16	691985	 Enterobacteria phage phiX174 sensu lato 	670852
+SRR5363792	0.16	19069	 Enterobacteria phage phiX174 sensu lato 	4792
+SRR5470956	0.15	827645	 Enterobacteria phage phiX174 sensu lato 	799632
+SRR5470957	0.15	810258	 Enterobacteria phage phiX174 sensu lato 	784744
+SRR5179525	0.15	75158	 Human gammaherpesvirus 8 	30816
+SRR5179524	0.15	74276	 Human gammaherpesvirus 8 	30392
+SRR5179523	0.15	73961	 Human gammaherpesvirus 8 	30392
+SRR5179521	0.15	73766	 Human gammaherpesvirus 8 	30307
+SRR5179522	0.15	73184	 Human gammaherpesvirus 8 	29821
+SRR5363786	0.15	25448	 Pandoravirus salinus 	6041
+SRR5363785	0.15	22993	 Pandoravirus salinus 	5549
+SRR5179530	0.14	47640	 Choristoneura occidentalis granulovirus 	27912
+SRR5179529	0.14	47085	 Choristoneura occidentalis granulovirus 	27671
+SRR5179526	0.14	47020	 Choristoneura occidentalis granulovirus 	27521
+SRR5179527	0.14	46892	 Choristoneura occidentalis granulovirus 	27392
+SRR5179528	0.14	46844	 Choristoneura occidentalis granulovirus 	27623
+SRR5363795	0.14	21389	 Enterobacteria phage phiX174 sensu lato 	7014
+SRR5363791	0.14	18818	 Enterobacteria phage phiX174 sensu lato 	4462
+SRR5470962	0.13	863909	 Enterobacteria phage phiX174 sensu lato 	840544
+SRR5470961	0.13	860542	 Enterobacteria phage phiX174 sensu lato 	837182
+SRR5113668	0.13	11138	 Choristoneura occidentalis granulovirus 	9554
+SRR5151127	0.12	77538	 Choristoneura occidentalis granulovirus 	75160
+SRR5363788	0.12	23398	 Enterobacteria phage phiX174 sensu lato 	6034
+SRR5363787	0.12	21964	 Pandoravirus salinus 	4876
+SRR5179520	0.12	19089	 Choristoneura occidentalis granulovirus 	16411
+SRR5179519	0.12	19072	 Choristoneura occidentalis granulovirus 	16464
+SRR5179516	0.12	18713	 Choristoneura occidentalis granulovirus 	16297
+SRR5179518	0.12	18640	 Choristoneura occidentalis granulovirus 	16093
+SRR5179517	0.12	18546	 Choristoneura occidentalis granulovirus 	16025
+SRR5363794	0.12	16125	 Enterobacteria phage phiX174 sensu lato 	4756
+SRR5330425	0.12	13718	 Choristoneura occidentalis granulovirus 	8929
+SRR5330423	0.12	13681	 Choristoneura occidentalis granulovirus 	9008
+SRR5330424	0.12	13113	 Choristoneura occidentalis granulovirus 	8353
+SRR5113661	0.12	3042	 Enterobacteria phage phiX174 sensu lato 	428
+SRR5376126	0.12	2558	 Choristoneura occidentalis granulovirus 	2120
+SRR5151128	0.11	77789	 Choristoneura occidentalis granulovirus 	73920
+SRR5227689	0.11	67550	 Choristoneura occidentalis granulovirus 	61704
+SRR5227690	0.11	58826	 Choristoneura occidentalis granulovirus 	55539
+SRR5227697	0.11	56351	 Choristoneura occidentalis granulovirus 	52599
+SRR5227686	0.11	51410	 Choristoneura occidentalis granulovirus 	48714
+SRR5151131	0.11	50120	 Choristoneura occidentalis granulovirus 	44387
+SRR5227685	0.11	45567	 Choristoneura occidentalis granulovirus 	41789
+SRR5353149	0.11	39977	 Choristoneura occidentalis granulovirus 	33928
+SRR5151126	0.11	34942	 Choristoneura occidentalis granulovirus 	31998
+SRR5227681	0.11	34534	 Choristoneura occidentalis granulovirus 	30865
+SRR5227694	0.11	34210	 Choristoneura occidentalis granulovirus 	30703
+SRR5227693	0.11	32628	 Choristoneura occidentalis granulovirus 	27564
+SRR5227687	0.11	27449	 Choristoneura occidentalis granulovirus 	23866
+SRR5353155	0.11	26798	 Choristoneura occidentalis granulovirus 	20753
+SRR5353153	0.11	26197	 Choristoneura occidentalis granulovirus 	20127
+SRR5227696	0.11	25831	 Choristoneura occidentalis granulovirus 	22234
+SRR5227683	0.11	23700	 Choristoneura occidentalis granulovirus 	19955
+SRR5353151	0.11	21616	 Choristoneura occidentalis granulovirus 	16596
+SRR5353147	0.11	20227	 Choristoneura occidentalis granulovirus 	15150
+SRR5353157	0.11	18822	 Choristoneura occidentalis granulovirus 	13766
+SRR5227688	0.11	18453	 Choristoneura occidentalis granulovirus 	14452
+SRR5353154	0.11	17277	 Choristoneura occidentalis granulovirus 	12465
+SRR5227704	0.11	17041	 Choristoneura occidentalis granulovirus 	12839
+SRR5227692	0.11	16811	 Choristoneura occidentalis granulovirus 	12837
+SRR5113644	0.11	16393	 Choristoneura occidentalis granulovirus 	10051
+SRR5227695	0.11	15212	 Choristoneura occidentalis granulovirus 	11020
+SRR5227682	0.11	14871	 Choristoneura occidentalis granulovirus 	11171
+SRR5227702	0.11	13749	 Choristoneura occidentalis granulovirus 	9589
+SRR5113603	0.11	13747	 Choristoneura occidentalis granulovirus 	10051
+SRR5353146	0.11	13744	 Choristoneura occidentalis granulovirus 	8238
+SRR5353156	0.11	13465	 Choristoneura occidentalis granulovirus 	7693
+SRR5227691	0.11	13002	 Choristoneura occidentalis granulovirus 	9231
+SRR5227703	0.11	13000	 Choristoneura occidentalis granulovirus 	9503
+SRR5227684	0.11	12735	 Choristoneura occidentalis granulovirus 	9142
+SRR5353150	0.11	12600	 Choristoneura occidentalis granulovirus 	5640
+SRR5179515	0.11	11957	 Choristoneura occidentalis granulovirus 	8326
+SRR5179514	0.11	11702	 Choristoneura occidentalis granulovirus 	8089
+SRR5179512	0.11	11673	 Choristoneura occidentalis granulovirus 	8141
+SRR5179513	0.11	11638	 Choristoneura occidentalis granulovirus 	8154
+SRR5179511	0.11	11612	 Choristoneura occidentalis granulovirus 	8011
+SRR5227698	0.11	11133	 Choristoneura occidentalis granulovirus 	7264
+SRR5227699	0.11	11034	 Choristoneura occidentalis granulovirus 	6512
+SRR5353152	0.11	10975	 Choristoneura occidentalis granulovirus 	4439
+SRR5353148	0.11	10301	 Choristoneura occidentalis granulovirus 	5319
+SRR5330422	0.11	9305	 Feline leukemia virus 	3036
+SRR5330420	0.11	9146	 Feline leukemia virus 	3015
+SRR5330421	0.11	8970	 Feline leukemia virus 	2867
+SRR5227701	0.11	8468	 Choristoneura occidentalis granulovirus 	3989
+SRR5227700	0.11	8141	 Choristoneura occidentalis granulovirus 	3803
+SRR5330415	0.11	6925	 Feline leukemia virus 	2009
+SRR5330412	0.11	6738	 Feline leukemia virus 	2205
+SRR5330413	0.11	6725	 Feline leukemia virus 	2025
+SRR5330414	0.11	6677	 Feline leukemia virus 	2015
+SRR5330410	0.11	6597	 Feline leukemia virus 	2098
+SRR5330419	0.11	6509	 Feline leukemia virus 	1912
+SRR5330417	0.11	6437	 Feline leukemia virus 	1910
+SRR5330411	0.11	6406	 Feline leukemia virus 	2097
+SRR5330409	0.11	6377	 Feline leukemia virus 	1982
+SRR5330407	0.11	6278	 Feline leukemia virus 	1998
+SRR5330418	0.11	6214	 Feline leukemia virus 	1802
+SRR5330408	0.11	6059	 Feline leukemia virus 	1836
+SRR5113647	0.11	5890	 Choristoneura occidentalis granulovirus 	1786
+SRR5113576	0.11	5140	 Choristoneura occidentalis granulovirus 	1284
+SRR5113633	0.11	4150	 Choristoneura occidentalis granulovirus 	2291
+SRR5113629	0.11	3786	 Enterobacteria phage phiX174 sensu lato 	1356
+SRR5113596	0.11	3678	 Enterobacteria phage phiX174 sensu lato 	1192
+SRR5113662	0.11	3468	 Enterobacteria phage phiX174 sensu lato 	953
+SRR5113650	0.11	3065	 Enterobacteria phage phiX174 sensu lato 	404
+SRR5113619	0.11	2832	 Choristoneura occidentalis granulovirus 	578
+SRR5113582	0.11	2720	 Enterobacteria phage phiX174 sensu lato 	457
+SRR5683083	0.11	2340	 Choristoneura occidentalis granulovirus 	404
+SRR5683088	0.11	2126	 dsDNA viruses, no RNA stage 	442

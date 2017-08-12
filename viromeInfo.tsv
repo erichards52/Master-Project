@@ -1,3 +1,4 @@
 Sample Accession No.	Prefetch & FastQDump Runtime	Classification Time	Total TaxIDs	Total Hits	Pielou's Evenness	Top TaxID	Top TaxID Name	Top TaxID Hits	Total Viral TaxIDs	Total Viral Hits	Top Viral TaxID	Top Viral TaxID Name	Top Viral TaxID Hits
 ERR2003017	443	6	 1049 	 3892 	 0.83 	 2263 	 Thermococcus 	 200 	 22 	 28 	 417290 	 Saccharopolyspora erythraea prophage pSE211 	 4
 ERR2003018	185	19	 1403 	 8801 	 0.69 	 2263 	 Thermococcus 	 2132 	 31 	 43 	 417290 	 Saccharopolyspora erythraea prophage pSE211 	 7
+ERR2003019	192	13	 1333 	 6356 	 0.81 	 2263 	 Thermococcus 	 319 	 29 	 39 	 417290 	 Saccharopolyspora erythraea prophage pSE211 	 6

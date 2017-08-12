@@ -4,8 +4,7 @@ library(plyr); library(dplyr)
 library(reshape)
 library(data.table)
 library(ggfortify)
-library(vegan)
-library(labdsv)
+library(cluster)
 memory.size(max = TRUE)
 
 #Read in virome information table - produced by createvirome script
@@ -54,13 +53,11 @@ for (i in unique(testdf$TaxID)){
 #transpose and rename column names
 colnames(newdf) = gsub(".tsv", "", colnames(newdf))
 newdfpca <- t(newdf)
-pr_comp <- prcomp(newdfpca, scale = F)
-autoplot(pr_comp, label = T, label.size = 3, shape = FALSE, colour = 'blue')
 
 #PCA plot
-dffinal <- newdfpca[c(1,2,3,4,5,6,7,8,9,10,12,13,14,15,16),]
+dffinal <- newdfpca[c(1:22),]
 pr_comp <- prcomp(dffinal, scale = F)
 autoplot(pr_comp, label = T, label.size = 3, shape = FALSE, 
-         colour = 'blue',  loadings = TRUE,  loadings.label = TRUE, 
+           loadings = TRUE,  loadings.label = TRUE, 
          loadings.label.size = 3)
 

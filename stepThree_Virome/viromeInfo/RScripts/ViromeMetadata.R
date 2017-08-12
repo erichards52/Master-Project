@@ -23,10 +23,10 @@ write.table(virTableHits, file ="virHitOrder.tsv", sep="\t",col.names = T,row.na
 
 #get samples with the highest pielou's evennness as well as total viral hits for analysis/PCA plot
 #Order by pielou and total viral hits
-sampleTable <- virTable[c(1,6,11,13)]
+sampleTable <- virTable[c(1,6,11,13,14)]
 sampleTable[, 2] <- as.numeric(as.character( sampleTable[, 2] ))
 sampleTable[, 3] <- as.numeric(as.character( sampleTable[, 3] ))
-threshold <- 10000
+threshold <- 2000
 pieThreshold <- 0.2
 sampleTable <- subset(sampleTable, sampleTable[,3] > threshold)
 sampleTable <- subset(sampleTable, sampleTable[,2] > pieThreshold)

@@ -27,10 +27,18 @@ sampleTable <- virTable[c(1,6,11,13,14)]
 sampleTable[, 2] <- as.numeric(as.character( sampleTable[, 2] ))
 sampleTable[, 3] <- as.numeric(as.character( sampleTable[, 3] ))
 threshold <- 2000
-pieThreshold <- 0.2
+hiThreshold <- 8000
+pieThreshold <- 0.1
 sampleTable <- subset(sampleTable, sampleTable[,3] > threshold)
 sampleTable <- subset(sampleTable, sampleTable[,2] > pieThreshold)
 sampleTable <- sampleTable[with(sampleTable, order(-Pielou.s.Evenness, -Total.Viral.Hits)), ]
 sampleTable <- sampleTable[ order(-sampleTable[,2], -sampleTable[,3]), ]
+
+#Write out
 colnames(sampleTable) <- c("Sample Accession No.", "Pielou's Evennness", "Total Viral Read Classified", "Top Viral Read Classified")
-write.table(sampleTable, file ="SamplesOfInterest.tsv", sep="\t",col.names = T,row.names = F,quote=F)
+write.table(sampleTable, file ="SamplesOfInterest.tsv", sep="\t",col.names = F,row.names = F,quote=F)
+
+#For creating a list of files to be copied (MUST BE DONE BEFORE WRITING CHANGING COLUMN NAMES IN LAST BATCH OF CODE)
+sampleTable$Sample.Accession.No. <- paste(sampleTable$Sample.Accession.No., ".tsv", sep="") 
+write.table(sampleTable$Sample.Accession.No., file ="SamplesOfInteresttoCopy.tsv", sep="\t",col.names = F,row.names = F,quote=F)
+

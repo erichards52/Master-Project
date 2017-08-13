@@ -5,6 +5,7 @@ library(reshape)
 library(data.table)
 library(ggfortify)
 library(cluster)
+library(gtools)
 memory.size(max = TRUE)
 
 #Read in virome information table - produced by createvirome script
@@ -15,9 +16,8 @@ virTable <- read.table("viromeInfo.tsv",header=T,sep="\t",quote="")
 virTax <- read.table("virTax.txt", header = T)
 colnames(virTax) <- "TaxID"
 
-#Read frequency table(s) and remove unneeded values
-#Stores unique tax values
-#Removes lineage
+#Read frequency table(s) into dataset (list) and remove unneeded values
+#Removes lineage for consistency
 read.data <- function(file){
   dat <- read.table(file,header=T,sep="\t")
   dat$fname <- file
@@ -25,12 +25,10 @@ read.data <- function(file){
 }
 setwd("~/MastersDegree/Thesis/R/RScripts/viromeFiles/")
 dataset <- do.call(bind_rows, lapply(list.files(pattern="tsv$"),read.data))
-taxVec <- unique(dataset$TaxID)
 dataset$Lineage <- NULL
 
-# split based on filename, uses vector of unique filenames
-# set taxIDs as rownames & filenames as rownames
-# merge all dataframes based on taxIDs
+# split based on filename by assigning a column name of filename values to each dataframe in the list
+# merge all dataframes into new dataframe
 df <- split(dataset, dataset$fname)
 for (i in 1:length(df)) {
   df[i] <- lapply(df[i], setNames, nm = c("TaxID", names(df)[i], "fname"))
@@ -50,14 +48,25 @@ for (i in unique(testdf$TaxID)){
   newdf[as.character(i),] <- tempdf
 }
 
-#transpose and rename column names
+# rename column names
 colnames(newdf) = gsub(".tsv", "", colnames(newdf))
-newdfpca <- t(newdf)
+tester <- newdf
 
-#PCA plot
-dffinal <- newdfpca[c(1:22),]
-pr_comp <- prcomp(dffinal, scale = F)
-autoplot(pr_comp, label = T, label.size = 3, shape = FALSE, 
-           loadings = TRUE,  loadings.label = TRUE, 
-         loadings.label.size = 3)
+#remove NAs
+tester[tester == 0] <- NA
+f1 <- function(vec) { 
+  m <- mean(vec, na.rm = TRUE) 
+  vec[is.na(vec)] <- m 
+  return(vec) 
+} 
 
+#Perform log scale
+tester <- apply(tester,2,f1)
+tester <- log(tester)
+tester <- as.data.frame(tester)
+
+#PCA plot - 2 types: pam or fanny
+viewer <- t(tester)
+viewer1 <- data.frame(t(na.omit(t(viewer))))
+autoplot(pam(viewer1, 3), frame = TRUE, frame.type = 'norm')
+autoplot(fanny(viewer1, 3), frame = TRUE)

@@ -27,7 +27,6 @@ sampleTable <- virTable[c(1,6,11,13,14)]
 sampleTable[, 2] <- as.numeric(as.character( sampleTable[, 2] ))
 sampleTable[, 3] <- as.numeric(as.character( sampleTable[, 3] ))
 threshold <- 2000
-hiThreshold <- 8000
 pieThreshold <- 0.1
 sampleTable <- subset(sampleTable, sampleTable[,3] > threshold)
 sampleTable <- subset(sampleTable, sampleTable[,2] > pieThreshold)

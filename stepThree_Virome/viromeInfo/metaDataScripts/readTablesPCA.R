@@ -8,10 +8,6 @@ library(cluster)
 library(gtools)
 memory.size(max = TRUE)
 
-#Read in virome information table - produced by createvirome script
-setwd("~/MastersDegree/Thesis/R/RScripts/viromeInfo/")
-virTable <- read.table("viromeInfo.tsv",header=T,sep="\t",quote="")
-
 #Read viral tax list - downloaded from NCBI taxonomy
 virTax <- read.table("virTax.txt", header = T)
 colnames(virTax) <- "TaxID"

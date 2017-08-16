@@ -8,7 +8,7 @@
 * Script which adds krona plot links in order to create table shown below
 
 ## viromeInfo
-* Contains various tsv files listing metadata created from table below.
+* Contains various tsv files and scripts which are created/utilised from table below.
 
 # Virome Table
 ### The table below displays all virome information for datasets classified. It can be fully viewed by holding the shift key and scrolling left to right. Krona plot links are available on the far right of the table.

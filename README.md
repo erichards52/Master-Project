@@ -2,6 +2,7 @@
 
 **Each of the sections below details the contents of each directory and its sub-directories**
 
+**Krona plots for all 1140 classifications conducted during this project can be found on the gh-pages branch of this project: https://github.com/erichards52/Master-Project/tree/gh-pages**
 
 -------------------------------------------------
 

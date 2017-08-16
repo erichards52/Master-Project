@@ -1,6 +1,6 @@
 # Benchmark Results
 
-## Human Respiratory Sample Infected with Rhinovirus 
+## Human Respiratory Sample from a Patient in Glasgow Infected with Rhinovirus 
 |                           | Kaiju                | CLARK                           | Kraken       | CLARK-S                         | 
 |------------------------------------|----------------------|---------------------------------|--------------|---------------------------------| 
 | Total Reads Classified             | 132954               | 89917                           | 89380        | 201746                          | 
@@ -28,7 +28,7 @@
 | Top Viral Taxon - Reads Classified | 29622                                   | 126181                          | 100526                                  | 70543                           | 
 
 
-## Human Sample Infected with Chikungunya Virus
+## Human Sample from Returning Traveler Infected with Chikungunya Virus
 |                                    | Kaiju             | CLARK                           | Kraken            | CLARK-S                         | 
 |-------------------------------------|-------------------|---------------------------------|-------------------|---------------------------------| 
 | Total Reads Classified              | 366592            | 419345                          | 418999            | 456266                          | 

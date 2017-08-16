@@ -5,6 +5,7 @@
 ## viromeCreationScripts
 * Script which reads in Kaiju output containing taxon name and ID in order to create abundance table manually
 * Script which downloads, extracts, classifies (using Kaiju), produces krona plot and automatically uploads to the Git
+* Script which adds krona plot links in order to create table shown below
 
 ## viromeInfo
 * Contains various tsv files listing metadata created from table below.

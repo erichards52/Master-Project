@@ -4,6 +4,7 @@
 
 * Reads in outputs from CLARK, Kraken and Kaiju.
 * Creates benchmark tables and Venn diagrams
+* This script was one of the first scripts to be created during the project and thus contains an abundance of redundant code. Due to time constraints this code was not properly cleaned.
 
 ## taxScriptVir.pl
 

@@ -1,0 +1,102 @@
+# GH-PAGES
+
+**This branch contains all krona outputs as well as a tab separated file listing metadata from all sample classified**
+
+## kronaOutputs
+* ratNorv - contains all krona plots for samples retrieved from the SRA with the taxon ID 10116
+
+* benchmarkKrona - contains all krona plots for benchmark samples
+
+# Virome Table
+### The table below displays all virome information for datasets classified. It can be fully viewed by holding the shift key and scrolling left to right. Krona plot links are available on the 
+### far right of the table.
+| Sample Accession No. | Prefetch & FastQDump Runtime | Classification Time | Total TaxIDs | Total Hits | Pielou's Evenness | Top TaxID | Top TaxID Name | Top TaxID Hits | Total Viral TaxIDs 
+| | Total Viral Hits | Top Viral TaxID | Top Viral TaxID Name | Top Viral TaxID Hits | Krona Plot |
+|----------------------|------------------------------|---------------------|--------------|------------|-------------------|-----------|-----------------------------------------|----------------|--------------------|------------------|-----------------|----------------------------------------------------|----------------------|-----------------------------------------------------------------------------------|
+| ERR2013703 | 449 | 77 | 2698 | 248313 | 0.31 | 1 | root | 123261 | 119 | 4708 | 374840 | Enterobacteria phage phiX174 sensu lato | 4514 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2013703.html | ERR2003012 | 106 | 5 | 1060 | 4234 | 0.82 | 1926494 | Paraburkholderia sp. SOS3 | 293 | 19 | 22 | 417290 
+| | Saccharopolyspora erythraea prophage pSE211 | 3 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003012.html |
+| ERR2003013 | 76 | 6 | 1316 | 6008 | 0.81 | 1926494 | Paraburkholderia sp. SOS3 | 373 | 30 | 45 | 1923444 | Shahe picorna-like virus 14 | 7 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003013.html | ERR2003014 | 150 | 7 | 1161 | 5459 | 0.76 | 2263 | Thermococcus | 630 | 26 | 38 | 417290 | 
+| Saccharopolyspora erythraea prophage pSE211 | 6 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003014.html | ERR2003015 | 146 | 6 | 1348 | 6942 | 0.78 | 2263 | 
+| Thermococcus | 713 | 33 | 43 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 7 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003015.html | ERR2003016 | 64 
+| | 7 | 1266 | 6181 | 0.78 | 1926494 | Paraburkholderia sp. SOS3 | 570 | 26 | 34 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 5 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003016.html | ERR2003017 | 103 | 4 | 1049 | 3892 | 0.83 | 2263 | Thermococcus | 200 | 22 | 28 | 417290 | 
+| Saccharopolyspora erythraea prophage pSE211 | 4 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003017.html | ERR2003018 | 77 | 7 | 1403 | 8801 | 0.69 | 2263 | 
+| Thermococcus | 2132 | 31 | 43 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 7 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003018.html | ERR2003019 | 
+| 93 | 6 | 1333 | 6356 | 0.81 | 2263 | Thermococcus | 319 | 29 | 39 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 6 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003019.html | ERR2003020 | 56 | 8 | 1280 | 6136 | 0.75 | 656024 | Frankia symbiont of Datisca glomerata | 708 | 24 | 25 
+| | 1349409 | Pandoravirus dulcis | 2 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003020.html |
+| ERR2003021 | 66 | 7 | 1234 | 5152 | 0.82 | 2263 | Thermococcus | 433 | 20 | 37 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 8 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003021.html | ERR2003022 | 75 | 6 | 1047 | 5101 | 0.72 | 2263 | Thermococcus | 851 | 19 | 29 | 417290 | 
+| Saccharopolyspora erythraea prophage pSE211 | 4 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003022.html | ERR2003023 | 54 | 7 | 1216 | 6498 | 0.72 | 2263 | 
+| Thermococcus | 1242 | 19 | 30 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 5 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003023.html | ERR2003024 | 
+| 90 | 6 | 1285 | 5095 | 0.84 | 656024 | Frankia symbiont of Datisca glomerata | 319 | 29 | 41 | 981323 | Gordonia phage GTE2 | 7 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003024.html | ERR2003025 | 91 | 5 | 1297 | 5834 | 0.78 | 2263 | Thermococcus | 825 | 22 | 29 | 417290 | 
+| Saccharopolyspora erythraea prophage pSE211 | 4 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003025.html | ERR2003026 | 85 | 6 | 1114 | 5536 | 0.73 | 656024 | 
+| Frankia symbiont of Datisca glomerata | 896 | 20 | 25 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 3 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003026.html | ERR2003027 | 102 | 5 | 985 | 3856 | 0.76 | 2263 | Thermococcus | 537 | 26 | 27 | 1923444 | Shahe 
+| picorna-like virus 14 | 2 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003027.html | ERR2003028 | 105 | 20 | 1222 | 6120 | 0.72 | 2263 | Thermococcus | 1408 | 29 
+| | 36 | 981323 | Gordonia phage GTE2 | 4 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003028.html |
+| ERR2003029 | 96 | 6 | 1135 | 4287 | 0.81 | 656024 | Frankia symbiont of Datisca glomerata | 555 | 20 | 26 | 981323 | Gordonia phage GTE2 | 6 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003029.html | ERR2003030 | 79 | 5 | 1054 | 4131 | 0.8 | 2263 | Thermococcus | 416 | 19 | 33 | 981323 | Gordonia phage 
+| GTE2 | 6 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003030.html | ERR2003031 | 58 | 6 | 1236 | 5521 | 0.8 | 2263 | Thermococcus | 497 | 30 | 39 | 981323 | 
+| Gordonia phage GTE2 | 4 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003031.html | ERR2003032 | 66 | 6 | 1145 | 4376 | 0.82 | 656024 | Frankia symbiont of Datisca 
+| glomerata | 426 | 20 | 33 | 1349409 | Pandoravirus dulcis | 5 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003032.html | ERR2003033 | 160 | 8 | 1071 | 3815 | 0.83 
+| | 2263 | Thermococcus | 301 | 24 | 36 | 1923444 | Shahe picorna-like virus 14 | 7 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003033.html |
+| ERR2003034 | 66 | 35 | 1105 | 4503 | 0.78 | 656024 | Frankia symbiont of Datisca glomerata | 547 | 22 | 40 | 1859492 | Kaumoebavirus | 11 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003034.html | ERR2003035 | 147 | 6 | 1179 | 5184 | 0.77 | 2263 | Thermococcus | 664 | 28 | 36 | 10294 | Simplexvirus | 
+| 3 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003035.html | ERR2003036 | 65 | 7 | 1410 | 7811 | 0.75 | 656024 | Frankia symbiont of Datisca glomerata | 1092 | 29 
+| | 45 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 5 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003036.html |
+| ERR2003037 | 72 | 11 | 1131 | 4653 | 0.78 | 656024 | Frankia symbiont of Datisca glomerata | 758 | 23 | 29 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 3 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003037.html | ERR2003038 | 75 | 4 | 1083 | 2892 | 0.86 | 656024 | Frankia symbiont of Datisca glomerata | 234 | 24 | 26 
+| | 356114 | Hepatitis C virus genotype 3 | 2 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003038.html |
+| ERR2003039 | 96 | 6 | 1082 | 4168 | 0.81 | 2263 | Thermococcus | 331 | 22 | 37 | 981323 | Gordonia phage GTE2 | 9 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003039.html | ERR2003040 | 115 | 8 | 1144 | 5104 | 0.75 | 656024 | Frankia symbiont of Datisca glomerata | 853 | 25 | 
+| 30 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 3 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003040.html | ERR2003041 | 64 | 4 | 1020 | 4185 | 0.77 
+| | 2263 | Thermococcus | 719 | 27 | 37 | 981323 | Gordonia phage GTE2 | 4 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003041.html |
+| ERR2003042 | 68 | 7 | 1257 | 5496 | 0.8 | 2263 | Thermococcus | 458 | 24 | 35 | 1923444 | Shahe picorna-like virus 14 | 7 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003042.html | ERR2003043 | 148 | 26 | 1376 | 6511 | 0.78 | 656024 | Frankia symbiont of Datisca glomerata | 979 | 37 | 
+| 54 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 6 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003043.html | ERR2003044 | 101 | 5 | 1182 | 4251 | 0.83 
+| | 164348 | Streptomyces puniciscabiei | 310 | 25 | 39 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 8 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003044.html | ERR2003045 | 77 | 4 | 1168 | 4104 | 0.82 | 656024 | Frankia symbiont of Datisca glomerata | 349 | 21 | 28 
+| | 1151014 | Vibrio phage phi-A318 | 3 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003045.html |
+| ERR2003046 | 114 | 5 | 974 | 3274 | 0.84 | 164348 | Streptomyces puniciscabiei | 291 | 19 | 21 | 1001533 | Bos taurus papillomavirus 7 | 2 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003046.html | ERR2003047 | 58 | 6 | 1275 | 4706 | 0.82 | 164348 | Streptomyces puniciscabiei | 402 | 27 | 32 | 1349409 
+| | Pandoravirus dulcis | 3 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003047.html |
+| ERR2003048 | 231 | 10 | 1157 | 3983 | 0.82 | 164348 | Streptomyces puniciscabiei | 465 | 21 | 25 | 1923444 | Shahe picorna-like virus 14 | 3 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003048.html | ERR2003049 | 56 | 5 | 1146 | 3822 | 0.84 | 164348 | Streptomyces puniciscabiei | 271 | 19 | 27 | 417290 | 
+| Saccharopolyspora erythraea prophage pSE211 | 6 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003049.html | ERR2003050 | 54 | 7 | 1328 | 5481 | 0.83 | 164348 | 
+| Streptomyces puniciscabiei | 428 | 31 | 37 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 6 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003050.html | 
+| ERR2003051 | 210 | 5 | 1076 | 4121 | 0.8 | 1198114 | Granulicella tundricola MP5ACTX9 | 254 | 20 | 26 | 1161927 | Pseudomonas phage Lu11 | 4 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003051.html | ERR2003052 | 101 | 6 | 1180 | 3838 | 0.83 | 656024 | Frankia symbiont of Datisca glomerata | 409 | 31 | 
+| 42 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 5 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003052.html | ERR2003053 | 71 | 5 | 1171 | 4112 | 0.82 
+| | 164348 | Streptomyces puniciscabiei | 354 | 21 | 40 | 1161927 | Pseudomonas phage Lu11 | 12 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003053.html |
+| ERR2003054 | 50 | 6 | 1311 | 5031 | 0.83 | 164348 | Streptomyces puniciscabiei | 458 | 28 | 56 | 1161927 | Pseudomonas phage Lu11 | 22 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003054.html | ERR2003055 | 48 | 4 | 1104 | 3695 | 0.86 | 656024 | Frankia symbiont of Datisca glomerata | 154 | 20 | 44 
+| | 1161927 | Pseudomonas phage Lu11 | 12 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003055.html |
+| ERR2003056 | 74 | 7 | 1232 | 4889 | 0.81 | 656024 | Frankia symbiont of Datisca glomerata | 409 | 20 | 38 | 1161927 | Pseudomonas phage Lu11 | 11 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003056.html | ERR2003057 | 100 | 5 | 997 | 3218 | 0.84 | 656024 | Frankia symbiont of Datisca glomerata | 292 | 20 | 24 
+| | 374840 | Enterobacteria phage phiX174 sensu lato | 2 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003057.html |
+| ERR2003058 | 74 | 9 | 1441 | 5829 | 0.84 | 164348 | Streptomyces puniciscabiei | 313 | 22 | 42 | 1161927 | Pseudomonas phage Lu11 | 15 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003058.html | ERR2003059 | 103 | 6 | 1266 | 5085 | 0.8 | 1198114 | Granulicella tundricola MP5ACTX9 | 396 | 25 | 35 | 
+| 1161927 | Pseudomonas phage Lu11 | 5 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003059.html | ERR2003060 | 104 | 6 | 1128 | 4120 | 0.82 | 656024 | Frankia 
+| symbiont of Datisca glomerata | 297 | 22 | 33 | 1161927 | Pseudomonas phage Lu11 | 8 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003060.html | ERR2003061 | 117 | 
+| 6 | 1241 | 4941 | 0.81 | 656024 | Frankia symbiont of Datisca glomerata | 435 | 18 | 23 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 6 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003061.html | ERR2003062 | 78 | 6 | 1066 | 3985 | 0.81 | 164348 | Streptomyces puniciscabiei | 379 | 22 | 28 | 1161927 
+| | Pseudomonas phage Lu11 | 5 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003062.html |
+| ERR2003063 | 66 | 4 | 783 | 2123 | 0.85 | 164348 | Streptomyces puniciscabiei | 144 | 14 | 21 | 417290 | Saccharopolyspora erythraea prophage pSE211 | 7 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003063.html | ERR2003064 | 96 | 58 | 1078 | 3982 | 0.81 | 164348 | Streptomyces puniciscabiei | 390 | 22 | 36 | 1161927 
+| | Pseudomonas phage Lu11 | 8 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003064.html |
+| ERR2003065 | 71 | 4 | 1158 | 4271 | 0.81 | 29549 | Rhodothermus marinus | 346 | 22 | 39 | 1161927 | Pseudomonas phage Lu11 | 8 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/ERR2003065.html | SRR5683083 | 264 | 417 | 3385 | 17493573 | 0.11 | 314146 | Euarchontoglires | 8521318 | 221 | 2340 | 
+| 364745 | Choristoneura occidentalis granulovirus | 404 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/SRR5683083.html | SRR5683084 | 261 | 247 | 2994 | 12183828 | 0.11 
+| | 314146 | Euarchontoglires | 6042973 | 170 | 1661 | 35237 | dsDNA viruses, no RNA stage | 298 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/SRR5683084.html |
+| SRR5683085 | 303 | 317 | 3118 | 14282985 | 0.11 | 314146 | Euarchontoglires | 7204294 | 187 | 1786 | 35237 | dsDNA viruses, no RNA stage | 334 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/SRR5683085.html | SRR5683086 | 205 | 229 | 2953 | 11571116 | 0.11 | 314146 | Euarchontoglires | 5835434 | 165 | 1470 | 
+| 35237 | dsDNA viruses, no RNA stage | 248 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/SRR5683086.html | SRR5683087 | 248 | 223 | 2914 | 10801988 | 0.11 | 314146 | 
+| Euarchontoglires | 5431475 | 174 | 1485 | 35237 | dsDNA viruses, no RNA stage | 278 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/SRR5683087.html | SRR5683088 | 308 | 
+| 321 | 3183 | 17438119 | 0.11 | 314146 | Euarchontoglires | 8906380 | 193 | 2126 | 35237 | dsDNA viruses, no RNA stage | 442 | 
+| https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/SRR5683088.html | SRR5683089 | 311 | 278 | 3191 | 15274603 | 0.11 | 314146 | Euarchontoglires | 7779485 | 190 | 1844 | 
+| 35237 | dsDNA viruses, no RNA stage | 358 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/SRR5683089.html | SRR5683090 | 217 | 258 | 2983 | 12186921 | 0.11 | 314146 | 
+| Euarchontoglires | 6192913 | 181 | 1809 | 35237 | dsDNA viruses, no RNA stage | 349 | https://erichards52.github.io/Master-Project/kronaOutputs/ratNorv/SRR5683090.html |

@@ -1,6 +1,6 @@
 # SRA Database Characterization, Viral Sequence Sensitivity Classifier Benchmarking & Virome Assembly
 
-** Each of the sections below details the contents of each directory and its sub-directories **
+**Each of the sections below details the contents of each directory and its sub-directories**
 
 
 -------------------------------------------------

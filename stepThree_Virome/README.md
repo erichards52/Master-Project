@@ -1,14 +1,13 @@
 # Virome Assembly
 ## outputStore
-* Taxa frequency tables for each SRA dataset classified (named OTUTables by fault)
+* Abundance tables for each SRA dataset classified 
 
 ## viromeCreationScripts
-* Script for generating virome information for each SRA dataset downloaded and classified, automatically uploads to the git
-* Script for generating virome information from Kaiju classification - utilised in virome creation script
-* Script for adding krona links to virome table output
+* Script which reads in Kaiju output containing taxon name and ID in order to create abundance table manually
+* Script which downloads, extracts, classifies (using Kaiju), produces krona plot and automatically uploads to the Git
 
 ## viromeInfo
-* Contains various tsv files listing metadata created from table below
+* Contains various tsv files listing metadata created from table below.
 
 # Virome Table
 ### The table below displays all virome information for datasets classified. It can be fully viewed by holding the shift key and scrolling left to right. Krona plot links are available on the far right of the table.

@@ -11,3 +11,6 @@
 * Reads in all tsv files in a directory (desired samples/samples of interest)
 * Logs value of all abundances
 * Creates PCA plot
+
+## virTax
+* List of all viral taxa as per NCBI

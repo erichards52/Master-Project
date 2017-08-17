@@ -121,6 +121,7 @@ system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/Git
 system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/GitProj/ push origin master");
 system("rm /home4/rich01e/ncbi/public/outputDir/OTUTable.tsv");
 
+#Paired-end classification - same code as above but slightly different
 }elsif(scalar(@files)==2){
 
 my $classif_startrun = time();
@@ -190,10 +191,11 @@ system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/Git
 system("git --git-dir=/home4/rich01e/GitProj/.git --work-tree=/home4/rich01e/GitProj/ push origin master");
 system("rm /home4/rich01e/ncbi/public/outputDir/OTUTable.tsv");
 
+#If no files are found at all
 }elsif(scalar(@files)==0){
-print "No files found! Ignore prefetch output above. Either all accession numbers have been exhausted or an error occurred.\n";
+print "No files found! Either all accession numbers have been exhausted or an error occurred.\n";
 }else{
-  print "error to log files";
+  print "Something went wrong, you might want to restart the script entirely and make sure you have cleaned the directories in which all FASTQ files are found";
 } 
 }
 

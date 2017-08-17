@@ -1,0 +1,4176 @@
+Scientific Name,ID
+Homo sapiens,9606
+Mus musculus,10090
+Bos taurus,9913
+Ovis aries,9940
+Arabidopsis thaliana,3702
+Bombyx mori,7091
+Picea abies,3329
+Oryza sativa,4530
+Klebsiella pneumoniae,573
+Aedes albopictus,7160
+Canis lupus familiaris,9615
+Phytophthora infestans,4787
+Trypanosoma congolense,5692
+Rattus norvegicus,10116
+Gasterosteus aculeatus,69293
+Saccharomyces cerevisiae,4932
+Nanorchestidae,386820
+Listeria monocytogenes,1639
+Betula pendula,3505
+Crassostrea gigas,29159
+human nasopharyngeal metagenome,1131769
+uncultured bacterium,77133
+Seriola lalandi,302047
+Cyprinus carpio,7962
+Brachypodium distachyon,15368
+Apis mellifera,7460
+Cricetulus griseus,10029
+Quercus petraea,38865
+Musca domestica,7370
+unidentified,32644
+Helicoverpa armigera,29058
+Danio rerio,7955
+Gallus gallus,9031
+Meleagris gallopavo,9103
+Oryza sativa Japonica Group,39947
+Triticum dicoccoides,85692
+Apostichopus japonicus,307972
+Anolis carolinensis,28377
+uncultured fungus,175245
+uncultured archaeon,115547
+Brassica napus,3708
+Oncorhynchus mykiss,8022
+Calonectris leucomelas,79622
+Citrobacter freundii,546
+Proteus mirabilis,584
+Proteus vulgaris,585
+Klebsiella aerogenes,548
+Morganella morganii,582
+Aggregatibacter aphrophilus,732
+Legionella jordanis,456
+Rhodococcus rhodochrous,1829
+Clostridium baratii,1561
+Corynebacterium imitans,156978
+Gardnerella vaginalis,2702
+Prevotella oris,28135
+Prevotella denticola,28129
+Exiguobacterium aurantiacum,33987
+Campylobacter coli,195
+Porphyromonas endodontalis,28124
+Propionibacterium freudenreichii subsp. shermanii,1752
+Peptoniphilus harei,54005
+Campylobacter hyointestinalis,198
+Burkholderia cepacia,292
+Trueperella pyogenes,1661
+Mycobacterium chubuense,1800
+Alloiococcus otitis,1652
+Corynebacterium auriscanis,99807
+Clostridium perfringens,1502
+Moraxella caprae,90240
+Corynebacterium cystitidis,35757
+Pandoraea sputorum,93222
+marine metagenome,408172
+Leishmania donovani,5661
+Picea purpurea,308687
+Picea obovata,331118
+Picea asperata var. aurantiaca,1935394
+Picea brachytyla,308686
+Picea sitchensis,3332
+Picea omorika,3336
+Picea wilsonii,162304
+Picea torano,130229
+Picea spinulosa,171229
+Picea smithiana,123602
+Picea schrenkiana,162307
+Picea rubens,3333
+Picea retroflexa,308684
+Picea pungens,3331
+Picea orientalis,224734
+Picea chihuahuana,162305
+Picea neoveitchii,369397
+Picea meyeri,308681
+Picea mexicana,39833
+Picea maximowiczii,130227
+Picea mariana,3335
+Picea likiangensis,308677
+Picea koyamae,130208
+Picea koraiensis,308680
+Picea jezoensis,67778
+Picea glehnii,130206
+Picea glauca,3330
+Picea farreri,369398
+Picea engelmannii,3334
+Picea crassifolia,308688
+Picea breweriana,100117
+Picea asperata,162306
+Picea alcoquiana,130203
+Populus tremula,113636
+Meloidogyne incognita,6306
+Meloidogyne arenaria,6304
+Meloidogyne javanica,6303
+Shigella flexneri,623
+Shigella dysenteriae,622
+Escherichia coli,562
+Shigella sonnei,624
+Vibrio cholerae O1 biovar El Tor str. Ogawa RND19187,1416747
+human gut metagenome,408170
+Mus musculus domesticus,10092
+Mus musculus castaneus,10091
+gut metagenome,749906
+mixed DNA library,704108
+Astatotilapia calliptera,8154
+Haplochromis burtoni,8153
+Neolamprologus brichardi,32507
+Oreochromis niloticus,8128
+Pundamilia nyererei,303518
+Trematocranus placodon,323800
+Rhamphochromis longiceps,304217
+Eclectochromis ornatus,526960
+Petrotilapia genalutea,1298786
+Maylandia zebra,106582
+Lethrinops gossei,57308
+Diplotaxodon sp. 'similis',165732
+Diplotaxodon limnothrissa,163623
+Dimidiochromis kiwinge,163619
+Copadichromis virginalis,163618
+Anopheles gambiae,7165
+Plasmodium falciparum,5833
+Salmonella enterica subsp. enterica serovar Typhimurium,90371
+Camelus dromedarius,9838
+Sus scrofa,9823
+Drosophila melanogaster,7227
+Dactylis glomerata,4509
+Setaria italica,4555
+Cajanus cajan,3821
+Sorghum bicolor,4558
+Lates calcarifer,8187
+Ctenopharyngodon idella,7959
+Populus trichocarpa,3694
+Equus caballus,9796
+Pinus sylvestris,3349
+Crotalus adamanteus,8729
+sediment metagenome,749907
+Mycobacterium abscessus,36809
+Vibrio furnissii,29494
+Bordetella hinzii,103855
+Pandoraea pnomenusa,93220
+Corynebacterium urealyticum,43771
+Corynebacterium pilosum,35756
+Corynebacterium kutscheri,35755
+Clostridium cochlearium,1494
+Clostridium beijerinckii,1520
+Aeromonas salmonicida,645
+Moraxella boevrei,346665
+Psychrobacter phenylpyruvicus,29432
+Enterococcus faecalis,1351
+Chryseobacterium bernardetii,1241978
+Chryseobacterium carnis,1241979
+Tissierella praeacuta,43131
+Streptococcus pneumoniae,1313
+Acinetobacter baumannii,470
+Staphylococcus aureus,1280
+Enterococcus faecium,1352
+Dracunculus medinensis,318479
+Spodoptera littoralis,7109
+Zea mays subsp. mays,381124
+Pristionchus pacificus,54126
+Bombus lucorum,30193
+Bombus terrestris,30195
+Panicum virgatum,38727
+Saccharomyces paradoxus,27291
+Salmonella bongori,54736
+Parabacteroides distasonis,823
+Prevotella stercorea,363265
+Bacteroides vulgatus,821
+Bacteroides thetaiotaomicron,818
+Clostridioides difficile,1496
+Vibrio cholerae,666
+Mycobacterium tuberculosis,1773
+Mycobacterium africanum,33894
+Mycobacterium bovis,1765
+Salmonella enterica subsp. enterica serovar Choleraesuis,119912
+Salmonella enterica subsp. enterica serovar Typhisuis,41529
+Bordetella pertussis,520
+Chlamydia abortus,83555
+Chlamydia trachomatis,813
+Salmonella enterica,28901
+Haemophilus influenzae,727
+Haemophilus haemolyticus,726
+Haemophilus parainfluenzae,729
+Neisseria meningitidis,487
+Salmonella enterica subsp. enterica serovar Infantis,595
+Salmonella enterica subsp. enterica serovar Hadar,149385
+Salmonella enterica subsp. enterica serovar Bovismorbificans,58097
+Leptospira interrogans serovar Autumnalis,174157
+Salmonella,590
+Salmonella enterica subsp. enterica serovar Paratyphi C,57046
+Campylobacter jejuni,197
+Salmonella enterica subsp. enterica serovar Java,224729
+Salmonella enterica subsp. enterica serovar Paratyphi B,57045
+Streptococcus pyogenes,1314
+Salix viminalis,40686
+Streptococcus pneumoniae ATCC 700669,561276
+Burkholderia pseudomallei,28450
+Xenopus tropicalis,8364
+Yersinia pseudotuberculosis,633
+Yersinia similis,367190
+Yersinia massiliensis,419257
+Yersinia kristensenii,28152
+Yersinia intermedia,631
+Yersinia frederiksenii,29484
+Yersinia bercovieri,634
+Yersinia rohdei,29485
+Yersinia mollaretii,33060
+Yersinia enterocolitica,630
+Klebsiella variicola,244366
+Klebsiella quasipneumoniae,1463165
+Mycobacterium marinum,1781
+Mycobacterium microti,1806
+Neisseria cinerea,483
+Neisseria subflava,28449
+Neisseria polysaccharea,489
+Neisseria mucosa subsp. heidelbergiensis,90368
+Neisseria sicca,490
+Salmonella enterica subsp. enterica serovar Typhimurium str. DT104,85569
+Salmonella enterica subsp. enterica serovar Enteritidis,149539
+Salmonella enterica subsp. enterica serovar Dublin,98360
+Mycobacterium avium subsp. paratuberculosis,1770
+Influenzavirus A,197911
+Streptococcus dysgalactiae subsp. equisimilis,119602
+Streptococcus sp. 'group A',36470
+Neisseria lactamica,486
+Salmonella enterica subsp. enterica serovar Paratyphi A,54388
+Salmonella enterica subsp. enterica serovar Typhi,90370
+Schistosoma mansoni,6183
+Neisseria gonorrhoeae,485
+Neisseria canis,493
+Neisseria dentiae,194197
+Neisseria,482
+Neisseria flavescens,484
+Neisseria perflava,33053
+Neisseria flava,34026
+Neisseria mucosa,488
+Neisseria elongata,495
+Mus musculus musculus,39442
+Leptospira interrogans,173
+Gorilla gorilla gorilla,9595
+Chlamydia pneumoniae,83558
+Blautia producta,33035
+Mycoplasma amphoriforme,273136
+Kocuria kristinae,37923
+Clostridium paraputrificum,29363
+Bacillus subtilis subsp. spizizenii,96241
+Listeria welshimeri,1643
+Streptococcus downei,1317
+Legionella pneumophila subsp. pascullei,91890
+Afipia felis,1035
+Bacillus cereus,1396
+Campylobacter jejuni subsp. jejuni,32022
+Bordetella trematum,123899
+Streptococcus sanguinis,1305
+Slackia heliotrinireducens,84110
+Streptococcus equi,1336
+Escherichia coli ETEC H10407,316401
+Micrococcus luteus,1270
+Lactobacillus crispatus,47770
+Lactobacillus rhamnosus,47715
+Streptococcus mitis,28037
+Corynebacterium coyleae,53374
+Actinomyces neuii,33007
+Streptococcus agalactiae,1311
+Corynebacterium tuscaniense,302449
+Bifidobacterium longum,216816
+Bifidobacterium breve,1685
+Streptococcus gallolyticus,315405
+Actinomyces oris,544580
+Corynebacterium minutissimum,38301
+Aerococcus urinae,1376
+Lactobacillus iners,147802
+Streptococcus anginosus,1328
+Lactobacillus gasseri,1596
+Streptococcus salivarius,1304
+Corynebacterium aurimucosum,169292
+Staphylococcus epidermidis,1282
+Staphylococcus warneri,1292
+Lactobacillus jensenii,109790
+Staphylococcus lugdunensis,28035
+Alloscardovia omnicolens,419015
+Streptococcus vestibularis,1343
+Staphylococcus pettenkoferi,170573
+Enterobacter cloacae,550
+Enterobacter ludwigii,299767
+Staphylococcus saprophyticus,29385
+Lactobacillus johnsonii,33959
+Corynebacterium freneyi,134034
+Oligella urethralis,90245
+Staphylococcus hominis,1290
+Corynebacterium riegelii,156976
+Facklamia hominis,178214
+Streptococcus parasanguinis,1318
+Staphylococcus simulans,1286
+Cutibacterium avidum,33010
+Streptococcus gordonii,1302
+Corynebacterium matruchotii,43768
+Bifidobacterium bifidum,1681
+Bifidobacterium dentium,1689
+Corynebacterium tuberculostearicum,38304
+Plasmodium chabaudi,5825
+Tremarctos ornatus,9638
+Ursus thibetanus,9642
+Melursus ursinus,9636
+Helarctos malayanus,9634
+Micrurus spixii,129469
+Micrurus corallinus,54390
+Micrurus lemniscatus,129464
+Haliotis tuberculata,36103
+Danio albolineatus,27699
+Salmonella enterica subsp. enterica serovar Eastbourne,486993
+Salmonella enterica subsp. enterica serovar Chester,149386
+Salmonella enterica subsp. enterica serovar Brandenburg,149387
+Salmonella enterica subsp. enterica serovar Muenster,82689
+Salmonella enterica subsp. enterica serovar Montevideo,115981
+Salmonella enterica subsp. enterica serovar Reading,165302
+Salmonella enterica subsp. enterica serovar Oranienburg,28147
+Salmonella enterica subsp. enterica serovar Arechavaleta,486988
+Salmonella enterica subsp. enterica serovar Javiana,363569
+Neisseria bacilliformis,267212
+Yersinia pekkanenii,1288385
+Yersinia aleksiciae,263819
+[Haemophilus] parasuis,738
+Yersinia ruckeri,29486
+Klebsiella pneumoniae subsp. rhinoscleromatis,39831
+mouse gut metagenome,410661
+CRISPR-mediated gene targeting vector p(U6a-BsaI-gRNA),1682107
+Vitis vinifera,29760
+Ophiorrhiza pumila,157934
+Acinetobacter ursingii,108980
+Ursus spelaeus,39097
+Delphinapterus leucas,9749
+Bison bison,9901
+Bos mutus,72004
+Ursus arctos,9644
+Platichthys flesus,8260
+Python bivittatus,176946
+Eptatretus burgeri,7764
+Ciona intestinalis,7719
+Slackia exigua,84109
+Corynebacterium striatum,43770
+Pseudomonas chlororaphis subsp. chlororaphis,333
+Tsukamurella paurometabola,2061
+Pseudomonas chlororaphis,587753
+[Clostridium] symbiosum,1512
+Clostridium tetani,1513
+Peptoniphilus indolicus,33030
+Pasteurella multocida,747
+Anaerococcus octavius,54007
+Leuconostoc mesenteroides,1245
+Vibrio harveyi,669
+Bordetella ansorpii,288768
+Vibrio anguillarum,55601
+Cardiobacterium valvarum,194702
+Lautropia mirabilis,47671
+Edwardsiella ictaluri,67780
+Actinobacillus suis,716
+Bordetella holmesii,35814
+Arcobacter butzleri,28197
+Ralstonia pickettii,329
+Acinetobacter haemolyticus,29430
+Burkholderia cenocepacia,95486
+Haemonchus contortus,6289
+Peromyscus eremicus,42410
+Lachnoclostridium phytofermentans,66219
+Kittacincla malabarica,1948888
+Copsychus saularis,343929
+Mixornis gularis,1948886
+Diospyros kaki,35925
+Ectopistes migratorius,187118
+Solanum lycopersicum,4081
+Capsella bursa-pastoris,3719
+Burkholderia ubonensis,101571
+Human alphaherpesvirus 1,10298
+Macrobrachium rosenbergii,79674
+Penaeus monodon,6687
+Actinomyces odontolyticus,1660
+Mycoplasma iowae,2116
+Pseudopropionibacterium propionicum,1750
+Legionella londiniensis,45068
+[Clostridium] cocleatum,69824
+Bifidobacterium longum subsp. infantis,1682
+Corynebacterium mycetoides,38302
+Corynebacterium bovis,36808
+Clostridium tertium,1559
+Clostridium fallax,1533
+Rhodococcus erythropolis,1833
+Corynebacterium ulcerans,65058
+Veillonella atypica,39777
+Legionella quinlivanii,45073
+Anaerobiospirillum thomasii,179995
+Enterococcus avium,33945
+Listeria ivanovii subsp. ivanovii,202751
+Legionella cincinnatiensis,28085
+Legionella parisiensis,45071
+Dermatophilus congolensis,1863
+Burkholderia multivorans,87883
+Peptostreptococcus anaerobius,1261
+Clostridium sporogenes,1509
+Neisseria zoodegmatis,326523
+Streptococcus acidominimus,1326
+Bacteroides pyogenes,310300
+Aeromonas caviae,648
+Aeromonas encheleia,73010
+Pragia fontium,82985
+Salmonella enterica subsp. enterica,59201
+Pseudomonas aeruginosa,287
+Acinetobacter schindleri,108981
+Acinetobacter radioresistens,40216
+Pseudomonas koreensis,198620
+Acinetobacter guillouiae,106649
+Rodentibacter pneumotropicus,758
+Burkholderia gladioli,28095
+Acinetobacter junii,40215
+Enterobacter asburiae,61645
+Comamonas testosteroni,285
+Stenotrophomonas maltophilia,40324
+Acinetobacter nosocomialis,106654
+Klebsiella oxytoca,571
+Acinetobacter calcoaceticus,471
+Serratia marcescens,615
+Pseudomonas jinjuensis,198616
+Pseudomonas putida,303
+Pseudomonas stutzeri,316
+Pseudomonas fulva,47880
+Serratia fonticola,47917
+Empedobacter falsenii,343874
+Achromobacter xylosoxidans,85698
+Enterobacter kobei,208224
+Salmo salar,8030
+Vicia faba,3906
+human metagenome,646099
+Oryza sativa Indica Group,39946
+Borreliella burgdorferi,139
+Allium fistulosum,35875
+Allium cepa var. aggregatum,28911
+Crassostrea virginica,6565
+Eleocharis vivipara,63338
+Legionella oakridgensis ATCC 33761 = DSM 21215,1268635
+metagenome,256318
+Quercus rubra,3512
+Bacillus coagulans,1398
+Staphylococcus fleurettii,150056
+Veillonella criceti,103891
+[Flavobacterium] thermophilum,1414643
+Legionella moravica,39962
+Capnocytophaga canimorsus,28188
+Helicobacter mustelae,217
+Legionella lansingensis,45067
+Legionella spiritensis,452
+Veillonella rodentium,248315
+Odoribacter splanchnicus,28118
+Streptococcus cristatus,45634
+Mycoplasma glycophilum,171285
+Mycoplasma ovipneumoniae,29562
+Mycoplasma canis,29555
+Mycoplasma pulmonis,2107
+Propionibacterium freudenreichii,1744
+Paenibacillus macquariensis,948756
+Capnocytophaga granulosa,45242
+Mycoplasma edwardii,53558
+Mycoplasma hyopneumoniae,2099
+synthetic construct,32630
+Bufo bufo,8384
+Salvelinus alpinus,8036
+Bergeyella zoohelcum,1015
+Human rhinovirus A31,185902
+Human rhinovirus A28,147672
+Human rhinovirus A25,185898
+Human rhinovirus A24,185897
+Human rhinovirus A23,12135
+Human rhinovirus A20,147675
+Human rhinovirus 1B,12129
+Human rhinovirus A2,12130
+Rhinovirus B48,147679
+Human rhinovirus A19,185895
+Human rhinovirus A18,147674
+Human rhinovirus B17,150904
+Human rhinovirus A16,31708
+Human rhinovirus B14,12131
+Human rhinovirus A11,39767
+Human rhinovirus A10,185892
+Human coronavirus 229E,11137
+Feline calicivirus strain F9,11981
+Treponema pallidum subsp. pertenue,168
+Enterococcus hirae,1354
+Bacillus firmus,1399
+Capnocytophaga haemolytica,45243
+Phocoenobacter uteri,146806
+Bartonella grahamii,33045
+Legionella birminghamensis,28083
+Capnocytophaga cynodegmi,28189
+Fusobacterium ulcerans,861
+Veillonella dispar,39778
+Influenza B virus (B/Lisboa/13/2010),1601029
+Influenza B virus (B/Lisboa/8/2010),1601035
+Influenza B virus (B/Luxembourg/558/2010),1953925
+Influenza B virus (B/Madagascar/7766/2010),1953924
+Influenza B virus (B/Tehran/5277/2010),1953923
+Influenza B virus (B/Tehran/5246/2010),1953922
+Influenza B virus (B/Latvia/12-41046/2010),1953918
+Influenza B virus (B/HongKong/2207/2010),1953917
+Influenza B virus (B/Berlin/2/2010),1953915
+Influenza B virus (B/Berlin/1/2010),1953914
+Influenza B virus (B/NordrheinWestfalen/1/2010),1953913
+Influenza B virus (B/Niedersachsen/2/2010),1601125
+Influenza B virus (B/Paris/1850/2010),1601174
+Influenza B virus (B/Bretagne/2278/2010),1953908
+Influenza B virus (B/Finland/39/2010),1600380
+Influenza B virus (B/Finland/33/2010),1600378
+Influenza B virus (B/Ireland/0132/2010),1953905
+Influenza B virus (B/Genoa/02/2010),1953904
+Influenza B virus (B/Georgia/75/2011),1953903
+Influenza B virus (B/Washington/01/2010),1111597
+Influenza B virus (B/England/421/2010),1953899
+Influenza B virus (B/England/512/2010),1600374
+Influenza B virus (B/England/170/2010),1600372
+Influenza B virus (B/Parma/3/2011),1953898
+Influenza B virus (B/Geneva/4201882/2011),1953897
+Influenza B virus (B/Lyon/68/2011),1953896
+Influenza B virus (B/Lisboa/4/2011),1953891
+Influenza B virus (B/Lisboa/36/2010),1953890
+Influenza B virus (B/Trieste/05/2011),1953889
+Influenza B virus (B/Parma/04/2010),1953888
+Influenza B virus (B/Milano/10/2011),1953887
+Influenza B virus (B/Ceuta/RR7186/2011),1953886
+Influenza B virus (B/Cameroon/10v-4954/2010),1953883
+Influenza B virus (B/Turkey/93/2011),1953882
+Influenza B virus (B/Turkey/97/2011),1953881
+Influenza B virus (B/Turkey/103/2011),1953880
+Influenza B virus (B/Algeria/G44/2010),1953879
+Influenza B virus (B/Ghana/FS11244/2011),1953875
+Influenza B virus (B/Athens/10051/2011),1953873
+Influenza B virus (B/Kharkov/4178/2010),1600950
+Influenza B virus (B/Voronezh/20/2011),1953868
+Influenza B virus (B/Malta/MV000738/2011),1953867
+Influenza B virus (B/Madagascar/0245/2011),1953866
+Influenza B virus (B/Madagascar/1119/2011),1953865
+Influenza B virus (B/Ukraine/7/2011),1953864
+Influenza B virus (B/Ukraine/142/2011),1953863
+Influenza B virus (B/England/168/2011),1953860
+Influenza B virus (B/England/172/2011),1953853
+Influenza B virus (B/England/169/2011),1953852
+Influenza B virus (B/Serbia/2061),1953850
+Influenza B virus (B/Serbia/2049),1953849
+Influenza B virus (B/Malmoe/2/2011),1953846
+Influenza B virus (B/Stockholm/14/2011),1953845
+Influenza B virus (B/Norway/1188/2011),1953842
+Influenza B virus (B/Malmoe/1/2011),1953841
+Influenza B virus (B/Norway/490/2011),1953840
+Influenza B virus (B/Minsk/1559/2011),1953836
+Influenza B virus (B/Vitebsk/672/2011),1953835
+Influenza B virus (B/Slovenia/1010/2011),1953830
+Influenza B virus (B/Slovenia/819/2011),1953829
+Influenza B virus (B/Ghana/735/2011),1953828
+Influenza B virus (B/Ghana/516/2011),1953827
+Influenza B virus (B/LyonCHU/16167/2011),1953826
+Influenza B virus (B/LyonCHU/15731/2011),1953825
+Influenza B virus (B/LyonCHU/14767/2011),1953824
+Influenza B virus (B/Slovenia/1141/2011),1953822
+Influenza B virus (B/Ghana/850/2011),1953821
+Influenza B virus (B/HongKong/765/2011),1953820
+Influenza B virus (B/HongKong/748/2011),1953809
+Influenza B virus (B/HongKong/767/2011),1953810
+Influenza B virus (B/Dnepropetrovsk/4719/2011),1953813
+Influenza B virus (B/Odessa/4709/2011),1953812
+Influenza B virus (B/Donetsk/4546/2011),1953811
+Influenza B virus (B/Donetsk/5206/2011),1953802
+Influenza B virus (B/Bangladesh/3333/2007),1089587
+Influenza B virus (B/Paris/1762/2008),1953777
+Influenza B virus (B/Ankara/TR10/2011),1953790
+Influenza B virus (B/Astrakhan/22/2011),1953789
+Influenza B virus (B/Vilnius/703/2011),1953788
+Influenza B virus (B/Madagascar/2550/2011),1953787
+Influenza B virus (B/Madagascar/1191/2011),1953786
+Influenza B virus (B/Paris/1260/2011),1953785
+Influenza B virus (B/Iceland/62/2011),1953784
+Influenza B virus (B/Iceland/21/2011),1953783
+Influenza B virus (B/England/243/2011),1953782
+Influenza B virus (B/Paris/1403/2011),1953781
+Influenza B virus (B/Bretagne/1083/2011),1953780
+Influenza B virus (B/Stockholm/12/2011),1953779
+Influenza B virus (B/Odessa/3886/2010),1953778
+Influenza B virus (B/Brisbane/60/2008),604436
+Influenza B virus (B/England/393/2007),1953776
+Influenza B virus (B/Valladolid/57/2010),1953893
+Influenza B virus (B/Israel/4-11/2011),1953892
+Influenza B virus (B/Lisboa/56/2010),1601034
+Influenza B virus (B/Ceuta/RR7185/2010),1953885
+Influenza B virus (B/LaRioja/RR6969/2010),1953884
+Influenza B virus (B/StPetersburg/5/2011),1953878
+Influenza B virus (B/Murmansk/3/2011),1953877
+Influenza B virus (B/Estonia/55784/2011),1953876
+Influenza B virus (B/CzechRep/36/2011),1953874
+Influenza B virus (B/Moldova/284/2011),1953872
+Influenza B virus (B/Doneck/4353/2011),1953871
+Influenza B virus (B/Hmelnizk/4273/2010),1953870
+Influenza B virus (B/Kharkov/4260/2010),1953869
+Influenza B virus (B/Ukraine/30/2011),1953862
+Influenza B virus (B/Ireland/21653/2011),1953861
+Influenza B virus (B/England/684/2010),1953859
+Influenza B virus (B/Madagascar/0236/2011),1953858
+Influenza B virus (B/Serbia/2095),1953857
+Influenza B virus (B/Serbia/2094),1953856
+Influenza B virus (B/Turkey/674/2011),1953855
+Influenza B virus (B/Turkey/682/2011),1953854
+Influenza B virus (B/Serbia/2089),1953851
+Influenza B virus (B/HongKong/591/2011),1953848
+Influenza B virus (B/Norway/1276/2011),1953847
+Influenza B virus (B/Slovakia/302/2011),1953844
+Influenza B virus (B/Slovakia/193/2011),1953843
+Influenza B virus (B/Malta/MV457/2011),1953839
+Influenza B virus (B/HongKong/1889/2010),1953838
+Influenza B virus (B/Ireland/132/2010),1953837
+Influenza B virus (B/LyonCHU/1288/2011),1953834
+Influenza B virus (B/Poitiers/267/2011),1953833
+Influenza B virus (B/Ghana/494/2011),1953832
+Influenza B virus (B/Lyon/1179/2011),1953831
+Influenza B virus (B/Dnepropetrovsk/4411/2010),1953823
+Influenza B virus (B/Odessa/4705/2010),1953819
+Influenza B virus (B/Hmelnizk/4637/2011),1953818
+Influenza B virus (B/HongKong/762/2011),1953817
+Influenza B virus (B/HongKong/599/2011),1953816
+Influenza B virus (B/HongKong/568/2011),1953815
+Influenza B virus (B/Dnepropetrovsk/4720/2011),1953814
+Influenza B virus (B/Madagascar/8699/2011),1953808
+Influenza B virus (B/Madagascar/3866/2011),1953807
+Influenza B virus (B/Cameroon/11V-12080GVF1/2011),1953806
+Influenza B virus (B/Cameroon/13V-16387GVF1/2011),1953805
+Influenza B virus (B/CameroonLEID/07111846/2011),1953804
+Influenza B virus (B/Iceland/48/2011),1953803
+Influenza B virus (B/Donetsk/5188/2011),1953801
+Influenza B virus (B/Crimea/4980/2011),1953800
+Influenza B virus (B/Skuodas/946/2011),1953799
+Influenza B virus (B/Vilnius/704/2011),1953798
+Influenza B virus (B/Ankara/TR21/2011),1953797
+Influenza B virus (B/Antalya/TR12/2011),1953796
+Influenza B virus (B/Adana/TR06/2010),1953795
+Influenza B virus (B/Konya/TR01/2010),1953794
+Influenza B virus (B/Cameroon/11V12076GVFI/2011),1953793
+Influenza B virus (B/Cameroon/LEID01111438/2011),1953792
+Influenza B virus (B/Sivas/TR14/2011),1953791
+Influenza B virus (B/Zamora/52/2010),1601792
+Influenza B virus (B/Egypt/65/2010),1953921
+Influenza B virus (B/Egypt/66/2010),1953920
+Influenza B virus (B/Egypt/46/2010),1953919
+Influenza B virus (B/HongKong/2200/2010),1953916
+Influenza B virus (B/Lisboa/21/2010),1601033
+Influenza B virus (B/Lisboa/15/2010),1601031
+Influenza B virus (B/HongKong/2188/2010),1953912
+Influenza B virus (B/Lisboa/20/2010),1601032
+Influenza B virus (B/Lisboa/14/2010),1601030
+Influenza B virus (B/Brussels/G0707/2010),1953911
+Influenza B virus (B/Latvia/12-43110/2010),1953910
+Influenza B virus (B/Agadir/156/2011),1953909
+Influenza B virus (B/Brussels/G0710/2010),1953907
+Influenza B virus (B/CotedIvoire/GR1520/2010),1953906
+Influenza B virus (B/CotedIvoire/GR1655/2010),1953902
+Influenza B virus (B/CotedIvoire/GR1576/2010),1953901
+Influenza B virus (B/Valladolid10/2011),1953900
+Influenza B virus (B/Lyon/74/2011),1953895
+Influenza B virus (B/Slovenia/46/2011),1953894
+Pieris brassicae,7116
+Heliothis virescens,7102
+Bubalus bubalis,89462
+Crocuta crocuta,9678
+Cucumis melo,3656
+Columbicola columbae,128991
+Megalaspis cordyla,232276
+Gerres filamentosus,274467
+Cynoglossus joyneri,366923
+Thunnus tonggol,48169
+Pseudorasbora parva,51549
+Parapterois heterura,1585663
+Konosirus punctatus,365056
+Terapon jarbua,163131
+Scolopsis monogramma,443717
+Scolopsis taenioptera,443718
+Coilia nasus,365059
+Acanthogobius flavimanus,86203
+Centropyge flavissima,586787
+Atule mate,197572
+Sphyraena putnamae,443726
+Selar crumenophthalmus,146146
+Siganus javus,225760
+Silurus biwaensis,1604540
+Cottus pollux,137882
+Silurus asotus,30991
+Cicer arietinum,3827
+Physeter catodon,9755
+Glycine max,3847
+Menidia menidia,238744
+Musa acuminata AAA Group,214697
+Quercus robur,38942
+Achromobacter marplatensis,470868
+Moraxella caviae,34060
+Vibrio metschnikovii,28172
+Plasmodium berghei,5821
+Oithona nana,136191
+Amaranthus caudatus,3567
+soil metagenome,410658
+Tetranychus urticae,32264
+marine sediment metagenome,412755
+Pinctada maxima,104660
+Paracentrotus lividus,7656
+Lichanura trivirgata,51879
+Boechera stricta,72658
+unidentified influenza virus,11309
+Influenza B virus (B/England/145/2008),1089590
+Influenza B virus (B/reassortant/NYMC BX-42(Lee/1940 x Panama/45/1990)),1171656
+Influenza B virus (B/Bulgaria/35/2011),1953775
+Influenza B virus (B/StPetersburg/93/2011),1953774
+Influenza B virus (B/Murmansk/2/2010),1953773
+Influenza B virus (B/Kazakhstan/2078/2011),1953772
+Astatotilapia bloyeti,85440
+Streptococcus suis,1307
+Burkholderia stagnalis,1503054
+Burkholderia vietnamiensis,60552
+Burkholderia anthina,179879
+Burkholderia ambifaria,152480
+Paraburkholderia phenoliruptrix,252970
+Chlamydia pecorum,85991
+Onychomys torridus,38674
+Shewanella baltica,62322
+Mycoplasma conjunctivae,45361
+Mycoplasma cynos,171284
+Legionella feeleii,453
+Mycoplasma bovigenitalium,2112
+Mycoplasma alkalescens,45363
+Mycoplasma dispar,86660
+Mobiluncus mulieris,2052
+Helicobacter fennelliae,215
+Kurthia zopfii,1650
+Mycobacterium terrae,1788
+Mycobacterium gadium,1794
+Mycobacterium nonchromogenicum,1782
+Anopheles funestus,62324
+Pan troglodytes,9598
+Alectis indica,436001
+Alepes kleinii,436002
+Fibramia lateralis,638140
+Lactobacillus plantarum subsp. plantarum ST-III,889932
+Hordeum vulgare,4513
+Pogona vitticeps,103695
+Pannonibacter phragmitetus,121719
+Veillonella ratti,103892
+Mycoplasma bovirhinis,29553
+Raoultella planticola,575
+Mycoplasma fermentans,2115
+Campylobacter upsaliensis,28080
+Neisseria elongata subsp. glycolytica,88719
+Enterococcus mundtii,53346
+Bordetella bronchiseptica,518
+Streptococcus dysgalactiae,1334
+Caenorhabditis elegans,6239
+Thunnus albacares,8236
+Influenza B virus (B/Lorraine/1023/2012),1954013
+Influenza B virus (B/HongKong/3585/2012),1954012
+Influenza B virus (B/HongKong/3581/2012),1954011
+Influenza B virus (B/HongKong/3579/2012),1954010
+Influenzavirus B,197912
+Influenza B virus (B/HongKong/3546/2012),1954009
+Influenza B virus (B/HongKong/3534/2012),1954008
+Influenza B virus (B/HongKong/3508/2012),1954007
+Influenza B virus (B/HongKong/3501/2012),1954006
+Influenza B virus (B/HongKong/3496/2012),1954005
+Influenza B virus (B/Madagascar/03165/2012),1954004
+Influenza B virus (B/Madagascar/03142/2012),1954003
+Influenza B virus (B/Madagascar/02856/2012),1954002
+Influenza B virus (B/Madagascar/02853/2012),1954001
+Influenza B virus (B/Madagascar/01732/2012),1954000
+Influenza B virus (B/Madagascar/01706/2012),1953999
+Influenza B virus (B/Madagascar/01593/2012),1953998
+Influenza B virus (B/Madagascar/01591/2012),1953997
+Influenza B virus (B/Ghana/DILI12-102/2012),1953996
+Influenza B virus (B/BuenosAires/770/2012),1954047
+Influenza B virus (B/Lusaka/72/2011),1954046
+Influenza B virus (B/Lusaka/63/2011),1954045
+Influenza B virus (B/Lusaka/127/2011),1954044
+Influenza B virus (B/Mauritius/718/2012),1954043
+Influenza B virus (B/Mauritius/571/2012),1954042
+Influenza B virus (B/Johannesburg/3462/2012),1954041
+Influenza B virus (B/Johannesburg/3559/2012),1954040
+Influenza B virus (B/Johannesburg/3952/2012),1954039
+Influenza B virus (B/Massachusetts/02/2012),1321139
+Influenza B virus (B/Linares/34634/2012),1954038
+Influenza B virus (B/NewJersey/01/2012),1954037
+Influenza B virus (B/Johanneburg/3964/2012),1954036
+Influenza B virus (B/Johannesburg/3958/2012),1954035
+Influenza B virus (B/Johannesburg/3005/2012),1954034
+Influenza B virus (B/Johannesburg/5564/2012),1954033
+Influenza B virus (B/Johannesburg/3009/2012),1954032
+Influenza B virus (B/Johannesburg/242/2012),1954031
+Influenza B virus (B/Norway/1165/2012),1954030
+Influenza B virus (B/Norway/1133/2012),1954029
+Influenza B virus (B/Norway/1072/2012),1954028
+Influenza B virus (B/Dakar/17/2012),1954027
+Influenza B virus (B/Dakar/9/2012),1954026
+Influenza B virus (B/Dakar/5/2012),1954025
+Influenza B virus (B/Dakar/3/2012),1954024
+Influenza B virus (B/Dakar/10/2012),1954023
+Influenza B virus (B/Dakar/08/2012),1954022
+Influenza B virus (B/Dakar/06/2012),1954021
+Influenza B virus (B/Dakar/04/2012),1954020
+Influenza B virus (B/Dakar/01/2012),1954019
+Influenza B virus (B/Lorraine/1408/2012),1954018
+Influenza B virus (B/Guyane/1307/2012),1954017
+Influenza B virus (B/Centre/1376/2012),1954016
+Influenza B virus (B/PaysdeLoire/1240/2012),1954015
+Influenza B virus (B/Djibouti/IP1157/2012),1954014
+Influenza B virus (B/Norway/2290/2012),1954064
+Influenza B virus (B/Norway/2157/2012),1954063
+Influenza B virus (B/Norway/2117/2012),1954062
+Influenza B virus (B/Norway/2114/2012),1954061
+Influenza B virus (B/Norway/2090/2012),1954060
+Influenza B virus (B/Norway/2026/2012),1954059
+Influenza B virus (B/Norway/1995/2012),1954058
+Influenza B virus (B/Norway/1864/2012),1954057
+Influenza B virus (B/Norway/1836/2012),1954056
+Influenza B virus (B/Norway/1477/2012),1954055
+Influenza B virus (B/HongKong/3577/2012),1954054
+Influenza B virus (B/Novosibirsk/1/2012),1953971
+Influenza B virus (B/Estonia/55669/2011),1954053
+Influenza B virus (B/BuenosAires/8833/2012),1954052
+Influenza B virus (B/Tucuman/A458/2012),1954051
+Influenza B virus (B/SantaFe/915530/2012),1954050
+Influenza B virus (B/Tucuman/A285/2012),1954049
+Influenza B virus (B/Formosa/V2367/2012),1954048
+Influenza B virus (B/Denmark/24/2011),1953944
+Influenza B virus (B/Denmark/16/2011),1953943
+Influenza B virus (B/Israel/17/2011),1953942
+Influenza B virus (B/Israel/15/2011),1953941
+Influenza B virus (B/Ireland/12M2515/2012),1953940
+Influenza B virus (B/Attecoube/GR887/2011),1953939
+Influenza B virus (B/Catalonia/S4125/2011),1953938
+Influenza B virus (B/Catalonia/S4251/2011),1953937
+Influenza B virus (B/Attecoube/GR1101/2011),1953936
+Influenza B virus (B/AixenProvence/1795/2011),1953935
+Influenza B virus (B/SachenAnhalt/1/2012),1953934
+Influenza B virus (B/Norway/2429/2011),1953933
+Influenza B virus (B/Yopougon/GR926/2011),1953932
+Influenza B virus (B/Yopougon/GR882/2011),1953931
+Influenza B virus (B/Berlin/147/2011),1953930
+Influenza B virus (B/Sweden/2/2011),1953929
+Influenza B virus (B/Norway/2075/2011),1953928
+Influenza B virus (B/Berlin/146/2011),1953927
+Influenza B virus (B/Netherlands/707/2011),1953926
+Influenza B virus (B/Lyon/2760/2012),1954079
+Influenza B virus (B/England/707/2012),1954078
+Influenza B virus (B/England/709/2012),1954077
+Influenza B virus (B/England/626/2012),1954076
+Influenza B virus (B/Valladolid/96/2012),1954075
+Influenza B virus (B/England/595/2012),1954069
+Influenza B virus (B/England/580/2012),1954068
+Influenza B virus (B/BadenWurttemberg/39/2012),1954074
+Influenza B virus (B/Stockholm/14/2012),1954073
+Influenza B virus (B/Denmark/31/2012),1954072
+Influenza B virus (B/Denmark/26/2012),1954071
+Influenza B virus (B/Denmark/23/2012),1954070
+Influenza B virus (B/England/579/2012),1954067
+Influenza B virus (B/England/594/2012),1954066
+Influenza B virus (B/England/577/2012),1954065
+Influenza B virus (B/Athens_GR/199/2012),1953962
+Influenza B virus (B/Athens_GR/132/2012),1953961
+Influenza B virus (B/Athens_GR/123/2012),1953960
+Influenza B virus (B/Lefkada_GR/46/2012),1953959
+Influenza B virus (B/Qatar/2311002267/2011),1953958
+Influenza B virus (B/Qatar/2311005072/2011),1953957
+Influenza B virus (B/Yaounde/11V-20231/2011),1953956
+Influenza B virus (B/Yaounde/11V-20028/2011),1953955
+Influenza B virus (B/Yaounde/11V-18591/2011),1953954
+Influenza B virus (B/Yaounde/11V-18472/2011),1953953
+Influenza B virus (B/Navarra/RR9043/2012),1953950
+Influenza B virus (B/Latvia/1-48266/2012),1953952
+Influenza B virus (B/LaRioja/RR8959/2011),1953951
+Influenza B virus (B/Austria/653880/2012),1953949
+Influenza B virus (B/Dakar/17/2011),1953948
+Influenza B virus (B/Dakar/09/2011),1953947
+Influenza B virus (B/Dakar/08/2011),1953946
+Influenza B virus (B/Dakar/05/2011),1953945
+Influenza B virus (B/Ghana/DILI-0859/2012),1954097
+Influenza B virus (B/Ghana/ARI-1648/2012),1954096
+Influenza B virus (B/Porto/EuroEva38/2013),1954095
+Influenza B virus (B/Valladolid/99/2012),1954094
+Influenza B virus (B/Burgos/95/2012),1954093
+Influenza B virus (B/Braga_PT/12/2012),1954092
+Influenza B virus (B/Lisboa_PT/9/2012),1954091
+Influenza B virus (B/Porto_PT/14/2012),1954090
+Influenza B virus (B/Lisboa_PT/8/2012),1954089
+Influenza B virus (B/Lisboa_PT/7/2012),1954088
+Influenza B virus (B/Saarland/2/2012),1954087
+Influenza B virus (B/Sachsen/26/2012),1954086
+Influenza B virus (B/England/706/2012),1954085
+Influenza B virus (B/Thuringen/1/2013),1954084
+Influenza B virus (B/Bayern/1/2013),1954083
+Influenza B virus (B/BadenWurttemberg/41/2012),1954082
+Influenza B virus (B/Lyon/2771/2012),1954081
+Influenza B virus (B/Poitiers/2821/2012),1954080
+Influenza B virus (B/Ukraine/5374/2012),1953978
+Influenza B virus (B/Ireland/12M17522/2012),1953977
+Influenza B virus (B/StPetersburg/24E2/2012),1953976
+Influenza B virus (B/England/537/2012),1953975
+Influenza B virus (B/England/507/2012),1953974
+Influenza B virus (B/StPetersburg/24C2/2012),1953973
+Influenza B virus (B/StPetersburg/18/2012),1953972
+Influenza B virus (B/Estonia/67205/2012),1953970
+Influenza B virus (B/Norway/710/2012),1953969
+Influenza B virus (B/Norway/579/2012),1953968
+Influenza B virus (B/Novosibirsk/2/2012),1953967
+Influenza B virus (B/Athens_GR/152/2012),1953966
+Influenza B virus (B/Crete_GR/141/2012),1953965
+Influenza B virus (B/Athens_GR/98/2012),1953964
+Influenza B virus (B/Lefkada_GR/58/2012),1953963
+Influenza B virus (B/Iasi/131732/2013),1954135
+Influenza B virus (B/Bucuresti/131574/2013),1954134
+Influenza B virus (B/Andalucia/358/2012),1954119
+Influenza B virus (B/Lyon-CHU/50/569/2012),1954133
+Influenza B virus (B/Lyon/2696/2012),1954132
+Influenza B virus (B/Trieste/01/2013),1954131
+Influenza B virus (B/Parma/01/2013),1954130
+Influenza B virus (B/Reims/1624/2012),1954129
+Influenza B virus (B/Guyane/308/2012),1954128
+Influenza B virus (B/Paris/1828/2012),1954127
+Influenza B virus (B/Norway/2476/2012),1954126
+Influenza B virus (B/Norway/2402/2012),1954125
+Influenza B virus (B/Athens_GR/11/2013),1954124
+Influenza B virus (B/Roma/02/2012),1954123
+Influenza B virus (B/Milano/36/2012),1954122
+Influenza B virus (B/Belgium/G901/2012),1954121
+Influenza B virus (B/Norway/2281/2012),1954120
+Influenza B virus (B/Navarra/304/2012),1954118
+Influenza B virus (B/PaisVasco/284/2012),1954117
+Influenza B virus (B/Israel/1/2013),1954116
+Influenza B virus (B/Latvia/1-40275p/2013),1954115
+Influenza B virus (B/Latvia/12-32427p/2012),1954114
+Influenza B virus (B/Ireland/02490/2013),1954113
+Influenza B virus (B/Ireland/00125/2013),1954112
+Influenza B virus (B/Ireland/90999/2012),1954111
+Influenza B virus (B/Ireland/88486/2012),1954110
+Influenza B virus (B/Milano/44/2012),1954109
+Influenza B virus (B/Parma/03/2012),1954108
+Influenza B virus (B/Belgium/G886/2012),1954107
+Influenza B virus (B/Switzerland/7628394/2012),1954106
+Influenza B virus (B/Switzerland/7587143/2012),1954105
+Influenza B virus (B/Norway/2349/2012),1954104
+Influenza B virus (B/Belgium/G922/2012),1954103
+Influenza B virus (B/Caen/1808/2012),1954102
+Influenza B virus (B/PaysdeLoire/1791/2012),1954101
+Influenza B virus (B/Jordan/30465/2012),1954100
+Influenza B virus (B/Jordan/30014/2012),1954099
+Influenza B virus (B/Jordan/20440/2012),1954098
+Human immunodeficiency virus 1,11676
+Influenza B virus (B/Netherlands/039/2012),1954143
+Influenza B virus (B/Netherlands/521/2012),1954142
+Influenza B virus (B/HongKong/3608/2012),1954141
+Influenza B virus (B/HongKong/6/2013),1954140
+Influenza B virus (B/HongKong/3611/2012),1954139
+Influenza B virus (B/HongKong/12/2013),1954138
+Influenza B virus (B/Blida/143/2012),1954137
+Influenza B virus (B/Blida/113/2012),1954136
+Influenza B virus (B/Ghana/FS12-808/2012),1953995
+Influenza B virus (B/Ghana/DILI12-098/2012),1953994
+Influenza B virus (B/Ghana/FS12-831/2012),1953993
+Influenza B virus (B/Roma/01/2012),1953992
+Influenza B virus (B/Milano/16/2012),1953991
+Influenza B virus (B/Milano/05/2012),1217556
+Influenza B virus (B/Perugia/02/2012),1953990
+Influenza B virus (B/Stockholm/9/2012),1953989
+Influenza B virus (B/Finland/292/2012),1953988
+Influenza B virus (B/Milano/03/2012),1217553
+Influenza B virus (B/Georgia/436/2012),1953987
+Influenza B virus (B/Georgia/741/2012),1953986
+Influenza B virus (B/Georgia/655/2012),1953985
+Influenza B virus (B/Stockholm/8/2012),1953984
+Influenza B virus (B/Stockholm/5/2012),1953983
+Influenza B virus (B/Stockholm/2/2012),1953982
+Influenza B virus (B/Lisboa/3/2012),1953981
+Influenza B virus (B/Lisboa/1/2012),1953980
+Influenza B virus (B/Ukraine/5376/2012),1953979
+Alouatta guariba,182256
+Hepatitis C virus,11103
+Mycoplasma gallinaceum,29556
+Mycoplasma neurolyticum,2120
+Mycoplasma putrefaciens,2123
+Mycoplasma hyorhinis,2100
+Mycoplasma pneumoniae,2104
+Mycoplasma salivarium,2124
+Streptococcus merionis,400065
+Salmonella enterica subsp. enterica serovar Gallinarum,594
+Roseomonas mucosa,207340
+Streptococcus constellatus subsp. pharyngis,184250
+Prevotella intermedia,28131
+[Haemophilus] ducreyi,730
+Cardiobacterium hominis,2718
+Rhodococcus coprophilus,38310
+Gordonia rubripertincta,36822
+Legionella busanensis,190655
+Legionella taurinensis,70611
+Mobiluncus curtisii subsp. holmesii,144178
+Eikenella corrodens,539
+Chryseobacterium taklimakanense,536441
+Suttonella ornithocola,279832
+Legionella beliardensis,91822
+Roseomonas gilardii subsp. rosea,243956
+Sphingobacterium mizutaii,1010
+Buttiauxella agrestis,82977
+Legionella israelensis,454
+Legionella steigerwaltii,460
+Legionella rubrilucens,458
+Legionella maceachernii,466
+Mycoplasma gallisepticum,2096
+Cutibacterium granulosum,33011
+Wolinella succinogenes,844
+Fusobacterium nucleatum subsp. vincentii,155615
+Haplochromis tweddlei,698650
+Thylogale thetis,442964
+Rana catesbeiana,8400
+Andrias davidianus,141262
+Kingella denitrificans,502
+Burkholderia oklahomensis,342113
+Rhodococcus gordoniae,223392
+Actinomyces slackii,52774
+Mycobacterium thermoresistibile,1797
+Mycoplasma orale,2121
+Vibrio alginolyticus,663
+Pasteurella testudinis,761
+Serratia ficaria,61651
+Edwardsiella hoshinae,93378
+Eggerthella lenta,84112
+Grimontia hollisae,673
+Bacteroides ovatus,28116
+Shinella zoogloeoides,352475
+Actinobacillus lignieresii,720
+Staphylococcus stepanovicii,643214
+Staphylococcus petrasii subsp. jettensis,1077965
+Achromobacter insolitus,217204
+Actinomyces denticolens,52767
+Staphylococcus saccharolyticus,33028
+Propioniferax innocua,1753
+Micrococcus lylae,1273
+Mycobacterium vaccae,1810
+[Clostridium] sphenoides,29370
+Schizosaccharomyces pombe,4896
+Staphylococcus muscae,1294
+Mycobacterium gordonae,1778
+Acholeplasma laidlawii,2148
+[Pasteurella] aerogenes,749
+Kingella potus,265175
+Haemophilus pittmaniae,249188
+Bordetella avium,521
+Pasteurella multocida subsp. septica,115545
+Moraxella osloensis,34062
+Staphylococcus microti,569857
+Mycobacterium peregrinum,43304
+Lactobacillus brevis,1580
+Anaerococcus prevotii,33034
+Nocardia asteroides,1824
+Blautia coccoides,1532
+Rothia dentocariosa,2047
+Neotoma albigula,42408
+Achromobacter sp.,134375
+Citrobacter rodentium,67825
+Aratinga solstitialis,176015
+Nothobranchius furzeri,105023
+Salmonella enterica subsp. enterica serovar Typhi str. CT18,220341
+Clostridium perfringens ATCC 13124,195103
+Salmonella enterica subsp. enterica serovar Typhi str. 404ty,497977
+Lythrypnus dalli,314003
+Gambelia sila,475046
+Gambelia wislizenii,43593
+Gambelia copeii,475045
+Plasmodium vivax,5855
+Salmonella enterica subsp. enterica serovar Typhimurium str. D23580,568708
+Staphylococcus simiae,308354
+Staphylococcus piscifermentans,70258
+Campylobacter jejuni subsp. doylei,32021
+Yokenella regensburgei,158877
+Staphylococcus petrasii subsp. petrasii,1276937
+Staphylococcus nepalensis,214473
+Staphylococcus devriesei,586733
+Staphylococcus condimenti,70255
+Citrobacter braakii,57706
+Pasteurella canis,753
+Myroides odoratus,256
+Megamonas hypermegale,158847
+Collinsella aerofaciens,74426
+Gordonia bronchialis,2054
+Staphylococcus carnosus subsp. utilis,147449
+Staphylococcus carnosus subsp. carnosus,147448
+Actinomyces israelii,1659
+Mycobacterium chitae,1792
+Mycobacterium aurum,1791
+Gemella morbillorum,29391
+Dermacoccus nishinomiyaensis,1274
+[Clostridium] indolis,69825
+Actinomyces bovis,1658
+Oerskovia turbata,1713
+Legionella jamestowniensis,455
+Legionella erythra,448
+Achromobacter piechaudii,72556
+Vibrio mediterranei,689
+Atopobium fossor,39487
+Bifidobacterium adolescentis,1680
+Anaerobiospirillum succiniciproducens,13335
+Photobacterium damselae,38293
+Pasteurella dagmatis,754
+Gallibacterium anatis,750
+Cocos nucifera,13894
+feces metagenome,1861841
+Syngnathus scovelli,161590
+Mus pahari,10093
+Mus caroli,10089
+Arabis alpina,50452
+Macaca fascicularis,9541
+Lagenaria siceraria,3668
+Montastraea cavernosa,63558
+Catharanthus roseus,4058
+Triticum aestivum,4565
+Thryonomys swinderianus,10169
+bioreactor metagenome,1076179
+Pseudotsuga menziesii,3357
+Mycobacterium tuberculosis complex bacterium,1494075
+Aedes aegypti,7159
+Cyphotilapia frontosa,27783
+Limnochromis auritus,27749
+Tanganicodus irsacae,27763
+Boulengerochromis microlepis,32488
+Acanthaster planci,133434
+Asparagus officinalis,4686
+Mycobacterium aichiense,1799
+Vibrio natriegens,691
+Vibrio campbellii,680
+Moraxella ovis,29433
+Avibacterium gallinarum,755
+Actinobacillus seminis,722
+Veillonella parvula,29466
+Vibrio pelagius,28169
+Nocardia brasiliensis,37326
+Faecalicoccus pleomorphus,1323
+Prevotella bivia,28125
+Moraxella catarrhalis,480
+Kingella kingae,504
+Haemophilus aegyptius,197575
+Haemophilus haemoglobinophilus,733
+Mobiluncus curtisii,2051
+Finegoldia magna,1260
+Streptococcus constellatus,76860
+Kytococcus sedentarius,1276
+Paenibacillus polymyxa,1406
+Paenibacillus macerans,44252
+Cryptococcus neoformans var. grubii,178876
+food metagenome,870726
+Drosophila pseudoobscura pseudoobscura,46245
+Gadus morhua,8049
+Macaca mulatta,9544
+Litopenaeus vannamei,6689
+Tripsacum dactyloides,4563
+Gadus morhua 'NEAC',328276
+Tyrannochromis macrostoma,40198
+Cyrtocara moorii,30882
+unidentified bacterium,1826778
+Bacteria,2
+Avena sativa,4498
+Citrus sinensis,2711
+Comamonas terrigena,32013
+Tyrannochromis nigriventer,163648
+Labeotropheus fuelleborni,57307
+Labeotropheus trewavasae,120210
+Maylandia livingstonii,40194
+Pseudotropheus elongatus,445509
+Oreochromis squamipinnis,1448877
+Melanochromis auratus,27751
+Gephyrochromis lawsi,323775
+Cheilochromis euchilus,316406
+Aristochromis christyi,143555
+Pseudotropheus fainzilberi,441536
+Maylandia emmiltos,441515
+Rhamphochromis woodi,454626
+Diplotaxodon apogon,323772
+Sciaenochromis benthicola,163639
+Tramitichromis brevis,163646
+Lethrinops longipinnis,163628
+Taeniolethrinops furcicauda,323797
+Taeniolethrinops praeorbitalis,163645
+Mylochromis anaphyrmus,165734
+Dimidiochromis strigatus,143503
+Protomelas similis,29149
+Buccochromis nototaenia,323759
+Plasmodium chabaudi chabaudi,31271
+Prunus persica,3760
+Zeugodacus cucurbitae,28588
+Bacillus megaterium,1404
+Lysinibacillus sphaericus,1421
+Bacillus pumilus,1408
+Ctenochromis pectoralis,64553
+Pharyngochromis acuticeps,311497
+Serranochromis angusticeps,311508
+Serranochromis robustus,50903
+Cryptosporidium parvum,5807
+Allium cepa,4679
+Diaphorina citri,121845
+Pisum sativum,3888
+Plasmodium ovale wallikeri,864142
+Plasmodium ovale curtisi,864141
+Plasmodium malariae,5858
+Aeromonas hydrophila,644
+Mycobacterium flavescens,1776
+Mycobacterium gilvum,1804
+Mycobacterium rhodesiae,36814
+Mobiluncus curtisii subsp. curtisii,144177
+Cryptosporidium hominis,237895
+Anas platyrhynchos,8839
+Populus tremula x Populus tremuloides,47664
+Secale cereale,4550
+Felis catus,9685
+Pleuronectiformes,8252
+Nicotiana tabacum,4097
+Helicobacter felis,214
+Pseudomonas synxantha,47883
+Mycobacterium bovis BCG,33892
+Neisseria bergeri,1906581
+Yersinia pseudotuberculosis IP 32953,273123
+uncultured microorganism,358574
+Leptinotarsa decemlineata,7539
+Marchantia polymorpha,3197
+Helianthus annuus,4232
+Boleophthalmus pectinirostris,150288
+Circulifer tenellus,102981
+Peromyscus californicus,42520
+Lens culinaris,3864
+Taeniopygia guttata,59729
+Myroides odoratimimus,76832
+Riemerella anatipestifer,34085
+Capnocytophaga sputigena,1019
+Fluoribacter gormanii,464
+Fluoribacter dumoffii,463
+Fluoribacter bozemanae,447
+Taylorella equigenitalis,29575
+Iodobacter fluviatilis,537
+Bacteroides eggerthii,28111
+Moraxella atlantae,34059
+Moraxella equi,60442
+Corynebacterium jeikeium,38289
+Aliivibrio wodanis,80852
+Moritella viscosa,80854
+Columba livia,8932
+Silene vulgaris,42043
+HIV-1 group M,388795
+Cyanistes teneriffae,1069445
+Cyanistes caeruleus,156563
+Cyanistes cyanus,156570
+Scophthalmus maximus,52904
+Salmonella enterica subsp. enterica serovar Pullorum,605
+Brugia pahangi,6280
+Nippostrongylus brasiliensis,27835
+Aedes riversi,373849
+Aedes polynesiensis,188700
+Trypanosoma brucei brucei,5702
+Cannabis sativa,3483
+Human betaherpesvirus 5,10359
+Lepus europaeus,9983
+Carassius auratus,7957
+Leishmania infantum,5671
+Campylobacter fetus subsp. fetus,32019
+Legionella pneumophila,446
+Enterococcus casseliflavus,37734
+Enterococcus gallinarum,1353
+Enterococcus durans,53345
+Streptococcus milleri,33040
+human oral metagenome,447426
+Arctocephalus tropicalis,37194
+Arctocephalus australis,161928
+Arachis hypogaea,3818
+Oryzias latipes,8090
+plant metagenome,1297885
+Carnobacterium divergens,2748
+Aerococcus viridans,1377
+Pseudomonas mucidolens,46679
+Moraxella cuniculi,34061
+Brevundimonas diminuta,293
+Bacillus lentus,1467
+Mycobacterium chelonae,1774
+Mycobacterium phlei,1771
+Moraxella lacunata,477
+Humulus lupulus,3486
+Arundo donax,35708
+Phytophthora ramorum,164328
+Firmicutes,1239
+Myzus persicae,13164
+Castor fiber,10185
+Petromus typicus,10183
+Heterocephalus glaber,10181
+Heliophobius argenteocinereus,10179
+Georychus capensis,10177
+Cryptomys hottentotus,10175
+Bathyergus suillus,10172
+Bathyergus janetta,10171
+Ctenodactylus gundi,10166
+Proechimys guairae,10163
+Octodon degus,10160
+Myocastor coypus,10157
+Lagostomus maximus,10154
+Chinchilla chinchilla,10152
+Hydrochoerus hydrochaeris,10149
+Galea musteloides,10146
+Cavia cutleri,10144
+Cavia porcellus,10141
+Hystrix africaeaustralis,10138
+Hystrix cristata,10137
+Apodemus sylvaticus,10129
+Conilurus penicillatus,10127
+Rattus villosissimus,10122
+Rattus tunneyi,10121
+Rattus sordidus,10120
+Rattus fuscipes,10119
+Rattus rattus,10117
+Rattus leucopus,10115
+Praomys daltoni,10113
+Mastomys natalensis,10112
+Mus abbotti,10108
+Mus minutoides,10105
+Mus spicilegus,10103
+Mus platythrix,10101
+Mus macedonicus,10100
+Mus cookii,10098
+Mus cervicolor,10097
+Mus spretus,10096
+Mus saxicola,10094
+fermentation metagenome,1326787
+Corynebacterium renale,1724
+Corynebacterium cervicis,158824
+Bacillus circulans,1397
+seawater metagenome,1561972
+algae metagenome,1300146
+rock metagenome,1311626
+Rutilus rutilus,48668
+Poecilia reticulata,8081
+Homo sapiens neanderthalensis,63221
+Lynx pardinus,191816
+rhizosphere metagenome,939928
+probiotic metagenome,1659218
+Spodoptera frugiperda,7108
+Coffea arabica,13443
+Saccharum officinarum x Saccharum spontaneum,566566
+Tipula oleracea,312236
+root,1
+unassigned viruses,686617
+Paeonia suffruticosa,45171
+Culex quinquefasciatus,7176
+Macaca nemestrina,9545
+Medicago truncatula,3880
+Bactrocera dorsalis,27457
+Eospalax fontanierii baileyi,146132
+Otospermophilus variegatus,45472
+Otospermophilus beecheyi,34862
+Callospermophilus lateralis,76772
+Ceratitis capitata,7213
+Polypedates megacephalus,68449
+Placopecten magellanicus,6577
+Spinacia oleracea,3562
+Ipomoea nil,35883
+Hordeum vulgare subsp. vulgare,112509
+Oryctolagus cuniculus,9986
+Leucoraja ocellata,173042
+Culter alburnus,194366
+Megalobrama amblycephala,75352
+Callinectes sapidus,6763
+Vibrio cholerae O1,127906
+Capreolus pygargus,48560
+Mazama gouazoupira,52407
+Vulpes vulpes,9627
+Ambrosia artemisiifolia,4212
+Microcebus murinus,30608
+Acipenser sinensis,61970
+Sus scrofa domesticus,9825
+Capra hircus,9925
+Atlantibacter hermannii NBRC 105704,1115512
+Raoultella ornithinolytica,54291
+Anopheles arabiensis,7173
+Mycobacterium abscessus subsp. abscessus,1185650
+Mycobacterium abscessus subsp. bolletii,319705
+Corynebacterium diphtheriae,1717
+Mugil cephalus,48193
+Manihot esculenta,3983
+Streptococcus intermedius,1338
+Brevibacillus brevis,1393
+Corvus dauuricus,477934
+Corvus cornix,181096
+Corvus frugilegus,75140
+Corvus monedula,30423
+Corvus corone orientalis,344226
+Corvus pectoralis,1196305
+Corvus brachyrhynchos,85066
+Heliconius erato,33431
+Vibrio cholerae O1 biovar El Tor str. N16961,243277
+Salmonella enterica subsp. enterica serovar Typhimurium str. SL1344,216597
+Sphingobacterium thalpophilum,259
+Bordetella parapertussis,519
+Lissotriton helveticus,256425
+Phascolarctos cinereus,38626
+Influenza A virus,11320
+Athalia rosae,37344
+Manduca sexta,7130
+Tetraodon nigroviridis,99883
+Yersinia enterocolitica subsp. palearctica,150053
+Chenopodium quinoa,63459
+Panthera onca,9690
+Streptococcus sp.,1306
+Streptococcus constellatus subsp. constellatus,184246
+Streptococcus anginosus subsp. whileyi,1272910
+Streptococcus anginosus subsp. anginosus,1671923
+Streptococcus equi subsp. equi,148942
+Streptococcus equi subsp. ruminatorum,254358
+Streptococcus equi subsp. zooepidemicus,40041
+Streptococcus mutans,1309
+Streptococcus oralis,1303
+Streptococcus australis,113107
+Streptococcus uberis,1349
+Pseudomonas alcaligenes,43263
+Providencia heimbachae,333962
+[Actinobacillus] rossii,123820
+Acinetobacter johnsonii,40214
+Avibacterium avium,751
+Shigella flexneri 2b,1288825
+Shigella flexneri 2a,42897
+Shigella sonnei 53G,216599
+Oncorhynchus masou masou,90313
+Trifolium subterraneum,3900
+Heterodera glycines,51029
+Pseudochromis fuscus,280673
+Chromis chromis,91607
+Parablennius parvicornis,171872
+Anabas testudineus,64144
+Helostoma temminkii,243708
+Selene dorsalis,179366
+Antennarius striatus,241820
+Spondyliosoma cantharus,50595
+Symphodus melops,171736
+Chaenocephalus aceratus,36190
+Sebastes norvegicus,394699
+Myoxocephalus scorpius,8097
+Perca fluviatilis,8168
+Lesueurigobius sanzi,1365564
+Chatrabus melanurus,990972
+Carapus acus,1491482
+Brotula barbata,432164
+Acanthochaenus luetkenii,473344
+Rondeletia loricata,88713
+Beryx splendens,88663
+Neoniphon sammara,47706
+Holocentrus rufus,722565
+Myripristis jacobus,371672
+Lampris guttatus,81370
+Regalecus glesne,81389
+Gadus chalcogrammus,1042646
+Arctogadus glacialis,185735
+Merlangius merlangus,8058
+Melanogrammus aeglefinus,8056
+Pollachius virens,8060
+Gadiculus argenteus,185737
+Trisopterus minutus,80722
+Molva molva,163112
+Lota lota,69944
+Malacocephalus occidentalis,630739
+Macrourus berglax,473319
+Bathygadus melanobranchus,630650
+Trachyrincus murrayi,241836
+Trachyrincus scabrus,562814
+Muraenolepis marmoratus,487677
+Melanonus zugmayeri,181410
+Merluccius capensis,89947
+Merluccius merluccius,8063
+Merluccius polli,89951
+Bregmaceros cantori,630652
+Stylephorus chordatus,409996
+Cyttopsis rosea,1176755
+Zeus faber,64108
+Typhlichthys subterraneus,940470
+Percopsis transmontana,143327
+Polymixia japonica,81385
+Guentherus altivela,1263181
+Borostomias antarcticus,473354
+Osmerus eperlanus,29151
+Pinus lambertiana,3343
+Pongo pygmaeus,9600
+Human alphaherpesvirus 3,10335
+Brevundimonas vesicularis,41276
+Streptococcus sp. 'group B',1319
+Porites lutea,51062
+Musa acuminata,4641
+Cedecea davisae,158484
+Legionella donaldsonii,45060
+Sarcophilus harrisii,9305
+Parasteatoda tepidariorum,114398
+Fungi,4751
+Faxonius limosus,28379
+Xenopus laevis,8355
+Farfantepenaeus aztecus,6690
+Chryseobacterium sp. RZ4MS9,1806269
+Ambrosia trifida,4214
+Chlorocebus cynosuros,460675
+Chlorocebus aethiops,9534
+Fraxinus excelsior,38873
+Salmonella enterica subsp. enterica serovar Concord,483687
+Teladorsagia circumcincta,45464
+Heliconius cydno,33424
+Bacillus freudenreichii,1783501
+Hathewaya histolytica,1498
+Haemophilus parahaemolyticus,735
+Streptococcus lutetiensis,150055
+Streptococcus infantis,68892
+Neisseria gonorrhoeae subsp. kochii,120575
+Trichuris suis,68888
+Oncorhynchus keta,8018
+human vaginal metagenome,1632839
+Heliconius melpomene,34740
+Streptococcus massiliensis,313439
+Jonesia denitrificans,43674
+Cucumis sativus,3659
+Carcharhinus acronotus,303932
+Dicentrarchus labrax,13489
+Staphylococcus sp.,29387
+Staphylococcus pseudintermedius,283734
+Streptococcus entericus,155680
+Streptococcus porcorum,701526
+Streptococcus rupicaprae,759619
+Streptococcus cuniculi,1432788
+Streptococcus porci,502567
+Coturnix japonica,93934
+Pinus radiata,3347
+Suttonella indologenes,13276
+Corynebacterium pseudotuberculosis,1719
+Streptococcus plurextorum,456876
+Streptococcus caprae,1640501
+Fasciola hepatica,6192
+Solanum tuberosum,4113
+Mannheimia haemolytica,75985
+Acinetobacter lwoffii,28090
+Streptococcus urinalis,149016
+Streptococcus infantarius,102684
+Lactobacillus acidophilus,1579
+Shewanella putrefaciens,24
+Pseudomonas fluorescens,294
+Bison bonasus,9902
+Kryptolebias marmoratus,37003
+Elaeis oleifera,80265
+Elaeis guineensis,51953
+Tupaia belangeri,37347
+Monodelphis domestica,13616
+Lagenorhynchus albirostris,27610
+Callithrix jacchus,9483
+Mustela putorius furo,9669
+Balaenoptera borealis,9768
+Mesoplodon bidens,48745
+Otolemur garnettii,30611
+Delphinus delphis,9728
+Chlorocebus sabaeus,60711
+uncultured Ruminococcus sp.,165186
+Faecalibacterium prausnitzii,853
+[Eubacterium] rectale,39491
+uncultured Lachnospira sp.,446043
+[Eubacterium] hallii,39488
+[Ruminococcus] torques,33039
+uncultured Eubacterium sp.,165185
+Coprococcus eutactus,33043
+Coprococcus comes,410072
+Dorea longicatena,88431
+Roseburia intestinalis,166486
+Anaerostipes hadrus,649756
+uncultured Blautia sp.,765821
+Blautia obeum,40520
+uncultured Clostridium sp.,59620
+Turicibacter sanguinis,154288
+Alistipes finegoldii,214856
+Bacteroides caccae,47678
+Bacteroides uniformis,820
+uncultured Flavonifractor sp.,1193534
+Anaerotruncus colihominis,169435
+Flavonifractor plautii,292800
+[Eubacterium] siraeum,39492
+uncultured Butyricicoccus sp.,1193532
+Fusicatenibacter,1407607
+Fusicatenibacter saccharivorans,1150298
+Hungatella hathewayi,154046
+Blautia wexlerae,418240
+uncultured Bacteroides sp.,162156
+uncultured Anaerotruncus sp.,905011
+uncultured Oscillibacter sp.,876091
+uncultured Roseburia sp.,512314
+Lachnospira pectinoschiza,28052
+Prevotella copri,165179
+Intestinibacter bartlettii,261299
+[Eubacterium] eligens,39485
+uncultured Dorea sp.,286138
+[Clostridium] clostridioforme,1531
+Clostridium ventriculi,1267
+Clostridium disporicum,84024
+uncultured Megasphaera sp.,165188
+[Clostridium] innocuum,1522
+uncultured Collinsella sp.,165190
+Parabacteroides merdae,46503
+Bifidobacterium pseudocatenulatum,28026
+uncultured Coprococcus sp.,458253
+Eubacterium ramulus,39490
+Roseburia inulinivorans,360807
+Bacteroides salyersiae,291644
+uncultured Faecalibacterium sp.,259315
+Roseburia faecis,301302
+Blautia hydrogenotrophica,53443
+[Ruminococcus] gnavus,33038
+Bacteroides finegoldii,338188
+Bacteroides xylanisolvens,371601
+Roseburia hominis,301301
+Mitsuokella jalaludinii,187979
+Catenibacterium mitsuokai,100886
+[Pasteurella] mairii,757
+Bergeriella denitrificans,494
+Streptococcus macacae,1339
+Dryophytes cinereus,8422
+bovine gut metagenome,506599
+Dokdonia,326319
+Dokdonia donghaensis,326320
+Staphylococcus lentus,42858
+Staphylococcus cohnii,29382
+Pseudomonas oleovorans,301
+Achromobacter denitrificans,32002
+Olea europaea,4146
+Nematostella vectensis,45351
+Ficedula albicollis,59894
+Leptobrachium boringii,265040
+Rodentia,9989
+Bombyx mandarina,7092
+Chlamydia sp.,35827
+Actinobacillus equuli,718
+Klebsiella,570
+Streptococcus criceti,1333
+Mycobacterium ulcerans,1809
+Mycobacterium liflandii,261524
+Pseudomonas mendocina,300
+Staphylococcus saprophyticus subsp. saprophyticus,147452
+Streptococcus sobrinus,1310
+Streptococcus dysgalactiae subsp. dysgalactiae,99822
+Streptomyces griseus,1911
+Gadus ogac,8052
+Human gammaherpesvirus 4,10376
+Psoroptes ovis,83912
+Betula nana,216990
+Betula pubescens,38787
+Staphylococcus schweitzeri,1654388
+Staphylococcus argenteus,985002
+Achromobacter spanius,217203
+Citrobacter youngae,133448
+Campylobacter sp.,205
+Plasmodium falciparum 3D7,36329
+bovine metagenome,1218275
+Ferrisia virgata,223228
+Pseudococcus longispinus,13233
+Maconellicoccus hirsutus,177089
+Enterococcus malodoratus,71451
+Sphingobacterium spiritivorum,258
+Pasteurella multocida subsp. gallicida,123812
+Salmonella sp.,599
+Mycobacterium tuberculosis complex,77643
+Brugia malayi,6279
+Bombina bombina,8345
+Orcinus orca,9733
+Amphicarpaea bracteata,45679
+Iris fulva,92176
+Contopus sordidulus,183522
+Ipomoea batatas,4120
+stomach metagenome,1284369
+Meloidogyne graminicola,189291
+Ambystoma mexicanum,8296
+Zoysia matrella,38722
+Tringa semipalmata,507600
+viral metagenome,1070528
+Erysipelotrichaceae bacterium DSM 29481,1775271
+Pasteurella sp. DSM 28627,1775259
+Clostridiaceae bacterium DSM 28593,1775272
+Asaccharobacter sp. DSM 29508,1775258
+Lachnospiraceae bacterium DSM 28559,1777751
+Erysipelotrichaceae bacterium DSM 29487,1775270
+Lachnospiraceae bacterium DSM 28560,1775269
+Lachnospiraceae bacterium DSM 29489,1775268
+Lachnospiraceae bacterium DSM 29486,1775267
+Ruminococcaceae bacterium DSM 27579,1775266
+Inga marginata,468147
+Inga cinnamomea,670672
+Inga cylindrica,1620951
+Inga sapindoides,486078
+Inga bourgonii,486052
+Inga pezizifera,486075
+Inga alba,668907
+Inga sp. (morphotype T72),1620956
+Inga umbellifera,486089
+Inga alata,668906
+Inga oerstediana,486073
+Inga nouragensis,597308
+Inga edulis,199163
+Inga heterophylla,668910
+Inga retinocarpa,1620954
+Inga sp. (morphotype KD#25),1620955
+Inga tenuistipula,486086
+Inga capitata,486053
+Inga punctata,247899
+Zygia sp. 'mediana',1620957
+Inga multijuga,486070
+Inga stipularis,1186121
+Inga auristellae,486050
+Inga grandiflora,1620953
+Inga ruiziana,486076
+Inga vera,486092
+Inga laurina,487684
+Inga leiocalycina,486065
+Inga setosa,486082
+Inga huberi,597307
+Inga thibaudiana,486087
+Inga spectabilis,486084
+Inga gracilifolia,688049
+Inga nobilis,486071
+Inga brevipes,668908
+Inga cocleensis,486055
+Inga brachystachys,597306
+Inga goldmanii,486059
+Inga acuminata,486047
+Inga flagelliformis,1620952
+Inga loubryana,1186118
+Impatiens balsamina,63779
+Bursaphelenchus xylophilus,6326
+Ananas comosus,4615
+Fagopyrum esculentum,3617
+Latimeria chalumnae,7897
+Brassica rapa,3711
+Citrus maxima,37334
+Citrus clementina,85681
+Citrus aurantium,43166
+Citrus aurantiifolia,159033
+Citrus bergamia,380129
+Citrus deliciosa,558547
+Citrus limon,2708
+Citrus medica,171251
+Citrus x paradisi,37656
+Citrus reshni,171252
+Plutellidae,51653
+Lymnaea stagnalis,6523
+Channa punctata,304456
+pig gut metagenome,1510822
+Streptococcus,1301
+Streptococcus canis,1329
+Streptococcus equinus,1335
+Klebsiella sp.,576
+Cydonia oblonga,36610
+Lynx lynx,13125
+Bartonella quintana,803
+Chryseobacterium gleum,250
+Pristis pectinata,685728
+Hyla intermedia,348533
+Salix suchowensis,1278906
+Streptococcus agalactiae FSL S3-128,1154791
+Streptococcus agalactiae FSL S3-043,1154787
+Streptococcus agalactiae SGBS030,1244106
+Streptococcus agalactiae SGBS029,1244105
+Streptococcus agalactiae SGBS027,1244104
+Streptococcus agalactiae SGBS026,1244103
+Streptococcus agalactiae SGBS025,1244102
+Streptococcus agalactiae SGBS022,1244101
+Streptococcus agalactiae SGBS021,1244100
+Streptococcus agalactiae SGBS020,1244099
+Streptococcus agalactiae SGBS016,1244098
+Streptococcus agalactiae SGBS015,1244097
+Streptococcus agalactiae SGBS014,1244096
+Streptococcus agalactiae SGBS010,1244095
+Streptococcus agalactiae SGBS007,1244094
+Streptococcus agalactiae SGBS006,1244093
+Streptococcus agalactiae SGBS005,1244092
+Streptococcus agalactiae SGBS004,1244091
+Streptococcus agalactiae SGBS003,1244090
+Streptococcus agalactiae SGBS002,1244089
+Streptococcus agalactiae SGBS001,1244088
+Streptococcus agalactiae FSL S3-222,1154780
+Solenopsis invicta,13686
+Monomorium pharaonis,307658
+Linepithema humile,83485
+Brassica rapa subsp. pekinensis,51351
+Nanorana parkeri,125878
+Nipponia nippon,128390
+Deinococcus radiodurans R1,243230
+Alligator sinensis,38654
+Drosophila suzukii,28584
+Ursus maritimus,29073
+Caldanaerobacter subterraneus subsp. tengcongensis MB4,273068
+Elizabethkingia meningoseptica,238
+Neisseria animalis,492
+Sphingomonas paucimobilis,13689
+Legionella wadsworthii,28088
+Vibrio parahaemolyticus,670
+Fusobacterium necrogenes,858
+Legionella oakridgensis,29423
+Legionella longbeachae,450
+Vibrio mimicus,674
+Actinobacillus pleuropneumoniae,715
+Campylobacter lari,201
+Dracunculus lutrae,520087
+Dracunculus insignis,331418
+Sphingobacterium multivorum,28454
+Chryseobacterium indologenes,253
+Chromobacterium violaceum,536
+Coccinella septempunctata,41139
+Adalia bipunctata,7084
+Pongo abelii,9601
+Pan paniscus,9597
+Streptococcus porcinus,1340
+Staphylococcus intermedius,1285
+Streptococcus thermophilus,1308
+Enterobacter sp.,42895
+Trichuris trichiura,36087
+Malus domestica,3750
+Streptococcus viridans,78535
+Streptococcus hyointestinalis,1337
+Streptococcus ferus,1345
+Dorea formicigenerans,39486
+Blautia schinkii,180164
+Eubacterium ventriosum,39496
+Blautia luti,89014
+[Clostridium] celerecrescens,29354
+[Clostridium] polysaccharolyticum,29364
+[Clostridium] xylanolyticum,29375
+[Clostridium] spiroforme,29348
+Bacteroides fragilis,817
+Sutterella wadsworthensis,40545
+Barnesiella intestinihominis,487174
+Gemmiger formicilis,745368
+[Clostridium] bolteae,208479
+Alistipes onderdonkii,328813
+Bacteroides stercoris,46506
+Ruminococcus faecis,592978
+[Clostridium] scindens,29347
+Anaerostipes caccae,105841
+Erysipelatoclostridium ramosum,1547
+Enterobacter hormaechei,158836
+Campylobacter fetus subsp. venerealis,32020
+Arthrobacter sp.,1667
+Dialister micraerophilus,309120
+Gemella haemolysans,1379
+Brevibacterium paucivorans,170994
+Kytococcus schroeteri,138300
+Actinotignum schaalii,59505
+Lactobacillus sp.,1591
+Bacillus infantis,324767
+Actinomyces europaeus,66228
+Globicatella sulfidifaciens,136093
+Dermabacter hominis,36740
+Gardnerella,2701
+Lactobacillus vaginalis,1633
+Actinomyces graevenitzii,55565
+Actinomyces turicensis,131111
+Microbacterium sp.,51671
+Anaerococcus vaginalis,33037
+Lactobacillus fermentum,1613
+Gemella sanguinis,84135
+Actinomyces naeslundii,1655
+Aerococcus sanguinicola,119206
+Campylobacter ureolyticus,827
+Corynebacterium amycolatum,43765
+Lactobacillus delbrueckii,1584
+Escherichia virus Lambda,10710
+Anopheles stephensi,30069
+Xiphophorus cortezi,32472
+Homo heidelbergensis,1425170
+Venturia canescens,32260
+Fagus sylvatica,28930
+Hirundo rustica,43150
+Vespertilio murinus,59485
+snow metagenome,1263966
+Armadillidium vulgare,13347
+Bos indicus gudali,119909
+Mus mattheyi,41270
+Apodemus uralensis,134910
+Raphanus sativus var. sativus,240228
+mixed sample,1427524
+mouse metagenome,1441287
+Insecta,50557
+Xiphophorus hellerii,8084
+Anser anser,8843
+Lethenteron reissneri,7753
+urban metagenome,1591089
+Vibrio fluvialis,676
+Staphylococcus xylosus,1288
+Ginkgo biloba,3311
+Enterococcus cecorum,44008
+Staphylococcus arlettae,29378
+Acanthiza murina,117493
+Tamiasciurus hudsonicus,10009
+Prunus dulcis,3755
+Prunus avium,42229
+Prunus armeniaca,36596
+Escherichia coli str. K-12 substr. MG1655,511145
+metagenomes,408169
+Potamotrygon falkneri,460153
+Plasmodium sp.,31272
+Acrocephalus schoenobaenus,52609
+Staphylococcus chromogenes,46126
+Staphylococcus hyicus,1284
+Scleractinia,6125
+Phoca vitulina,9720
+Grallaria erythrotis,1753973
+Erebia tyndarus,468193
+Erebia cassioides,111900
+Paraburkholderia fungorum,134537
+Burkholderia contaminans,488447
+Paraburkholderia caryophylli,28094
+Paraburkholderia caribensis,75105
+Paraburkholderia caledonica,134536
+Burkholderia stabilis,95485
+Paraburkholderia andropogonis,28092
+Burkholderia diffusa,488732
+Burkholderia pyrrocinia,60550
+Burkholderia cepacia complex,87882
+Burkholderia metallica,488729
+Burkholderia dolosa,152500
+Paraburkholderia mimosarum,312026
+Burkholderia lata,482957
+Burkholderia arboris,488730
+Paraburkholderia tuberum,157910
+Paraburkholderia terricola,169427
+Paraburkholderia sacchari,159450
+Terrabacter,53355
+Yonghaparkia,355929
+Nocardioides,1839
+Phycicoccus,367298
+Paenibacillus,44249
+Arthrobacter,1663
+Frateuria,70411
+Rhodanobacter,75309
+Bacillus,1386
+Tetrasphaera,99479
+Knoellia,136099
+Janibacter,53457
+Mycobacterium,1763
+Agromyces,33877
+Lysobacter,68
+Ensifer,106591
+Flavobacterium,237
+Cellulomonas,1707
+Oerskovia,162491
+Pseudomonas,286
+Achromobacter,222
+Phenylobacterium,20
+Rhizobium,379
+Sphingomonas,13687
+Acidovorax,12916
+Mesorhizobium,68287
+Devosia,46913
+Altererythrobacter,361177
+Bosea,85413
+Streptomyces,1883
+Pelomonas,335058
+Caulobacter,75
+Pseudoxanthomonas,83618
+Microbacterium,33882
+Brevundimonas,41275
+Leifsonia,110932
+Aeromicrobium,2040
+Variovorax,34072
+Angustibacter,908626
+Massilia,149698
+Rhizobacter,212743
+Duganella,75654
+Sphingopyxis,165697
+Hydrogenophaga,47420
+Noviherbaspirillum,1344552
+Kitasatospora,2063
+Pseudolabrys,556257
+Nocardia,1817
+Acinetobacter,469
+Methylibium,316612
+Afipia,1033
+Aminobacter,31988
+Methylobacterium,407
+Aureimonas,414371
+Methylophilus,16
+Marmoricola,86795
+Aurantimonas,182269
+Frigoribacterium,96492
+Chryseobacterium,59732
+Ramlibacter,174951
+Bradyrhizobium,374
+Modestobacter,88138
+Geodermatophilus,1860
+Williamsia,85043
+Agreia,110934
+Deinococcus,1298
+Plantibacter,190323
+Frondihabitans,447237
+Rathayibacter,33886
+Rhodococcus,1827
+Pseudorhodoferax,747294
+Curtobacterium,2034
+Xylophilus,54066
+Pedobacter,84567
+Exiguobacterium,33986
+Dyadobacter,120831
+Brevibacillus,55080
+Burkholderia,32008
+Xanthomonas,338
+Stenotrophomonas,40323
+Erwinia,551
+Serratia,613
+Sphingobium,165695
+Sanguibacter,60919
+Novosphingobium,165696
+Coffea canephora,49390
+Staphylococcus kloosii,29384
+Paraburkholderia tropica,92647
+Burkholderia seminalis,488731
+Burkholderia plantarii,41899
+Paraburkholderia phymatum,148447
+Burkholderia latens,488446
+Paraburkholderia kururiensis,984307
+Paraburkholderia hospita,169430
+Burkholderia glumae,337
+Rhamphochromis esox,163638
+Otopharynx lithobates,451872
+Pallidochromis tokolosh,163636
+Hemitilapia oxyrhyncha,445558
+Stigmatochromis modestus,313994
+Mylochromis ericotaenia,323785
+Protomelas spilopterus,445503
+Taeniolethrinops,163643
+Taeniochromis holotaenia,323798
+Stigmatochromis,120228
+Plasmodium falciparum isolate WELLCOME,5848
+Plasmodium falciparum V1,5847
+Plasmodium falciparum T4/Thailand,5846
+Plasmodium falciparum FCM17/Senegal,5845
+Plasmodium falciparum NF54,5843
+Plasmodium falciparum NF7/Ghana,5842
+Plasmodium falciparum Mad20/Papua New Guinea,5841
+Plasmodium falciparum LE5,5840
+Plasmodium falciparum RO-33,5834
+Staphylococcus delphini,53344
+Eisenia fetida,6396
+Myzus cerasi,93721
+Rhopalosiphum padi,40932
+Kuraishia capsulata,317047
+Ovis orientalis,469796
+Tragelaphus imberbis,9947
+Elephas maximus,9783
+Salmonella enterica subsp. enterica serovar Weltevreden,57743
+Sesamum radiatum,300843
+Sesamum indicum,4182
+Labrus bergylta,56723
+Calidris pugnax,198806
+Clarias gariepinus,13013
+Campylobacter hyointestinalis subsp. hyointestinalis,91352
+Leishmania major x donovani,1097170
+Leishmania major,5664
+Sander lucioperca,283035
+Panthera leo,9689
+Herpetomonas megaseliae,5717
+Staphylococcus sciuri subsp. sciuri,147467
+Campylobacter fetus,196
+Rothia mucilaginosa,43675
+Fusobacterium nucleatum,851
+Actinomyces radingae,131110
+Trueperella bernardiae,59561
+Pseudoglutamicibacter cumminsii,156979
+Neisseria macacae,496
+Actinomyces urogenitalis,103621
+Kocuria rhizophila,72000
+Prevotella buccalis,28127
+Brevibacterium ravenspurgense,479117
+Aerococcus christensenii,87541
+Vicia villosa,3911
+Vicia cracca,3905
+Salmonella enterica subsp. enterica serovar Braenderup,149391
+Leishmania braziliensis,5660
+Vibrio sp.,678
+uncultured eukaryote,100272
+Lepisosteus oculatus,7918
+Alcaligenes faecalis,511
+Bordetella,517
+Enterobacter cloacae subsp. cloacae ATCC 13047,716541
+Citrobacter koseri,545
+Acinetobacter sp.,472
+Ancylobacter aquaticus,100
+Amusium pleuronectes,158443
+Streptococcus pyogenes serotype M1,301447
+Salmonella enterica subsp. enterica serovar Poona,436295
+Atlantibacter hermannii,565
+Salmonella enterica subsp. enterica serovar Virchow,48409
+Phrynosoma orbiculare,52576
+Phrynosoma mcallii,159094
+Phrynosoma goodei,348390
+Daucus carota,4039
+Coluber flagellum,94899
+Coluber bilineatus,1651144
+Coluber constrictor,8590
+Coluber schotti,1651145
+Coluber taeniatus,201383
+Lotus japonicus,34305
+Sus verrucosus,159856
+Salmonella enterica subsp. enterica serovar Madelia,1160758
+Plasmodium yoelii,5861
+Campylobacter sp. RC11,1780363
+Campylobacter geochelonis,1780362
+Campylobacter sp. RC7,1780361
+indoor metagenome,1256227
+Colossoma macropomum,42526
+Mangifera indica,29780
+Vigna angularis,3914
+Rotavirus,10912
+Raoultella terrigena,577
+Shimwellia blattae,563
+Plasmodium relictum,85471
+Trypanosoma brucei,5691
+Serratia grimesii,82995
+Clostridium sp.,1506
+Serratia sp.,616
+Lepidonotothen nudifrons,83203
+unidentified phage,38018
+Osmia bicornis,1437190
+Heriades truncorum,549062
+Daphnia magna,35525
+Salmonella enterica subsp. houtenae,59205
+Cronobacter universalis,535744
+Mycoplasma pneumoniae FH,722438
+Mycobacterium tuberculosis H37Rv,83332
+Mycoplasma hominis ATCC 23114,347256
+Onchocerca volvulus,6282
+Oncorhynchus kisutch,8019
+Leishmania tropica,5666
+Escherichia,561
+Leishmania mexicana,5665
+Mycoplasma amphoriforme A39,572419
+Phaseolus vulgaris var. aborigineus,419294
+Trachemys scripta,34903
+Sphingobacterium daejeonense,371142
+Staphylococcus haemolyticus,1283
+Providencia rustigianii,158850
+Serratia quinivorans,137545
+Cedecea lapagei,158823
+Plasmodium knowlesi,5850
+Alcolapia alcalica,40169
+Alcolapia latilabris,87888
+Oreochromis amphimelas,87884
+Alcolapia grahami,87886
+Alcolapia ndalalani,87887
+Influenza B virus,11520
+bacterial mixed DNA library,1303873
+Plasmodium cynomolgi,5827
+Kluyvera intermedia,61648
+Candida albicans,5476
+Bombus terrestris audax,1255228
+Salmonella enterica subsp. diarizonae,59204
+Salmonella enterica subsp. arizonae,59203
+Staphylococcus caprae,29380
+Staphylococcus gallinarum,1293
+Staphylococcus auricularis,29379
+unidentified virus,1214906
+Canis lupus,9612
+Tragelaphus strepsiceros,9946
+Trichuris muris,70415
+Rhipicephalus sanguineus,34632
+Mammuthus primigenius,37349
+Acinetobacter sp. ADP1,62977
+Neisseria weaveri,28091
+Klebsiella pneumoniae subsp. pneumoniae,72407
+Enterobacteriaceae,543
+Acyrthosiphon pisum,7029
+Ochrobactrum intermedium,94625
+Ochrobactrum anthropi,529
+Vibrio vulnificus,672
+Vibrio cincinnatiensis,675
+Vibrio,662
+Chryseobacterium shigense,297244
+Chryseobacterium indoltheticum,254
+Legionella sainthelensi,28087
+Legionella hackeliae,449
+Citrobacter,544
+Citrobacter sedlakii,67826
+Stenotrophomonas sp.,69392
+Lucilia sericata,13632
+Legionella cherrii,28084
+Staphylococcus schleiferi,1295
+Brucella abortus,235
+Pinus mugo subsp. x rotundata,689842
+Pinus mugo subsp. uncinata,38864
+Pinus mugo,28528
+Brucella ceti,120577
+Brucella suis,29461
+Brucella sp.,52132
+Actinobacillus ureae,723
+Helicobacter pylori,210
+Agrobacterium tumefaciens,358
+Brachyspira pilosicoli,52584
+Aggregatibacter,416916
+Pasteurella bettyae,752
+Avibacterium volantium,762
+Bacillus licheniformis,1402
+Campylobacter,194
+Phage M13mp18,28360
+Aggregatibacter actinomycetemcomitans,714
+Astatotilapia,8152
+Homo sapiens ssp. Denisova,741158
+Mycoplasma hyopneumoniae 232,295358
+Yersinia enterocolitica subsp. enterocolitica,150052
+Salmonella enterica subsp. enterica serovar Goldcoast,260678
+Streptococcus pseudopneumoniae,257758
+Fossorochromis rostratus,137271
+Andinoacara coeruleopunctatus,318583
+Aulonocara stuartgranti,286572
+Placidochromis,28821
+Mylochromis lateristriga,120215
+Tropheops tropheops,95543
+Diplotaxodon macrops,163624
+Iodotropheus sprengerae,57305
+Genyochromis mento,57303
+Cyathochromis obliquidens,57301
+Alticorpus,163611
+Cynotilapia,205485
+Aulonocara,27780
+Aulonocara sp. 'yellow',163614
+Copadichromis borleyi,163616
+Cynotilapia afra,205486
+Diplotaxodon cf. macrops 'black dorsal',407099
+Dimidiochromis compressiceps,106584
+Aulonocara sp. 'gold',163613
+Ctenopharynx,323767
+Champsochromis,32495
+Ctenopharynx intermedius,323768
+Chilotilapia rhoadesii,323764
+Copadichromis trimaculatus,451848
+Otopharynx speciosus,163630
+Chlamydia trachomatis L2b/UCH-1/proctitis,471473
+Serratia rubidaea,61652
+Ficedula hyperythra,393709
+Strongyloides venezuelensis,75913
+Strongyloides papillosus,174720
+Strongyloides stercoralis,6248
+Tatumella ptyseos,82987
+Klebsiella pneumoniae subsp. ozaenae,574
+Mus musculus bactrianus,35531
+Synechococcus sp. WH 8103,29410
+Salmonella enterica subsp. salamae,59202
+Equus kiang,94398
+Equus hemionus,9794
+freshwater metagenome,449393
+Rattus andamanensis,69077
+Providencia rettgeri,587
+Serratia plymuthica,82996
+Providencia stuartii,588
+Pluralibacter gergoviae,61647
+Edwardsiella tarda,636
+Plesiomonas shigelloides,703
+Providencia alcalifaciens,126385
+Populus balsamifera,73824
+Pantoea agglomerans,549
+Hafnia alvei,569
+Solanum nigrum,4112
+Lama glama,9844
+Emiliania huxleyi,2903
+Ficedula hypoleuca,46689
+Ixodes scapularis,6945
+Leminorella grimontii,82981
+Shigella boydii,621
+Shigella flexneri 6,424719
+Shigella flexneri 1b,41434
+Shigella sp.,625
+Leishmania braziliensis species complex,37617
+Leishmania peruviana,5681
+Bacillus subtilis subsp. subtilis str. 168,224308
+Lactococcus lactis subsp. cremoris MG1363,416870
+Escherichia vulneris,566
+Pipistrellus pygmaeus,246814
+Rhynchophorus ferrugineus,354439
+Bacillus subtilis,1423
+Shigella flexneri 3a,424717
+Daucus carota subsp. sativus,79200
+Brassica rapa subsp. rapa,51350
+Brassica oleracea var. capitata,3716
+Brassica napus var. napus,138011
+Diplotaxis tenuifolia,264416
+Citrobacter amalonaticus,35703
+Escherichia fergusonii,564
+Lelliottia amnigena,61646
+Serratia odorifera,618
+Leclercia adecarboxylata,83655
+Kluyvera cryocrescens,580
+Staphylococcus leei,427272
+Moellerella wisconsensis,158849
+Enterobacter cancerogenus,69218
+Cedecea neteri,158822
+Shigella flexneri Y,424720
+Shigella flexneri 5,373383
+Shigella flexneri 1a,374923
+Shigella flexneri 3b,435321
+Shigella flexneri 4a,984898
+Kareius bicoloratus,143345
+Amphilophus citrinellus,61819
+Amphilophus labiatus,61820
+Amphilophus zaliosus,281253
+Cronobacter sakazakii,28141
+Ewingella americana,41202
+Budvicia aquatica,82979
+Salmonella enterica subsp. indica,59207
+Proteus penneri,102862
+Leminorella richardii,158841
+Piaractus mesopotamicus,42528
+Haplobothrium globuliforme,108250
+Atractolytocestus huronensis,507542
+activated sludge metagenome,942017
+Gorilla beringei beringei,1159185
+Gorilla beringei graueri,46359
+Betacoronavirus,694002
+Lactobacillus plantarum,1590
+Lactobacillus salivarius,1624
+Lactobacillus oris,1632
+Lactobacillus mucosae,97478
+Lactobacillus parabuchneri,152331
+Lactobacillus buchneri,1581
+Lactobacillus casei,1582
+Xenotilapia melanogenys,559345
+Xenotilapia leptura,559344
+Cyprichromis coloratus,559343
+Benthochromis horii,559342
+Trichophyton sp. IFM 41172,559341
+Rosa clinophylla var. glabra,559339
+Rosa clinophylla var. clinophylla,559338
+Rosa clinophylla,559337
+Linum grandiflorum,559336
+Pseudomonas sp. DRJS2,559335
+Alcaligenes sp. DRJS1,559334
+Achromobacter sp. DRJS3,559333
+Rhizobium sp. CCNWXJ16-1,559332
+Mesorhizobium sp. CCNWXJ35-1,559330
+Mesorhizobium sp. CCNWX12-2,559325
+Mesorhizobium sp. CCNWAX45-1,559324
+Mesorhizobium sp. CCNWAX25-1,559322
+Mesorhizobium sp. CCNWYC131,559319
+Mesorhizobium sp. CCNWYC116,559316
+Mesorhizobium robiniae,559315
+Alpheus cf. malleator CRH-2008,559312
+Alpheus cf. bouvieri CRH-2008,559311
+Anisakis sp. MP-2005,559310
+Anisakis sp. HC-2005,559309
+Zygosaccharomyces rouxii CBS 732,559307
+Ustilago maydis FB1,559306
+Trichophyton rubrum CBS 118892,559305
+Millerozyma farinosa CBS 7064,559304
+Ogataea polymorpha RB11,559303
+Ogataea polymorpha CBS 4732,559302
+Lactobacillus gasseri MV-22,559301
+Candida tropicalis CBS 94,559300
+Candida albicans 1161,559299
+Blastomyces dermatitidis ER-3,559297
+Kluyveromyces marxianus CBS 712,559296
+Lachancea thermotolerans CBS 6340,559295
+Uranotaenia unguiculata,559294
+Lishizhenia,559293
+Echinococcus multilocularis,6211
+Echinococcus granulosus,6210
+Hymenolepis microstoma,85433
+Austrobilharzia variglandis,100588
+Strongyloides ratti,34506
+Melitaea cinxia,113334
+Brucella canis,36855
+Nocardia farcinica,37329
+Mycobacterium smegmatis,1772
+Schistosoma mattheei,31246
+Schistosoma intercalatum,6187
+Schistosoma bovis,6184
+Schistosoma guineensis,393876
+Halicephalobus gingivalis,114868
+Parastrongyloides trichosuri,131310
+Heliconius melpomene melpomene,171917
+Heliconius numata aurora,884339
+Heliconius,33416
+Heliconius cydno chioneus,171915
+Dicrocoelium dendriticum,57078
+Elaeophora elaphi,1147741
+Trichobilharzia regenti,157069
+Neisseria sp.,192066
+Cervus elaphus,9860
+Zea mays,4577
+Buteo buteo,30397
+Francisella tularensis,263
+Oreochromis mossambicus,8127
+Fragaria vesca,57918
+Capra aegagrus,9923
+Ovis vignei,59896
+Chiloscyllium griseum,586796
+Fusobacterium nucleatum subsp. polymorphum,76857
+Wolbachia,953
+Schistocephalus solidus,70667
+Staphylococcus sciuri,1296
+Teleogryllus oceanicus,128161
+Bos indicus,9915
+Mycoplasma genitalium,2097
+Mycoplasma genitalium M6320,662945
+Mycoplasma genitalium M2321,663918
+Mycoplasma genitalium G37,243273
+Mycoplasma genitalium M6282,662946
+Serratia liquefaciens,614
+Lactobacillus gastricus,227942
+Lactobacillus helveticus,1587
+Lactobacillus antri,227943
+Weissella confusa,1583
+Lactobacillus sucicola,519050
+Macrobilharzia macrobilharzia,307263
+Griphobilharzia amoena,322592
+Sanguinicola cf. inermis,232606
+Gorilla beringei,499232
+Brucella pinnipedialis,120576
+Hemibagrus nemurus,156983
+Lactobacillus homohiochii,33961
+Lactobacillus aviarius subsp. araffinosus,147809
+Respiratory syncytial virus,12814
+Plasmodium berghei ANKA,5823
+Lactobacillus ruminis,1623
+Weissella minor,1620
+Lactobacillus zymae,267363
+Olsenella uli,133926
+Lactobacillus satsumensis,259059
+Lactobacillus saniviri,931533
+Lactobacillus sakei subsp. carnosus,214325
+Lactobacillus rossiae,231049
+Lactobacillus rennini,238013
+Lactobacillus pontis,35787
+Lactobacillus pobuzihii,449659
+Lactobacillus paucivorans,616990
+Lactobacillus paraplantarum,60520
+Lactobacillus paralimentarius,83526
+Lactobacillus parakefiri,152332
+Lactobacillus paracollinoides,240427
+Lactobacillus paracasei subsp. tolerans,113557
+Lactobacillus parabrevis,357278
+Lactobacillus panis,47493
+Lactobacillus ozensis,866801
+Lactobacillus odoratitofui,480930
+Lactobacillus nantensis,305793
+Lactobacillus namurensis,380393
+Lactobacillus kunkeei,148814
+Lactobacillus harbinensis,304207
+Lactobacillus fructivorans,1614
+Lactobacillus dextrinicus,51664
+Lactobacillus delbrueckii subsp. indicus,249265
+Lactobacillus delbrueckii subsp. lactis,29397
+Lactobacillus delbrueckii subsp. delbrueckii,83684
+Lactobacillus concavus,287844
+Lactobacillus collinoides,33960
+Lactobacillus ceti,395085
+Lactobacillus cacaonum,483012
+Lactobacillus acidipiscis,89059
+Lactobacillus apodemi,307126
+Lactobacillus algidus,105612
+Carnobacterium maltaromaticum,2751
+Atopobium minutum,1381
+Trichobilharzia szidati,157070
+Leucaena leucocephala,3866
+Hexaprotodon liberiensis,56798
+Plodia interpunctella,58824
+Salmonella enterica subsp. enterica serovar Naestved,71517
+Giardia intestinalis,5741
+Schizosaccharomyces pombe 972h-,284812
+unidentified retrovirus,31931
+Aegilops tauschii,37682
+Bacillus sp. 27,593087
+Allobilharzia visceralis,431770
+Burkholderia thailandensis,57975
+Hypophthalmichthys nobilis,7965
+Thermobia domestica,89055
+Dictyocaulus viviparus,29172
+Chlamydomonas reinhardtii,3055
+Globodera pallida,36090
+Enterococcus raffinosus,71452
+Lactobacillus amylophilus,1603
+Lactobacillus amylotrophicus,376807
+Lactobacillus kefiranofaciens subsp. kefirgranum,190906
+Lactobacillus acidifarinae,267364
+Lactobacillus hammesii,267633
+Fructobacillus fructosus,1631
+Lactobacillus diolivorans,179838
+Lactobacillus fuchuensis,164393
+Weissella kandleri,1616
+Lactobacillus lindneri,53444
+Lactobacillus fabifermentans,483011
+Lactobacillus equigenerosi,417373
+Lactobacillus alimentarius,1602
+Lactobacillus camelliae,381742
+Weissella halotolerans,1615
+Lactobacillus farraginis,390841
+Lactobacillus vaccinostercus,176291
+Lactobacillus sakei subsp. sakei,214326
+Lactobacillus composti,398555
+Lactobacillus kefiri,33962
+Lactobacillus hayakitensis,396716
+Lactobacillus manihotivorans,88233
+Lactobacillus capillatus,480931
+Lactobacillus animalis,1605
+Kandleria vitulina,1630
+Weissella viridescens,1629
+Lactobacillus uvarum,303240
+Lactobacillus tucceti,238012
+Lactobacillus ingluviei,148604
+Lactobacillus thailandensis,381741
+Lactobacillus taiwanensis,508451
+Lactobacillus sunkii,481719
+Lactobacillus spicheri,216463
+Lactobacillus similis,414682
+Lactobacillus siliginis,348151
+Lactobacillus sharpeae,1626
+Lactobacillus senmaizukei,431273
+Lactobacillus senioris,931534
+Lactobacillus secaliphilus,396268
+Lactococcus lactis subsp. lactis,1360
+Lactobacillus mali,1618
+Lactobacillus selangorensis,81857
+Lactobacillus aviarius subsp. aviarius,147810
+Lactobacillus frumenti,104955
+Lactobacillus graminis,60519
+Lactobacillus acetotolerans,1600
+Lactobacillus delbrueckii subsp. bulgaricus,1585
+Lactobacillus hordei,468911
+Lactobacillus mindensis,167481
+Atopobium rimae,1383
+Lactobacillus plantarum subsp. argentoratensis,271881
+Lactobacillus psittaci,116089
+Lactobacillus perolens,100468
+Lactobacillus oligofermentans,293371
+Lactobacillus nasuensis,944671
+Lactobacillus rapi,481723
+Lactobacillus oeni,303241
+Lactobacillus nodensis,460870
+Lactobacillus otakiensis,481720
+Lactobacillus kitasatonis,237446
+Lactobacillus kalixensis,227944
+Lactobacillus intestinalis,151781
+Lactobacillus equi,137357
+Lactobacillus gallinarum,52242
+Lactobacillus hamsteri,96565
+Lactobacillus pantheris,171523
+Lactobacillus nagelii,82688
+Lactobacillus murinus,1622
+Lactobacillus amylovorus,1604
+Lactobacillus ghanensis,399370
+Lactobacillus agilis,1601
+Lactobacillus futsaii,938155
+Lactobacillus aquaticus,392566
+Lactobacillus fornicalis,88164
+Lactobacillus crustorum,392416
+Lactobacillus brantae,943673
+Lactobacillus floricola,679249
+Staphylococcus carnosus,1281
+Chlamydia muridarum str. Nigg,243161
+Murine norovirus,357231
+Eidolon helvum,77214
+Chiroptera,9397
+Dugesia japonica,6161
+Glossina morsitans,7394
+Plasmodium vinckei brucechwatti,119398
+Plasmodium vinckei petteri,138298
+Plasmodium yoelii killicki,283801
+Hepatitis E virus,12461
+Miscanthus sinensis,62337
+Lygus hesperus,30085
+Aphelocoma sumichrasti,247970
+Bufotes viridis,30338
+Sinonovacula constricta,98310
+Vulpes lagopus,494514
+Tursiops truncatus,9739
+Leishmania sp.,28847
+Leishmania donovani donovani,99875
+prokaryotic environmental samples,81490
+organismal metagenomes,410656
+chicken gut metagenome,506600
+Solanum phureja,172790
+Legionella pneumophila 130b,866628
+Brassica oleracea var. botrytis,3715
+Hordeum vulgare subsp. spontaneum,77009
+Lepeophtheirus salmonis,72036
+Conus betulinus,89764
+Equus asinus,9793
+Eustoma exaltatum subsp. russellianum,52518
+Eriocheir sinensis,95602
+Festuca arundinacea,4606
+Papilio xuthus,66420
+Cenchrus americanus,4543
+Tragulus javanicus,9849
+Zoysia japonica,309978
+unclassified sequences,12908
+Betula platyphylla,78630
+Raphanus sativus,3726
+Lactuca sativa,4236
+Phytomonas,5706
+Canis lupus chanco,246881
+Musa acuminata subsp. burmannicoides,213592
+Hypothenemus hampei,57062
+Hypothenemus sp. DDM-2009,638874
+Scolytodes sp. BHJ-2012,1220328
+Macaca,9539
+Hynobius retardatus,36312
+Tachysurus fulvidraco,1234273
+Dufourea novaeangliae,178035
+Apoidea,34735
+Melipona quadrifasciata,166423
+Eufriesea mexicana,516756
+Habropoda laboriosa,597456
+Ectocarpus siliculosus,2880
+Eukaryota,2759
+Citrus kinokuni,408488
+Citrus micrantha,341933
+Citrus erythrosa,237568
+Citrus tangerina,237575
+Citrus reticulata,85571
+Citrus sunki,237574
+Citrus nobilis,481549
+Lactobacillus crispatus MV-1A-US,575596
+Panthera uncia,29064
+Anser cygnoides domesticus,381198
+Nannochloropsis oceanica,145522
+unclassified Bacteria (miscellaneous),49928
+Enterococcus faecalis ARO1/DG,565651
+Neisseria gonorrhoeae 35/02,528346
+Staphylococcus aureus A8796,553577
+Staphylococcus aureus A9719,553588
+Staphylococcus aureus A5937,553565
+Staphylococcus aureus A9635,553583
+Acinetobacter baumannii ATCC 19606 = CIP 70.34 = JCM 6841,575584
+Neisseria gonorrhoeae SK-92-679,528359
+Ceratotherium simum simum,73337
+Fusobacterium nucleatum subsp. animalis 11_3_2,457403
+Latimeria menadoensis,106881
+Bacillus cereus VD142,718224
+Bacillus cereus VD022,718223
+Bacillus cereus str. Schrouff,718221
+Bacillus cereus TIAC219,718222
+Bacillus cereus IS075,718220
+Orycteropus afer afer,1230840
+Erinaceus europaeus,9365
+Microtus ochrogaster,79684
+Jaculus jaculus,51337
+Eptesicus fuscus,29078
+Elephantulus edwardii,28737
+Chrysochloris asiatica,185453
+Condylura cristata,143302
+Brucella melitensis bv. 1 str. Rev.1,520464
+Brucella sp. 83/13,520449
+Trichechus manatus latirostris,127582
+Chinchilla lanigera,34839
+Leptonychotes weddellii,9713
+Citrobacter freundii 4_7_47CFAA,742730
+Mycobacterium tuberculosis SUMu004,675515
+Mycobacterium tuberculosis SUMu001,675512
+Mycobacterium tuberculosis SUMu003,675514
+Brucella sp. NVSL 07-0026,520448
+Brucella abortus bv. 2 str. 86/8/59,520450
+Brucella pinnipedialis M292/94/1,520462
+Brucella abortus bv. 9 str. C68,520455
+Brucella suis bv. 5 str. 513,520489
+Brucella neotomae 5K33,520456
+Brucella ceti B1/94,520457
+Brucella ceti M644/93/1,520459
+Brucella pinnipedialis B2/94,520461
+Brucella pinnipedialis M163/99/10,520463
+Prochlorococcus phage P-SSM5,536454
+coral metagenome,496922
+hot springs metagenome,433727
+Salicola phage CGphi29,754067
+Phaeocystis globosa virus 12T,755273
+Cellulophaga phage phi47:1,756281
+Prochlorococcus phage P-SSM3,536453
+Phaeocystis globosa virus 14T,755274
+Prochlorococcus phage P-GSP1,382262
+hydrothermal vent metagenome,652676
+Halorubrum phage GNf2,889959
+Emiliania huxleyi virus 201,181210
+Emiliania huxleyi virus V1,756286
+[Clostridium] aldenense WAL-18727,742731
+Campylobacter sp. 10_1_50,665939
+Coprobacillus sp. 3_3_56FAA,665941
+Vibrio phage SIO-2,700512
+Cellulophaga phage phiSM,756280
+Cyanophage SS120-1,616674
+Synechococcus phage S-SSM4,536466
+Prevotella nigrescens F0103,702439
+Neisseria gonorrhoeae MS11,528354
+Peptostreptococcaceae bacterium CM5,796940
+Peptoanaerobacter stomatis,796937
+Peptostreptococcaceae bacterium CM2,796939
+Edhazardia aedis,70536
+Dysgonomonas mossii DSM 22836,742767
+Lactobacillus sp. 7_1_47FAA,665945
+Bilophila sp. 4_1_30,693988
+Vittaforma corneae,42399
+Dysgonomonas gadei ATCC BAA-286,742766
+Desulfovibrio sp. 6_1_46AFAA,665942
+Anncaliia algerae,723287
+Clostridium sp. 1_1_41A1FAA,457397
+Vibrio phage eugene 12A10,573172
+Lachnospiraceae bacterium 5_1_57FAA,658085
+Mycobacterium tuberculosis HN2602,795205
+Bacillus sp. 2_A_57_CT2,665959
+[Clostridium] symbiosum WAL-14163,742740
+[Clostridium] symbiosum WAL-14673,742741
+Clostridium perfringens WAL-14572,742739
+Streptococcus anginosus 1_2_62CV,742820
+Nematocida parisii ERTm3,935791
+Sphaeroforma arctica JP610,667725
+[Clostridium] citroniae WAL-19142,742734
+[Clostridium] citroniae WAL-17108,742733
+Collinsella sp. 4_8_47FAA,742722
+Sutterella wadsworthensis 3_1_45B,742821
+Sutterella wadsworthensis 2_1_59BFAA,742823
+Bacteroides sp. 2_1_56FAA,665938
+Coprobacillus sp. 29_1,469596
+Eggerthella lenta 1_1_60AFAA,742768
+Rothia mucilaginosa M508,563033
+Lachnospiraceae bacterium 3_1_46FAA,665950
+Pseudomonas sp. 2_1_26,665948
+Vavraia culicis,103449
+Nematocida sp. 1 ERTm2,944018
+Bacteroides ovatus 3_8_47FAA,665954
+[Clostridium] clostridioforme WAL-7855,742736
+[Clostridium] bolteae WAL-14578,742732
+Anncaliia algerae PRA109,1240240
+Phascolarctobacterium sp. 3_1syn4,457408
+Parabacteroides sp. 20_3,469591
+Oribacterium asaccharolyticum ACB7,796944
+Bacillus sp. 7_6_55CFAA_CT2,665957
+Subdoligranulum sp. 4_3_54A2FAA,665956
+Pseudogymnoascus destructans,655981
+Segniliparus rugosus ATCC BAA-974,679197
+Actinomyces sp. oral taxon 849 str. F0330,653386
+Gemella morbillorum M424,562982
+Treponema denticola F0402,699187
+Ralstonia sp. 5_2_56FAA,658080
+Emiliania huxleyi virus 202,181211
+Cellulophaga phage phi3:1,756279
+Prochlorococcus phage P-SSP6,382275
+Prochlorococcus phage P-RSP2,756283
+Vibrio phage douglas 12A4,573171
+Vibrio phage martha 12B12,573175
+Vibrio phage helene 12B3,573173
+Vibrio phage henriette 12B8,573174
+Pseudogymnoascus destructans 20631-21,658429
+Eubacterium infirmum F0142,883109
+Neisseria gonorrhoeae FA19,528352
+Staphylococcus aureus subsp. aureus M809,585157
+Oribacterium parvum ACB1,796943
+Enterococcus saccharolyticus 30_1,742813
+Fusobacterium necrophorum subsp. funduliforme 1_1_36S,742814
+Prevotella oulorum F0390,702438
+Selenomonas noxia F0398,702437
+Tannerella sp. 6_1_58FAA_CT1,665949
+Prevotella micans F0438,883158
+Collinsella tanakaei YIT 12063,742742
+Streptococcus intermedius F0395,857292
+Prevotella histicola F0411,857291
+[Clostridium] clostridioforme 2_1_49FAA,742735
+Bacteroides oleiciplenus YIT 12058,742727
+Alistipes indistinctus YIT 12060,742725
+Streptococcus intermedius F0413,883167
+Puccinia triticina 1-1 BBBD Race 1,630390
+Klebsiella sp. 4_1_44FAA,665944
+Lachnospiraceae bacterium 7_1_58FAA,658087
+Bacteroides sp. 4_1_36,457393
+Anaerostipes sp. 3_2_56FAA,665937
+Bacillus sp. BT1B_CT2,665958
+Clostridium sp. 7_3_54FAA,665940
+Neisseria sp. GT4A_CT1,665946
+Dorea formicigenerans 4_6_53AFAA,742765
+Lachnospiraceae bacterium 2_1_46FAA,742723
+Clostridium orbiscindens 1_3_50AFAA,742738
+Mycobacterium tuberculosis str. Erdman WHO,937592
+Neisseria mucosa C102,435832
+Fusobacterium ulcerans 12-1B,457404
+Fusobacterium nucleatum subsp. animalis 4_8,469607
+Selenomonas infelix ATCC 43532,679201
+Escherichia fergusonii B253,550694
+Johnsonella ignava ATCC 51276,679200
+Bacteroides eggerthii 1_2_48FAA,665953
+Dorea sp. 4_1_36FAA,450747
+Aggregatibacter aphrophilus F0387,679198
+Bacillus smithii 7_3_47FAA,665952
+Eggerthella sp. 1_3_56FAA,665943
+Alloprevotella rava F0323,679199
+Lachnospiraceae bacterium 8_1_57FAA,665951
+Fusobacterium nucleatum subsp. polymorphum F0401,693991
+Lachnospiraceae bacterium 4_1_37FAA,552395
+Bacteroides sp. 1_1_14,469585
+Dorea sp. D27,658665
+Prevotella sp. C561,563031
+Actinomyces graevenitzii C83,435830
+Enterobacteriaceae bacterium 9_2_54FAA,469613
+Gemella sanguinis M325,562983
+Erysipelotrichaceae bacterium 2_2_44A,457422
+Bacteroides sp. 3_1_40A,469593
+Bacteroides sp. 1_1_30,457387
+Bilophila wadsworthia 3_1_6,563192
+Olsenella sp. oral taxon 809 str. F0356,661087
+Synergistes sp. 3_1_syn1,457415
+Actinomyces viscosus C505,562973
+Achromobacter xylosoxidans C54,562971
+Capnocytophaga granulosa ATCC 51502,641143
+Lachnospiraceae bacterium 9_1_43BFAA,658088
+Lachnospiraceae bacterium 6_1_63FAA,658083
+Gemella haemolysans M341,562981
+Lachnospiraceae bacterium 4_1_47FAA,658084
+Lachnospiraceae bacterium 1_4_56FAA,658655
+Lachnospiraceae bacterium 6_1_37FAA,658656
+Streptococcus sp. C150,435842
+Parascardovia denticolens F0305,641144
+Scardovia inopinata F0304,641146
+Streptomyces roseosporus NRRL 11379,457430
+Granulicatella elegans ATCC 700633,626369
+Rothia dentocariosa M567,563032
+Staphylococcus hominis subsp. hominis C80,435837
+Prevotella oris C735,563008
+Leptotrichia goodfellowii D28,564663
+Streptococcus sp. M143,563037
+Streptococcus sp. C300,563036
+Escherichia albertii B090,550692
+Simonsiella muelleri ATCC 29453,641147
+Staphylococcus aureus A8819,553580
+Bacteroides sp. 3_1_23,457390
+Bacteroides sp. 3_1_13,457389
+Lactobacillus fermentum 28-3-CHN,575599
+Enterococcus faecium D344SRF,565665
+Vibrio cholerae V52,345076
+Staphylococcus aureus A9754,553590
+Lachnospiraceae oral taxon 107 str. F0167,575593
+Hepatitis C virus subtype 4o,745709
+Hepatitis C virus subtype 4r,693427
+Neisseria sp. oral taxon 014 str. F0314,641149
+Streptomyces himastatinicus ATCC 53653,457427
+Streptomyces clavuligerus ATCC 27064,443255
+Streptomyces griseoflavus Tu4000,467200
+Streptomyces albus J1074,457425
+Kutzneria sp. 744,345341
+Micromonospora sp. M42,457406
+Streptomyces roseosporus NRRL 15998,457431
+Streptomyces sp. Mg1,465541
+Streptomyces sp. AA4,591158
+Acinetobacter sp. SH024,575565
+Vibrio cholerae V51,345075
+Vibrio cholerae MZO-3,412883
+Vibrio cholerae MZO-2,417398
+Streptomyces sviceus ATCC 29083,463191
+Wuchereria bancrofti,6293
+Brucella ceti M13/05/1,520460
+Micromonospora sp. ATCC 39149,219305
+Vibrio cholerae AM-19226,404974
+Vibrio cholerae 623-39,417397
+Vibrio cholerae 2740-80,412614
+Vibrio cholerae 1587,412966
+Streptomyces sp. SPB78,591157
+Streptomyces sp. e14,645465
+Colletotrichum graminicola M1.001,645133
+Escherichia albertii B156,550693
+Lactobacillus johnsonii 135-1-CHN,572503
+Veillonella sp. 6_1_27,450749
+Bifidobacterium sp. 12_1_47BFAA,469594
+Staphylococcus aureus subsp. aureus A017934/97,585147
+Staphylococcus aureus subsp. aureus M1015,585156
+Enterococcus faecium C68,565664
+Brucella melitensis bv. 3 str. Ether,520466
+Prevotella sp. oral taxon 299 str. F0039,575614
+Bacteroides sp. 3_1_19,469592
+Staphylococcus aureus subsp. aureus WBG10049,585160
+Staphylococcus aureus subsp. aureus C101,585149
+Lactobacillus jensenii 27-2-CHN,575606
+Acinetobacter johnsonii SH046,575586
+Brucella abortus NCTC 8038,575591
+Brucella melitensis bv. 1 str. 16M,224914
+Loa loa,7209
+Filifactor alocis ATCC 35896,546269
+Lactobacillus crispatus 125-2-CHN,575595
+Acinetobacter radioresistens SH164,575589
+Lactobacillus crispatus SJ-3C-US,575598
+Lactobacillus gasseri SV-16A-US,575604
+Prevotella melaninogenica D18,575612
+Lactobacillus jensenii SJ-7A-US,575607
+Prevotella buccae D17,575611
+Acinetobacter junii SH205,575587
+Bacteroides sp. D20,585543
+Bacteroides sp. 2_1_33B,469589
+Bacteroides fragilis 3_1_12,457424
+Staphylococcus aureus A5948,553567
+Lactobacillus gasseri SJ-9E-US,575603
+Burkholderiales bacterium 1_1_47,469610
+Peptoniphilus sp. oral taxon 386 str. F0131,575609
+Acinetobacter sp. RUH2624,575564
+Lactobacillus crispatus MV-3A-US,575597
+Acinetobacter calcoaceticus RUH2202,575585
+Staphylococcus aureus subsp. aureus H19,585155
+Staphylococcus aureus A6300,553571
+Ruminococcaceae bacterium D16,552398
+Staphylococcus aureus A9763,553592
+Parabacteroides sp. D13,563193
+Pediococcus acidilactici 7_4,563194
+Klebsiella sp. 1_1_55,469608
+Fusobacterium nucleatum subsp. animalis 3_1_33,469603
+Erysipelotrichaceae bacterium 5_2_54FAA,552396
+Veillonella sp. 3_1_44,457416
+Desulfovibrio sp. 3_1_syn3,457398
+Staphylococcus aureus subsp. aureus 68-397,585146
+Acidaminococcus sp. D21,563191
+Bacteroidetes oral taxon 274 str. F0058,575590
+Lactobacillus jensenii 1153,440497
+Staphylococcus aureus A10102,553601
+Staphylococcus aureus A9765,553594
+Streptococcus sp. M334,563038
+Lactobacillus crispatus CTV-05,440496
+Lactobacillus coleohominis 101-4-CHN,575594
+Bacteroides sp. 2_1_22,469588
+Acinetobacter lwoffii SH145,575588
+Prevotella sp. oral taxon 317 str. F0108,575615
+Fusobacterium nucleatum subsp. vincentii 3_1_27,469602
+Staphylococcus aureus subsp. aureus C427,585151
+Staphylococcus aureus A9781,553596
+Bacteroides sp. 1_1_6,469586
+Bacteroides sp. D22,585544
+Bacteroides sp. 2_1_16,469587
+Bacteroides sp. 3_1_33FAA,457391
+Streptococcus sp. 2_1_36FAA,469609
+Staphylococcus aureus subsp. aureus D139,585152
+Staphylococcus aureus subsp. aureus EMRSA16,585154
+Staphylococcus aureus subsp. aureus 58-424,585144
+Staphylococcus aureus subsp. aureus C160,585150
+Staphylococcus aureus subsp. aureus Btn1260,585148
+Neisseria gonorrhoeae PID18,528356
+Fusobacterium nucleatum subsp. vincentii 3_1_36A2,469604
+Lactobacillus jensenii 115-3-CHN,575605
+Fusobacterium periodonticum D10,620833
+Staphylococcus aureus subsp. aureus M899,585159
+Neisseria gonorrhoeae PID332,528358
+Enterococcus casseliflavus EC10,565654
+Staphylococcus aureus A8117,553574
+Staphylococcus aureus A8115,553573
+Enterococcus faecalis HIP11704,565646
+Brucella abortus bv. 3 str. Tulya,520451
+Enterococcus faecalis T8,565639
+Brucella abortus bv. 5 str. B3196,520453
+Enterococcus faecalis T2,565637
+Enterococcus faecium 1,231,501,565658
+Neisseria gonorrhoeae DGI2,528348
+Enterococcus faecium 1,230,933,565656
+Neisseria gonorrhoeae DGI18,528347
+Fusobacterium nucleatum subsp. animalis 7_1,457405
+Haplochromis chilotes,257977
+Staphylococcus aureus subsp. aureus M876,585158
+Vibrio cholerae MAK 757,412967
+Brucella abortus bv. 4 str. 292,520452
+Enterococcus casseliflavus EC20,565655
+Paenibacillus sp. oral taxon 786 str. D14,621372
+Vibrio cholerae RC385,345074
+Brucella suis bv. 3 str. 686,520487
+Neisseria gonorrhoeae 1291,528345
+Neisseria gonorrhoeae PID1,528355
+Escherichia sp. 3_2_53FAA,469598
+Neisseria gonorrhoeae FA6140,528353
+Enterococcus faecium Com12,565662
+Staphylococcus aureus subsp. aureus E1410,585153
+Fusobacterium nucleatum subsp. vincentii 4_1_13,469606
+Fusobacterium gonidiaformans 3-1-5R,469605
+Enterococcus faecalis E1Sol,565647
+Enterococcus faecalis T3,565638
+Staphylococcus aureus subsp. aureus 65-1322,585145
+Enterococcus faecalis D6,565650
+Fusobacterium gonidiaformans ATCC 25563,469615
+Staphylococcus aureus A9299,553581
+Enterococcus faecium TC 6,565666
+Enterococcus faecalis T1,565636
+Clupea harengus,7950
+Loxodonta africana,9785
+Dopasia gracilis,182351
+Balaenoptera bonaerensis,33556
+Sparus aurata,8175
+Papilio machaon,76193
+Serinus canaria,9135
+Pampus argenteus,206143
+Jatropha curcas,180498
+Equus grevyi,9792
+Nicotiana benthamiana,4100
+Vibrio cholerae C6706,948564
+Jatropha integerrima,316874
+Haemadipsa interrupta,480263
+Cochliomyia macellaria,66361
+Chrysomya rufifacies,45450
+Gossypium hirsutum,3635
+Heterololigo bleekeri,1423826
+Camelus bactrianus,9837
+Vicugna pacos huacaya,273913
+Laternula elliptica,228457
+ecological metagenomes,410657
+Solanum lycopersicum var. cerasiforme,195583
+epibiont metagenome,408171
+Psychotria gabriellae,1162814
+Taphrina deformans PYCC 5710,1097556
+Arctica islandica,59239
+biofilm metagenome,718308
+Burkholderia cenocepacia HI4278,1110699
+Burkholderia cenocepacia HI4277,1110698
+Burkholderia cenocepacia AU16958,1110701
+Burkholderia cenocepacia AU16956,1110700
+Phyllostachys edulis,38705
+Ensete,4638
+Musa beccarii,192045
+Musa textilis,228183
+Musa ornata,160690
+Musa balbisiana var. balbisiana,482283
+Pneumocystis jirovecii,42068
+Aegilops sharonensis,58530
+Notophthalmus viridescens,8316
+air metagenome,655179
+phyllosphere metagenome,662107
+symbiont metagenome,410662
+Oryza meridionalis,40149
+Oryza rufipogon,4529
+Oryza longistaminata,4528
+Oryza barthii,65489
+Oryza glaberrima,4538
+Clogmia albipunctata,85120
+root metagenome,1118232
+Actinopterygii,7898
+human lung metagenome,433733
+wastewater metagenome,527639
+Streptococcus pyogenes M1 GAS,160490
+Bradyrhizobium sp. STM 3847,551950
+endophyte metagenome,483425
+Karlodinium veneficum,407301
+Anguillid herpesvirus 1,150286
+Cyprinid herpesvirus 2,317878
+Bradyrhizobium sp. STM 3843,551947
+Bradyrhizobium sp. STM 3809,551936
+Bradyrhizobium sp. ORS 375,566679
+Bradyrhizobium sp. STM 4523,551982
+Bradyrhizobium sp. STM 4509,551972
+Luzula,46322
+Solanum phureja x Solanum tuberosum,188760
+Leishmania infantum JPCM5,435258
+Mytilus edulis,6550
+Physarum polycephalum,5791
+Parhyale hawaiensis,317513
+Colletotrichum higginsianum IMI 349063,759273
+Stegodyphus mimosarum,407821
+Stegodyphus tentoriicola,202532
+Stegodyphus lineatus,175341
+Pseudomonas aeruginosa TB63741,1158202
+Pseudomonas aeruginosa TBCF121838,1158201
+Pseudomonas aeruginosa TBCF10839,1158200
+Beta vulgaris subsp. vulgaris,3555
+Golovinomyces orontii,62715
+Phoca groenlandica,39089
+Populus tremuloides,3693
+environmental samples,48479
+Funaria hygrometrica,29583
+Ovis aries/Saccharomyces cerevisiae mixed DNA library,1145095
+Cardamine resedifolia,352370
+Cardamine impatiens,82286
+groundwater metagenome,717931
+Schmidtea,55270
+Dirofilaria immitis,6287
+Hepatitis B virus,10407
+fish metagenome,496924
+Mycobacterium tuberculosis MR075750X,940670
+Mycobacterium tuberculosis MR071702G,940669
+Mycobacterium tuberculosis MR054150Z,940668
+Listeria monocytogenes EGD-e,169963
+Danio nigrofasciatus,144739
+fossil metagenome,444079
+Yersinia pestis biovar Orientalis str. IP674,696370
+Citrobacter freundii str. ballerup 7851/39,670484
+Pseudomonas syringae pv. syringae B728a,205918
+Salmonella enterica subsp. enterica serovar Typhimurium str. A130,589363
+Escherichia coli 042,216592
+Pseudomonas fluorescens SBW25,216595
+Mycobacterium marinum M,216594
+Salmonella enterica subsp. enterica serovar Typhimurium str. 5579,589366
+Saccharomyces paradoxus Y8.1,580232
+Saccharomyces paradoxus Q69.8,580238
+Saccharomyces paradoxus Z1,580233
+Saccharomyces paradoxus Y55,580230
+Saccharomyces paradoxus Q74.4,580231
+Saccharomyces paradoxus W7,580234
+Saccharomyces cerevisiae W303,580240
+Saccharomyces paradoxus Q31.4,580237
+Saccharomyces paradoxus Y9.6,580235
+Saccharomyces paradoxus Y8.5,580236
+Saccharomyces cerevisiae SK1,580239
+Salmonella enterica subsp. enterica serovar Paratyphi A str. AKU_12601,554290
+Trypanosoma evansi,5697
+Carassius auratus x Cyprinus carpio,211488
+Philautus sp. FB-8,302748
+wasp metagenome,1077529
+Selenomonas sp. HMP_JCVI_SC0243,1409859
+Prevotella sp. HMP_JCVI_SC0285,1409845
+Selenomonas sp. HMP_JCVI_SC0181,1409851
+Enterococcus faecium HMP_JCVI_SC0320,1409944
+Enterococcus faecium HMP_JCVI_SC0319,1409943
+Escherichia coli HMP_JCVI_SC0318,1409951
+Enterococcus faecium HMP_JCVI_SC0316,1409942
+Enterococcus faecium HMP_JCVI_SC0314,1409941
+Enterococcus faecium HMP_JCVI_SC0311,1409938
+Enterococcus faecalis HMP_JCVI_SC0310,1410033
+Enterococcus faecium HMP_JCVI_SC0308,1409936
+Enterococcus sp. HMP_JCVI_SC0307,1409822
+Enterococcus faecium HMP_JCVI_SC0306,1409935
+Enterococcus faecium HMP_JCVI_SC0304,1409933
+Enterococcus faecium HMP_JCVI_SC0302,1409931
+Enterococcus faecium HMP_JCVI_SC0299,1409949
+bacterium HMP_JCVI_SC0281,1409890
+bacterium HMP_JCVI_SC0278,1409889
+Streptococcus mitis HMP_JCVI_SC0277,1410008
+Streptococcus oralis HMP_JCVI_SC0276,1410021
+Streptococcus oralis HMP_JCVI_SC0275,1410020
+Streptococcus mitis HMP_JCVI_SC0274,1410007
+Streptococcus oralis HMP_JCVI_SC0272,1410018
+Streptococcus oralis HMP_JCVI_SC0271,1410017
+Streptococcus oralis HMP_JCVI_SC0270,1410016
+Streptococcus mitis HMP_JCVI_SC0269,1410006
+Streptococcus mitis HMP_JCVI_SC0268,1410005
+Streptococcus oralis HMP_JCVI_SC0267,1410015
+Streptococcus oralis HMP_JCVI_SC0266,1410014
+Streptococcus oralis HMP_JCVI_SC0265,1410013
+Prevotella saccharolytica HMP_JCVI_SC0223,1409988
+Capnocytophaga sp. HMP_JCVI_SC0222,1409820
+fenpropathrin-degrading bacterium HMP_JCVI_SC0264,1409897
+Selenomonas sp. HMP_JCVI_SC0262,1409864
+candidate division TM7 bacterium HMP_JCVI_SC0260,1409912
+Propionibacterium acidifaciens HMP_JCVI_SC0259,1410036
+candidate division TM7 bacterium HMP_JCVI_SC0257,1409911
+Selenomonas artemidis HMP_JCVI_SC0256,1410000
+Selenomonas sp. HMP_JCVI_SC0255,1409861
+candidate division TM7 bacterium HMP_JCVI_SC0254,1409910
+Porphyromonas sp. HMP_JCVI_SC0253,1409843
+Selenomonas artemidis HMP_JCVI_SC0252,1409999
+Prevotella saccharolytica HMP_JCVI_SC0250,1409989
+Haemophilus sp. HMP_JCVI_SC0249,1409827
+Haemophilus sp. HMP_JCVI_SC0248,1409826
+Neisseria sp. HMP_JCVI_SC0247,1409841
+Granulicatella elegans HMP_JCVI_SC0246,1409956
+Selenomonas artemidis HMP_JCVI_SC0241,1409996
+Capnocytophaga ochracea HMP_JCVI_SC0240,1410029
+Selenomonas sp. HMP_JCVI_SC0239,1409857
+Leptotrichia sp. HMP_JCVI_SC0238,1409839
+Selenomonas sp. HMP_JCVI_SC0237,1409856
+Selenomonas sp. HMP_JCVI_SC0236,1409855
+bacterium HMP_JCVI_SC0234,1409888
+Selenomonas sp. HMP_JCVI_SC0233,1409854
+Selenomonas sp. HMP_JCVI_SC0232,1409853
+Leptotrichia sp. HMP_JCVI_SC0231,1409838
+Selenomonas sp. HMP_JCVI_SC0230,1409852
+Selenomonas artemidis HMP_JCVI_SC0229,1409995
+Veillonella sp. HMP_JCVI_SC0227,1409866
+Capnocytophaga sp. HMP_JCVI_SC0226,1409821
+bacterium HMP_JCVI_SC0224,1409887
+Capnocytophaga sp. HMP_JCVI_SC0221,1409819
+Capnocytophaga sp. HMP_JCVI_SC0220,1409818
+candidate division TM7 bacterium HMP_JCVI_SC0219,1409909
+Capnocytophaga haemolytica HMP_JCVI_SC0218,1410027
+Capnocytophaga sp. HMP_JCVI_SC0217,1409817
+Capnocytophaga haemolytica HMP_JCVI_SC0216,1410026
+Capnocytophaga sp. HMP_JCVI_SC0214,1409816
+Megasphaera micronuciformis DNF00954,1401076
+Capnocytophaga sp. HMP_JCVI_SC0213,1409815
+Prevotella disiens,28130
+Capnocytophaga sp. HMP_JCVI_SC0212,1409814
+Prevotella melaninogenica,28132
+Streptococcus sp. HMP_JCVI_SC0211,1409865
+Leptotrichia wadei HMP_JCVI_SC0210,1409985
+Leptotrichia wadei HMP_JCVI_SC0208,1409983
+Peptoniphilus lacrimalis,33031
+Leptotrichia wadei HMP_JCVI_SC0207,1409982
+Brevibacterium luteolum,199591
+Leptotrichia wadei HMP_JCVI_SC0206,1409981
+Leptotrichia wadei HMP_JCVI_SC0204,1409979
+Prevotella histicola,470565
+bacterium HMP_JCVI_SC0203,1409886
+Leptotrichia wadei HMP_JCVI_SC0202,1409978
+Veillonella montpellierensis,187328
+Leptotrichia wadei HMP_JCVI_SC0201,1409977
+Prevotella,838
+Leptotrichia wadei HMP_JCVI_SC0200,1409976
+Leptotrichia wadei HMP_JCVI_SC0199,1409975
+Leptotrichia wadei HMP_JCVI_SC0198,1409974
+Pseudoglutamicibacter albus,98671
+Leptotrichia wadei HMP_JCVI_SC0197,1409973
+Slackia sp. S9 HS-10,1344343
+Leptotrichia wadei HMP_JCVI_SC0196,1409972
+Leptotrichia wadei HMP_JCVI_SC0195,1409971
+Prevotella timonensis,386414
+Leptotrichia wadei HMP_JCVI_SC0194,1409970
+Leptotrichia sp. HMP_JCVI_SC0193,1409836
+Olsenella sp. S9 HS-6,1344333
+Leptotrichia wadei HMP_JCVI_SC0192,1409969
+Clostridiales bacterium S9 PR-1,1344345
+Haemophilus pittmaniae HMP_JCVI_SC0190,1409960
+Clostridiales bacterium S8 87-8,1330237
+Clostridiales bacterium S9 HS-16,1344344
+Haemophilus sp. HMP_JCVI_SC0189,1409825
+Peptoniphilus sp. S3PFAA2-10,1219651
+Bergeyella sp. HMP_JCVI_SC0186,1409810
+Prevotella sp.,59823
+Capnocytophaga sp. HMP_JCVI_SC0185,1409813
+Anaerococcus sp. S9 PR-5,1344330
+Haemophilus pittmaniae HMP_JCVI_SC0183,1409959
+Prevotella shahii HMP_JCVI_SC0182,1410035
+Actinomycetaceae sp. S8 65-1,1330234
+Campylobacter sp. HMP_JCVI_SC0184,1409867
+Selenomonas sputigena ATCC 35185,546271
+Actinomycetaceae bacterium DNF00952,1285931
+Selenomonas artemidis HMP_JCVI_SC0179,1409994
+Selenomonas artemidis HMP_JCVI_SC0178,1409993
+Megasphaera sp. DNF00912,1285934
+Atopobium parvulum,1382
+Selenomonas sp. HMP_JCVI_SC0177,1409850
+Megasphaera sp. DNF00872,1285933
+Prevotellaceae bacterium DNF00733,1285936
+Peptoniphilus sp. DNF00192,1285935
+Lachnospiraceae bacterium DNF00160,1285932
+Haemophilus pittmaniae HMP_JCVI_SC0163,1409957
+Pseudoclavibacter sp. DNF00083,1285937
+Bergeyella sp. HMP_JCVI_SC0161,1409808
+Prevotellaceae bacterium S4-A16,1219631
+Granulicatella elegans HMP_JCVI_SC0160,1409955
+Peptostreptococcus sp.,1262
+Bergeyella sp. HMP_JCVI_SC0147,1409804
+Eggerthella sp. MVA1,1219595
+Lachnoanaerobaculum sp. S6-P3,1284709
+bacterium HMP_JCVI_SC0175,1409884
+Finegoldia sp. S3MVA7,1219606
+Leptotrichia sp. HMP_JCVI_SC0174,1409835
+Selenomonas sp. HMP_JCVI_SC0170,1409849
+Clostridiales Family XIII. Incertae Sedis,543314
+Capnocytophaga sp. HMP_JCVI_SC0169,1409812
+Chryseobacterium sp. HMP_JCVI_SC0128,1410022
+bacterium HMP_JCVI_SC0127,1409876
+bacterium HMP_JCVI_SC0126,1409875
+Arcanobacterium sp.,72409
+Actinomyces sp.,29317
+bacterium HMP_JCVI_SC0125,1409874
+Anaerococcus lactolyticus,33032
+bacterium HMP_JCVI_SC0124,1409873
+Actinomycetaceae bacterium S5-BM8,1230729
+Selenomonas artemidis HMP_JCVI_SC0123,1409992
+bacterium HMP_JCVI_SC0143,1409878
+Bergeyella sp. HMP_JCVI_SC0142,1409800
+bacterium HMP_JCVI_SC0141,1409877
+candidate division TM7 bacterium HMP_JCVI_SC0122,1409908
+bacterium HMP_JCVI_SC0121,1409872
+candidate division TM7 bacterium HMP_JCVI_SC0120,1409907
+bacterium HMP_JCVI_SC0119,1409871
+Leptotrichia sp. HMP_JCVI_SC0118,1409830
+candidate division TM7 bacterium HMP_JCVI_SC0117,1409906
+Selenomonas artemidis HMP_JCVI_SC0116,1409991
+candidate division TM7 bacterium HMP_JCVI_SC0115,1409905
+Selenomonas artemidis HMP_JCVI_SC0114,1409990
+candidate division TM7 bacterium HMP_JCVI_SC0113,1409904
+Prevotella saccharolytica HMP_JCVI_SC0112,1409987
+candidate division TM7 bacterium HMP_JCVI_SC0111,1409903
+bacterium HMP_JCVI_SC0110,1409870
+Selenomonas sp. HMP_JCVI_SC0109,1409848
+Leptotrichia sp. HMP_JCVI_SC0108,1409829
+candidate division TM7 bacterium HMP_JCVI_SC0107,1409902
+Leptotrichia sp. HMP_JCVI_SC0106,1409828
+Prevotella saccharolytica HMP_JCVI_SC0105,1409986
+Bergeyella sp. HMP_JCVI_SC0104,1409793
+Selenomonas sp. HMP_JCVI_SC0103,1409847
+Lachnospiraceae bacterium HMP_JCVI_SC0140,1409917
+bacterium HMP_JCVI_SC0102,1409869
+candidate division TM7 bacterium HMP_JCVI_SC0101,1409901
+Bergeyella sp. HMP_JCVI_SC0100,1409792
+Streptococcus mutans HMP_JCVI_SC0099,1410012
+Streptococcus mutans HMP_JCVI_SC0098,1410011
+Bergeyella sp. HMP_JCVI_SC0136,1409798
+Leptotrichia sp. HMP_JCVI_SC0138,1409831
+Bergeyella sp. HMP_JCVI_SC0137,1409799
+Metazoa,33208
+Euphausia crystallorophias,48141
+Erythranthe guttata,4155
+Blastobotrys adeninivorans,409370
+Mayetiola destructor,39758
+food fermentation metagenome,1154581
+Trifolium repens,3899
+Theropithecus gelada,9565
+Symphalangus syndactylus,9590
+Sapajus xanthosternos,174599
+Saimiri boliviensis,27679
+Saguinus oedipus,9490
+Prolemur simus,1328070
+Perodicticus potto edwarsi,9473
+Papio anubis,9555
+Nycticebus bengalensis,261741
+Nomascus leucogenys,61853
+Mandrillus sphinx,9561
+Loris lydekkerianus,300163
+Lophocebus aterrimus,75566
+Lepilemur ruficaudatus,78866
+Leontopithecus rosalia,30588
+Lagothrix lagotricha,9519
+Hapalemur griseus,13557
+Galago moholi,30609
+Eulemur rufus,859983
+Erythrocebus patas,9538
+Chiropotes albinasus,198627
+Cheirogaleus medius,9460
+Cercocebus chrysogaster,75569
+Cercopithecus albogularis,867370
+Callithrix pygmaea,9493
+Callithrix geoffroyi,52231
+Plecturocebus cupreus,202457
+Cacajao calvus,30596
+Avahi laniger,122246
+Ateles belzebuth,9507
+Aotus azarai,30591
+Alouatta caraya,9502
+Ardenna tenuirostris,48684
+Larimichthys crocea,215358
+Gossypium arboreum,29729
+Chloris chloris,37601
+Yersinia pestis,632
+Fragaria x ananassa,3747
+Pyrus communis,23211
+microbial mat metagenome,527640
+Pagurus bernhardus,174397
+Plasmodium falciparum UGK 707.3,1050257
+Anopheles albimanus,7167
+Anopheles quadriannulatus,34691
+Strongylocentrotus purpuratus,7668
+Trialeurodes abutilonea,176123
+Human herpesvirus 1 strain KOS,10306
+Viruses,10239
+Candida albicans SC5314,237561
+Microtus agrestis,29092
+Pelomonas sp. ORNL_6EZ5-Gt_2_Pl1-1,1394005
+Mycobacterium tuberculosis str. Erdman = ATCC 35801,652616
+unidentified archaeon,13776
+Cryptococcus sp.,52038
+Cryptococcus neoformans,5207
+Synechococcus phage S-RIM8,756278
+Micromonas pusilla virus 12T,755272
+Vibrio phage PWH3a-P1,754058
+Pseudoalteromonas phage pYD6-A,754052
+Rhodovulum phage RS1,754056
+Micromonas pusilla virus PL1,373997
+Synechococcus phage S-CBP4,754059
+Ostreococcus lucimarinus virus OlV3,754062
+Vibrio phage nt-1,115992
+Puccinia triticina Race 161,664263
+Aplysia californica,6500
+Vibrio phage 11895-B1,754075
+Synechococcus phage S-CBP42,461711
+Vibrio phage VBM1,754074
+Cellulophaga phage phiST,756282
+Micromonas pusilla virus SP1,373996
+Tetraselmis viridis virus N1,756284
+Cyanophage KBS-S-1A,889952
+Methylophilales phage HIM624-A,889949
+Vibrio phage VBP47,754073
+Vibrio phage VBP32,754072
+Dengue virus 2,11060
+Plasmodium falciparum ML-14,685970
+Plasmodium falciparum MaliPS096_E11,1036727
+Plasmodium falciparum FCH/4,1036724
+Plasmodium falciparum CAMP/Malaysia,5835
+Plasmodium falciparum NF135/5.C10,1036726
+Plasmodium falciparum Tanzania (2000708),1036725
+Plasmodium falciparum Vietnam Oak-Knoll (FVO),1036723
+Plasmodium falciparum 7G8,57266
+Plasmodium falciparum Palo Alto/Uganda,57270
+Plasmodium falciparum UGK 661.1,1050255
+Plasmodium falciparum UGK 674.4,1050256
+Plasmodium falciparum UGK 815.1,1050259
+Plasmodium falciparum UGK 730.2,1050258
+Plasmodium falciparum UGK 408.2,1050252
+Plasmodium falciparum UGK 443.2,1050251
+Plasmodium falciparum UGK 659.1,1050254
+Plasmodium falciparum UGK 396.1,1050250
+Plasmodium falciparum UGK 432.4,1050253
+Bartonella elizabethae Re6043vi,1094554
+Bartonella birtlesii LL-WM9,1094552
+Bartonella sp. DB5-6,1094755
+Bartonella melophagi K-2C,1094557
+Bartonella vinsonii subsp. arupensis OK-94-513,1094562
+Bartonella washoensis Sb944nv,1094563
+Bartonella tamiae Th239,1094558
+Bartonella taylorii 8TBB,1094560
+Bartonella washoensis 085-0475,1094564
+Bartonella vinsonii subsp. arupensis Pm136co,1094561
+Bartonella tamiae Th307,1094559
+Bartonella alsatica IBS 382,1094551
+Bartonella rattimassiliensis 15908,1094556
+Houttuynia cordata,16752
+Cunninghamia lanceolata,28977
+Diospyros malabarica,413755
+Cedrus libani,93692
+Sciadopitys verticillata,28979
+Hibiscus cannabinus,229543
+Boehmeria nivea,83906
+Salvia rosmarinus,39367
+Allamanda cathartica,52818
+Tanacetum parthenium,127999
+Inula helenium,55635
+Colchicum autumnale,45005
+Acorus americanus,263995
+Ephedra sinica,33152
+Yucca filamentosa,55960
+Smilax bona-nox,50510
+Mycobacterium tuberculosis W-148,659019
+Encephalitozoon cuniculi,6035
+Naja nigricollis,8654
+Lasiodora parahybana,268490
+Bothrops atrox,8725
+Bitis arietans,8692
+Crotalus atrox,8730
+Oxyuranus scutellatus scutellatus,8667
+Ribes nigrum,78511
+Aeromonas sp.,647
+Leishmania aethiopica,5667
+Cryptosporidium meleagridis,93969
+Spirometra erinaceieuropaei,99802
+Enterobius vermicularis,51028
+Schistosoma rodhaini,6188
+Schistosoma curassoni,6186
+Salmonella enterica subsp. enterica serovar Coeln,399584
+Salmonella enterica subsp. enterica serovar Muenchen,596
+Salmonella enterica subsp. enterica serovar Bareilly,58096
+Salmonella enterica subsp. enterica serovar Rubislaw,598
+Salmonella enterica subsp. enterica serovar Agona,58095
+Salmonella enterica subsp. enterica serovar Tennessee,143221
+Schistosomatium douthitti,38741
+Protopolystoma xenopodis,117903
+Aeromonas veronii,654
+Staphylococcus aureus subsp. aureus TW20,663951
+Bordetella pertussis 18323,568706
+Eimeria tenella strain Houghton,413949
+Acanthoscurria geniculata,575412
+Podoces hendersoni,257846
+Machlolophus spilonotus,1356389
+Parus major,9157
+Capsicum annuum,4072
+Tetrahymena borealis,5893
+Tetrahymena malaccensis,5901
+Tetrahymena elliotti,5897
+Plasmodium falciparum SenT128.09,1107504
+Plasmodium falciparum SenT086.09,1107498
+Plasmodium falciparum SenV34.04,871283
+Plasmodium falciparum SenP08.04,871278
+Plasmodium falciparum SenV35.04,871282
+Plasmodium falciparum SenP11.02,871276
+Plasmodium falciparum SenP26.04,871275
+Plasmodium falciparum SenP60.02,871285
+Plasmodium falciparum SenP31.01,871284
+Plasmodium falciparum SenT28.04,871280
+Plasmodium falciparum SenP19.04,871277
+Plasmodium falciparum SenP05.02,871286
+Saccharomyces cerevisiae CEN.PK113-7D,889517
+Gyrodactylus salaris,37629
+Mirabilis jalapa,3538
+Stramenopiles,33634
+Dinoponera,369122
+Brugia timori,42155
+Plasmodium gallinaceum,5849
+Proteobacteria bacterium ORNL_6EZ5-Gt_2_Pl2-119,1394157
+Veillonellaceae bacterium ORNL_6EZ3_F_Cy59,1394147
+Veillonellaceae bacterium ORNL_6EZ3_F_Cy55,1394146
+Subdoligranulum sp. ORNL_6EZ5-Gt_4_Pl1-34,1394032
+Ruminococcaceae bacterium ORNL_6EZ5-Gt_4_Pl1-39,1394145
+Ruminococcaceae bacterium hmp_mda_pilot_jcvi_0012,1394144
+Rhizobium sp. ORNL_6EZ5-Gt_4_Pl1-31,1394031
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_3_Pl2-128,1394030
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_3_Pl2-123,1394029
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_3_Pl1-29,1394028
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_3_Pl1-25,1394027
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_3_Pl1-24,1394026
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_3_Pl1-23,1394025
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_3_Pl1-22,1394024
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_3_Pl1-21,1394023
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_3_Pl1-20,1394022
+Phascolarctobacterium sp. ORNL_6EZ5-Gt_1_Pl2-107,1394021
+Pelomonas sp. ORNL_6EZ5-Gt_8_Pl3-183,1394020
+Pelomonas sp. ORNL_6EZ5-Gt_8_Pl3-181,1394019
+Pelomonas sp. ORNL_6EZ5-Gt_8_Pl3-176,1394018
+Pelomonas sp. ORNL_6EZ5-Gt_8_Pl1-85,1394017
+Pelomonas sp. ORNL_6EZ5-Gt_7_Pl1-77,1394016
+Pelomonas sp. ORNL_6EZ5-Gt_7_Pl1-73,1394015
+Pelomonas sp. ORNL_6EZ5-Gt_7_Pl1-69,1394014
+Pelomonas sp. ORNL_6EZ5-Gt_7_Pl1-65,1394013
+Pelomonas sp. ORNL_6EZ5-Gt_7_Pl1-64,1394012
+Pelomonas sp. ORNL_6EZ5-Gt_4_Pl2-134,1394011
+Pelomonas sp. ORNL_6EZ5-Gt_4_Pl2-131,1394010
+Pelomonas sp. ORNL_6EZ5-Gt_4_Pl1-44,1394009
+Pelomonas sp. ORNL_6EZ5-Gt_4_Pl1-43,1394008
+Pelomonas sp. ORNL_6EZ5-Gt_4_Pl1-42,1394007
+Pelomonas sp. ORNL_6EZ5-Gt_3_Pl1-30,1394006
+Pelomonas sp. ORNL_6EZ5-Gt_1_Pl2-106,1393991
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl2-173,1394004
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl2-172,1394003
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl2-169,1394002
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl2-168,1394001
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl2-167,1394000
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl1-99,1393999
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl1-97,1393998
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl1-96,1393997
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl1-93,1393996
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl1-92,1393995
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl1-88,1393994
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl1-87,1393993
+Pelomonas sp. ORNL_6EZ5-Gt_10_Pl1-86,1393992
+Oscillibacter sp. ORNL_6EZ5-Gt_3_Pl1-28,1393990
+Oscillibacter sp. ORNL_6EZ5-Gt_1_Pl2-110,1393989
+Oscillibacter sp. ORNL_6EZ5-Gt_1_Pl2-100,1393988
+Lactobacillales bacterium hmp_mda_pilot_jcvi_0010,1394156
+Lachnospiraceae bacterium ORNL_6EZ5-Gt_6_Pl2-150,1394099
+Lachnospiraceae bacterium ORNL_6EZ3_SD_38,1394092
+Lachnospiraceae bacterium ORNL_6EZ3_SD_35,1394091
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_182,1394090
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_178,1394089
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_176,1394088
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_172,1394087
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_171,1394086
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_170,1394085
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_169,1394084
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_168,1394083
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_166,1394082
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_165,1394081
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_163,1394080
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_161,1394079
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_160,1394078
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_159,1394077
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_158,1394076
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_157,1394075
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_155,1394074
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_152,1394073
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_151,1394072
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_150,1394071
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_149,1394070
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_148,1394069
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_147,1394068
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_145,1394067
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_144,1394066
+Lachnospiraceae bacterium hmp_mda_pilot_jcvi_0016,1394064
+Lachnospiraceae bacterium ORNL_2UT_Ab5152_143,1394065
+Lachnospiraceae bacterium hmp_mda_pilot_jcvi_0011,1394063
+Gordonibacter sp. ORNL_6EZ5-Gt_7_Pl2-158,1393987
+Geobacter sp. ORNL_6EZ5-Gt_5_Pl1-57,1393986
+Flavobacteriia bacterium hmp_mda_pilot_jcvi_0014,1394153
+Flavobacteriaceae bacterium ORNL_1OR_Ab54_110,1394151
+Firmicutes bacterium ORNL_2OR_SB_170,1394150
+Coprobacillus sp. ORNL_6EZ5-Gt_1_Pl2-112,1393982
+Clostridiales bacterium ORNL_6EZ5-Gt_9_Pl2-165,1394123
+Dorea sp. hmp_mda_pilot_jcvi_0013,1393985
+Clostridiales bacterium ORNL_6EZ5-Gt_5_Pl1-54,1394120
+Clostridiales bacterium ORNL_6EZ5-Gt_3_Pl2-125,1394118
+Clostridiales bacterium ORNL_6EZ3_SF_67,1394117
+Clostridiales bacterium ORNL_6EZ3_SF_51,1394116
+Clostridiales bacterium ORNL_6EZ3_SF_49,1394115
+Clostridiales bacterium ORNL_6EZ3_SF_47,1394114
+Clostridiales bacterium ORNL_6EZ3_SF_46,1394113
+Clostridiales bacterium ORNL_6EZ3_SF_43,1394112
+Clostridiales bacterium ORNL_6EZ3_SD_37,1394111
+Clostridiales bacterium ORNL_2OR_SG_389,1394110
+Clostridiales bacterium ORNL_2OR_SD_357,1394109
+Clostridiales bacterium ORNL_2OR_SA_143_Oral,1394108
+Clostridiales bacterium ORNL_2OR_ORNL_218,1394107
+Clostridiales bacterium ORNL_1OR_Ab54_54,1394106
+Clostridiales bacterium ORNL_1OR_Ab51_62,1394105
+Clostridiales bacterium hmp_mda_pilot_jcvi_0015,1394104
+Clostridiales bacterium hmp_mda_pilot_jcvi_0009,1394103
+Clostridiales bacterium hmp_mda_pilot_jcvi_0006,1394102
+Butyricicoccus sp. ORNL_6EZ5-Gt_6_Pl2-147,1393981
+Butyricicoccus sp. ORNL_6EZ5-Gt_4_Pl1-35,1393980
+Blautia sp. ORNL_6EZ5-Gt_6_Pl2-149,1393978
+Bacteroidetes bacterium ORNL_1UT_ORNL_28,1394140
+Bacteroidales bacterium ORNL_2OR_SD_356,1394139
+Anaerovorax sp. ORNL_6EZ5-Gt_3_Pl2-127,1393975
+Pediculus humanus,121225
+Morus notabilis,981085
+Pseudomonas aeruginosa D8_AMT0041-1,990324
+Pseudomonas aeruginosa E10_AMT0066-3,990325
+Pseudomonas aeruginosa G3_AMT0076-2,990334
+Pseudomonas aeruginosa F5_AMT0074-1,990331
+Pseudomonas aeruginosa E8_AMT0066-1,990327
+Pseudomonas aeruginosa AMT0071-2,694533
+Pseudomonas aeruginosa D7_AMT0036-3,990323
+Pseudomonas aeruginosa E1_AMT0047-3,990326
+Pseudomonas aeruginosa D2_AMT0033-1,990320
+Pseudomonas aeruginosa D5_AMT0036-1,990322
+Pseudomonas aeruginosa F10_AMT0075-3,990328
+Pseudomonas aeruginosa F11_AMT0075-4,990329
+Pseudomonas aeruginosa G10_NC-AMT0101-3,990333
+Pseudomonas aeruginosa D3_AMT0033-2,990321
+Pseudomonas aeruginosa D10_AMT0041-3,990318
+Pseudomonas aeruginosa G4_AMT0076-3,990335
+Pseudomonas aeruginosa D12_AMT0047-2,990319
+Pseudomonas aeruginosa F7_AMT0074-3,990332
+Pseudomonas aeruginosa G8_NC-AMT0101-1,990336
+Pseudomonas aeruginosa F1_AMT0071-3,990330
+Candida albicans 24F,1040612
+Candida albicans 28I,1040631
+Candida albicans 23P,1040607
+Candida albicans 23R,1040604
+Candida albicans 24A,1040609
+Candida albicans 28H,1040623
+Candida albicans 18E,1040619
+Candida albicans 24E,1040620
+Candida albicans 25P,1040629
+Candida albicans 23F,1040630
+Candida albicans 25N,1040608
+Candida albicans 22K,1040626
+Candida albicans 11C,1040627
+Candida albicans 11E,1040611
+Candida albicans 23B,1040605
+Candida albicans 28C,1041952
+Candida albicans 25M,1040624
+Candida albicans 23K,1040615
+Candida albicans 28A,1040632
+Candida albicans 24C,1040610
+Candida albicans 25O,1040622
+Candida albicans 22O,1040625
+Candida albicans 23C,1040613
+Candida albicans 23Q,1040606
+Candida albicans 18M,1040616
+Candida albicans 18J,1040628
+Candida albicans 22F,1040614
+Candida albicans 18K,1040618
+Candida albicans 23G,1040621
+Candida albicans 22C,1040617
+Escherichia coli PBD3,1017045
+Mycobacterium tuberculosis HT1157,1017075
+Mycobacterium tuberculosis HT1117,1017057
+Mycobacterium tuberculosis mc(2)6020-D,1017089
+Escherichia coli PBA1,1027269
+Mycobacterium tuberculosis HT1164,1017080
+Mycobacterium tuberculosis HT1119,1017059
+Escherichia coli PBB13,1017037
+Escherichia coli PBD22,1017052
+Mycobacterium tuberculosis HT1161,1017079
+Escherichia coli PBC6,1017039
+Mycobacterium tuberculosis HT1118,1017058
+Mycobacterium tuberculosis HT1123,1017062
+Mycobacterium tuberculosis HT1121,1017061
+Mycobacterium tuberculosis HT1139,1017071
+Escherichia coli PBC7,1017040
+Mycobacterium tuberculosis HT1171,1017084
+Escherichia coli PBC3,1017038
+Mycobacterium tuberculosis HT1170,1017083
+Mycobacterium tuberculosis HT1131,1017064
+Mycobacterium tuberculosis HT1116,1017056
+Escherichia coli PB10,1017033
+Escherichia coli MV2C11,694529
+Mycobacterium tuberculosis HT1150,1017073
+Escherichia coli PBD1,1017043
+Escherichia coli MV1994,694524
+Mycobacterium tuberculosis HT1160,1017078
+Mycobacterium tuberculosis HT1132,1017065
+Mycobacterium tuberculosis HT1114,1017054
+Mycobacterium tuberculosis HT1166,1017082
+Escherichia coli PBD11,1017047
+Mycobacterium tuberculosis mc(2)6020-C,1017087
+Escherichia coli PBB4,1017034
+Escherichia coli PBD19,1017049
+Mycobacterium tuberculosis mc(2)6020-A,1017088
+Mycobacterium tuberculosis mc(2)6020-B,1017086
+Escherichia coli PBB6,1017036
+Escherichia coli PBD7,1017046
+Mycobacterium tuberculosis HT1137,1017069
+Escherichia coli PBC22,1017042
+Escherichia coli PBA5,1017031
+Escherichia coli PBD20,1017050
+Mycobacterium tuberculosis HT1115,1017055
+Mycobacterium tuberculosis HT1172,1017085
+Mycobacterium tuberculosis HT1130,1017063
+Escherichia coli PBD2,1017044
+Escherichia coli PBD24,1017053
+Mycobacterium tuberculosis HT1134,1017067
+Escherichia coli PBA9,1017032
+Mycobacterium tuberculosis HT1149,1017072
+Mycobacterium tuberculosis HT1133,1017066
+Escherichia coli PBD16,1017048
+Mycobacterium tuberculosis HT1156,1017074
+Mycobacterium tuberculosis HT1138,1017070
+Mycobacterium tuberculosis HT1165,1017081
+Mycobacterium tuberculosis HT1120,1017060
+Mycobacterium tuberculosis HT1158,1017076
+Escherichia coli PBD21,1017051
+Escherichia coli PBB5,1017035
+Escherichia coli MV2D4,694532
+Mycobacterium tuberculosis HT1159,1017077
+Escherichia coli PBC20,1017041
+Mycobacterium tuberculosis HT1135,1017068
+Mycobacterium tuberculosis KL2827,687448
+Mycobacterium tuberculosis KL2826,687447
+Mycobacterium tuberculosis KL2825,687446
+Mycobacterium tuberculosis KL2802,687444
+Mycobacterium tuberculosis KL2850,687450
+Mycobacterium tuberculosis MC2_6020,687452
+Mycobacterium tuberculosis KL2851,687451
+Mycobacterium tuberculosis KL2801,687443
+Mycobacterium tuberculosis KL2803,687445
+Mycobacterium tuberculosis KL2849,687449
+Escherichia coli MV7505,694522
+Escherichia coli MV4241,694514
+Escherichia coli MV7502,694520
+Escherichia coli MV4242,694515
+Escherichia coli MV4244,694517
+Pseudomonas aeruginosa PAO1LM06,990342
+Pseudomonas aeruginosa PAO1LM05,990341
+Pseudomonas aeruginosa PAO1LM04,990340
+Pseudomonas aeruginosa PAO1LM03,990339
+Pseudomonas aeruginosa PAO1LM02,990338
+Pseudomonas aeruginosa PAO1LM01,990337
+Pseudomonas aeruginosa PAO1,208964
+Escherichia coli MV2B10,694527
+Escherichia coli MV7506,694523
+Escherichia coli MV7501,694519
+Escherichia coli MV2A6,694525
+Escherichia coli MV2B9,694528
+Escherichia coli MV2C9,694530
+Pseudomonas aeruginosa PAO1LM09,990345
+Pseudomonas aeruginosa PAO1LM08,990344
+Pseudomonas aeruginosa PAO1LM07,990343
+Pseudomonas aeruginosa PAO1LM13,990349
+Pseudomonas aeruginosa PAO1LM12,990348
+Pseudomonas aeruginosa PAO1LM11,990347
+Pseudomonas aeruginosa PAO1LM10,990346
+Escherichia coli MV4246,694518
+Escherichia coli MV7503,694521
+Escherichia coli MV4243,694516
+Escherichia coli MV2A9,694526
+Escherichia coli MV2D10,694531
+Mycobacterium tuberculosis HTS1092,903513
+Mycobacterium tuberculosis HTS1090,903511
+Mycobacterium tuberculosis HTS1091,903512
+Mycobacterium tuberculosis HTS1109,903517
+Mycobacterium tuberculosis HTS1108,903516
+Mycobacterium tuberculosis HTS1093,903514
+Mycobacterium tuberculosis HTS1105,903515
+Mycobacterium tuberculosis HTS1110,903518
+Paramecium tetraurelia,5888
+Plasmodium vivax India VII,1077284
+Cyanophage MED4-117,889954
+Synechococcus phage S-RIM2,687800
+Sulfitobacter phage pCB2047-A,754045
+Rhizobium phage RR1-A,929833
+Emiliania huxleyi virus 43,889960
+Emiliania huxleyi virus 207,181214
+Synechococcus phage S-CAM8,754038
+Aeromonas phage pIS4-A,754050
+Vibrio phage VD1,754057
+Cyanophage P-SS1,889957
+Vibrio phage pYD21-A,754049
+Synechococcus phage S-IOM18,754039
+Synechococcus phage S-RIP2,754040
+Tetraselmis viridis virus S20,754070
+Synechococcus phage S-CBM2,351708
+Synechococcus phage S-CBP2,756277
+Cyanophage P-RSM3,536446
+Cyanophage P-RSM1,536444
+Vibrio phage pYD38-A,754051
+Prochlorococcus phage MED4-184,889955
+Schizosaccharomyces pombe NCYC132,941278
+Phytophthora phaseoli race F_18,887082
+Phytophthora infestans PIC99189,887081
+Phytophthora mirabilis PIC 99114,451108
+Enterococcus faecalis Merz96,565645
+Ostreococcus lucimarinus virus OlV6,754065
+Puccinia triticina PRTUS35,664262
+Pseudomonas aeruginosa PA14,652611
+Enterococcus faecium Com15,565663
+Schizosaccharomyces cryophilus OY26,653667
+Ostreococcus lucimarinus virus OlV4,754063
+Polistes canadensis,91411
+Odobenus rosmarus divergens,9708
+[Clostridium] innocuum 6_1_30,450752
+Toxoplasma gondii RH,383379
+Plasmodium vivax North Korean,1035514
+Plasmodium vivax Brazil I,1033975
+Plasmodium vivax Mauritania I,1035515
+Emiliania huxleyi virus PS401,754068
+Loktanella phage pCB2051-A,754044
+Sulfitobacter phage pCB2047-C,754043
+Cyanophage Syn30,536474
+Rhodobacter phage RC1,754055
+Cyanophage P-RSM6,929832
+Dunaliella viridis virus SI2,754069
+Cyanophage Syn10,536472
+Emiliania huxleyi virus 208,181215
+Psychrobacter phage pOW20-A,754048
+Paenibacillus phage PG1,754053
+Synechococcus phage S-CBP3,756276
+Synechococcus phage S-CAM1,754037
+Synechococcus phage S-SKS1,754042
+Neurospora crassa OR74A,367110
+Schizosaccharomyces japonicus yFS275,402676
+Salpingoeca rosetta,946362
+Schizosaccharomyces pombe SPK1820,941279
+Magnaporthe oryzae 70-15,242507
+Fusarium oxysporum MN25,660028
+Fusarium oxysporum FOL 4287,660037
+Fusarium oxysporum NRRL 32931,660029
+Fusarium oxysporum 247,660030
+Fusarium oxysporum Fov24500,660026
+Puccinia triticina Race 9,664264
+Puccinia striiformis PST-1,931979
+Puccinia striiformis PST-127,931978
+Mycobacterium tuberculosis SUMu007,675518
+Mycobacterium tuberculosis SUMu009,675520
+Mycobacterium tuberculosis SUMu010,675521
+Mycobacterium tuberculosis SUMu002,675513
+Mycobacterium tuberculosis SUMu005,675516
+Mycobacterium tuberculosis SUMu006,675517
+Mycobacterium tuberculosis SUMu008,675519
+Mycobacterium tuberculosis SUMu011,675522
+Mycobacterium tuberculosis SUMu012,675523
+Mycobacterium tuberculosis 8104-2A,593264
+Mycobacterium tuberculosis 7604-4,593260
+Mycobacterium tuberculosis 10403-4,593248
+Mycobacterium tuberculosis 10403-7,593249
+Mycobacterium tuberculosis 6404-3B,593256
+Mycobacterium tuberculosis 10403-1,593245
+Mycobacterium tuberculosis 7604-2,593259
+Mycobacterium tuberculosis 7904-2,593262
+Mycobacterium tuberculosis 15304-3A,593254
+Mycobacterium tuberculosis 10403-11,593247
+Mycobacterium tuberculosis 11105-3,593252
+Mycobacterium tuberculosis 11105-2,593251
+Mycobacterium tuberculosis 10403-10,593246
+Mycobacterium tuberculosis 10403-8,593250
+Mycobacterium tuberculosis 8104-1C,593263
+Mycobacterium tuberculosis 6404-1B,593255
+Mycobacterium tuberculosis 7904-1,593261
+Mycobacterium tuberculosis 7404-1,593258
+Mycobacterium tuberculosis 15304-1B,593253
+Mycobacterium tuberculosis 6404-A1,593257
+Vibrio splendidus,29497
+Vibrio alginolyticus 12G01,314288
+Streptococcus pyogenes MGAS15029,530017
+Methylobacterium extorquens AM1,272630
+Staphylococcus aureus subsp. aureus WW2703/97,585161
+Staphylococcus aureus subsp. aureus 67-331,585131
+Staphylococcus aureus subsp. aureus WW2707/97,585142
+Staphylococcus aureus subsp. aureus M859,585141
+Staphylococcus aureus subsp. aureus HT20010559,585138
+Staphylococcus aureus subsp. aureus 4030,585122
+Staphylococcus aureus subsp. aureus 69-412,585135
+Staphylococcus aureus subsp. aureus 58-362,585127
+Staphylococcus aureus subsp. aureus 66-1888,585130
+Staphylococcus aureus subsp. aureus M1016,585139
+Streptococcus pyogenes MGAS9945,529978
+Streptococcus pyogenes MGAS9955,529979
+Streptococcus pyogenes MGAS9958,529980
+Streptococcus pyogenes MGAS9959,529981
+Streptococcus pyogenes MGAS9921,529972
+Streptococcus pyogenes MGAS9969,529982
+Streptococcus pyogenes MGAS10738,529952
+Streptococcus pyogenes MGAS10870,530008
+Streptococcus pyogenes MGAS10874,530009
+Streptococcus pyogenes MGAS15001,530010
+Streptococcus pyogenes MGAS15005,530011
+Streptococcus pyogenes MGAS15009,530012
+Streptococcus pyogenes MGAS15013,530013
+Streptococcus pyogenes MGAS9881,529961
+Streptococcus pyogenes MGAS3475,529960
+Streptococcus pyogenes MGAS3452,529959
+Streptococcus pyogenes MGAS3397,529958
+Streptococcus pyogenes MGAS10044,529994
+Streptococcus pyogenes MGAS10048,529995
+Streptococcus pyogenes MGAS10398,529996
+Streptococcus pyogenes MGAS10742,529997
+Streptococcus pyogenes MGAS10830,529998
+Streptococcus pyogenes MGAS10834,529999
+Streptococcus pyogenes MGAS10838,530000
+Streptococcus pyogenes MGAS10842,530001
+Streptococcus pyogenes MGAS10846,530002
+Streptococcus pyogenes MGAS10850,530003
+Streptococcus pyogenes MGAS10854,530004
+Streptococcus pyogenes MGAS10858,530005
+Streptococcus pyogenes MGAS10863,530006
+Streptococcus pyogenes MGAS10866,530007
+Streptococcus pyogenes MGAS3370,529947
+Streptococcus pyogenes MGAS3393,529957
+Streptococcus pyogenes MGAS3385,529956
+Streptococcus pyogenes MGAS10006,529955
+Streptococcus pyogenes MGAS10003,529954
+Streptococcus pyogenes MGAS10002,529953
+Streptococcus pyogenes MGAS9908,529968
+Streptococcus pyogenes MGAS9897,529965
+Streptococcus pyogenes MGAS9973,529983
+Streptococcus pyogenes MGAS9978,529984
+Streptococcus pyogenes MGAS9983,529985
+Streptococcus pyogenes MGAS9884,529962
+Streptococcus pyogenes MGAS9911,529969
+Streptococcus pyogenes MGAS15200,530030
+Streptococcus pyogenes MGAS9901,529966
+Streptococcus pyogenes MGAS9926,529973
+Streptococcus pyogenes MGAS9913,529970
+Streptococcus pyogenes MGAS9930,529974
+Streptococcus pyogenes MGAS9937,529976
+Streptococcus pyogenes MGAS9941,529977
+Streptococcus pyogenes MGAS10029,529991
+Streptococcus pyogenes MGAS9917,529971
+Streptococcus pyogenes MGAS9893,529964
+Streptococcus pyogenes MGAS10041,529993
+Streptococcus pyogenes MGAS15034,530018
+Streptococcus pyogenes MGAS15043,530020
+Streptococcus pyogenes MGAS15045,530021
+Streptococcus pyogenes MGAS15049,530022
+Streptococcus pyogenes MGAS15053,530023
+Streptococcus pyogenes MGAS9934,529975
+Streptococcus pyogenes MGAS3374,529950
+Streptococcus pyogenes MGAS3664,529946
+Streptococcus pyogenes MGAS9986,529986
+Streptococcus pyogenes MGAS9990,529987
+Streptococcus pyogenes MGAS10021,529988
+Streptococcus pyogenes MGAS10025,529990
+Streptococcus pyogenes MGAS9892,529963
+Streptococcus pyogenes MGAS10024,529989
+Streptococcus pyogenes MGAS15057,530024
+Streptococcus pyogenes MGAS15061,530025
+Streptococcus pyogenes MGAS15184,530026
+Streptococcus pyogenes MGAS15188,530027
+Streptococcus pyogenes MGAS15192,530028
+Streptococcus pyogenes MGAS15196,530029
+Streptococcus pyogenes MGAS3376,529951
+Streptococcus pyogenes MGAS15017,530014
+Streptococcus pyogenes MGAS15021,530015
+Streptococcus pyogenes MGAS15025,530016
+Staphylococcus aureus subsp. aureus 68-81,585133
+Staphylococcus aureus subsp. aureus 55/2798,585124
+Staphylococcus aureus subsp. aureus 55/3224,585125
+Staphylococcus aureus subsp. aureus M765,585140
+Staphylococcus aureus subsp. aureus 4022,585121
+Staphylococcus aureus subsp. aureus 55/3488,585126
+Staphylococcus aureus subsp. aureus 55/2237,585123
+Staphylococcus aureus subsp. aureus 75916,585136
+Staphylococcus aureus subsp. aureus 67-43,585132
+Staphylococcus aureus subsp. aureus 69-172,585134
+Staphylococcus aureus subsp. aureus 01.7997.S,585120
+Staphylococcus aureus subsp. aureus 65-20,585129
+Staphylococcus aureus subsp. aureus 65-1119,585128
+Staphylococcus aureus subsp. aureus BH26-04,585137
+Ostreococcus lucimarinus virus OlV5,754064
+Vibrio cholerae NCTC 8457,417399
+Vibrio cholerae MO10,345072
+Puccinia striiformis CYR-32,931977
+Puccinia striiformis UK94/519,931976
+Enterococcus faecalis X98,565641
+Bacillus cereus BAG2X1-3,1053181
+Bacillus cereus ISP3191,1053216
+Bacillus cereus VDM062,1053250
+Bacillus cereus VD166,1053240
+Bacillus cereus VD154,1053238
+Bacillus cereus VD115,1053230
+Bacillus cereus VD148,1053237
+Bacillus cereus VD107,1053229
+Bacillus cereus VD102,1053228
+Bacillus cereus MSX-D12,1053222
+Bacillus cereus VD021,1053224
+Bacillus cereus MSX-A1,1053220
+Bacillus cereus MC67,1053219
+Bacillus cereus MC118,1053218
+Bacillus cereus K-5975c,1053217
+Bacillus cereus IS195,1053213
+Bacillus cereus IS845/00,1053214
+Bacillus cereus HuB4-4,1053211
+Bacillus cereus HuB4-10,1053210
+Bacillus cereus HuB2-9,1053209
+Bacillus cereus HuB1-1,1053207
+Bacillus cereus CER074,1053199
+Bacillus cereus HD73,1053200
+Bacillus cereus CER057,1053198
+Bacillus cereus BtB2-4,1053197
+Bacillus cereus BMG1.7,1053196
+Bacillus cereus BAG6X1-2,1053195
+Bacillus cereus BAG6X1-1,1053194
+Bacillus cereus BAG6O-2,1053193
+Bacillus cereus BAG6O-1,1053192
+Bacillus cereus BAG5X1-1,1053189
+Bacillus cereus BAG5O-1,1053188
+Bacillus cereus BAG4X2-1,1053187
+Bacillus cereus BAG4X12-1,1053186
+Bacillus cereus BAG4O-1,1053185
+Bacillus cereus BAG3X2-1,1053183
+Bacillus cereus BAG3O-2,1053182
+Bacillus cereus BAG2X1-2,1053180
+Bacillus cereus BAG2X1-1,1053179
+Bacillus cereus BAG2O-3,1053178
+Bacillus cereus BAG1X1-3,1053172
+Bacillus cereus AND1407,1053166
+Bacillus cereus VDM019,1053246
+Bacillus cereus VD196,1053243
+Bacillus cereus VD169,1053241
+Bacillus cereus VD156,1053239
+Bacillus cereus VD133,1053233
+Bacillus cereus VD078,1053227
+Bacillus cereus VD048,1053226
+Bacillus cereus VD045,1053225
+Bacillus cereus VD014,1053223
+Bacillus cereus MSX-A12,1053221
+Bacillus cereus HuA4-10,1053206
+Bacillus cereus HuA3-9,1053205
+Bacillus cereus HuA2-9,1053204
+Bacillus cereus HuA2-4,1053203
+Bacillus cereus HuA2-1,1053201
+Bacillus cereus BAG1X2-2,1053174
+Bacillus cereus BAG1X2-1,1053173
+Bacillus cereus BAG1X1-2,1053171
+Bacillus cereus BAG1X1-1,1053170
+Bacillus cereus BAG1O-3,1053169
+Bacillus cereus BAG1O-2,1053168
+Escherichia coli O104:H4 str. 11-3798,1048335
+Mycoplasma agalactiae,2110
+Mycoplasma bovis,28903
+Mycoplasma flocculare,2128
+Delftia acidovorans CCUG 15835,883100
+Delftia acidovorans CCUG 274B,883101
+Myroides odoratimimus CCUG 3837,883153
+Afipia broomeae ATCC 49717,883078
+Slackia piriformis YIT 12062,742818
+Barnesiella intestinihominis YIT 11860,742726
+Helcococcus kunzii ATCC 51366,883114
+Flavonifractor sp. hmp_mda_pilot_jcvi_0195,1316609
+Ruminococcaceae bacterium hmp_mda_pilot_jcvi_0104,1316608
+Ruminococcaceae bacterium hmp_mda_pilot_jcvi_0103,1316607
+Bifidobacterium bifidum NCIMB 41171,398513
+Fusobacterium periodonticum 2_1_31,469599
+Eubacterium sp. 3_1_31,457402
+Klebsiella oxytoca 10-5248,883123
+Erysipelotrichaceae bacterium 6_1_45,469614
+Erysipelotrichaceae bacterium 21_3,658657
+Paenibacillus sp. 4_7_47FAA,658660
+Klebsiella oxytoca 10-5249,883124
+Klebsiella oxytoca 10-5250,883125
+Klebsiella oxytoca 10-5245,883120
+Klebsiella oxytoca 10-5244,883119
+Klebsiella oxytoca 10-5243,883118
+Klebsiella oxytoca 10-5242,883117
+Klebsiella oxytoca 09-7231,883116
+Fusobacterium nucleatum subsp. animalis 21_1A,469601
+Escherichia sp. 1_1_43,457400
+Clostridium sp. D5,556261
+Coprobacillus sp. D6,556262
+Bacteroides sp. 2_2_4,469590
+Fusobacterium nucleatum subsp. animalis D11,556264
+Erysipelotrichaceae bacterium D7,564664
+Bacteroides dorei 5_1_36/D4,556260
+Shigella sp. D8,556265
+Fusobacterium varium ATCC 27725,469618
+Escherichia sp. 4_1_40B,457401
+Fusobacterium ulcerans ATCC 49185,469617
+Fusobacterium periodonticum 1_1_41FAA,469621
+Fusobacterium necrophorum D12,556263
+Fusobacterium mortiferum ATCC 9817,469616
+Bacteroides sp. D2,556259
+Bacteroides sp. D1,556258
+Citrobacter sp. 30_2,469595
+Oxalobacter formigenes OXCC13,556269
+Helicobacter winghamensis ATCC BAA-430,556267
+Bacteroides sp. 9_1_42FAA,457395
+Flavobacteriaceae bacterium LANL_C1_MDA_FEC_HR3_1,1357344
+Subdoligranulum sp. 6_1_47FAA,665955
+Sporothrix schenckii ATCC 58251,1391915
+Kluyvera sp. UC1_BHI_B,1357331
+Helicobacter macacae MIT 99-5501,1357400
+Dialister pneumosintes CD1_D5_FAA_6,1357393
+[Clostridium] innocuum UC1_FAA_N,1357388
+Catabacter hongkongensis AB8_9,1357384
+Streptococcus sp. oral taxon 71 str. ATCC 15914,1316590
+Selenomonas dianae ATCC 43527,1316584
+Prevotella sp. oral taxon 376 str. F0043,1316591
+Oribacterium sp. oral taxon 102 str. W9097,1316598
+Kluyvera ascorbata F0526,1316585
+[Clostridium] bolteae CC43_001B,1073368
+Staphylococcus sp. KPL1816,1203580
+Staphylococcus sp. KPL1815,1203579
+Capnocytophaga sp. oral taxon 878 str. F0545,1316597
+Capnocytophaga sp. oral taxon 864 str. F0512,1316595
+Actinomyces sp. oral taxon 169 str. F0496,1316592
+Helicobacter canis NCTC 12740,1357399
+Helicobacter pullorum MIT 98-5489,537972
+Adlercreutzia equolifaciens UC1_BHI_P,1357377
+Methylobacterium sp. LANL_B2_MDA_FEC_HR3_2,1357333
+Kocuria sp. LANL_A2_MDA_BH_HR4_1,1365973
+Enterococcus sp. LANL_G1_MDA_FEC_HR4_2,1357329
+Pseudoflavonifractor capillosus UC1_FAA_NB_F,1357380
+Ruminococcaceae bacterium 2_1_42A,742724
+Collinsella aerofaciens UC1_BHI_C,1357391
+Weissella cibaria F16_1,1357418
+Veillonella parvula AC2_8_11_AN_NA_2,1357417
+Veillonella atypica UC1_FAA_A,1357415
+Veillonella atypica CD1_NA_1,1357414
+Synergistes sp. 22-5-S_12_D6_FAA,1357335
+Phascolarctobacterium faecium UC1_BHI_D,1357409
+Peptococcus sp. 2_1_54CFAACT2,1357330
+Parabacteroides merdae UC1_BHI_R,1357405
+Morganella morganii AC2_8_11_AN_D6_FAA_4,1365974
+Micrococcus luteus CD1_FAA_NB_1,1357403
+Leuconostoc mesenteroides A16_17,1357402
+Fusobacterium ulcerans AC2_8_11_AN_D5_FAA_7,1365972
+Fusobacterium nucleatum 13_3C,1357398
+Dorea formicigenerans UC1_FAA_G,1357394
+[Clostridium] leptum A16_3,1357389
+[Clostridium] hylemonae CD1_FAA_3,1357387
+Paraclostridium bifermentans NI48_6,1357385
+Bilophila wadsworthia AC2_8_11_AN_D5_FAA_1,1357383
+Bacteroides cellulosilyticus UC1_FAA_J,1357381
+Veillonella dispar UC1_MRS_D,1357416
+Slackia exigua CD1_D6_FAA_13,1357412
+Varibaculum cambriense AB12_3,1357413
+Raoultella ornithinolytica CD1_MRS_4,1357411
+Peptoniphilus asaccharolyticus CD1_D5_FAA_2,1357407
+Parvimonas micra CD1_D6_FAA_3,1357406
+Mogibacterium timidum CD1_D5_FAA_3,1357404
+Lactobacillus curvatus F16_9,1357401
+Enterococcus durans CD1_FAA_2_aer.,1357396
+Eggerthella lenta MR1_12,1357395
+Clostridium paraputrificum ETR2_15,1357390
+Clostridium cadaveris CD1_D5_FAA_12,1357386
+Bifidobacterium angulatum F16_22,1357382
+Bacteroides caccae MR1_13,1357379
+Alistipes shahii ETR2_14,1357378
+Eubacterium infirmum CD1_FAA_NB_6,1357397
+Lachnospiraceae bacterium hmp_mda_pilot_jcvi_0098,1316621
+Subdoligranulum sp. hmp_mda_pilot_jcvi_0110,1316518
+Sphingomonas sp. hmp_mda_pilot_jcvi_0201,1316523
+Simonsiella sp. hmp_mda_pilot_jcvi_0203,1316525
+Selenomonas sp. hmp_mda_pilot_jcvi_0577,1316529
+Selenomonas sp. hmp_mda_pilot_jcvi_0200,1316522
+Ruminococcaceae bacterium hmp_mda_pilot_jcvi_0105,1316633
+Ruminococcaceae bacterium hmp_mda_pilot_jcvi_0102,1316632
+Ruminococcaceae bacterium hmp_mda_pilot_jcvi_0101,1316631
+Ruminococcaceae bacterium hmp_mda_pilot_jcvi_0100,1316630
+Porphyromonas sp. hmp_mda_pilot_jcvi_0204,1316526
+Porphyromonas sp. hmp_mda_pilot_jcvi_0197,1316519
+Methylobacterium sp. hmp_mda_pilot_jcvi_0205,1316527
+Lachnospiraceae bacterium hmp_mda_pilot_jcvi_0194,1316623
+Haemophilus sp. hmp_mda_pilot_jcvi_0198,1316520
+Clostridiales bacterium hmp_mda_pilot_jcvi_0578,1316617
+Clostridia bacterium hmp_mda_pilot_jcvi_0108,1316612
+Clostridia bacterium hmp_mda_pilot_jcvi_0099,1316611
+Capnocytophaga sp. hmp_mda_pilot_jcvi_0199,1316521
+Bacteroidales bacterium hmp_mda_pilot_jcvi_0196,1316605
+Brevundimonas sp. hmp_mda_pilot_jcvi_0202,1316524
+Aggregatibacter sp. hmp_mda_pilot_jcvi_0576,1316528
+Acetanaerobacterium sp. hmp_mda_pilot_jcvi_0109,1316517
+Acetanaerobacterium sp. hmp_mda_pilot_jcvi_0107,1316516
+Acetanaerobacterium sp. hmp_mda_pilot_jcvi_0106,1316515
+Clostridia bacterium hmp_mda_pilot_jcvi_0097,1316610
+Klebsiella pneumoniae ATCC 43816,1316582
+Fusobacterium nucleatum CTI-7,1316588
+Fusobacterium nucleatum CTI-6,1316587
+Fusobacterium nucleatum CTI-5,1316586
+Actinomyces odontolyticus C702,562972
+Corynebacterium sp. KPL1824,1203561
+Corynebacterium sp. KPL1855,1203562
+Solobacterium moorei CC57E,1073371

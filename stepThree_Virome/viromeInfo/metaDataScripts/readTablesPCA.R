@@ -1,4 +1,4 @@
-#Load libraries for pielou calculation
+#Load libraries 
 library(OTUtable)
 library(plyr); library(dplyr)
 library(reshape)
@@ -6,9 +6,12 @@ library(data.table)
 library(ggfortify)
 library(cluster)
 library(gtools)
+install.packages("Hmisc")
+library("Hmisc")
 memory.size(max = TRUE)
 
 #Read viral tax list - downloaded from NCBI taxonomy
+setwd("~/MastersDegree/Thesis/R/RScripts/viromeInfo/")
 virTax <- read.table("virTax.txt", header = T)
 colnames(virTax) <- "TaxID"
 
@@ -24,7 +27,7 @@ dataset <- do.call(bind_rows, lapply(list.files(pattern="tsv$"),read.data))
 dataset$Lineage <- NULL
 
 # split based on filename by assigning a column name of filename values to each dataframe in the list
-# merge all dataframes into new dataframe
+# merge all dataframes into new dataframe, moving values into correct rows
 df <- split(dataset, dataset$fname)
 for (i in 1:length(df)) {
   df[i] <- lapply(df[i], setNames, nm = c("TaxID", names(df)[i], "fname"))
@@ -44,9 +47,11 @@ for (i in unique(testdf$TaxID)){
   newdf[as.character(i),] <- tempdf
 }
 
-# rename column names
+# rename column names - remove Choristoneura occidentalis granulovirus & Enterobacteria phage 
 colnames(newdf) = gsub(".tsv", "", colnames(newdf))
 tester <- newdf
+tester = tester[which(!rownames(tester) %in% "374840"), ]
+tester = tester[which(!rownames(tester) %in% "364745"), ]
 
 #remove NAs
 tester[tester == 0] <- NA
@@ -61,8 +66,9 @@ tester <- apply(tester,2,f1)
 tester <- log(tester)
 tester <- as.data.frame(tester)
 
-#PCA plot - 2 types: pam or fanny
+#PCA plot - 2 types: pam or fanny 
 viewer <- t(tester)
 viewer1 <- data.frame(t(na.omit(t(viewer))))
 autoplot(pam(viewer1, 3), frame = TRUE, frame.type = 'norm')
-autoplot(fanny(viewer1, 3), frame = TRUE)
+autoplot(fanny(viewer1,3), frame = TRUE, label = F, shape = T)
+x <- fanny(viewer1, 3)

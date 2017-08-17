@@ -21,7 +21,7 @@ virTableHits <- virTableHits[order(-virTableHits$`Reads Classified`),]
 virTableHits <- head(virTableHits,10)
 write.table(virTableHits, file ="virHitOrder.tsv", sep="\t",col.names = T,row.names = F,quote=F)
 
-#get samples with the highest pielou's evennness as well as total viral hits for analysis/PCA plot
+#get samples with the highest pielou's evennness (0.1) as well as total viral hits (2000+) for analysis/PCA plot
 #Order by pielou and total viral hits
 sampleTable <- virTable[c(1,6,11,13,14)]
 sampleTable[, 2] <- as.numeric(as.character( sampleTable[, 2] ))
@@ -33,7 +33,7 @@ sampleTable <- subset(sampleTable, sampleTable[,2] > pieThreshold)
 sampleTable <- sampleTable[with(sampleTable, order(-Pielou.s.Evenness, -Total.Viral.Hits)), ]
 sampleTable <- sampleTable[ order(-sampleTable[,2], -sampleTable[,3]), ]
 
-#Write out
+#Write out list of samples
 colnames(sampleTable) <- c("Sample Accession No.", "Pielou's Evennness", "Total Viral Read Classified", "Top Viral Read Classified")
 write.table(sampleTable, file ="SamplesOfInterest.tsv", sep="\t",col.names = F,row.names = F,quote=F)
 
